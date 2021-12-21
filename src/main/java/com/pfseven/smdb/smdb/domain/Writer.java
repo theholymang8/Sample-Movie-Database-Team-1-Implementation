@@ -1,10 +1,12 @@
 package com.pfseven.smdb.smdb.domain;
 
-
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
@@ -15,23 +17,19 @@ import java.util.List;
 @SuperBuilder
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-@Table(name = "ACTOR")
-@SequenceGenerator(name = "idGenerator", sequenceName = "ACTOR_SEQ", initialValue = 1, allocationSize = 1)
-public class Actor extends Individual{
+@Table(name = "WRITER")
+@SequenceGenerator(name = "idGenerator", sequenceName = "WRITER_SEQ", initialValue = 1, allocationSize = 1)
+public class Writer extends Individual{
 
     //Films
-    @ManyToMany(mappedBy = "actors")
+    @OneToMany(mappedBy = "writer")
     private List<Film> films;
 
-    //Role
-    @NotNull(message = "{role.null}")
-    private String role;
-
-    //TvShows
-    @ManyToMany(mappedBy = "actors")
-    private List<TvShow> tvShows;
+    //Screenplay(s)
+    private String screenPlays;
 
     //awards
     @NotNull(message = "{awards.null}")
     private String awards;
+
 }

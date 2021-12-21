@@ -3,6 +3,7 @@ package com.pfseven.smdb.smdb.services;
 import java.util.List;
 
 public interface BaseService <T, ID>{
+
     T create (T entity);
 
     List<T> createAll(List<T> entities);
