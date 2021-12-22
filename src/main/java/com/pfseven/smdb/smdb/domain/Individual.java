@@ -18,9 +18,10 @@ import java.util.Set;
 @SuperBuilder
 @ToString
 @EqualsAndHashCode
-@Entity
+@Entity()
 @Table(name = "INDIVIDUALS")
 @SequenceGenerator(name = "idGenerator", sequenceName = "INDIVIDUAL_SEQ", initialValue = 1, allocationSize = 1)
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Individual extends BaseModel{
 
     @NotNull(message = "{email.null}")

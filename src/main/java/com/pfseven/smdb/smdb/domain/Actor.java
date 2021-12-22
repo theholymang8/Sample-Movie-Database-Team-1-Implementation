@@ -18,7 +18,6 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "ACTOR")
 @SequenceGenerator(name = "idGenerator", sequenceName = "ACTOR_SEQ", initialValue = 1, allocationSize = 1)
-@Inheritance(strategy = InheritanceType.JOINED)
 public class Actor extends Individual{
 
     //Films
@@ -26,13 +25,14 @@ public class Actor extends Individual{
     @ManyToMany(mappedBy = "actors")
     private Set<Film> films = new HashSet<>();
 
+    //TvShows
+    @ManyToMany(mappedBy = "directors", fetch = FetchType.LAZY)
+    private Set<TvShow> tvShows = new HashSet<>();
+
     //Role
     @NotNull(message = "{role.null}")
     private String role;
 
-    //TvShows
-    @ManyToMany(mappedBy = "actors")
-    private Set<TvShow> tvShows;
 
     //awards
 }

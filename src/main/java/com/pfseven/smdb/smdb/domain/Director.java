@@ -5,7 +5,9 @@ import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @AllArgsConstructor
@@ -20,12 +22,12 @@ import java.util.List;
 public class Director extends Individual{
 
     //Films
-    @OneToMany(mappedBy = "director", fetch = FetchType.LAZY)
-    private List<Film> films;
+    @ManyToMany(mappedBy = "directors", fetch = FetchType.LAZY)
+    private Set<Film> films = new HashSet<>();
 
     //TvShows
-    @OneToMany(mappedBy = "director", fetch = FetchType.LAZY)
-    private List<TvShow> tvShows;
+    @ManyToMany(mappedBy = "directors", fetch = FetchType.LAZY)
+    private Set<TvShow> tvShows = new HashSet<>();
 
     //Publicity Listings
     private String publicityListings;

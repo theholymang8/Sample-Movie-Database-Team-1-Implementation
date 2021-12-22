@@ -6,7 +6,9 @@ import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @AllArgsConstructor
@@ -20,12 +22,12 @@ import java.util.List;
 public class Producer extends Individual{
 
     //Films
-    @OneToMany(mappedBy = "producer", fetch = FetchType.LAZY)
-    private List<Film> films;
+    @ManyToMany(mappedBy = "producers", fetch = FetchType.LAZY)
+    private Set<Film> films = new HashSet<>();
 
     //TvShows
-    @OneToMany(mappedBy = "producer", fetch = FetchType.LAZY)
-    private List<TvShow> tvShows;
+    @ManyToMany(mappedBy = "producers", fetch = FetchType.LAZY)
+    private Set<TvShow> tvShows = new HashSet<>();
 
     //Contributions
     private BigDecimal contributions;

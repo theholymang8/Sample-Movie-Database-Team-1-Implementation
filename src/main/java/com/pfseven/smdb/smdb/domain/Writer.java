@@ -3,12 +3,11 @@ package com.pfseven.smdb.smdb.domain;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @AllArgsConstructor
@@ -22,8 +21,12 @@ import java.util.List;
 public class Writer extends Individual{
 
     //Films
-    @OneToMany(mappedBy = "writer")
-    private List<Film> films;
+    @ManyToMany(mappedBy = "writers", fetch = FetchType.LAZY)
+    private Set<Film> films = new HashSet<>();
+
+    //TvShows
+    @ManyToMany(mappedBy = "writers", fetch = FetchType.LAZY)
+    private Set<TvShow> tvShows = new HashSet<>();
 
     //Screenplay(s)
     private String screenPlays;
