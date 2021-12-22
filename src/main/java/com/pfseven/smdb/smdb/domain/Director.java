@@ -16,6 +16,7 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "DIRECTOR")
 @SequenceGenerator(name = "idGenerator", sequenceName = "DIRECTOR_SEQ", initialValue = 1, allocationSize = 1)
+//INHERITANCE
 public class Director extends Individual{
 
     //Films

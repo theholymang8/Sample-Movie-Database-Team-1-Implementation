@@ -28,8 +28,5 @@ public class Writer extends Individual{
     //Screenplay(s)
     private String screenPlays;
 
-    //awards
-    @NotNull(message = "{awards.null}")
-    private String awards;
 
 }

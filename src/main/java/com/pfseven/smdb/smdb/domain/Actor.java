@@ -6,7 +6,9 @@ import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @AllArgsConstructor
@@ -17,29 +19,21 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "ACTOR")
 @SequenceGenerator(name = "idGenerator", sequenceName = "ACTOR_SEQ", initialValue = 1, allocationSize = 1)
+//MAYBE INHERITANCE
 public class Actor extends Individual{
 
     //Films
-    @ManyToMany//(mappedBy = "actors")
-    @JoinTable(
-            name = "actors_films",
-            joinColumns = @JoinColumn(name = "actor_id"),
-            inverseJoinColumns = @JoinColumn(name = "film_id"))
-    private List<Film> films;
+    //SEE AGAIN
+    @ManyToMany(mappedBy = "actors")
+    private Set<Film> films = new HashSet<>();
 
     //Role
     @NotNull(message = "{role.null}")
     private String role;
 
     //TvShows
-    @ManyToMany//(mappedBy = "actors")
-    @JoinTable(
-            name = "actors_tvShows",
-            joinColumns = @JoinColumn(name = "actor_id"),
-            inverseJoinColumns = @JoinColumn(name = "tvShow_id"))
+    @ManyToMany(mappedBy = "actors")
     private List<TvShow> tvShows;
 
     //awards
-    @NotNull(message = "{awards.null}")
-    private String awards;
 }

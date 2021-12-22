@@ -3,20 +3,24 @@ package com.pfseven.smdb.smdb.domain;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity
 @SuperBuilder
 @ToString
 @EqualsAndHashCode
+@Entity
+@Table(name = "INDIVIDUALS")
+@SequenceGenerator(name = "idGenerator", sequenceName = "INDIVIDUAL_SEQ", initialValue = 1, allocationSize = 1)
 public class Individual extends BaseModel{
 
     @NotNull(message = "{email.null}")
@@ -41,4 +45,14 @@ public class Individual extends BaseModel{
     @NotNull(message = "{nationality.null}")
     @Column(length = 15, nullable = false)
     private String nationality;
+
+    @NotNull(message = "{awards.null}")
+    private String awards;
+
+
+
+
+
+
+
 }
