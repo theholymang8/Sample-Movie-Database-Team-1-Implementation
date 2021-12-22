@@ -20,7 +20,11 @@ import java.util.List;
 public class Actor extends Individual{
 
     //Films
-    @ManyToMany(mappedBy = "actors")
+    @ManyToMany//(mappedBy = "actors")
+    @JoinTable(
+            name = "actors_films",
+            joinColumns = @JoinColumn(name = "actor_id"),
+            inverseJoinColumns = @JoinColumn(name = "film_id"))
     private List<Film> films;
 
     //Role
@@ -28,7 +32,11 @@ public class Actor extends Individual{
     private String role;
 
     //TvShows
-    @ManyToMany(mappedBy = "actors")
+    @ManyToMany//(mappedBy = "actors")
+    @JoinTable(
+            name = "actors_tvShows",
+            joinColumns = @JoinColumn(name = "actor_id"),
+            inverseJoinColumns = @JoinColumn(name = "tvShow_id"))
     private List<TvShow> tvShows;
 
     //awards
