@@ -14,12 +14,11 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@SuperBuilder
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "ACTOR")
 @SequenceGenerator(name = "idGenerator", sequenceName = "ACTOR_SEQ", initialValue = 1, allocationSize = 1)
-//MAYBE INHERITANCE
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Actor extends Individual{
 
     //Films
@@ -33,7 +32,7 @@ public class Actor extends Individual{
 
     //TvShows
     @ManyToMany(mappedBy = "actors")
-    private List<TvShow> tvShows;
+    private Set<TvShow> tvShows;
 
     //awards
 }
