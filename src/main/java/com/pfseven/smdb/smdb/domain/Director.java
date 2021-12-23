@@ -22,11 +22,11 @@ import java.util.Set;
 public class Director extends Individual{
 
     //Films
-    @ManyToMany(mappedBy = "directors", fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "directors")
     private Set<Film> films = new HashSet<>();
 
     //TvShows
-    @ManyToMany(mappedBy = "directors", fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "directors")
     private Set<TvShow> tvShows = new HashSet<>();
 
     //Publicity Listings

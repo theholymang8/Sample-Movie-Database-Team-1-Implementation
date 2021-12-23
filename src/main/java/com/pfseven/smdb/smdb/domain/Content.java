@@ -42,7 +42,6 @@ public class Content extends BaseModel{
     @Column(length = 3, nullable = false)
     private Integer length;
 
-
     //Rating
     @NotNull(message = "{rating.null}")
     @Column(length = 3, nullable = false)
@@ -79,7 +78,6 @@ public class Content extends BaseModel{
     private String awards;
 
     @NotNull(message = "{producers.null}")
-
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinTable(
             name = "CONTENT_PRODUCERS",
@@ -93,7 +91,6 @@ public class Content extends BaseModel{
             joinColumns = @JoinColumn(name="CONTENT_ID"),
             inverseJoinColumns = @JoinColumn(name="WRITER_ID"))
     private Set<Writer> writers = new HashSet<>();
-
 
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinTable(

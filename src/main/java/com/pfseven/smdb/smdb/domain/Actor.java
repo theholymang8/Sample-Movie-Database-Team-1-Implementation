@@ -26,7 +26,7 @@ public class Actor extends Individual{
     private Set<Film> films = new HashSet<>();
 
     //TvShows
-    @ManyToMany(mappedBy = "directors", fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "actors")
     private Set<TvShow> tvShows = new HashSet<>();
 
     //Role

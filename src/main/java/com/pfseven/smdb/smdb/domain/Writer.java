@@ -4,9 +4,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -21,11 +19,11 @@ import java.util.Set;
 public class Writer extends Individual{
 
     //Films
-    @ManyToMany(mappedBy = "writers", fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "writers")
     private Set<Film> films = new HashSet<>();
 
     //TvShows
-    @ManyToMany(mappedBy = "writers", fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "writers")
     private Set<TvShow> tvShows = new HashSet<>();
 
     //Screenplay(s)
