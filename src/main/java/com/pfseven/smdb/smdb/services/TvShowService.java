@@ -1,4 +1,6 @@
 package com.pfseven.smdb.smdb.services;
 
-public interface TvShowService {
+import com.pfseven.smdb.smdb.domain.TvShow;
+
+public interface TvShowService extends BaseService<TvShow, Long> {
 }

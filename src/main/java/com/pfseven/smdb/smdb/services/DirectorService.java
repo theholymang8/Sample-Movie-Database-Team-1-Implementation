@@ -1,4 +1,6 @@
 package com.pfseven.smdb.smdb.services;
 
-public interface DirectorService {
+import com.pfseven.smdb.smdb.domain.Director;
+
+public interface DirectorService extends BaseService<Director, Long> {
 }

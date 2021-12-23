@@ -1,4 +1,6 @@
 package com.pfseven.smdb.smdb.services;
 
-public interface ProducerService {
+import com.pfseven.smdb.smdb.domain.Producer;
+
+public interface ProducerService extends BaseService<Producer, Long>  {
 }
