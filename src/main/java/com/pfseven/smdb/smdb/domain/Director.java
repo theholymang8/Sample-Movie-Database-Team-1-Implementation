@@ -18,6 +18,7 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "DIRECTOR")
 @SequenceGenerator(name = "idGenerator", sequenceName = "DIRECTOR_SEQ", initialValue = 1, allocationSize = 1)
+@PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "INDIVIDUALS_FK_ID_D"))
 //INHERITANCE
 public class Director extends Individual{
 

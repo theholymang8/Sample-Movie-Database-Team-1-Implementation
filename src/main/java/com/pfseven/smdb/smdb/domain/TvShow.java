@@ -19,6 +19,7 @@ import java.util.List;
 @Entity
 @Table(name = "TV_SHOW")
 @SequenceGenerator(name = "idGenerator", sequenceName = "TV_SHOW_SEQ", initialValue = 1, allocationSize = 1)
+@PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "CONTENT_FK_ID_TV"))
 public class TvShow extends Content{
 
     @NotNull(message = "{seasons.null}")

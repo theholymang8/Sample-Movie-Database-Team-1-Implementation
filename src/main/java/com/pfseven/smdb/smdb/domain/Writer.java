@@ -16,6 +16,7 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "WRITER")
 @SequenceGenerator(name = "idGenerator", sequenceName = "WRITER_SEQ", initialValue = 1, allocationSize = 1)
+@PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "INDIVIDUALS_FK_ID_W"))
 public class Writer extends Individual{
 
     //Films

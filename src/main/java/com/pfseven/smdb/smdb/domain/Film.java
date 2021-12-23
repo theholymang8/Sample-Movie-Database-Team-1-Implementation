@@ -16,6 +16,7 @@ import java.util.List;
 @Entity
 @Table(name = "FILM")
 @SequenceGenerator(name = "idGenerator", sequenceName = "FILM_SEQ", initialValue = 1, allocationSize = 1)
+@PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "CONTENT_FK_ID_F"))
 public class Film extends Content{
 
     //ONE EXTRA ATTRIBUTE

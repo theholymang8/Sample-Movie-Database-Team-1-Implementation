@@ -19,6 +19,7 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "PRODUCER")
 @SequenceGenerator(name = "idGenerator", sequenceName = "PRODUCER_SEQ", initialValue = 1, allocationSize = 1)
+@PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "INDIVIDUALS_FK_ID_P"))
 public class Producer extends Individual{
 
     //Films

@@ -81,6 +81,8 @@ public class Content extends BaseModel{
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinTable(
             name = "CONTENT_PRODUCERS",
+            foreignKey = @ForeignKey(name = "CONTENT_FK_ID_P"),
+            inverseForeignKey = @ForeignKey(name = "PRODUCER_FK_ID"),
             joinColumns = @JoinColumn(name="CONTENT_ID"),
             inverseJoinColumns = @JoinColumn(name="PRODUCER_ID"))
     private Set<Producer> producers = new HashSet<>();
@@ -88,6 +90,8 @@ public class Content extends BaseModel{
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinTable(
             name = "CONTENT_WRITERS",
+            foreignKey = @ForeignKey(name = "CONTENT_FK_ID_W"),
+            inverseForeignKey = @ForeignKey(name = "WRITER_FK_ID"),
             joinColumns = @JoinColumn(name="CONTENT_ID"),
             inverseJoinColumns = @JoinColumn(name="WRITER_ID"))
     private Set<Writer> writers = new HashSet<>();
@@ -95,6 +99,8 @@ public class Content extends BaseModel{
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinTable(
             name = "CONTENT_DIRECTORS",
+            foreignKey = @ForeignKey(name = "CONTENT_FK_ID_D"),
+            inverseForeignKey = @ForeignKey(name = "DIRECTOR_FK_ID"),
             joinColumns = @JoinColumn(name="CONTENT_ID"),
             inverseJoinColumns = @JoinColumn(name="DIRECTOR_ID"))
     private Set<Director> directors = new HashSet<>();
@@ -102,6 +108,8 @@ public class Content extends BaseModel{
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @JoinTable(
             name = "CONTENT_ACTORS",
+            foreignKey = @ForeignKey(name = "CONTENT_FK_ID_A"),
+            inverseForeignKey = @ForeignKey(name = "ACTOR_FK_ID"),
             joinColumns =  @JoinColumn(name="CONTENT_ID"),
             inverseJoinColumns = @JoinColumn(name="ACTOR_ID"))
     private Set<Actor> actors = new HashSet<>();

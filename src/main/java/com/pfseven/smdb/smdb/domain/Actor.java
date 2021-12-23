@@ -18,6 +18,7 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 @Table(name = "ACTOR")
 @SequenceGenerator(name = "idGenerator", sequenceName = "ACTOR_SEQ", initialValue = 1, allocationSize = 1)
+@PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "INDIVIDUALS_FK_ID_A"))
 public class Actor extends Individual{
 
     //Films
