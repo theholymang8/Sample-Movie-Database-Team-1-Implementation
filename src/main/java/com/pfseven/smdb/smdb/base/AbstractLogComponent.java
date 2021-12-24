@@ -10,6 +10,7 @@ import javax.annotation.PreDestroy;
  * Abstract class used to provide logging functionality to all components.
  */
 public abstract class AbstractLogComponent {
+
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
     @PostConstruct

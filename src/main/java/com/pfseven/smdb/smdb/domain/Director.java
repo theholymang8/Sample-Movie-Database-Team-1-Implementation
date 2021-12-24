@@ -16,7 +16,7 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 //Hibernate
 @Entity
-@Table(name = "DIRECTOR")
+@Table(name = "DIRECTORS")
 @PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "INDIVIDUALS_FK_ID_D"))
 //Serializable
 @SequenceGenerator(name = "idGenerator", sequenceName = "DIRECTOR_SEQ", allocationSize = 1)

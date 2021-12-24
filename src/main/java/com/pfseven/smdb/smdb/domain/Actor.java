@@ -5,7 +5,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,7 +18,7 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 //Hibernate
 @Entity
-@Table(name = "ACTOR")
+@Table(name = "ACTORS")
 @PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "INDIVIDUALS_FK_ID_A"))
 //Serializable
 @SequenceGenerator(name = "idGenerator", sequenceName = "ACTOR_SEQ", allocationSize = 1)
@@ -30,7 +30,6 @@ public class Actor extends Individual{
     @ManyToMany(mappedBy = "actors")
     private Set<TvShow> tvShows = new HashSet<>();
 
-    @NotNull(message = "{role.null}")
     private String role;
 
 }

@@ -73,7 +73,7 @@ public class Content extends BaseModel{
     private String awards;
 
     @NotNull(message = "{producers.null}")
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
+    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(
             name = "CONTENT_PRODUCERS",
             foreignKey = @ForeignKey(name = "CONTENT_FK_ID_P"),
@@ -82,7 +82,7 @@ public class Content extends BaseModel{
             inverseJoinColumns = @JoinColumn(name="PRODUCER_ID"))
     private Set<Producer> producers = new HashSet<>();
 
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
+    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(
             name = "CONTENT_WRITERS",
             foreignKey = @ForeignKey(name = "CONTENT_FK_ID_W"),
@@ -91,7 +91,7 @@ public class Content extends BaseModel{
             inverseJoinColumns = @JoinColumn(name="WRITER_ID"))
     private Set<Writer> writers = new HashSet<>();
 
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
+    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(
             name = "CONTENT_DIRECTORS",
             foreignKey = @ForeignKey(name = "CONTENT_FK_ID_D"),
@@ -100,7 +100,7 @@ public class Content extends BaseModel{
             inverseJoinColumns = @JoinColumn(name="DIRECTOR_ID"))
     private Set<Director> directors = new HashSet<>();
 
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.LAZY)
+    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(
             name = "CONTENT_ACTORS",
             foreignKey = @ForeignKey(name = "CONTENT_FK_ID_A"),

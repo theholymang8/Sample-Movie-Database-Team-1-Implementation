@@ -14,12 +14,13 @@ import javax.persistence.*;
 @Data
 //Hibernate
 @Entity
-@Table(name = "FILM")
+@Table(name = "FILMS")
 @PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "CONTENT_FK_ID_F"))
 //Serializable
 @SequenceGenerator(name = "idGenerator", sequenceName = "FILM_SEQ", allocationSize = 1)
 public class Film extends Content{
 
+    @Enumerated(EnumType.STRING)
     private FilmUniverse filmUniverse;
 
 }

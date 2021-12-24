@@ -18,7 +18,7 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 //Hibernate
 @Entity
-@Table(name = "PRODUCER")
+@Table(name = "PRODUCERS")
 @PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "INDIVIDUALS_FK_ID_P"))
 //Serializable
 @SequenceGenerator(name = "idGenerator", sequenceName = "PRODUCER_SEQ", allocationSize = 1)

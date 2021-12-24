@@ -41,13 +41,12 @@ public class Individual extends BaseModel{
     @Min(value = 12, message = "{age.min}")
     @Max(value = 110, message = "{age.max}")
     @Column(length = 3, nullable = false)
-    private String age;
+    private Integer age;
 
     @NotNull(message = "{nationality.null}")
     @Column(length = 15, nullable = false)
     private String nationality;
 
-    @NotNull(message = "{awards.null}")
     private String awards;
 
 }

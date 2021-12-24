@@ -17,7 +17,7 @@ import javax.validation.constraints.NotNull;
 @EqualsAndHashCode(callSuper = true)
 //Hibernate
 @Entity
-@Table(name = "TV_SHOW")
+@Table(name = "TV_SHOWS")
 @PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "CONTENT_FK_ID_TV"))
 //Serializable
 @SequenceGenerator(name = "idGenerator", sequenceName = "TV_SHOW_SEQ", allocationSize = 1)
