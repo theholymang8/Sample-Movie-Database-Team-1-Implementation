@@ -5,18 +5,20 @@ import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 
-
-@AllArgsConstructor
+//Project Lombok
 @NoArgsConstructor
-@ToString
-@EqualsAndHashCode
+@AllArgsConstructor
+@SuperBuilder
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 @Data
+//Hibernate
 @Entity
 @Table(name = "FILM")
-@SequenceGenerator(name = "idGenerator", sequenceName = "FILM_SEQ", allocationSize = 1)
 @PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "CONTENT_FK_ID_F"))
+//Serializable
+@SequenceGenerator(name = "idGenerator", sequenceName = "FILM_SEQ", allocationSize = 1)
 public class Film extends Content{
-
 
     private FilmUniverse filmUniverse;
 

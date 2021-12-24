@@ -9,31 +9,29 @@ import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@AllArgsConstructor
+//Project Lombok
 @NoArgsConstructor
-@Data
-@ToString
-@EqualsAndHashCode
+@AllArgsConstructor
 @SuperBuilder
+@Data
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
+//Hibernate
+@Entity
 @Table(name = "ACTOR")
-@SequenceGenerator(name = "idGenerator", sequenceName = "ACTOR_SEQ", allocationSize = 1)
 @PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "INDIVIDUALS_FK_ID_A"))
+//Serializable
+@SequenceGenerator(name = "idGenerator", sequenceName = "ACTOR_SEQ", allocationSize = 1)
 public class Actor extends Individual{
 
-    //Films
-    //SEE AGAIN
     @ManyToMany(mappedBy = "actors")
     private Set<Film> films = new HashSet<>();
 
-    //TvShows
     @ManyToMany(mappedBy = "actors")
     private Set<TvShow> tvShows = new HashSet<>();
 
-    //Role
     @NotNull(message = "{role.null}")
     private String role;
 
-
-    //awards
 }
+

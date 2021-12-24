@@ -9,17 +9,19 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
-@AllArgsConstructor
+//Project Lombok
 @NoArgsConstructor
-@Data
+@AllArgsConstructor
 @SuperBuilder
+@Data
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
+//Hibernate
 @Entity
 @Table(name = "INDIVIDUALS")
-@SequenceGenerator(name = "idGenerator", sequenceName = "INDIVIDUAL_SEQ", allocationSize = 1)
 @Inheritance(strategy = InheritanceType.JOINED)
-
+//Serializable
+@SequenceGenerator(name = "idGenerator", sequenceName = "INDIVIDUAL_SEQ", allocationSize = 1)
 public class Individual extends BaseModel{
 
     @NotNull(message = "{email.null}")

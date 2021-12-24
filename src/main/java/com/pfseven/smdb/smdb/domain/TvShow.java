@@ -8,18 +8,19 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 
-
-
-@AllArgsConstructor
+//Project Lombok
 @NoArgsConstructor
+@AllArgsConstructor
+@SuperBuilder
 @Data
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-//@SuperBuilder
+//Hibernate
 @Entity
 @Table(name = "TV_SHOW")
-@SequenceGenerator(name = "idGenerator", sequenceName = "TV_SHOW_SEQ", allocationSize = 1)
 @PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "CONTENT_FK_ID_TV"))
+//Serializable
+@SequenceGenerator(name = "idGenerator", sequenceName = "TV_SHOW_SEQ", allocationSize = 1)
 public class TvShow extends Content{
 
     @NotNull(message = "{seasons.null}")

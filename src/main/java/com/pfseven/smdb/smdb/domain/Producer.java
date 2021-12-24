@@ -9,32 +9,29 @@ import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@AllArgsConstructor
+//Project Lombok
 @NoArgsConstructor
+@AllArgsConstructor
 @SuperBuilder
 @Data
-@ToString
-@EqualsAndHashCode
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
+//Hibernate
+@Entity
 @Table(name = "PRODUCER")
-@SequenceGenerator(name = "idGenerator", sequenceName = "PRODUCER_SEQ", allocationSize = 1)
 @PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "INDIVIDUALS_FK_ID_P"))
+//Serializable
+@SequenceGenerator(name = "idGenerator", sequenceName = "PRODUCER_SEQ", allocationSize = 1)
 public class Producer extends Individual{
 
-    //Films
+    private BigDecimal contributions;
+
+    private String productionCompany;
+
     @ManyToMany(mappedBy = "producers")
     private Set<Film> films = new HashSet<>();
 
-    //TvShows
     @ManyToMany(mappedBy = "producers")
     private Set<TvShow> tvShows = new HashSet<>();
-
-    //Contributions
-    private BigDecimal contributions;
-
-    //Production Company
-    private String productionCompany;
-
-
 
 }
