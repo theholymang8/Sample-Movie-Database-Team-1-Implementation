@@ -1,24 +1,24 @@
 package com.pfseven.smdb.smdb.domain;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.math.BigDecimal;
-import java.util.Date;;
-import java.util.List;
+
 
 
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@ToString
-@EqualsAndHashCode
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
+//@SuperBuilder
 @Entity
 @Table(name = "TV_SHOW")
-@SequenceGenerator(name = "idGenerator", sequenceName = "TV_SHOW_SEQ", initialValue = 1, allocationSize = 1)
+@SequenceGenerator(name = "idGenerator", sequenceName = "TV_SHOW_SEQ", allocationSize = 1)
 @PrimaryKeyJoinColumn(foreignKey=@ForeignKey(name = "CONTENT_FK_ID_TV"))
 public class TvShow extends Content{
 

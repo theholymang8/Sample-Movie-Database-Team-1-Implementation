@@ -1,4 +1,7 @@
 package com.pfseven.smdb.smdb.repositories;
 
-public interface ProducerRepository {
+import com.pfseven.smdb.smdb.domain.Producer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProducerRepository extends JpaRepository<Producer, Long> {
 }
