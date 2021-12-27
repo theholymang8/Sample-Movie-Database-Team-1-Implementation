@@ -25,7 +25,7 @@ public class ActorsFactory extends AbstractLogComponent implements CommandLineRu
                     .email("liamneelson@outlook.com")
                     .age(69)
                     .firstName("Liam")
-                    .lastName("Neelson")
+                    .lastName("Neeson")
                     .nationality("British")
                     .awards("Best Actor - 1993 - Schindler's List, Best Actor - 1996 - Michael Collins, Best Actor - 2004 - Kinsey, ")
                     .role("Bryan Mills at Taken, Qui-Gon Jinn at Star Wars: Episode I - The Phantom Menace")
@@ -37,7 +37,7 @@ public class ActorsFactory extends AbstractLogComponent implements CommandLineRu
                     .lastName("Barrymore")
                     .nationality("American")
                     .awards("Favorite Actress - Drama/Romance - 1999 - Even After, Favorite Actress - Comedy/Romance - 2000 - Never Been Kissed, Icon Award - 2000 - Herself")
-                    .role("Gertie at E.T the Extra Terrestrial, Casey Becker at Scream")
+                    .role("Gertie at E.T. the Extra-Terrestrial, Casey Becker at Scream")
                     .build(),
             Actor.builder()
                     .email("timallen@gmail.com")
@@ -48,6 +48,18 @@ public class ActorsFactory extends AbstractLogComponent implements CommandLineRu
                     .awards("Outstanding Voice Acting in a Feature Production/Annie Awards - 2000 - Toy Story 2, Favorite Actor in a Comedy/TV Guide Awards - 1999 - Home Improvement, Favorite Comeback/TV Guide Awards - 2012 - Last Man Standing")
                     .role("Buzz Lightyear at Toy Story, Tim Taylor at Home Improvement")
                     .build()
+/*
+            //Form used for future inserts.
+                Actor.builder()
+                        .email("")
+                        .age()
+                        .firstName("")
+                        .lastName("")
+                        .nationality("")
+                        .awards("")
+                        .role("")
+                        .build(),
+*/
         );
     //actorService.createAll(actors);
     logger.info("Created 3 actors: {}", actors);
