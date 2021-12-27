@@ -8,6 +8,8 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.util.HashSet;
+import java.util.Set;
 
 //Project Lombok
 @NoArgsConstructor
@@ -47,6 +49,16 @@ public class Individual extends BaseModel{
     @Column(length = 15, nullable = false)
     private String nationality;
 
-    private String awards;
+    @ElementCollection(targetClass=ContributingRole.class)
+    @Enumerated(EnumType.STRING)
+    @CollectionTable(name = "INDIVIDUAL_ROLE")
+    @Column(name = "ROLE")
+    private Set<ContributingRole> contributingRole = new HashSet<>();
+
+    @ManyToMany(mappedBy = "individuals")
+    private Set<Content> content = new HashSet<>();
+
+    @OneToMany(mappedBy = "individual", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private Set<Award> awards;
 
 }

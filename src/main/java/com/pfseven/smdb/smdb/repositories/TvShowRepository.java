@@ -10,12 +10,12 @@ import java.util.Optional;
 
 public interface TvShowRepository extends JpaRepository<TvShow, Long> {
 
-    Optional<TvShow> findByTitle(String title);
+    //Optional<TvShow> findByTitle(String title);
 
-    Long exportTvShows(TvShow tvShow);
+    //Long exportTvShows(TvShow tvShow);
 
-    List<TvShow> findTop10ByOrderByRatingDesc();
+    //List<TvShow> findTop10ByOrderByRatingDesc();
 
-    List<TvShow> findByGenre(Genre genre);
+    //List<TvShow> findByGenre(Genre genre);
 
 }

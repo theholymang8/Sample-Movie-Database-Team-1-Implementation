@@ -1,8 +1,7 @@
 package com.pfseven.smdb.smdb.bootstrap;
 
 import com.pfseven.smdb.smdb.base.AbstractLogComponent;
-import com.pfseven.smdb.smdb.domain.Actor;
-import com.pfseven.smdb.smdb.services.ActorService;
+import com.pfseven.smdb.smdb.services.TvShowService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
@@ -15,11 +14,12 @@ import java.util.List;
 @Profile("content-generator")
 public class TvShowsFactory extends AbstractLogComponent implements CommandLineRunner {
 
+
     private final TvShowService tvshowService;
 
     @Override
     public void run(String... args)  {
-
+    /*
         List<TvShow> tvshows = tvshowService.createAll(
                 TvShow.builder()
                         .title("Cosmos: A Spacetime Odyssey")
@@ -84,8 +84,8 @@ public class TvShowsFactory extends AbstractLogComponent implements CommandLineR
                         .episodes()
                         .build(),
                         */
-        );
+       /* );
         //tvshowService.createAll(tvshows);
-        logger.info("Created 3 tvshows: {}", tvshows);
+        logger.info("Created 3 tvshows: {}", tvshows);*/
     }
 }

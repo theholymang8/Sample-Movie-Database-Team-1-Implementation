@@ -70,43 +70,17 @@ public class Content extends BaseModel{
     private String countryOfOrigin;
 
     @NotNull(message = "{awards.null}")
-    private String awards;
+    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private Set<Award> awards = new HashSet<>();
 
-    @NotNull(message = "{producers.null}")
+    @NotNull(message = "{individuals.null}")
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(
-            name = "CONTENT_PRODUCERS",
+            name = "CONTENT_INDIVIDUALS",
             foreignKey = @ForeignKey(name = "CONTENT_FK_ID_P"),
-            inverseForeignKey = @ForeignKey(name = "PRODUCER_FK_ID"),
+            inverseForeignKey = @ForeignKey(name = "INDIVIDUAL_FK_ID"),
             joinColumns = @JoinColumn(name="CONTENT_ID"),
-            inverseJoinColumns = @JoinColumn(name="PRODUCER_ID"))
-    private Set<Producer> producers = new HashSet<>();
-
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "CONTENT_WRITERS",
-            foreignKey = @ForeignKey(name = "CONTENT_FK_ID_W"),
-            inverseForeignKey = @ForeignKey(name = "WRITER_FK_ID"),
-            joinColumns = @JoinColumn(name="CONTENT_ID"),
-            inverseJoinColumns = @JoinColumn(name="WRITER_ID"))
-    private Set<Writer> writers = new HashSet<>();
-
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "CONTENT_DIRECTORS",
-            foreignKey = @ForeignKey(name = "CONTENT_FK_ID_D"),
-            inverseForeignKey = @ForeignKey(name = "DIRECTOR_FK_ID"),
-            joinColumns = @JoinColumn(name="CONTENT_ID"),
-            inverseJoinColumns = @JoinColumn(name="DIRECTOR_ID"))
-    private Set<Director> directors = new HashSet<>();
-
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "CONTENT_ACTORS",
-            foreignKey = @ForeignKey(name = "CONTENT_FK_ID_A"),
-            inverseForeignKey = @ForeignKey(name = "ACTOR_FK_ID"),
-            joinColumns =  @JoinColumn(name="CONTENT_ID"),
-            inverseJoinColumns = @JoinColumn(name="ACTOR_ID"))
-    private Set<Actor> actors = new HashSet<>();
+            inverseJoinColumns = @JoinColumn(name="INDIVIDUAL_ID"))
+    private Set<Individual> individuals = new HashSet<>();
 
 }

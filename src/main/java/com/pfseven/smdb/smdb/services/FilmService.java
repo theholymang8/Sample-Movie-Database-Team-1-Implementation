@@ -9,16 +9,16 @@ import java.util.Optional;
 
 public interface FilmService extends BaseService<Film, Long>  {
 
-    Optional<Film> findMovieByTitle(String title);
+    //Optional<Film> findMovieByTitle(String title);
 
     //Export films to csv file
-    Long exportFilms(Film film);
+    //Long exportFilms(Film film);
 
     //Return X high-rated content
-    List<Film> findTopFilms(Long X);
+    //List<Film> findTopFilms(Long X);
 
     //Returns films for a given genre
-    List<Film> findFilmsByGenre(Genre genre);
+    //List<Film> findFilmsByGenre(Genre genre);
 
 
 

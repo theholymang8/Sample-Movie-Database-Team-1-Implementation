@@ -1,8 +1,8 @@
 package com.pfseven.smdb.smdb.bootstrap;
 
 import com.pfseven.smdb.smdb.base.AbstractLogComponent;
-import com.pfseven.smdb.smdb.domain.Actor;
-import com.pfseven.smdb.smdb.services.ActorService;
+import com.pfseven.smdb.smdb.domain.Film;
+import com.pfseven.smdb.smdb.services.FilmService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
@@ -18,9 +18,9 @@ public class FilmsFactory extends AbstractLogComponent implements CommandLineRun
     private final FilmService filmService;
 
     @Override
-    public void run(String... args)  {
+    public void run(String... args)  {}
 
-        List<Film> films = filmService.createAll(
+       /* List<Film> films = filmService.createAll(
                 Film.builder()
                         .title("Schindler's List")
                         .description("In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.")
@@ -76,8 +76,8 @@ public class FilmsFactory extends AbstractLogComponent implements CommandLineRun
                                 .revenue()
                                 .build(),
 */
-        );
+        /*);
         //filmService.createAll(films);
         logger.info("Created 3 films: {}", films);
-    }
+    }*/
 }

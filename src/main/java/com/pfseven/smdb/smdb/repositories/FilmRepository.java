@@ -9,12 +9,12 @@ import java.util.Optional;
 
 public interface FilmRepository extends JpaRepository<Film, Long> {
 
-    Optional<Film> findByTitle(String title);
+    //Optional<Film> findByTitle(String title);
 
-    Long exportFilms(Film film);
+    //Long exportFilms(Film film);
 
-    List<Film> findTop10ByOrderByRatingDesc();
+    //List<Film> findTop10ByOrderByRatingDesc();
 
-    List<Film> findByGenre(Genre genre);
+    //List<Film> findByGenre(Genre genre);
 
 }

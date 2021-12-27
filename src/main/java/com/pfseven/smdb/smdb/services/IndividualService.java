@@ -1,9 +1,8 @@
 package com.pfseven.smdb.smdb.services;
 
-import com.pfseven.smdb.smdb.domain.Actor;
-import com.pfseven.smdb.smdb.domain.Writer;
+import com.pfseven.smdb.smdb.domain.Individual;
 
-public interface WriterService extends BaseService<Writer, Long>{
+public interface IndividualService extends BaseService<Individual, Long>{
 
     //List<Writer> findWriterByFirstName(String firstName);
 
