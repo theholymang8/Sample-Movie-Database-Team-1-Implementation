@@ -4,6 +4,10 @@ import com.pfseven.smdb.smdb.domain.Actor;
 
 public interface ActorService extends BaseService<Actor, Long>  {
 
-    //Actor findActorById(Long id);
+    //List<Actor> findActorByFirstName(String firstName);
+
+    //Actor findActorByFullName(String firstName, String lastName);
+
+    //Long exportActors(Actor actor);
 
 }
