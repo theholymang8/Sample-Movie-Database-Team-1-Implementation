@@ -4,9 +4,9 @@ import com.pfseven.smdb.smdb.domain.Individual;
 
 public interface IndividualService extends BaseService<Individual, Long>{
 
-    //List<Writer> findWriterByFirstName(String firstName);
+    //List<Individual> findIndividualByFirstName(String firstName);
 
-    //Writer findWriterByFullName(String firstName, String lastName);
+    //Individual findIndividualByFullName(String firstName, String lastName);
 
-    //Long exportWriters(Writer writer);
+    //Long exportIndividuals(Individual individual);
 }
