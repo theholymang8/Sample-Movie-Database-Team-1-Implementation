@@ -7,7 +7,7 @@ import lombok.experimental.SuperBuilder;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -57,9 +57,9 @@ public class Content extends BaseModel{
 
     @NotNull(message = "{releaseDate.null}")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(nullable = false)
-    private Date releaseDate;
+    private LocalDate releaseDate;
 
     @NotNull(message = "{language.null}")
     @Column(length = 50, nullable = false)

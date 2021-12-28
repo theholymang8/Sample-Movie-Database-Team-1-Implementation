@@ -23,19 +23,19 @@ public class AwardsFactory extends AbstractLogComponent implements CommandLineRu
         List<Award> awards = awardService.createAll(
                 Award.builder()
                         .title("Best Picture")
-                        .dateOfAward('1994-11-11')
+                        .yearOfAward("1994")
                         .category("Oscar")
                         .build(),
                 Award.builder()
                         .title("Special Achievement Award")
-                        .dateOfAward('1996-02-20')
+                        .yearOfAward("1996")
                         .category("Oscar")
                         .build(),
                 Award.builder()
                         .title("Outstanding Animated Program")
-                        .dateOfAward('2018-01-12')
+                        .yearOfAward("2014")
                         .category("Emmy")
-                        .build()
+                        .build());
 /*
             //Form used for future inserts.
                 Award.builder()
@@ -43,8 +43,8 @@ public class AwardsFactory extends AbstractLogComponent implements CommandLineRu
                         .dateOfAward('')
                         .category("")
                         .build(),
+
 */
-        );
         //awardService.createAll(awards);
         logger.info("Created 3 awards: {}", awards);
     }

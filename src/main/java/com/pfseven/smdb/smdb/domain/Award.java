@@ -27,13 +27,12 @@ public class Award extends BaseModel{
     private String title;
 
     @NotNull(message = "{releaseDate.null}")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Column(nullable = false)
-    private Date dateOfAward;
+    private String yearOfAward;
 
     @NotNull(message = "{category.null}")
     @Column(length = 4096, nullable = false)
-    private String Category;
+    private String category;
 
     @ManyToOne
     private Content content;

@@ -1,13 +1,18 @@
 package com.pfseven.smdb.smdb.bootstrap;
 
 import com.pfseven.smdb.smdb.base.AbstractLogComponent;
+import com.pfseven.smdb.smdb.domain.Award;
 import com.pfseven.smdb.smdb.domain.Film;
+import com.pfseven.smdb.smdb.domain.Genre;
+import com.pfseven.smdb.smdb.services.AwardService;
 import com.pfseven.smdb.smdb.services.FilmService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.List;
 
 @Component
@@ -16,21 +21,25 @@ import java.util.List;
 public class FilmsFactory extends AbstractLogComponent implements CommandLineRunner {
 
     private final FilmService filmService;
+    private final AwardService awardService;
 
     @Override
     public void run(String... args)  {}
-
-       /* List<Film> films = filmService.createAll(
+        /*
+       List<Film> films = filmService.createAll(
                 Film.builder()
                         .title("Schindler's List")
                         .description("In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.")
-                        .genre("Biography, Drama")
+                        //.genre("Biography, Drama")
+                        .genre(Genre.Biography)
                         .length(195)
-                        .releasedate('1994-02-04')
-                        .rating(8.9)
-                        .countryoforigin("USA")
+                        //.releaseDate("1994-02-04")
+                        .releaseDate(LocalDate.of(1994, 2, 4))
+                        .rating(8.9F)
+                        .countryOfOrigin("USA")
                         .language("English, Hebrew, German, Polish, Latin")
                         .awards("Best Picture, Best Director, Best Writing, Best Cinematography, Best Art Direction-Set Decoration, Best Film Editing, Best Music-Original Score")
+                        .awards(new HashSet<Award>(awardService.find()))
                         .budget(22000000)
                         .revenue(322161245)
                         .build(),
