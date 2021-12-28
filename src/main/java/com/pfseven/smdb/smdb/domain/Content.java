@@ -57,7 +57,7 @@ public class Content extends BaseModel{
 
     @NotNull(message = "{releaseDate.null}")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    @Temporal(TemporalType.DATE)
+    //@Temporal(TemporalType.DATE)
     @Column(nullable = false)
     private LocalDate releaseDate;
 
@@ -69,7 +69,7 @@ public class Content extends BaseModel{
     @Column(length = 50, nullable = false)
     private String countryOfOrigin;
 
-    @NotNull(message = "{awards.null}")
+    //@NotNull(message = "{awards.null}")
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private Set<Award> awards = new HashSet<>();
 

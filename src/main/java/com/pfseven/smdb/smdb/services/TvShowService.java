@@ -22,5 +22,5 @@ public interface TvShowService extends BaseService<TvShow, Long> {
     //Returns the number of shows per genre
     //Long numOfTvShowsPerGenre(Genre genre);
 
-    Map<Long, Long> numOfTvShowsPerYearPerGenre();
+    //Map<Long, Long> numOfTvShowsPerYearPerGenre();
 }

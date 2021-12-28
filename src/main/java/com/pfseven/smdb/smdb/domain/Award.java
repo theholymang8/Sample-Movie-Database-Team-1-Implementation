@@ -23,7 +23,7 @@ import java.util.Date;
 public class Award extends BaseModel{
 
     @NotNull(message = "{title.null}")
-    @Column(length = 50, nullable = false)
+    @Column(length = 500, nullable = false)
     private String title;
 
     @NotNull(message = "{releaseDate.null}")

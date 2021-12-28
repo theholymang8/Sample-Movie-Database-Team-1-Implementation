@@ -8,9 +8,9 @@ import java.util.Optional;
 
 public interface IndividualRepository extends JpaRepository<Individual, Long> {
 
-    List<Individual> findByFirstNameIgnoreCaseContaining(String firstName);
+    //List<Individual> findByFirstNameIgnoreCaseContaining(String firstName);
 
-    Optional<Individual> findByFirstNameIgnoreCaseContainingAndLastNameIgnoreCaseContaining(String firstName, String lastName);
+    //Optional<Individual> findByFirstNameIgnoreCaseContainingAndLastNameIgnoreCaseContaining(String firstName, String lastName);
 
-    Long exportActors(Individual individual);
+    //Long exportActors(Individual individual);
 }
