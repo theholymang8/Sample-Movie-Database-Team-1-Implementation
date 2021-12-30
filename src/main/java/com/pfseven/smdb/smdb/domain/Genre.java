@@ -8,7 +8,7 @@ public enum Genre {
     Superhero, Documentary, Biography,
     Adventure, Sci_Fi, Drama,
     Musical, Sitcom, Reality,
-    War, Sports, Other
+    War, Sports, Family, Crime, Other
 
 
 }
