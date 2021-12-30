@@ -33,7 +33,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
 
         List<Award> awards = List.of(
                 Award.builder()
-                        .title("Best Picture - Schindler's List")
+                        .title("Best Picture - Schindler's List - Steven Spielberg")
                         .yearOfAward("1994")
                         .category("Oscar")
                         .build(),
@@ -43,67 +43,67 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .category("Oscar")
                         .build(),
                 Award.builder()
-                        .title("Outstanding Animated Program - Rick & Morty")
+                        .title("Outstanding Animated Program - Rick & Morty - Wesley Archer")
                         .yearOfAward("2014")
                         .category("Emmy")
                         .build(),
                 Award.builder()
-                        .title("Best Actor - Kinsey")
+                        .title("Best Actor - Kinsey -  Liam Neeson")
                         .yearOfAward("2005")
                         .category("AARP Movies for Grownups")
                         .build(),
                 Award.builder()
-                        .title("Voice Over Talent Love Thy Nature")
+                        .title("Voice Over Talent Love Thy Nature - Liam Neeson")
                         .yearOfAward("2015")
                         .category("Accolade Competition")
                         .build(),
                 Award.builder()
-                        .title("Best Director Saving Private Ryan")
+                        .title("Best Director Saving Private Ryan - Steven Spielberg")
                         .yearOfAward("1999")
                         .category("Oscar")
                         .build(),
                 Award.builder()
-                        .title("Outstanding Miniseries The Pacific")
+                        .title("Outstanding Miniseries The Pacific - Steven Spielberg")
                         .yearOfAward("2010")
                         .category("Emmy")
                         .build(),
                 Award.builder()
-                        .title("Outstanding Miniseries Taken")
+                        .title("Outstanding Miniseries Taken - Steven Spielberg")
                         .yearOfAward("2003")
                         .category("Emmy")
                         .build(),
                 Award.builder()
-                        .title("Outstanding Miniseries Band of Brothers")
+                        .title("Outstanding Miniseries Band of Brothers - Steven Spielberg")
                         .yearOfAward("2002")
                         .category("Emmy")
                         .build(),
                 Award.builder()
-                        .title("Outstanding Animated Program Pinky and the Brain")
+                        .title("Outstanding Animated Program Pinky and the Brain - Steven Spielberg")
                         .yearOfAward("1996")
                         .category("Emmy")
                         .build(),
                 Award.builder()
-                        .title("Best Film Schindler's List")
+                        .title("Best Film Schindler's List - Steven Spielberg")
                         .yearOfAward("1994")
                         .category("BAFTA")
                         .build(),
                 Award.builder()
-                        .title("Best Director Schindler's List")
+                        .title("Best Director Schindler's List - Steven Spielberg")
                         .yearOfAward("2014")
                         .category("20/20")
                         .build(),
                 Award.builder()
-                        .title("Best Director Lincoln")
+                        .title("Best Director Lincoln - Steven Spielberg")
                         .yearOfAward("2013")
                         .category("AARP Movies for Grownups")
                         .build(),
                 Award.builder()
-                        .title("Best Director Munich")
+                        .title("Best Director Munich - Steven Spielberg")
                         .yearOfAward("2006")
                         .category("AARP Movies for Grownups")
                         .build(),
                 Award.builder()
-                        .title("Best Actress EverAfter")
+                        .title("Best Actress EverAfter - Drew Barrymore")
                         .yearOfAward("1999")
                         .category("Academy of Science Fiction")
                         .build(),
@@ -143,72 +143,72 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .category("Emmy")
                         .build(),
                 Award.builder()
-                        .title("Outstanding Animated Program (For Programming One Hour or Less) King of the Hill")
+                        .title("Outstanding Animated Program (For Programming One Hour or Less) King of the Hill - Wesley Archer")
                         .yearOfAward("1999")
                         .category("Emmy")
                         .build(),
                 Award.builder()
-                        .title("Best Actor in a Supporting Role Goodfellas")
+                        .title("Best Actor in a Supporting Role Goodfellas - Joe Pesci")
                         .yearOfAward("1991")
                         .category("Oscar")
                         .build(),
                 Award.builder()
-                        .title("Most Outstanding Newcomer to Leading Film Roles Raging Bull")
+                        .title("Most Outstanding Newcomer to Leading Film Roles Raging Bull - Joe Pesci")
                         .yearOfAward("1982")
                         .category("BAFTA")
                         .build(),
                 Award.builder()
-                        .title("Best Supporting Actor Goodfellas")
+                        .title("Best Supporting Actor Goodfellas - Joe Pesci")
                         .yearOfAward("2011")
                         .category("20/20")
                         .build(),
                 Award.builder()
-                        .title("Funniest Actor in a Motion Picture (Leading Role) My Cousin Vinny")
+                        .title("Funniest Actor in a Motion Picture (Leading Role) My Cousin Vinny - Joe Pesci")
                         .yearOfAward("1992")
                         .category("American Comedy")
                         .build(),
                 Award.builder()
-                        .title("Best Actor in a Leading Role Raging Bull")
+                        .title("Best Actor in a Leading Role Raging Bull - Robert De Niro")
                         .yearOfAward("1981")
                         .category("Oscar")
                         .build(),
                 Award.builder()
-                        .title("Best Actor in a Supporting Role The Godfather: Part II")
+                        .title("Best Actor in a Supporting Role The Godfather: Part II - Robert De Niro")
                         .yearOfAward("1975")
                         .category("Oscar")
                         .build(),
                 Award.builder()
-                        .title("Best Actor in a Motion Picture - DramaRaging Bull")
+                        .title("Best Actor in a Motion Picture - DramaRaging Bull - Robert De Niro")
                         .yearOfAward("1981")
                         .category("Golden Globes")
                         .build(),
                 Award.builder()
-                        .title("Best Performance by an Actor in a Supporting Role Django Unchained")
+                        .title("Best Performance by an Actor in a Supporting Role Django Unchained - Christoph Waltz")
                         .yearOfAward("2013")
                         .category("Oscar")
                         .build(),
                 Award.builder()
-                        .title("Best Performance by an Actor in a Supporting Role Inglourious Basterds")
+                        .title("Best Performance by an Actor in a Supporting Role Inglourious Basterds - Christoph Waltz")
                         .yearOfAward("2010")
                         .category("Oscar")
                         .build(),
                 Award.builder()
-                        .title("Best Supporting Actor Django Unchained")
+                        .title("Best Supporting Actor Django Unchained - Christoph Waltz")
                         .yearOfAward("2013")
                         .category("BAFTA")
                         .build(),
                 Award.builder()
-                        .title("Best Supporting Actor Inglourious Basterds")
+                        .title("Best Supporting Actor Inglourious Basterds - Christoph Waltz")
                         .yearOfAward("2010")
                         .category("BAFTA")
                         .build(),
                 Award.builder()
-                        .title("Best Performance by an Actor in a Supporting Role in a Motion Picture Django Unchained")
+                        .title("Best Performance by an Actor in a Supporting Role in a Motion Picture Django Unchained - Christoph Waltz")
                         .yearOfAward("2012")
                         .category("Golden Globes")
                         .build(),
                 Award.builder()
-                        .title("Best Performance by an Actor in a Supporting Role in a Motion Picture Inglourious Basterds")
+                        .title("Best Performance by an Actor in a Supporting Role in a Motion Picture Inglourious Basterds - Christoph Waltz")
                         .yearOfAward("2009")
                         .category("Golden GLobes")
                         .build(),
@@ -218,12 +218,12 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .category("Oscar")
                         .build(),
                 Award.builder()
-                        .title("Best Score John Williams")
+                        .title("Best Score John Williams E.T.")
                         .yearOfAward("1983")
                         .category("BAFTA")
                         .build(),
                 Award.builder()
-                        .title("Best Original Score - Motion Picture John Williams")
+                        .title("Best Original Score - Motion Picture John Williams E.T.")
                         .yearOfAward("1983")
                         .category("Golden Globes")
                         .build(),
@@ -310,7 +310,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Archer")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director))
-                        .awards(Set.of(awards.get(20), awards.get(21)))
+                        .awards(Set.of(awards.get(20), awards.get(21), awards.get(22)))
                         .build(),
                 Individual.builder()
                         .email("stevenspielrock@gmail.com")
@@ -319,7 +319,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Spielberg")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
-                        .awards(Set.of(awards.get(22), awards.get(0), awards.get(5), awards.get(6), awards.get(7), awards.get(8), awards.get(9), awards.get(10), awards.get(11), awards.get(12), awards.get(13)))
+                        .awards(Set.of(awards.get(0), awards.get(5), awards.get(6), awards.get(7), awards.get(8), awards.get(9), awards.get(10), awards.get(11), awards.get(12), awards.get(13)))
                         .build(),
                 Individual.builder()
                         .email("melissamathison@gmail.com")
@@ -397,8 +397,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
 
         //Film Factory
 
-        /*
-       List<Film> films = filmService.createAll(
+        List<Film> films = filmService.createAll(
                 Film.builder()
                         .title("Schindler's List")
                         .description("In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.")
@@ -407,10 +406,10 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .length(195)
                         //.releaseDate("1994-02-04")
                         .releaseDate(LocalDate.of(1994, 2, 4))
-                        .rating(8.9F)
+                        .rating(8.9)
                         .countryOfOrigin("USA")
                         .language("English, Hebrew, German, Polish, Latin")
-                        .awards("Best Picture, Best Director, Best Writing, Best Cinematography, Best Art Direction-Set Decoration, Best Film Editing, Best Music-Original Score")
+                        .awards(Set.of(awards.get(0), awards.get(10), awards.get(11)))
                         .awards(new HashSet<Award>(awardService.find()))
                         .budget(22000000)
                         .revenue(322161245)
@@ -420,11 +419,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .description("A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.")
                         .genre("Adventure, Family, Sci-Fi")
                         .length(115)
-                        .releasedate('1982-06-11')
+                        .releasedate(LocalDate.of(1982,6,11)
                         .rating(7.8)
                         .countryoforigin("USA")
                         .language("English")
-                        .awards("Best Sound, Best Visual Effects, Best Sound Effects Editing, Best Music")
+                        .awards(Set.of(awards.get(17), awards.get(36), awards.get(37), awards.get(38)))
                         .budget(10500000)
                         .revenue(792910554)
                         .build(),
@@ -433,27 +432,27 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .description("A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.")
                         .genre("Animation, Adventure, Comedy")
                         .length(81)
-                        .releasedate('1995-11-22')
+                        .releasedate(LocalDate.of(1995,11,22)
                         .rating(8.3)
                         .countryoforigin("USA")
                         .language("English")
-                        .awards("Special Achievement Award - First feature-length computer-animated film")
+                        .awards(Set.of(awards.get(1)))
                         .budget(30000000)
                         .revenue(394436586)
                         .build()
-            ); */
-        /*
+            );
+
         List<TvShow> tvshows = tvshowService.createAll(
                 TvShow.builder()
                         .title("Cosmos: A Spacetime Odyssey")
                         .description("An exploration of our discovery of the laws of nature and coordinates in space and time.")
                         .genre("Documentary")
                         .length(44)
-                        .releasedate('2014-03-09')
+                        .releasedate(LocalDate.of(2014,3,9)
                         .rating(9.3)
                         .countryoforigin("USA")
                         .language("English")
-                        .awards("Outstanding Original Main Title Theme Music, Outstanding Writing for Nonfiction Programming, Outstanding Sound Editing for Nonfiction Programming, Outstanding Music Composition for a Series.")
+                        .awards(Set.of(awards.get(18), awards.get(41), awards.get(42), awards.get(43), awards.get(44), awards.get(41)))
                         .budget(6000000)
                         .revenue(135429666)
                         .seasons(1)
@@ -464,11 +463,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .description("Follows Captain Flint and his pirates twenty years prior to Robert Louis Stevenson's classic novel \"Treasure Island.\"")
                         .genre("Adventure, Drama")
                         .length(56)
-                        .releasedate('2014-01-25')
+                        .releasedate(LocalDate.of(2014,01,25)
                         .rating(8.2)
                         .countryoforigin("USA, South Africa")
                         .language("English")
-                        .awards("Outstanding Sound Editing for a Series, Outstanding Special and Visual Effects in a Supporting Role")
+                        .awards(Set.of(awards.get(39), awards.get(40)))
                         .budget(15460000)
                         .revenue(249752131)
                         .seasons(4)
@@ -479,16 +478,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .description("An animated series that follows the exploits of a super scientist and his not-so-bright grandson.")
                         .genre("Animation, Adventure, Comedy")
                         .length(23)
-                        .releasedate('2013-12-02')
+                        .releasedate(LocalDate.of(2013,12,02)
                         .rating(9.2)
                         .countryoforigin("USA")
                         .language("English")
-                        .awards("Outstanding Animated Program.")
+                        .awards(Set.of(awards.get(20), awards.get(21)))
                         .budget(24000000)
                         .revenue(666732999)
                         .seasons(5)
                         .episodes(52)
-                        .build(),
-*/
+                        .build()
     }
 }
