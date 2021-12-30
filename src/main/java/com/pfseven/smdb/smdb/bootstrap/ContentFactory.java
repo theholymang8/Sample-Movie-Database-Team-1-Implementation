@@ -259,12 +259,13 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build()
         );
 
+
         //awardService.createAll(awards);
 
 
         //Award award = awards.get(0);
         //logger.info("Created 45 awards: {}", (awards.forEach(award -> award.getTitle().equals("Best Animated Special Production Cosmos"))));
-        logger.info("Created 45 awards : {}", awards);
+        //logger.info("Created 45 awards : {}", awards);
         //Individual Factory
 
         List<Individual> individuals = List.of(
@@ -275,7 +276,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Neeson")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        .awards(Set.of(awards.get(3), awards.get(4)))
+                        //.awards(Set.of(awards.get(3), awards.get(4)))
                         .build(),
                 Individual.builder()
                         .email("drewbarrymore@outlook.com")
@@ -284,7 +285,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Barrymore")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
-                        .awards(Set.of(awards.get(14)))
+                        //.awards(Set.of(awards.get(14)))
                         .build(),
                 Individual.builder()
                         .email("timallen@gmail.com")
@@ -293,7 +294,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Allen")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        .awards(Set.of(awards.get(15), awards.get(16)))
+                        //.awards(Set.of(awards.get(15), awards.get(16)))
                         .build(),
                 Individual.builder()
                         .email("jonburton@gmail.com")
@@ -310,7 +311,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Archer")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director))
-                        .awards(Set.of(awards.get(20), awards.get(21)))
+                        //.awards(Set.of(awards.get(20), awards.get(21)))
                         .build(),
                 Individual.builder()
                         .email("stevenspielrock@gmail.com")
@@ -319,7 +320,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Spielberg")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
-                        .awards(Set.of(awards.get(22), awards.get(0), awards.get(5), awards.get(6), awards.get(7), awards.get(8), awards.get(9), awards.get(10), awards.get(11), awards.get(12), awards.get(13)))
+                        //.awards(Set.of(awards.get(22), awards.get(0), awards.get(5), awards.get(6), awards.get(7), awards.get(8), awards.get(9), awards.get(10), awards.get(11), awards.get(12), awards.get(13)))
                         .build(),
                 Individual.builder()
                         .email("melissamathison@gmail.com")
@@ -328,7 +329,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Mathison")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Writer))
-                        .awards(Set.of(awards.get(17)))
+                        //.awards(Set.of(awards.get(17)))
                         .build(),
                 Individual.builder()
                         .email("anndruchii@gmail.com")
@@ -337,7 +338,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Druyan")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
-                        .awards(Set.of(awards.get(18), awards.get(19)))
+                        //.awards(Set.of(awards.get(18), awards.get(19)))
                         .build(),
                 Individual.builder()
                         .email("robertlevine@gmail.com")
@@ -362,7 +363,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Pesci")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        .awards(Set.of(awards.get(23), awards.get(24), awards.get(25), awards.get(26)))
+                        //.awards(Set.of(awards.get(23), awards.get(24), awards.get(25), awards.get(26)))
                         .build(),
                 Individual.builder()
                         .email("robertdenniro@outlook.com")
@@ -371,7 +372,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("De Niro Jr")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
-                        .awards(Set.of(awards.get(27), awards.get(28), awards.get(29)))
+                        //.awards(Set.of(awards.get(27), awards.get(28), awards.get(29)))
                         .build(),
                 Individual.builder()
                         .email("christophwaltz@gmail.com")
@@ -380,7 +381,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Waltz")
                         .nationality("German")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        .awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
+                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("kathleenkennedy@gmail.com")
@@ -392,8 +393,60 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build()
         );
 
+
+
+
+        awards.get(0).setIndividual(individuals.get(5));
+        //awards.get(1).setIndividual(individuals.get(5));
+        //awards.get(2).setIndividual(individuals.get(5));
+        awards.get(3).setIndividual(individuals.get(0));
+        awards.get(4).setIndividual(individuals.get(0));
+        awards.get(5).setIndividual(individuals.get(5));
+        awards.get(6).setIndividual(individuals.get(5));
+        awards.get(7).setIndividual(individuals.get(5));
+        awards.get(8).setIndividual(individuals.get(5));
+        awards.get(9).setIndividual(individuals.get(5));
+        awards.get(10).setIndividual(individuals.get(5));
+        awards.get(11).setIndividual(individuals.get(5));
+        awards.get(12).setIndividual(individuals.get(5));
+        awards.get(13).setIndividual(individuals.get(5));
+        awards.get(14).setIndividual(individuals.get(1));
+        awards.get(15).setIndividual(individuals.get(2));
+        awards.get(16).setIndividual(individuals.get(2));
+        awards.get(17).setIndividual(individuals.get(6));
+        awards.get(18).setIndividual(individuals.get(7));
+        awards.get(19).setIndividual(individuals.get(7));
+        awards.get(20).setIndividual(individuals.get(4));
+        awards.get(21).setIndividual(individuals.get(4));
+        awards.get(22).setIndividual(individuals.get(5));
+        awards.get(23).setIndividual(individuals.get(10));
+        awards.get(24).setIndividual(individuals.get(10));
+        awards.get(25).setIndividual(individuals.get(10));
+        awards.get(26).setIndividual(individuals.get(10));
+        awards.get(27).setIndividual(individuals.get(11));
+        awards.get(28).setIndividual(individuals.get(11));
+        awards.get(29).setIndividual(individuals.get(11));
+        awards.get(30).setIndividual(individuals.get(12));
+        awards.get(31).setIndividual(individuals.get(12));
+        awards.get(32).setIndividual(individuals.get(12));
+        awards.get(33).setIndividual(individuals.get(12));
+        awards.get(34).setIndividual(individuals.get(12));
+        awards.get(35).setIndividual(individuals.get(12));
+        //awards.get(37).setIndividual(individuals.get(5));
+        //awards.get(38).setIndividual(individuals.get(5));
+        //awards.get(39).setIndividual(individuals.get(5));
+        //awards.get(40).setIndividual(individuals.get(5));
+        //awards.get(41).setIndividual(individuals.get(5));
+        //awards.get(42).setIndividual(individuals.get(5));
+        //awards.get(43).setIndividual(individuals.get(5));
+        //awards.get(44).setIndividual(individuals.get(5));
+        //awards.get(45).setIndividual(individuals.get(5));
+        //awardService.update(Award.builder().title());
+
         individualService.createAll(individuals);
-        logger.info("Created 13 Individuals: {}", individuals);
+        awardService.createAll(awards);
+        //logger.info("Created 13 Individuals: {}", individuals);
+        logger.info("Created 45 awards: {}", awards);
 
         //Film Factory
 
