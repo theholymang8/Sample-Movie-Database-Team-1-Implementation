@@ -29,243 +29,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
     @Override
     public void run(String... args) {
 
-        //Awards Factory
-
-        List<Award> awards = List.of(
-                Award.builder()
-                        .title("Best Picture - Schindler's List")
-                        .yearOfAward("1994")
-                        .category("Oscar")
-                        .build(),
-                Award.builder()
-                        .title("Special Achievement Award - Toy Story")
-                        .yearOfAward("1996")
-                        .category("Oscar")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Animated Program - Rick & Morty")
-                        .yearOfAward("2014")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Best Actor - Kinsey")
-                        .yearOfAward("2005")
-                        .category("AARP Movies for Grownups")
-                        .build(),
-                Award.builder()
-                        .title("Voice Over Talent Love Thy Nature")
-                        .yearOfAward("2015")
-                        .category("Accolade Competition")
-                        .build(),
-                Award.builder()
-                        .title("Best Director Saving Private Ryan")
-                        .yearOfAward("1999")
-                        .category("Oscar")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Miniseries The Pacific")
-                        .yearOfAward("2010")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Miniseries Taken")
-                        .yearOfAward("2003")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Miniseries Band of Brothers")
-                        .yearOfAward("2002")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Animated Program Pinky and the Brain")
-                        .yearOfAward("1996")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Best Film Schindler's List")
-                        .yearOfAward("1994")
-                        .category("BAFTA")
-                        .build(),
-                Award.builder()
-                        .title("Best Director Schindler's List")
-                        .yearOfAward("2014")
-                        .category("20/20")
-                        .build(),
-                Award.builder()
-                        .title("Best Director Lincoln")
-                        .yearOfAward("2013")
-                        .category("AARP Movies for Grownups")
-                        .build(),
-                Award.builder()
-                        .title("Best Director Munich")
-                        .yearOfAward("2006")
-                        .category("AARP Movies for Grownups")
-                        .build(),
-                Award.builder()
-                        .title("Best Actress EverAfter")
-                        .yearOfAward("1999")
-                        .category("Academy of Science Fiction")
-                        .build(),
-                Award.builder()
-                        .title("Best Actor Galaxy Quest")
-                        .yearOfAward("2000")
-                        .category("Academy of Science Fiction")
-                        .build(),
-                Award.builder()
-                        .title("Best Performance by an Actor in a Television Series - Comedy or Musical Home Improvement")
-                        .yearOfAward("1995")
-                        .category("Golden Globes")
-                        .build(),
-                Award.builder()
-                        .title("Best Writing E.T. the Extra-Terrestrial")
-                        .yearOfAward("1983")
-                        .category("Academy of Science Fiction")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Writing for Nonfiction Programming Cosmos: A Spacetime Odyssey")
-                        .yearOfAward("2014")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Best Dramatic Presentation Contact")
-                        .yearOfAward("1998")
-                        .category("Hugo")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Animated Program Rick and Morty")
-                        .yearOfAward("2020")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Animated Program Rick and Morty")
-                        .yearOfAward("2018")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Animated Program (For Programming One Hour or Less) King of the Hill")
-                        .yearOfAward("1999")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Best Actor in a Supporting Role Goodfellas")
-                        .yearOfAward("1991")
-                        .category("Oscar")
-                        .build(),
-                Award.builder()
-                        .title("Most Outstanding Newcomer to Leading Film Roles Raging Bull")
-                        .yearOfAward("1982")
-                        .category("BAFTA")
-                        .build(),
-                Award.builder()
-                        .title("Best Supporting Actor Goodfellas")
-                        .yearOfAward("2011")
-                        .category("20/20")
-                        .build(),
-                Award.builder()
-                        .title("Funniest Actor in a Motion Picture (Leading Role) My Cousin Vinny")
-                        .yearOfAward("1992")
-                        .category("American Comedy")
-                        .build(),
-                Award.builder()
-                        .title("Best Actor in a Leading Role Raging Bull")
-                        .yearOfAward("1981")
-                        .category("Oscar")
-                        .build(),
-                Award.builder()
-                        .title("Best Actor in a Supporting Role The Godfather: Part II")
-                        .yearOfAward("1975")
-                        .category("Oscar")
-                        .build(),
-                Award.builder()
-                        .title("Best Actor in a Motion Picture - DramaRaging Bull")
-                        .yearOfAward("1981")
-                        .category("Golden Globes")
-                        .build(),
-                Award.builder()
-                        .title("Best Performance by an Actor in a Supporting Role Django Unchained")
-                        .yearOfAward("2013")
-                        .category("Oscar")
-                        .build(),
-                Award.builder()
-                        .title("Best Performance by an Actor in a Supporting Role Inglourious Basterds")
-                        .yearOfAward("2010")
-                        .category("Oscar")
-                        .build(),
-                Award.builder()
-                        .title("Best Supporting Actor Django Unchained")
-                        .yearOfAward("2013")
-                        .category("BAFTA")
-                        .build(),
-                Award.builder()
-                        .title("Best Supporting Actor Inglourious Basterds")
-                        .yearOfAward("2010")
-                        .category("BAFTA")
-                        .build(),
-                Award.builder()
-                        .title("Best Performance by an Actor in a Supporting Role in a Motion Picture Django Unchained")
-                        .yearOfAward("2012")
-                        .category("Golden Globes")
-                        .build(),
-                Award.builder()
-                        .title("Best Performance by an Actor in a Supporting Role in a Motion Picture Inglourious Basterds")
-                        .yearOfAward("2009")
-                        .category("Golden GLobes")
-                        .build(),
-                Award.builder()
-                        .title("Best Music, Original Score John Williams E.T.")
-                        .yearOfAward("1983")
-                        .category("Oscar")
-                        .build(),
-                Award.builder()
-                        .title("Best Score John Williams")
-                        .yearOfAward("1983")
-                        .category("BAFTA")
-                        .build(),
-                Award.builder()
-                        .title("Best Original Score - Motion Picture John Williams")
-                        .yearOfAward("1983")
-                        .category("Golden Globes")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Sound Editing for a Series Black Sails")
-                        .yearOfAward("2016")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Sound Editing for a Series Black Sails")
-                        .yearOfAward("2014")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Original Main Title Theme Music Cosmos")
-                        .yearOfAward("2014")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Sound Editing for Nonfiction Programming Cosmos")
-                        .yearOfAward("2014")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Outstanding Music Composition for a Series Cosmos")
-                        .yearOfAward("2014")
-                        .category("Emmy")
-                        .build(),
-                Award.builder()
-                        .title("Best Animated Special Production Cosmos")
-                        .yearOfAward("2015")
-                        .category("Annie")
-                        .build()
-        );
-
-
-        //awardService.createAll(awards);
-
-
-        //Award award = awards.get(0);
-        //logger.info("Created 45 awards: {}", (awards.forEach(award -> award.getTitle().equals("Best Animated Special Production Cosmos"))));
-        //logger.info("Created 45 awards : {}", awards);
         //Individual Factory
 
         List<Individual> individuals = List.of(
@@ -394,18 +157,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
         );
 
 
+        individualService.createAll(individuals);
+        logger.info("Created 13 Individuals: {}", individuals);
 
-
-
-
-
-        //individualService.createAll(individuals);
-        //awardService.createAll(awards);
-        //logger.info("Created 13 Individuals: {}", individuals);
-        //logger.info("Created 45 awards: {}", awards);
 
         //Film Factory
-
 
         List<Film> films = List.of(
                 Film.builder()
@@ -419,7 +175,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.9f)
                         .countryOfOrigin("USA")
                         .language("English, Hebrew, German, Polish, Latin")
-                        .awards(Set.of(awards.get(0), awards.get(10), awards.get(11)))
+                        //.awards(Set.of(awards.get(0), awards.get(10), awards.get(11)))
                         //awards(new HashSet<Award>(awardService.find()))
                         .budget(BigDecimal.valueOf(22000000))
                         .revenue(BigDecimal.valueOf(322161245))
@@ -433,7 +189,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.8f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(17), awards.get(36), awards.get(37), awards.get(38)))
+                        //.awards(Set.of(awards.get(17), awards.get(36), awards.get(37), awards.get(38)))
                         .budget(BigDecimal.valueOf(10500000))
                         .revenue(BigDecimal.valueOf(792910554))
                         .build(),
@@ -446,7 +202,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(1)))
+                        //.awards(Set.of(awards.get(1)))
                         .budget(BigDecimal.valueOf(30000000))
                         .revenue(BigDecimal.valueOf(394436586))
                         .build(),
@@ -459,7 +215,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.1f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(4)))
+                        //.awards(Set.of(awards.get(4)))
                         .budget(BigDecimal.valueOf(11000000))
                         .revenue(BigDecimal.valueOf(16900000))
                         .build(),
@@ -472,7 +228,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(6.8f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(5)))
+                        //.awards(Set.of(awards.get(5)))
                         .budget(BigDecimal.valueOf(60000)) //couldnt find the budget
                         .revenue(BigDecimal.valueOf(53134))
                         .build(),
@@ -485,7 +241,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.6f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(6)))
+                        //.awards(Set.of(awards.get(6)))
                         .budget(BigDecimal.valueOf(70000000))
                         .revenue(BigDecimal.valueOf(482300000))
                         .build(),
@@ -498,7 +254,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(13)))
+                        //.awards(Set.of(awards.get(13)))
                         .budget(BigDecimal.valueOf(65000000))
                         .revenue(BigDecimal.valueOf(275300000))
                         .build(),
@@ -511,7 +267,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.5f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(14)))
+                        //.awards(Set.of(awards.get(14)))
                         .budget(BigDecimal.valueOf(70000000))
                         .revenue(BigDecimal.valueOf(130400000))
                         .build(),
@@ -524,7 +280,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.1f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(15)))
+                        //.awards(Set.of(awards.get(15)))
                         .budget(BigDecimal.valueOf(26000000))
                         .revenue(BigDecimal.valueOf(98000000))
                         .build(),
@@ -537,7 +293,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(16)))
+                        //.awards(Set.of(awards.get(16)))
                         .budget(BigDecimal.valueOf(45000000))
                         .revenue(BigDecimal.valueOf(90700000))
                         .build(),
@@ -550,7 +306,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.5f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(20)))
+                        //.awards(Set.of(awards.get(20)))
                         .budget(BigDecimal.valueOf(90000000))
                         .revenue(BigDecimal.valueOf(171100000))
                         .build(),
@@ -563,7 +319,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.7f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(24), awards.get(26)))
+                        //.awards(Set.of(awards.get(24), awards.get(26)))
                         .budget(BigDecimal.valueOf(25000000))
                         .revenue(BigDecimal.valueOf(47100000))
                         .build(),
@@ -576,7 +332,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.2f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(25), awards.get(28), awards.get(30)))
+                        //.awards(Set.of(awards.get(25), awards.get(28), awards.get(30)))
                         .budget(BigDecimal.valueOf(18000000))
                         .revenue(BigDecimal.valueOf(23400000))
                         .build(),
@@ -589,7 +345,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(9.0f)
                         .countryOfOrigin("USA")
                         .language("English, Sicilian")
-                        .awards(Set.of(awards.get(29) ))
+                        //.awards(Set.of(awards.get(29) ))
                         .budget(BigDecimal.valueOf(13000000))
                         .revenue(BigDecimal.valueOf(93000000))
                         .build(),
@@ -602,7 +358,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.4f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(31) , awards.get(33), awards.get(35)) )
+                        //.awards(Set.of(awards.get(31) , awards.get(33), awards.get(35)) )
                         .budget(BigDecimal.valueOf(100000000))
                         .revenue(BigDecimal.valueOf(425400000))
                         .build(),
@@ -615,7 +371,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.4f)
                         .countryOfOrigin("USA")
                         .language("English, German, French")
-                        .awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
+                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(70000000))
                         .revenue(BigDecimal.valueOf(321500000))
                         .build()
@@ -632,7 +388,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(9.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(18), awards.get(41), awards.get(42), awards.get(43), awards.get(44), awards.get(41)))
+                        //.awards(Set.of(awards.get(18), awards.get(41), awards.get(42), awards.get(43), awards.get(44), awards.get(41)))
                         .budget(BigDecimal.valueOf(6000000))
                         .revenue(BigDecimal.valueOf(135429666))
                         .seasons(1)
@@ -647,7 +403,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.2f)
                         .countryOfOrigin("USA, South Africa")
                         .language("English")
-                        .awards(Set.of(awards.get(39), awards.get(40)))
+                        //.awards(Set.of(awards.get(39), awards.get(40)))
                         .budget(BigDecimal.valueOf(15460000))
                         .revenue(BigDecimal.valueOf(249752131))
                         .seasons(4)
@@ -662,7 +418,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(9.2f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(20), awards.get(21)))
+                        //.awards(Set.of(awards.get(20), awards.get(21)))
                         .budget(BigDecimal.valueOf(24000000))
                         .revenue(BigDecimal.valueOf(666732999))
                         .seasons(5)
@@ -677,7 +433,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(7)))
+                        //.awards(Set.of(awards.get(7)))
                         .budget(BigDecimal.valueOf(200000000))
                         .revenue(BigDecimal.valueOf(350000000))
                         .seasons(1)
@@ -692,7 +448,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.8f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(8)))
+                        //.awards(Set.of(awards.get(8)))
                         .budget(BigDecimal.valueOf(40000000))
                         .revenue(BigDecimal.valueOf(60000000))
                         .seasons(1)
@@ -707,7 +463,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(9.4f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(9)))
+                        //.awards(Set.of(awards.get(9)))
                         .budget(BigDecimal.valueOf(125000000))
                         .revenue(BigDecimal.valueOf(183000000))
                         .seasons(1)
@@ -722,7 +478,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.8f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(10)))
+                        //.awards(Set.of(awards.get(10)))
                         .budget(BigDecimal.valueOf(5200000))
                         .revenue(BigDecimal.valueOf(8700000))
                         .seasons(4)
@@ -737,7 +493,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.2f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(17)))
+                        //.awards(Set.of(awards.get(17)))
                         .budget(BigDecimal.valueOf(3400000))
                         .revenue(BigDecimal.valueOf(6800000))
                         .seasons(8)
@@ -752,7 +508,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        .awards(Set.of(awards.get(23)))
+                        //.awards(Set.of(awards.get(23)))
                         .budget(BigDecimal.valueOf(2800000))
                         .revenue(BigDecimal.valueOf(47800000))
                         .seasons(13)
@@ -760,53 +516,377 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build()
 
         );
-        //tvShowService.createAll(tvshows);
-        //logger.info("Created 9 Tv Shows {}", tvshows);
-//
-//        filmService.createAll(films);
-//        logger.info("Created 16 films {}", films);
+        tvShowService.createAll(tvshows);
+        logger.info("Created 9 Tv Shows {}", tvshows);
 
-        awards.get(0).setIndividual(individuals.get(5));
-        awards.get(0).setContent(films.get(0));
+        filmService.createAll(films);
+        logger.info("Created 16 films {}", films);
+
+        //Awards Factory
+
+        List<Award> awards = List.of(
+                Award.builder()
+                        .title("Best Picture - Schindler's List")
+                        .yearOfAward("1994")
+                        .category("Oscar")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Special Achievement Award - Toy Story")
+                        .yearOfAward("1996")
+                        .category("Oscar")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Animated Program - Rick & Morty")
+                        .yearOfAward("2014")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Best Actor - Kinsey")
+                        .yearOfAward("2005")
+                        .category("AARP Movies for Grownups")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(0))
+                        .build(),
+                Award.builder()
+                        .title("Voice Over Talent Love Thy Nature")
+                        .yearOfAward("2015")
+                        .category("Accolade Competition")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(0))
+                        .build(),
+                Award.builder()
+                        .title("Best Director Saving Private Ryan")
+                        .yearOfAward("1999")
+                        .category("Oscar")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Miniseries The Pacific")
+                        .yearOfAward("2010")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Miniseries Taken")
+                        .yearOfAward("2003")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Miniseries Band of Brothers")
+                        .yearOfAward("2002")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Animated Program Pinky and the Brain")
+                        .yearOfAward("1996")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Best Film Schindler's List")
+                        .yearOfAward("1994")
+                        .category("BAFTA")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Best Director Schindler's List")
+                        .yearOfAward("2014")
+                        .category("20/20")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Best Director Lincoln")
+                        .yearOfAward("2013")
+                        .category("AARP Movies for Grownups")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Best Director Munich")
+                        .yearOfAward("2006")
+                        .category("AARP Movies for Grownups")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(1))
+                        .build(),
+                Award.builder()
+                        .title("Best Actress EverAfter")
+                        .yearOfAward("1999")
+                        .category("Academy of Science Fiction")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(2))
+                        .build(),
+                Award.builder()
+                        .title("Best Actor Galaxy Quest")
+                        .yearOfAward("2000")
+                        .category("Academy of Science Fiction")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(2))
+                        .build(),
+                Award.builder()
+                        .title("Best Performance by an Actor in a Television Series - Comedy or Musical Home Improvement")
+                        .yearOfAward("1995")
+                        .category("Golden Globes")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(6))
+                        .build(),
+                Award.builder()
+                        .title("Best Writing E.T. the Extra-Terrestrial")
+                        .yearOfAward("1983")
+                        .category("Academy of Science Fiction")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(7))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Writing for Nonfiction Programming Cosmos: A Spacetime Odyssey")
+                        .yearOfAward("2014")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(7))
+                        .build(),
+                Award.builder()
+                        .title("Best Dramatic Presentation Contact")
+                        .yearOfAward("1998")
+                        .category("Hugo")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(4))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Animated Program Rick and Morty")
+                        .yearOfAward("2020")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(4))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Animated Program Rick and Morty")
+                        .yearOfAward("2018")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Animated Program (For Programming One Hour or Less) King of the Hill")
+                        .yearOfAward("1999")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(10))
+                        .build(),
+                Award.builder()
+                        .title("Best Actor in a Supporting Role Goodfellas")
+                        .yearOfAward("1991")
+                        .category("Oscar")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(10))
+                        .build(),
+                Award.builder()
+                        .title("Most Outstanding Newcomer to Leading Film Roles Raging Bull")
+                        .yearOfAward("1982")
+                        .category("BAFTA")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(10))
+                        .build(),
+                Award.builder()
+                        .title("Best Supporting Actor Goodfellas")
+                        .yearOfAward("2011")
+                        .category("20/20")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(10))
+                        .build(),
+                Award.builder()
+                        .title("Funniest Actor in a Motion Picture (Leading Role) My Cousin Vinny")
+                        .yearOfAward("1992")
+                        .category("American Comedy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(11))
+                        .build(),
+                Award.builder()
+                        .title("Best Actor in a Leading Role Raging Bull")
+                        .yearOfAward("1981")
+                        .category("Oscar")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(11))
+                        .build(),
+                Award.builder()
+                        .title("Best Actor in a Supporting Role The Godfather: Part II")
+                        .yearOfAward("1975")
+                        .category("Oscar")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(11))
+                        .build(),
+                Award.builder()
+                        .title("Best Actor in a Motion Picture - DramaRaging Bull")
+                        .yearOfAward("1981")
+                        .category("Golden Globes")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(12))
+                        .build(),
+                Award.builder()
+                        .title("Best Performance by an Actor in a Supporting Role Django Unchained")
+                        .yearOfAward("2013")
+                        .category("Oscar")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(12))
+                        .build(),
+                Award.builder()
+                        .title("Best Performance by an Actor in a Supporting Role Inglourious Basterds")
+                        .yearOfAward("2010")
+                        .category("Oscar")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(12))
+                        .build(),
+                Award.builder()
+                        .title("Best Supporting Actor Django Unchained")
+                        .yearOfAward("2013")
+                        .category("BAFTA")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(12))
+                        .build(),
+                Award.builder()
+                        .title("Best Supporting Actor Inglourious Basterds")
+                        .yearOfAward("2010")
+                        .category("BAFTA")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(12))
+                        .build(),
+                Award.builder()
+                        .title("Best Performance by an Actor in a Supporting Role in a Motion Picture Django Unchained")
+                        .yearOfAward("2012")
+                        .category("Golden Globes")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(12))
+                        .build(),
+                Award.builder()
+                        .title("Best Performance by an Actor in a Supporting Role in a Motion Picture Inglourious Basterds")
+                        .yearOfAward("2009")
+                        .category("Golden GLobes")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Best Music, Original Score John Williams E.T.")
+                        .yearOfAward("1983")
+                        .category("Oscar")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Best Score John Williams")
+                        .yearOfAward("1983")
+                        .category("BAFTA")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Best Original Score - Motion Picture John Williams")
+                        .yearOfAward("1983")
+                        .category("Golden Globes")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Sound Editing for a Series Black Sails")
+                        .yearOfAward("2016")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Sound Editing for a Series Black Sails")
+                        .yearOfAward("2014")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Original Main Title Theme Music Cosmos")
+                        .yearOfAward("2014")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Sound Editing for Nonfiction Programming Cosmos")
+                        .yearOfAward("2014")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Outstanding Music Composition for a Series Cosmos")
+                        .yearOfAward("2014")
+                        .category("Emmy")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build(),
+                Award.builder()
+                        .title("Best Animated Special Production Cosmos")
+                        .yearOfAward("2015")
+                        .category("Annie")
+                        .content(tvshows.get(0))
+                        .individual(individuals.get(5))
+                        .build()
+        );
 
 
+        awardService.createAll(awards);
+
+        //logger.info("Created 45 awards: {}", (awards.forEach(award -> award.getTitle().equals("Best Animated Special Production Cosmos"))));
+        //logger.info("Created 45 awards : {}", awards);
+
+        //awards.get(0).setIndividual(individuals.get(5));
+        //awards.get(0).setContent(films.get(0));
         //awards.get(1).setIndividual(individuals.get(5));
         //awards.get(2).setIndividual(individuals.get(5));
-        awards.get(3).setIndividual(individuals.get(0));
-        awards.get(4).setIndividual(individuals.get(0));
-        awards.get(5).setIndividual(individuals.get(5));
-        awards.get(6).setIndividual(individuals.get(5));
-        awards.get(7).setIndividual(individuals.get(5));
-        awards.get(8).setIndividual(individuals.get(5));
-        awards.get(9).setIndividual(individuals.get(5));
-        awards.get(10).setIndividual(individuals.get(5));
-        awards.get(10).setContent(films.get(0));
-        awards.get(11).setIndividual(individuals.get(5));
-        awards.get(11).setContent(films.get(0));
-        awards.get(12).setIndividual(individuals.get(5));
-        awards.get(13).setIndividual(individuals.get(5));
-        awards.get(14).setIndividual(individuals.get(1));
-        awards.get(15).setIndividual(individuals.get(2));
-        awards.get(16).setIndividual(individuals.get(2));
-        awards.get(17).setIndividual(individuals.get(6));
-        awards.get(18).setIndividual(individuals.get(7));
-        awards.get(19).setIndividual(individuals.get(7));
-        awards.get(20).setIndividual(individuals.get(4));
-        awards.get(21).setIndividual(individuals.get(4));
-        awards.get(22).setIndividual(individuals.get(5));
-        awards.get(23).setIndividual(individuals.get(10));
-        awards.get(24).setIndividual(individuals.get(10));
-        awards.get(25).setIndividual(individuals.get(10));
-        awards.get(26).setIndividual(individuals.get(10));
-        awards.get(27).setIndividual(individuals.get(11));
-        awards.get(28).setIndividual(individuals.get(11));
-        awards.get(29).setIndividual(individuals.get(11));
-        awards.get(30).setIndividual(individuals.get(12));
-        awards.get(31).setIndividual(individuals.get(12));
-        awards.get(32).setIndividual(individuals.get(12));
-        awards.get(33).setIndividual(individuals.get(12));
-        awards.get(34).setIndividual(individuals.get(12));
-        awards.get(35).setIndividual(individuals.get(12));
+//        awards.get(3).setIndividual(individuals.get(0));
+//        awards.get(4).setIndividual(individuals.get(0));
+//        awards.get(5).setIndividual(individuals.get(5));
+//        awards.get(6).setIndividual(individuals.get(5));
+//        awards.get(7).setIndividual(individuals.get(5));
+//        awards.get(8).setIndividual(individuals.get(5));
+//        awards.get(9).setIndividual(individuals.get(5));
+//        awards.get(10).setIndividual(individuals.get(5));
+//        awards.get(10).setContent(films.get(0));
+//        awards.get(11).setIndividual(individuals.get(5));
+//        awards.get(11).setContent(films.get(0));
+//        awards.get(12).setIndividual(individuals.get(5));
+//        awards.get(13).setIndividual(individuals.get(5));
+//        awards.get(14).setIndividual(individuals.get(1));
+//        awards.get(15).setIndividual(individuals.get(2));
+//        awards.get(16).setIndividual(individuals.get(2));
+//        awards.get(17).setIndividual(individuals.get(6));
+//        awards.get(18).setIndividual(individuals.get(7));
+//        awards.get(19).setIndividual(individuals.get(7));
+//        awards.get(20).setIndividual(individuals.get(4));
+//        awards.get(21).setIndividual(individuals.get(4));
+//        awards.get(22).setIndividual(individuals.get(5));
+//        awards.get(23).setIndividual(individuals.get(10));
+//        awards.get(24).setIndividual(individuals.get(10));
+//        awards.get(25).setIndividual(individuals.get(10));
+//        awards.get(26).setIndividual(individuals.get(10));
+//        awards.get(27).setIndividual(individuals.get(11));
+//        awards.get(28).setIndividual(individuals.get(11));
+//        awards.get(29).setIndividual(individuals.get(11));
+//        awards.get(30).setIndividual(individuals.get(12));
+//        awards.get(31).setIndividual(individuals.get(12));
+//        awards.get(32).setIndividual(individuals.get(12));
+//        awards.get(33).setIndividual(individuals.get(12));
+//        awards.get(34).setIndividual(individuals.get(12));
+//        awards.get(35).setIndividual(individuals.get(12));
         //awards.get(37).setIndividual(individuals.get(5));
         //awards.get(38).setIndividual(individuals.get(5));
         //awards.get(39).setIndividual(individuals.get(5));
@@ -816,6 +896,13 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
         //awards.get(43).setIndividual(individuals.get(5));
         //awards.get(44).setIndividual(individuals.get(5));
         //awards.get(45).setIndividual(individuals.get(5));
+
+
+        //logger.info("Search Individual by first name: {}", individualService.findIndividualByFirstName("joe").get(0));
+        //logger.info("Search Individual by fullname: {}", individualService.findIndividualByFullName("joe", "peci").isPresent());
+
+        //logger.info("Search film by title: {}", filmService.findMovieByTitle(""));
+        //individualService.exportToCsv();
 
     }
 }

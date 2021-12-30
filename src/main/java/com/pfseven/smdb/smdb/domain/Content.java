@@ -48,11 +48,11 @@ public class Content extends BaseModel{
     private Float rating;
 
     @NotNull(message = "{budget.null}")
-    @Column(precision = 2, length = 20, nullable = false)
+    @Column(length = 20, nullable = false)
     private BigDecimal budget;
 
     @NotNull(message = "{revenue.null}")
-    @Column(precision = 2, length = 20, nullable = false)
+    @Column(length = 20, nullable = false) //precision = 2
     private BigDecimal revenue;
 
     @NotNull(message = "{releaseDate.null}")
@@ -73,7 +73,7 @@ public class Content extends BaseModel{
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private Set<Award> awards = new HashSet<>();
 
-    @NotNull(message = "{individuals.null}")
+    //@NotNull(message = "{individuals.null}")
     @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(
             name = "CONTENT_INDIVIDUALS",
