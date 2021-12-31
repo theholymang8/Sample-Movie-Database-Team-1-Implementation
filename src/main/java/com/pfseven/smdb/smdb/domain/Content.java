@@ -35,9 +35,11 @@ public class Content extends BaseModel{
     private String description;
 
     @NotNull(message = "{genre.null}")
+    @ElementCollection(targetClass=Genre.class)
     @Enumerated(EnumType.STRING)
-    @Column(length = 50, nullable = false)
-    private Genre genre;
+    @CollectionTable(name = "CONTENT_GENRE")
+    @Column(name = "GENRE")
+    private Set<Genre> genres = new HashSet<>();
 
     @NotNull(message = "{length.null}")
     @Column(length = 3, nullable = false)
