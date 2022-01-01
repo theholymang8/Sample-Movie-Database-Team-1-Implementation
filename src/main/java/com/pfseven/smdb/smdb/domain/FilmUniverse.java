@@ -7,5 +7,6 @@ public enum FilmUniverse {
     Spy_Kids_And_Machete, Ghostbusters_And_Casper,
     Trading_Places, Coming_To_America, Piranha_And_Jaws,
     Scream, Alien, Blade_Runner, Marvel, DC_Universe,
-    Harry_Potter, Lord_Of_The_Rings, Other
+    Harry_Potter, Lord_Of_The_Rings, Dune, Trois_Couleurs,
+    Toy_Story, Godfather, Other
 }
