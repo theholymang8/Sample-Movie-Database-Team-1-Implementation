@@ -9,8 +9,9 @@ import java.util.Optional;
 
 public interface TvShowService extends BaseService<TvShow, Long> {
 
-    //Optional<TvShow> findTvShowByTitle(String title);
+    TvShow findByTitle(String title);
 
+    List<TvShow> findByGenres(final List<Genre> genres);
     //Long exportTvShows(TvShow tvShow);
 
     //Return X high-rated content

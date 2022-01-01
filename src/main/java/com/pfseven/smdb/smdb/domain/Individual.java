@@ -46,7 +46,7 @@ public class Individual extends BaseModel{
     private Integer age;
 
     @NotNull(message = "{nationality.null}")
-    @Column(length = 15, nullable = false)
+    @Column(length = 75, nullable = false)
     private String nationality;
 
     @ElementCollection(targetClass=ContributingRole.class)
