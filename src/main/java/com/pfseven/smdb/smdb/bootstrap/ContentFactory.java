@@ -112,14 +112,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .contributingRole(Set.of(ContributingRole.Producer))
                         .build(),
                 Individual.builder()
-                        .email("nothisispatrick@gmail.com")
-                        .age(59)
-                        .firstName("Patrick")
-                        .lastName("Gilmore")
-                        .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor))
-                        .build(),
-                Individual.builder()
                         .email("joepesci@gmail.com")
                         .age(77)
                         .firstName("Joe")
@@ -1139,7 +1131,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
 
 
         individualService.createAll(individuals);
-        logger.info("Created 123 Individuals: {}", individuals);
+        logger.info("Created 122 Individuals: {}", individuals);
 
 
         //Film Factory
@@ -1152,7 +1144,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Actors: Liam Neeson, Ralph Fiennes, Ben Kingsley
                         .description("In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.")
                         //.genre("Biography, Drama")
-                        .genres(Set.of(Genre.Biography))
+                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History))
                         .length(195)
                         //.releaseDate("1994-02-04")
                         .releaseDate(LocalDate.of(1994, 2, 4))
@@ -1170,7 +1162,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Melissa Mathison
                         //Actors: Henry Thomas, Drew Barrymore
                         .description("A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.")
-                        .genres(Set.of(Genre.Adventure)) //, Genre.Family, Genre.Sci_Fi
+                        .genres(Set.of(Genre.Adventure, Genre.Family, Genre.Sci_Fi)) //, Genre.Family, Genre.Sci_Fi
                         .length(115)
                         .releaseDate(LocalDate.of(1982,6,11))
                         .rating(7.8f)
@@ -1187,7 +1179,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: John Lasseter
                         //Actors: Tom Hanks, Tim Allen
                         .description("A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.")
-                        .genres(Set.of(Genre.Animation)) // Genre.Adventure, Genre.Comedy
+                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Family, Genre.Fantasy)) // Genre.Adventure, Genre.Comedy
                         .length(81)
                         .releaseDate(LocalDate.of(1995,11,22))
                         .rating(8.3f)
@@ -1204,7 +1196,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Bill Condon
                         //Actors: Liam Neeson
                         .description("A look at the life of Alfred Kinsey, a pioneer in the area of human sexuality research, whose 1948 publication \"Sexual Behavior in the Human Male\" was one of the first recorded works that saw science address sexual behavior.")
-                        .genres(Set.of(Genre.Biography)) //, Genre.Drama, Genre.Romance
+                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.Romance)) //, Genre.Drama, Genre.Romance
                         .length(118)
                         .releaseDate(LocalDate.of(2004,11,12))
                         .rating(7.1f)
@@ -1236,7 +1228,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Robert Rodat
                         //Actors: Tom Hanks, Matt Damon
                         .description("Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.")
-                        .genres(Set.of(Genre.War)) //Genre.Drama
+                        .genres(Set.of(Genre.Drama, Genre.War)) //Genre.Drama
                         .length(169)
                         .releaseDate(LocalDate.of(1998,7,24))
                         .rating(8.6f)
@@ -1252,7 +1244,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Tony Kushner
                         //Actors: Daniel Day-Lewis, Sally Field
                         .description("As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.")
-                        .genres(Set.of(Genre.Biography)) //, Genre.Drama, Genre.History
+                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History, Genre.War)) //, Genre.Drama, Genre.History
                         .length(150)
                         .releaseDate(LocalDate.of(2012,10,8))
                         .rating(7.3f)
@@ -1268,7 +1260,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Tony Kushner
                         //Actors: Eric Bana, Daniel Craig
                         .description("After the Black September capture and massacre of Israeli athletes at the 1972 Olympics, five men are chosen to eliminate the people responsible for that fateful day.")
-                        .genres(Set.of(Genre.Action)) //, Genre.Drama, Genre.History
+                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.History, Genre.Thriller)) //, Genre.Drama, Genre.History
                         .length(163)
                         .releaseDate(LocalDate.of(2005,12,23))
                         .rating(7.5f)
@@ -1284,7 +1276,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Susannah Grant
                         //Actors: Drew Barrymore, Anjelica Huston
                         .description("The Brothers Grimm arrive at the home of a wealthy Grande Dame who speaks of the many legends surrounding the fable of the cinder girl before telling the \"true\" story of her ancestor.")
-                        .genres(Set.of(Genre.Comedy)) //, Genre.Drama, Genre.Romance"
+                        .genres(Set.of(Genre.Comedy, Genre.Drama, Genre.Romance)) //, Genre.Drama, Genre.Romance"
                         .length(121)
                         .releaseDate(LocalDate.of(1998,7,31))
                         .rating(7.1f)
@@ -1300,7 +1292,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: David Howard
                         //Actors: Tim Allen, Sigourney Weaver, Alan Rickman
                         .description("The alumni cast of a space opera television series have to play their roles as the real thing when an alien race needs their help. However, they also have to defend both Earth and the alien race from a reptilian warlord.")
-                        .genres(Set.of(Genre.Adventure)) //, Genre.Comedy, Genre.Sci-Fi"
+                        .genres(Set.of(Genre.Adventure, Genre.Comedy, Genre.Sci_Fi)) //, Genre.Comedy, Genre.Sci-Fi"
                         .length(102)
                         .releaseDate(LocalDate.of(1999,12,25))
                         .rating(7.3f)
@@ -1316,7 +1308,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Carl Sagan, Ann Druyan
                         //Actors: Jodie Foster, Matthew McConaughey
                         .description("Dr. Ellie Arroway, after years of searching, finds conclusive radio proof of extraterrestrial intelligence, sending plans for a mysterious machine.")
-                        .genres(Set.of(Genre.Drama))//, Genre.Mystery, Genre.Sci-Fi"
+                        .genres(Set.of(Genre.Drama, Genre.Mystery, Genre.Sci_Fi, Genre.Thriller))//, Genre.Mystery, Genre.Sci-Fi"
                         .length(150)
                         .releaseDate(LocalDate.of(1997,7,11))
                         .rating(7.5f)
@@ -1332,7 +1324,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Martin Scorsese
                         //Actors: Robert De Niro, Joew Pesci, Ray Liotta
                         .description("The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.")
-                        .genres(Set.of(Genre.Biography)) //, Genre.Crime, Genre.Drama"
+                        .genres(Set.of(Genre.Biography, Genre.Crime, Genre.Drama)) //, Genre.Crime, Genre.Drama"
                         .length(146)
                         .releaseDate(LocalDate.of(1990,9,9))
                         .rating(8.7f)
@@ -1348,7 +1340,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Jake LaMotta
                         //Actors: Robert De Niro, Joe Pesci
                         .description("The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.")
-                        .genres(Set.of(Genre.Biography)) //, Genre.Drama, Genre.Sport"
+                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.Sport)) //, Genre.Drama, Genre.Sport"
                         .length(129)
                         .releaseDate(LocalDate.of(1990,12,19))
                         .rating(8.2f)
@@ -1364,7 +1356,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Francis Ford Coppola
                         //Actors: Al Pacino, Robert De Niro
                         .description("The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.")
-                        .genres(Set.of(Genre.Crime)) //, Genre.Drama"
+                        .genres(Set.of(Genre.Crime, Genre.Drama)) //, Genre.Drama"
                         .length(200)
                         .releaseDate(LocalDate.of(1974,12,12))
                         .rating(9.0f)
@@ -1381,7 +1373,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Quentin Tarantino
                         //Actors: Jamie Foxx, Christoph Waltz, Leonardo Dicaprio
                         .description("With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation-owner in Mississippi.")
-                        .genres(Set.of(Genre.Drama)) //, Genre.Western"
+                        .genres(Set.of(Genre.Drama, Genre.Western)) //, Genre.Western"
                         .length(165)
                         .releaseDate(LocalDate.of(2012,12,11))
                         .rating(8.4f)
@@ -1398,7 +1390,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Quentin Tarantino
                         //Actors: Brad Pitt, Diane Kruger, Christoph Waltz
                         .description("In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.")
-                        .genres(Set.of(Genre.Adventure)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Adventure, Genre.Drama, Genre.War)) //, Genre.Drama, Genre.War"
                         .length(153)
                         .releaseDate(LocalDate.of(2009,5,20))
                         .rating(8.4f)
@@ -1415,7 +1407,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Krzysztof Kieslowski
                         //Actors: Juliette Binoche, Zbigniew Zamachowski, Julie Delpy
                         .description("A woman struggles to find a way to live her life after the death of her husband and child.")
-                        .genres(Set.of(Genre.Drama)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Drama, Genre.Music, Genre.Mystery, Genre.Romance)) //, Genre.Drama, Genre.War"
                         .length(94)
                         .releaseDate(LocalDate.of(1993,9,8))
                         .rating(7.9f)
@@ -1432,7 +1424,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Krzysztof Kieslowski
                         //Actors: Zbigniew Zamachowski, Julie Delpy
                         .description("After his wife divorces him, a Polish immigrant plots to get even with her.")
-                        .genres(Set.of(Genre.Comedy)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Comedy, Genre.Drama, Genre.Romance)) //, Genre.Drama, Genre.War"
                         .length(92)
                         .releaseDate(LocalDate.of(1994,6,10))
                         .rating(7.6f)
@@ -1449,7 +1441,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Krzysztof Kieslowski
                         //Actors: Irène Jacob, Jean-Louis Trintignant
                         .description("A model discovers a retired judge is keen on invading people's privacy.")
-                        .genres(Set.of(Genre.Drama)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Drama, Genre.Mystery, Genre.Romance)) //, Genre.Drama, Genre.War"
                         .length(99)
                         .releaseDate(LocalDate.of(1994,11,23))
                         .rating(8.1f)
@@ -1466,7 +1458,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Jean-Piere Jeunet, Guillaume Laurant
                         //Actors: Audrey Tautou
                         .description("Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.")
-                        .genres(Set.of(Genre.Romance)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Comedy, Genre.Romance)) //, Genre.Drama, Genre.War"
                         .length(122)
                         .releaseDate(LocalDate.of(2002,2,8))
                         .rating(8.3f)
@@ -1482,7 +1474,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Thomas Vinterberg
                         //Actors: Mads Mikkelsen, Thomas Bo Larsen
                         .description("Four high school teachers consume alcohol on a daily basis to see how it affects their social and professional lives.")
-                        .genres(Set.of(Genre.Comedy)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Comedy, Genre.Drama)) //, Genre.Drama, Genre.War"
                         .length(117)
                         .releaseDate(LocalDate.of(2020,12,18))
                         .rating(7.8f)
@@ -1498,7 +1490,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Abbas Kiarostami
                         //Actors: Babek Ahmed Poor
                         .description("8 year old Ahmed has mistakenly taken his friend Mohammad's notebook. He wants to return it, or else his friend will be expelled from school. Determinedly, the conscientious boy sets out to find Mohammad's home in the neighbouring village.")
-                        .genres(Set.of(Genre.Family)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Drama, Genre.Family)) //, Genre.Drama, Genre.War"
                         .length(83)
                         .releaseDate(LocalDate.of(1987,2,18))
                         .rating(8.1f)
@@ -1514,7 +1506,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Akira Kurosawa
                         //Actors: Tatsuya Nakadai
                         .description("In Medieval Japan, an elderly warlord retires, handing over his empire to his three sons. However, he vastly underestimates how the new-found power will corrupt them and cause them to turn on each other...and him.")
-                        .genres(Set.of(Genre.War)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.War)) //, Genre.Drama, Genre.War"
                         .length(162)
                         .releaseDate(LocalDate.of(1985,6,1))
                         .rating(8.2f)
@@ -1530,7 +1522,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Akira Kurosawa
                         //Actors: Toshiro Mifune
                         .description("A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.")
-                        .genres(Set.of(Genre.Action)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Drama)) //, Genre.Drama, Genre.War"
                         .length(207)
                         .releaseDate(LocalDate.of(1956,11,19))
                         .rating(8.6f)
@@ -1546,7 +1538,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Carl Mayer
                         //Actors: Werner Krauss
                         .description("Hypnotist Dr. Caligari uses a somnambulist, Cesare, to commit murders.")
-                        .genres(Set.of(Genre.Horror)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Horror, Genre.Mystery, Genre.Thriller)) //, Genre.Drama, Genre.War"
                         .length(67)
                         .releaseDate(LocalDate.of(1920,2,27))
                         .rating(8.1f)
@@ -1562,7 +1554,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Wolfgang Petersen
                         //Actors: Jürgen Prochnow
                         .description("The claustrophobic world of a WWII German U-boat; boredom, filth and sheer terror.")
-                        .genres(Set.of(Genre.War)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Drama, Genre.War)) //, Genre.Drama, Genre.War"
                         .length(149)
                         .releaseDate(LocalDate.of(1982,2,10))
                         .rating(8.3f)
@@ -1578,7 +1570,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Denis Villeneuve
                         //Actors: Timothée Chalamet, Rebecca Fergusson
                         .description("Feature adaptation of Frank Herbert's science fiction novel about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.")
-                        .genres(Set.of(Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Drama, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
                         .length(155)
                         .releaseDate(LocalDate.of(2021,10,22))
                         .rating(8.2f)
@@ -1595,7 +1587,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Pete Docter
                         //Actors: Ed Asner
                         .description("78-year-old Carl Fredricksen travels to Paradise Falls in his house equipped with balloons, inadvertently taking a young stowaway.")
-                        .genre(Genre.Adventure) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Drama, Genre.Family)) //, Genre.Drama, Genre.War"
                         .length(96)
                         .releaseDate(LocalDate.of(2009,5,29))
                         .rating(8.2f)
@@ -1612,7 +1604,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Lee Unkrich
                         //Actors: Anthony Gonzalez
                         .description("Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.")
-                        .genre(Genre.Adventure) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Family, Genre.Fantasy, Genre.Music, Genre.Mystery)) //, Genre.Drama, Genre.War"
                         .length(105)
                         .releaseDate(LocalDate.of(2017,11,22))
                         .rating(8.4f)
@@ -1629,7 +1621,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: George Lucas
                         //Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Alec Guinness
                         .description("Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.")
-                        .genre(Genre.Action) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
                         .length(121)
                         .releaseDate(LocalDate.of(1977,5,25))
                         .rating(8.6f)
@@ -1646,7 +1638,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: George Lucas
                         //Actors: Mark Hamill, Harrison Ford, Carrie Fisher
                         .description("After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader and bounty hunter Boba Fett.")
-                        .genre(Genre.Action) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
                         .length(124)
                         .releaseDate(LocalDate.of(2021,10,22))
                         .rating(8.7f)
@@ -1663,7 +1655,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Goerge Lucas
                         //Actors: Mark Hamill, Harrison Ford, Carrie Fisher
                         .description("After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor's trap.")
-                        .genre(Genre.Action) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
                         .length(131)
                         .releaseDate(LocalDate.of(1983,5,25))
                         .rating(8.3f)
@@ -1680,7 +1672,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Hampton Fancher
                         //Actors: Harrison Ford, Rutger Hauer
                         .description("A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.")
-                        .genre(Genre.Action) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
                         .length(117)
                         .releaseDate(LocalDate.of(1982,6,25))
                         .rating(8.1f)
@@ -1697,7 +1689,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Hampton Fancher
                         //Actors: Harrison Ford, Ryan Gosling
                         .description("Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.")
-                        .genre(Genre.Action) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.Mystery, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
                         .length(164)
                         .releaseDate(LocalDate.of(2017,10,6))
                         .rating(8.0f)
@@ -1714,7 +1706,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Stephen King
                         //Actors: River Phoenix, Corey Feldman
                         .description("After the death of one of his friends, a writer recounts a childhood journey with his friends to find the body of a missing boy.")
-                        .genre(Genre.Adventure) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Adventure, Genre.Drama)) //, Genre.Drama, Genre.War"
                         .length(89)
                         .releaseDate(LocalDate.of(1986,8,22))
                         .rating(8.1f)
@@ -1731,7 +1723,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Stephen King, Stanley Kubrick
                         //Actors: Jack Nicholson, Shelley Duvall
                         .description("A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.")
-                        .genre(Genre.Horror) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Horror, Genre.Drama)) //, Genre.Drama, Genre.War"
                         .length(146)
                         .releaseDate(LocalDate.of(1980,6,13))
                         .rating(8.4f)
@@ -1748,7 +1740,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Frank Darabont, Stephen King
                         //Actors: Thomas Jane, Marcia Gay Harden
                         .description("A freak storm unleashes a species of bloodthirsty creatures on a small town, where a small band of citizens hole up in a supermarket and fight for their lives.")
-                        .genre(Genre.Horror) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Horror, Genre.Sci_Fi, Genre.Thriller)) //, Genre.Drama, Genre.War"
                         .length(89)
                         .releaseDate(LocalDate.of(1986,8,22))
                         .rating(7.1f)
@@ -1788,7 +1780,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Robert Levine
                         //Actors: Jessica Kennedy, Toby Stephens
                         .description("Follows Captain Flint and his pirates twenty years prior to Robert Louis Stevenson's classic novel \"Treasure Island.\"")
-                        .genres(Set.of(Genre.Adventure))
+                        .genres(Set.of(Genre.Adventure, Genre.Drama))
                         .length(56)
                         .releaseDate(LocalDate.of(2014,1,25))
                         .rating(8.2f)
@@ -1806,7 +1798,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Dan Harmon, Justin Roiland
                         //Actors: Justin Roiland
                         .description("An animated series that follows the exploits of a super scientist and his not-so-bright grandson.")
-                        .genres(Set.of(Genre.Animation))
+                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Sci_Fi))
                         .length(23)
                         .releaseDate(LocalDate.of(2013,12,2))
                         .rating(9.2f)
@@ -1824,7 +1816,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Bruce MacKenna
                         //Actors: James Dale
                         .description("The Pacific Theatre of World War II, as seen through the eyes of several young Marines." )
-                        .genres(Set.of(Genre.Action))
+                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Drama, Genre.History, Genre.War))
                         .length(55)
                         .releaseDate(LocalDate.of(2010,3,14))
                         .rating(8.3f)
@@ -1842,7 +1834,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Leslie Bohem
                         //Actors: Dakota Fanning
                         .description("Three families experience alien abductions over a period of five decades." )
-                        .genres(Set.of(Genre.Sci_Fi))
+                        .genres(Set.of(Genre.Drama, Genre.Mystery, Genre.Sci_Fi, Genre.Thriller))
                         .length(87)
                         .releaseDate(LocalDate.of(2002,12,2))
                         .rating(7.8f)
@@ -1860,7 +1852,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Stephen Ambrose
                         //Actors: Scott Grimes, Damian Lewis
                         .description("The story of Easy Company of the U.S. Army 101st Airborne Division and their mission in World War II Europe, from Operation Overlord to V-J Day." )
-                        .genres(Set.of(Genre.War))
+                        .genres(Set.of(Genre.Drama, Genre.History, Genre.War))
                         .length(60)
                         .releaseDate(LocalDate.of(2001,9,9))
                         .rating(9.4f)
@@ -1878,7 +1870,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Kirk Tingblad
                         //Actors: Maurice LaMarche, Rob Paulsen
                         .description("A genius mouse and his stupid sidekick try to conquer the world each night." )
-                        .genres(Set.of(Genre.Animation))
+                        .genres(Set.of(Genre.Animation, Genre.Short, Genre.Adventure, Genre.Comedy, Genre.Family, Genre.Fantasy, Genre.Sci_Fi))
                         .length(22)
                         .releaseDate(LocalDate.of(1995,9,9))
                         .rating(7.8f)
@@ -1896,7 +1888,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Carmen Finestra
                         //Actors: Tim Allen
                         .description("The daily trials and tribulations of Tim \"The Tool Man\" Taylor, a television show host raising three mischievous boys with help from his loyal co-host, loving wife, and eccentric neighbor." )
-                        .genres(Set.of(Genre.Comedy))
+                        .genres(Set.of(Genre.Comedy, Genre.Family))
                         .length(22)
                         .releaseDate(LocalDate.of(1991,9,17))
                         .rating(7.2f)
@@ -1914,7 +1906,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Greg Daniels, Mike Judge
                         //Actors: Mike Judge
                         .description("A straight-laced propane salesman in Arlen, Texas tries to deal with the wacky antics of his family and friends, while also trying to keep his son in line." )
-                        .genres(Set.of(Genre.Animation))
+                        .genres(Set.of(Genre.Animation, Genre.Comedy, Genre.Drama))
                         .length(21)
                         .releaseDate(LocalDate.of(1997,1,12))
                         .rating(7.3f)
