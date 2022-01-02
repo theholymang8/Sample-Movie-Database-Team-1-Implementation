@@ -1022,7 +1022,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Steven Zaillian
                         //Actors: Liam Neeson, Ralph Fiennes, Ben Kingsley
                         .description("In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.")
-                        //.genre("Biography, Drama")
                         .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History))
                         .length(195)
                         .releaseDate(LocalDate.of(1994, 2, 4))
