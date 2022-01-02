@@ -16,8 +16,8 @@ import java.util.Set;
 @AllArgsConstructor
 @SuperBuilder
 @Data
-@ToString(callSuper = true)
-@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true, exclude = {"awards", "content"})
+@EqualsAndHashCode(callSuper = true, exclude = {"awards", "content"})
 //Hibernate
 @Entity
 @Table(name = "INDIVIDUALS")
@@ -28,7 +28,7 @@ public class Individual extends BaseModel{
 
     @NotNull(message = "{email.null}")
     @Pattern(regexp = "^[A-Za-z0-9+_.-]+@(.+)$", message = "{email.format}")
-    @Column(length = 65, nullable = false, unique = true )
+    @Column(length = 100, nullable = false, unique = true )
     private String email;
 
     @NotNull(message = "{firstname.null}")

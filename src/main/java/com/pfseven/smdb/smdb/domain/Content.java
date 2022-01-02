@@ -15,8 +15,8 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
-@ToString(callSuper = true)
-@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true, exclude = {"awards", "individuals"})
+@EqualsAndHashCode(callSuper = true, exclude = {"awards", "individuals"})
 @Data
 //Hibernate
 @Entity
@@ -64,11 +64,11 @@ public class Content extends BaseModel{
     private LocalDate releaseDate;
 
     @NotNull(message = "{language.null}")
-    @Column(length = 50, nullable = false)
+    @Column(length = 500, nullable = false)
     private String language;
 
     @NotNull(message = "{countryOfOrigin.null}")
-    @Column(length = 50, nullable = false)
+    @Column(length = 500, nullable = false)
     private String countryOfOrigin;
 
     //@NotNull(message = "{awards.null}")

@@ -39,7 +39,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Neeson")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(3), awards.get(4)))
                         .build(),
                 Individual.builder()
                         .email("drewbarrymore@outlook.com")
@@ -48,7 +47,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Barrymore")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(14)))
                         .build(),
                 Individual.builder()
                         .email("timallen@gmail.com")
@@ -57,7 +55,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Allen")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(15), awards.get(16)))
                         .build(),
                 Individual.builder()
                         .email("jonburton@gmail.com")
@@ -74,7 +71,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Archer")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director))
-                        //.awards(Set.of(awards.get(20), awards.get(21)))
                         .build(),
                 Individual.builder()
                         .email("stevenspielrock@gmail.com")
@@ -83,7 +79,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Spielberg")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(22), awards.get(0), awards.get(5), awards.get(6), awards.get(7), awards.get(8), awards.get(9), awards.get(10), awards.get(11), awards.get(12), awards.get(13)))
                         .build(),
                 Individual.builder()
                         .email("melissamathison@gmail.com")
@@ -92,7 +87,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Mathison")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(17)))
                         .build(),
                 Individual.builder()
                         .email("anndruchii@gmail.com")
@@ -101,7 +95,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Druyan")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(18), awards.get(19)))
                         .build(),
                 Individual.builder()
                         .email("robertlevine@gmail.com")
@@ -118,7 +111,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Pesci")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(23), awards.get(24), awards.get(25), awards.get(26)))
                         .build(),
                 Individual.builder()
                         .email("robertdenniro@outlook.com")
@@ -127,7 +119,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("De Niro Jr")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(27), awards.get(28), awards.get(29)))
                         .build(),
                 Individual.builder()
                         .email("christophwaltz@gmail.com")
@@ -136,7 +127,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Waltz")
                         .nationality("German")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("kathleenkennedy@gmail.com")
@@ -153,7 +143,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Kieslowski")
                         .nationality("Polish")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("juliettebinoche@gmail.com")
@@ -162,7 +151,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Binoche")
                         .nationality("French")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("audreytautou@gmail.com")
@@ -171,7 +159,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Tautou")
                         .nationality("French")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("guillaumelaurant@gmail.com")
@@ -180,7 +167,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Laurant")
                         .nationality("French")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("jeanpierrejeunet@gmail.com")
@@ -189,7 +175,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Jeunet")
                         .nationality("French")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("thomasvinterberg@gmail.com")
@@ -198,7 +183,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Vinterberg")
                         .nationality("Danish")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("madsmikkelsen@gmail.com")
@@ -207,7 +191,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Mikkelsen")
                         .nationality("Danish")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("abbaskiarostami@gmail.com")
@@ -216,7 +199,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Kiarostami")
                         .nationality("Iranian")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("tatsuyanakadai@gmail.com")
@@ -225,7 +207,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Nakadai")
                         .nationality("Japanese")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("akirakurosawa@gmail.com")
@@ -234,7 +215,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Kurosawa")
                         .nationality("Japanese")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("toshiromifune@gmail.com")
@@ -243,7 +223,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Mifune")
                         .nationality("Japanese, Chinese")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("wernerkrauss@gmail.com")
@@ -252,7 +231,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Krauss")
                         .nationality("German")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("robertwiene@gmail.com")
@@ -261,7 +239,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Wiene")
                         .nationality("German")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("wolfgangpetersen@gmail.com")
@@ -270,7 +247,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Petersen")
                         .nationality("German")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("denisvilleneuve@gmail.com")
@@ -279,7 +255,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Villeneuve")
                         .nationality("Canadian")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("timotheechalamet@gmail.com")
@@ -288,7 +263,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Chalamet")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("rebeccaferguson@gmail.com")
@@ -297,7 +271,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Ferguson")
                         .nationality("Swedish")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("javierbardem@gmail.com")
@@ -306,7 +279,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Bardem")
                         .nationality("Spanish")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("petedocterm@gmail.com")
@@ -315,7 +287,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Docter")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("edasner@gmail.com")
@@ -324,7 +295,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Asner")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("leeunkrich@gmail.com")
@@ -333,7 +303,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Unkrich")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("anthonygonzalez@gmail.com")
@@ -342,7 +311,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Gonzalez")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("georgelucas@gmail.com")
@@ -351,7 +319,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Lucas")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("markhamill@gmail.com")
@@ -360,7 +327,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Hamill")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("harrisonford@gmail.com")
@@ -369,7 +335,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Ford")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("alecguinnesss@gmail.com")
@@ -378,7 +343,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Guinness")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("carriefisher@gmail.com")
@@ -387,7 +351,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Fisher")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("rutgerhauer@gmail.com")
@@ -396,7 +359,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Hauer")
                         .nationality("Dutch")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("ridleyscott@gmail.com")
@@ -405,7 +367,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Scott")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("hamptonfancher@gmail.com")
@@ -414,7 +375,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Fancher")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("ryangosling@gmail.com")
@@ -423,7 +383,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Gosling")
                         .nationality("Canadian")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("robreiner@gmail.com")
@@ -432,7 +391,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Reiner")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("stephenking@gmail.com")
@@ -441,7 +399,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("King")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("riverpheonix@gmail.com")
@@ -450,7 +407,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Phoenix")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("coreyfeldman@gmail.com")
@@ -459,7 +415,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Feldman")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("stanleykubrick@gmail.com")
@@ -468,7 +423,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Kubrick")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Producer, ContributingRole.Director, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("jacknicholson@gmail.com")
@@ -477,7 +431,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Nicholson")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("shelleyduvall@gmail.com")
@@ -486,7 +439,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Duvall")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("frankdarabont@gmail.com")
@@ -495,7 +447,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Darabont")
                         .nationality("French")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("thomasjane@gmail.com")
@@ -504,7 +455,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Jane")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("marciagayharden@gmail.com")
@@ -513,7 +463,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Harden")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("richarcmarquand@gmail.com")
@@ -522,7 +471,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Marquand")
                         .nationality("Welsh")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("irvinkershner@gmail.com")
@@ -531,7 +479,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Kershner")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("jurgenprochnow@gmail.com")
@@ -540,7 +487,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Prochnow")
                         .nationality("German")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("carlmayer@gmail.com")
@@ -549,7 +495,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Mayer")
                         .nationality("Austrian")
                         .contributingRole(Set.of(ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("babekahmedpoor@gmail.com")
@@ -558,7 +503,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Poor")
                         .nationality("Iranian")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("thomasbolarsen@gmail.com")
@@ -567,7 +511,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Larsen")
                         .nationality("Danish")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("irenejacob@gmail.com")
@@ -576,7 +519,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Jacob")
                         .nationality("French")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("jeanlouistrintignant@gmail.com")
@@ -585,7 +527,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Trintignant")
                         .nationality("French")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("zbigniewzamachowski@gmail.com")
@@ -594,7 +535,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Zamachowski")
                         .nationality("Polish")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("juliedelpy@gmail.com")
@@ -603,7 +543,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Delpy")
                         .nationality("French")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("bradpitt@gmail.com")
@@ -612,7 +551,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Pitt")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("dianekruger@gmail.com")
@@ -621,7 +559,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Kruger")
                         .nationality("German")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("quentintarantino@gmail.com")
@@ -630,7 +567,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Tarantino")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("jamiefoxx@gmail.com")
@@ -639,7 +575,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Foxx")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("leonardodicaprio@gmail.com")
@@ -648,7 +583,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("DiCaprio")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("francisfordcopolla@gmail.com")
@@ -657,7 +591,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Coppola")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("alpacino@gmail.com")
@@ -666,7 +599,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Pacino")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("martinscorsese@gmail.com")
@@ -675,7 +607,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Scorsese")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("jakelamotta@gmail.com")
@@ -684,7 +615,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("LaMotta")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("rayliotta@gmail.com")
@@ -693,7 +623,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Liotta")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("robertzemeckis@gmail.com")
@@ -702,7 +631,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Zemeckis")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("carlsagan@gmail.com")
@@ -711,7 +639,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Sagan")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("jodiefoster@gmail.com")
@@ -720,7 +647,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Foster")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("matthewmacconaughey@gmail.com")
@@ -729,7 +655,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("McConaughey")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("deanparisto@gmail.com")
@@ -738,7 +663,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Parisot")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("davidhoward@gmail.com")
@@ -747,7 +671,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Howard")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("sigourneyweaver@gmail.com")
@@ -756,7 +679,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Weaver")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("alanrickman@gmail.com")
@@ -765,7 +687,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Rickman")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("andytennant@gmail.com")
@@ -774,7 +695,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Tennant")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("susannahgrant@gmail.com")
@@ -783,7 +703,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Grant")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("anjelicahuston@gmail.com")
@@ -792,7 +711,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Huston")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("tonykushner@gmail.com")
@@ -801,7 +719,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Kushner")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("ericbana@gmail.com")
@@ -810,7 +727,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Bana")
                         .nationality("Australian")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("danielcraig@gmail.com")
@@ -819,7 +735,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Craig")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("danieldaylewis@gmail.com")
@@ -828,7 +743,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Day-Lewis")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("sallyfield@gmail.com")
@@ -837,25 +751,22 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Field")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
-                        .email("leonardodicaprio@gmail.com")
-                        .age(47)
-                        .firstName("Leonardo")
-                        .lastName("DiCaprio")
-                        .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
+                        .email("patrickstewart@gmail.com")
+                        .age(71)
+                        .firstName("Patrick")
+                        .lastName("Stewart")
+                        .nationality("British")
+                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("robertrodat@gmail.com")
                         .age(68)
-                        .firstName("Robart")
+                        .firstName("Robert")
                         .lastName("Rodat")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("tomhanks@gmail.com")
@@ -864,7 +775,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Hanks")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("mattdamon@gmail.com")
@@ -873,7 +783,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Damon")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("sylvierokab@gmail.com")
@@ -882,7 +791,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Rokab")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("billcondon@gmail.com")
@@ -891,7 +799,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Condon")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("johnlasseter@gmail.com")
@@ -900,7 +807,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Lasseter")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("henrythomas@gmail.com")
@@ -909,7 +815,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Thomas")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("stevenzaillian@gmail.com")
@@ -918,16 +823,14 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Zaillian")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
-                        .email("ralphfiennes.com")
+                        .email("ralphfiennes@gmail.com")
                         .age(59)
                         .firstName("Ralph")
                         .lastName("Fiennes")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("benkingsley@gmail.com")
@@ -936,7 +839,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Kingsley")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("gregdaniels@gmail.com")
@@ -945,7 +847,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Daniels")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("mikejudge@gmail.com")
@@ -954,7 +855,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Judge")
                         .nationality("Equadorian")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("carmenfinestra@gmail.com")
@@ -963,7 +863,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Finestra")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("andycardiff@gmail.com")
@@ -972,7 +871,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Cardiff")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("kirktingblad@gmail.com")
@@ -981,7 +879,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Tingblad")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("mauricelamarche@gmail.com")
@@ -990,7 +887,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("LaMarche")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("robpaulsen@gmail.com")
@@ -999,7 +895,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Paulsen")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("stephenambrose@gmail.com")
@@ -1008,7 +903,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Ambrose")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("scottgrimes@gmail.com")
@@ -1017,7 +911,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Grimes")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("damianlewis@gmail.com")
@@ -1026,7 +919,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Lewis")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("lesliebohem@gmail.com")
@@ -1035,7 +927,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Bohem")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Director, ContributingRole.Writer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("dakotafanning@gmail.com")
@@ -1044,7 +935,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Fanning")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("jeremypodeswa@gmail.com")
@@ -1053,7 +943,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Podeswa")
                         .nationality("Canadian")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("brucecmckenna@gmail.com")
@@ -1062,7 +951,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("McKenna")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("jamesbadgedale@gmail.com")
@@ -1071,7 +959,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Dale")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("danharmon@gmail.com")
@@ -1080,7 +967,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Harmon")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("justinroiland@gmail.com")
@@ -1089,7 +975,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Roiland")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("steveboyum@gmail.com")
@@ -1098,7 +983,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Boyum")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("tobystephens@gmail.com")
@@ -1107,7 +991,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Stephens")
                         .nationality("British")
                         .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build(),
                 Individual.builder()
                         .email("jessicaparkerkennedy@gmail.com")
@@ -1116,7 +999,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("kennedy")
                         .nationality("Canadian")
                         .contributingRole(Set.of(ContributingRole.Actor))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
+
                         .build(),
                 Individual.builder()
                         .email("brannonbraga@gmail.com")
@@ -1125,13 +1008,9 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .lastName("Braga")
                         .nationality("American")
                         .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
-                        //.awards(Set.of(awards.get(30), awards.get(31), awards.get(32), awards.get(33), awards.get(34), awards.get(35)))
                         .build()
         );
 
-
-        individualService.createAll(individuals);
-        logger.info("Created 122 Individuals: {}", individuals);
 
 
         //Film Factory
@@ -1146,15 +1025,13 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //.genre("Biography, Drama")
                         .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History))
                         .length(195)
-                        //.releaseDate("1994-02-04")
                         .releaseDate(LocalDate.of(1994, 2, 4))
                         .rating(8.9f)
                         .countryOfOrigin("USA")
                         .language("English, Hebrew, German, Polish, Latin")
-                        //.awards(Set.of(awards.get(0), awards.get(10), awards.get(11)))
-                        //awards(new HashSet<Award>(awardService.find()))
                         .budget(BigDecimal.valueOf(22000000))
                         .revenue(BigDecimal.valueOf(322161245))
+                        .individuals(Set.of(individuals.get(5), individuals.get(98), individuals.get(0), individuals.get(99), individuals.get(100)))
                         .build(),
                 Film.builder()
                         .title("E.T. the Extra-Terrestrial")
@@ -1162,16 +1039,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Melissa Mathison
                         //Actors: Henry Thomas, Drew Barrymore
                         .description("A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.")
-                        .genres(Set.of(Genre.Adventure, Genre.Family, Genre.Sci_Fi)) //, Genre.Family, Genre.Sci_Fi
+                        .genres(Set.of(Genre.Adventure, Genre.Family, Genre.Sci_Fi))
                         .length(115)
                         .releaseDate(LocalDate.of(1982,6,11))
                         .rating(7.8f)
                         .countryOfOrigin("USA")
                         .language("English")
                         .filmUniverse(FilmUniverse.E_T_And_Star_Wars)
-                        //.awards(Set.of(awards.get(17), awards.get(36), awards.get(37), awards.get(38)))
                         .budget(BigDecimal.valueOf(10500000))
                         .revenue(BigDecimal.valueOf(792910554))
+                        .individuals(Set.of(individuals.get(5), individuals.get(6), individuals.get(97), individuals.get(99), individuals.get(1)))
                         .build(),
                 Film.builder()
                         .title("Toy Story")
@@ -1179,16 +1056,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: John Lasseter
                         //Actors: Tom Hanks, Tim Allen
                         .description("A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.")
-                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Family, Genre.Fantasy)) // Genre.Adventure, Genre.Comedy
+                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Family, Genre.Fantasy))
                         .length(81)
                         .releaseDate(LocalDate.of(1995,11,22))
                         .rating(8.3f)
                         .countryOfOrigin("USA")
                         .language("English")
                         .filmUniverse(FilmUniverse.Pixar_Movies)
-                        //.awards(Set.of(awards.get(1)))
                         .budget(BigDecimal.valueOf(30000000))
                         .revenue(BigDecimal.valueOf(394436586))
+                        .individuals(Set.of(individuals.get(96), individuals.get(92), individuals.get(2)))
                         .build(),
                 Film.builder()
                         .title("Kinsey")
@@ -1196,15 +1073,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Bill Condon
                         //Actors: Liam Neeson
                         .description("A look at the life of Alfred Kinsey, a pioneer in the area of human sexuality research, whose 1948 publication \"Sexual Behavior in the Human Male\" was one of the first recorded works that saw science address sexual behavior.")
-                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.Romance)) //, Genre.Drama, Genre.Romance
+                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.Romance))
                         .length(118)
                         .releaseDate(LocalDate.of(2004,11,12))
                         .rating(7.1f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(4)))
                         .budget(BigDecimal.valueOf(11000000))
                         .revenue(BigDecimal.valueOf(16900000))
+                        .individuals(Set.of(individuals.get(95), individuals.get(0)))
                         .build(),
                 Film.builder()
                         .title("Love thy nature")
@@ -1218,25 +1095,25 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(6.8f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(5)))
-                        .budget(BigDecimal.valueOf(60000)) //couldnt find the budget
+                        .budget(BigDecimal.valueOf(60000))
                         .revenue(BigDecimal.valueOf(53134))
+                        .individuals(Set.of(individuals.get(94), individuals.get(0)))
                         .build(),
                 Film.builder()
-                        .title("Saving Pirate Ryan")
+                        .title("Saving Private Ryan")
                         //Directors: Steven Spielberg
                         //Writers: Robert Rodat
                         //Actors: Tom Hanks, Matt Damon
                         .description("Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.")
-                        .genres(Set.of(Genre.Drama, Genre.War)) //Genre.Drama
+                        .genres(Set.of(Genre.Drama, Genre.War))
                         .length(169)
                         .releaseDate(LocalDate.of(1998,7,24))
                         .rating(8.6f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(6)))
                         .budget(BigDecimal.valueOf(70000000))
                         .revenue(BigDecimal.valueOf(482300000))
+                        .individuals(Set.of(individuals.get(5), individuals.get(91), individuals.get(92), individuals.get(93)))
                         .build(),
                 Film.builder()
                         .title("Lincoln")
@@ -1244,15 +1121,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Tony Kushner
                         //Actors: Daniel Day-Lewis, Sally Field
                         .description("As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.")
-                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History, Genre.War)) //, Genre.Drama, Genre.History
+                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History, Genre.War))
                         .length(150)
                         .releaseDate(LocalDate.of(2012,10,8))
                         .rating(7.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(13)))
                         .budget(BigDecimal.valueOf(65000000))
                         .revenue(BigDecimal.valueOf(275300000))
+                        .individuals(Set.of(individuals.get(5), individuals.get(85), individuals.get(88), individuals.get(89)))
                         .build(),
                 Film.builder()
                         .title("Munich")
@@ -1260,15 +1137,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Tony Kushner
                         //Actors: Eric Bana, Daniel Craig
                         .description("After the Black September capture and massacre of Israeli athletes at the 1972 Olympics, five men are chosen to eliminate the people responsible for that fateful day.")
-                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.History, Genre.Thriller)) //, Genre.Drama, Genre.History
+                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.History, Genre.Thriller))
                         .length(163)
                         .releaseDate(LocalDate.of(2005,12,23))
                         .rating(7.5f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(14)))
                         .budget(BigDecimal.valueOf(70000000))
                         .revenue(BigDecimal.valueOf(130400000))
+                        .individuals(Set.of(individuals.get(5), individuals.get(85), individuals.get(86), individuals.get(87)))
                         .build(),
                 Film.builder()
                         .title("EverAfter")
@@ -1276,15 +1153,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Susannah Grant
                         //Actors: Drew Barrymore, Anjelica Huston
                         .description("The Brothers Grimm arrive at the home of a wealthy Grande Dame who speaks of the many legends surrounding the fable of the cinder girl before telling the \"true\" story of her ancestor.")
-                        .genres(Set.of(Genre.Comedy, Genre.Drama, Genre.Romance)) //, Genre.Drama, Genre.Romance"
+                        .genres(Set.of(Genre.Comedy, Genre.Drama, Genre.Romance))
                         .length(121)
                         .releaseDate(LocalDate.of(1998,7,31))
                         .rating(7.1f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(15)))
                         .budget(BigDecimal.valueOf(26000000))
                         .revenue(BigDecimal.valueOf(98000000))
+                        .individuals(Set.of(individuals.get(82), individuals.get(83), individuals.get(1), individuals.get(84)))
                         .build(),
                 Film.builder()
                         .title("Galaxy Quest")
@@ -1292,15 +1169,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: David Howard
                         //Actors: Tim Allen, Sigourney Weaver, Alan Rickman
                         .description("The alumni cast of a space opera television series have to play their roles as the real thing when an alien race needs their help. However, they also have to defend both Earth and the alien race from a reptilian warlord.")
-                        .genres(Set.of(Genre.Adventure, Genre.Comedy, Genre.Sci_Fi)) //, Genre.Comedy, Genre.Sci-Fi"
+                        .genres(Set.of(Genre.Adventure, Genre.Comedy, Genre.Sci_Fi))
                         .length(102)
                         .releaseDate(LocalDate.of(1999,12,25))
                         .rating(7.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(16)))
                         .budget(BigDecimal.valueOf(45000000))
                         .revenue(BigDecimal.valueOf(90700000))
+                        .individuals(Set.of(individuals.get(78), individuals.get(79), individuals.get(80), individuals.get(81)))
                         .build(),
                 Film.builder()
                         .title("Contact")
@@ -1308,15 +1185,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Carl Sagan, Ann Druyan
                         //Actors: Jodie Foster, Matthew McConaughey
                         .description("Dr. Ellie Arroway, after years of searching, finds conclusive radio proof of extraterrestrial intelligence, sending plans for a mysterious machine.")
-                        .genres(Set.of(Genre.Drama, Genre.Mystery, Genre.Sci_Fi, Genre.Thriller))//, Genre.Mystery, Genre.Sci-Fi"
+                        .genres(Set.of(Genre.Drama, Genre.Mystery, Genre.Sci_Fi, Genre.Thriller))
                         .length(150)
                         .releaseDate(LocalDate.of(1997,7,11))
                         .rating(7.5f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(20)))
                         .budget(BigDecimal.valueOf(90000000))
                         .revenue(BigDecimal.valueOf(171100000))
+                        .individuals(Set.of(individuals.get(75), individuals.get(7), individuals.get(76), individuals.get(77)))
                         .build(),
                 Film.builder()
                         .title("GoodFellas")
@@ -1324,15 +1201,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Martin Scorsese
                         //Actors: Robert De Niro, Joew Pesci, Ray Liotta
                         .description("The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.")
-                        .genres(Set.of(Genre.Biography, Genre.Crime, Genre.Drama)) //, Genre.Crime, Genre.Drama"
+                        .genres(Set.of(Genre.Biography, Genre.Crime, Genre.Drama))
                         .length(146)
                         .releaseDate(LocalDate.of(1990,9,9))
                         .rating(8.7f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(24), awards.get(26)))
                         .budget(BigDecimal.valueOf(25000000))
                         .revenue(BigDecimal.valueOf(47100000))
+                        .individuals(Set.of(individuals.get(71), individuals.get(10), individuals.get(9), individuals.get(73)))
                         .build(),
                 Film.builder()
                         .title("Raging Bull")
@@ -1340,15 +1217,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Jake LaMotta
                         //Actors: Robert De Niro, Joe Pesci
                         .description("The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.")
-                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.Sport)) //, Genre.Drama, Genre.Sport"
+                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.Sport))
                         .length(129)
                         .releaseDate(LocalDate.of(1990,12,19))
                         .rating(8.2f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(25), awards.get(28), awards.get(30)))
                         .budget(BigDecimal.valueOf(18000000))
                         .revenue(BigDecimal.valueOf(23400000))
+                        .individuals(Set.of(individuals.get(71), individuals.get(10), individuals.get(9), individuals.get(72)))
                         .build(),
                 Film.builder()
                         .title("The Godfather : Part II")
@@ -1356,16 +1233,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Francis Ford Coppola
                         //Actors: Al Pacino, Robert De Niro
                         .description("The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.")
-                        .genres(Set.of(Genre.Crime, Genre.Drama)) //, Genre.Drama"
+                        .genres(Set.of(Genre.Crime, Genre.Drama))
                         .length(200)
                         .releaseDate(LocalDate.of(1974,12,12))
                         .rating(9.0f)
                         .countryOfOrigin("USA")
                         .language("English, Sicilian")
                         .filmUniverse(FilmUniverse.Godfather)
-                        //.awards(Set.of(awards.get(29) ))
                         .budget(BigDecimal.valueOf(13000000))
                         .revenue(BigDecimal.valueOf(93000000))
+                        .individuals(Set.of(individuals.get(69), individuals.get(70), individuals.get(10)))
                         .build(),
                 Film.builder()
                         .title("Django Unchained")
@@ -1373,16 +1250,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Quentin Tarantino
                         //Actors: Jamie Foxx, Christoph Waltz, Leonardo Dicaprio
                         .description("With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation-owner in Mississippi.")
-                        .genres(Set.of(Genre.Drama, Genre.Western)) //, Genre.Western"
+                        .genres(Set.of(Genre.Drama, Genre.Western))
                         .length(165)
                         .releaseDate(LocalDate.of(2012,12,11))
                         .rating(8.4f)
                         .countryOfOrigin("USA")
                         .language("English")
                         .filmUniverse(FilmUniverse.Quentin_Tarantino_Movies)
-                        //.awards(Set.of(awards.get(31) , awards.get(33), awards.get(35)) )
                         .budget(BigDecimal.valueOf(100000000))
                         .revenue(BigDecimal.valueOf(425400000))
+                        .individuals(Set.of(individuals.get(66), individuals.get(67), individuals.get(11), individuals.get(68)))
                         .build(),
                 Film.builder()
                         .title("Inglourious Basterds")
@@ -1390,16 +1267,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Quentin Tarantino
                         //Actors: Brad Pitt, Diane Kruger, Christoph Waltz
                         .description("In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.")
-                        .genres(Set.of(Genre.Adventure, Genre.Drama, Genre.War)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Adventure, Genre.Drama, Genre.War))
                         .length(153)
                         .releaseDate(LocalDate.of(2009,5,20))
                         .rating(8.4f)
                         .countryOfOrigin("USA")
                         .language("English, German, French")
                         .filmUniverse(FilmUniverse.Quentin_Tarantino_Movies)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(70000000))
                         .revenue(BigDecimal.valueOf(321500000))
+                        .individuals(Set.of(individuals.get(66), individuals.get(64), individuals.get(65), individuals.get(11)))
                         .build(),
                 Film.builder()
                         .title("Trois couleurs: Bleu")
@@ -1407,16 +1284,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Krzysztof Kieslowski
                         //Actors: Juliette Binoche, Zbigniew Zamachowski, Julie Delpy
                         .description("A woman struggles to find a way to live her life after the death of her husband and child.")
-                        .genres(Set.of(Genre.Drama, Genre.Music, Genre.Mystery, Genre.Romance)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Drama, Genre.Music, Genre.Mystery, Genre.Romance))
                         .length(94)
                         .releaseDate(LocalDate.of(1993,9,8))
                         .rating(7.9f)
                         .countryOfOrigin("France, Poland, Switzerland")
                         .language("French, Romanian, Polish")
                         .filmUniverse(FilmUniverse.Trois_Couleurs)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(472591))
                         .revenue(BigDecimal.valueOf(1341154))
+                        .individuals(Set.of(individuals.get(13), individuals.get(14), individuals.get(62), individuals.get(63)))
                         .build(),
                 Film.builder()
                         .title("Trois couleurs: Blanc")
@@ -1424,16 +1301,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Krzysztof Kieslowski
                         //Actors: Zbigniew Zamachowski, Julie Delpy
                         .description("After his wife divorces him, a Polish immigrant plots to get even with her.")
-                        .genres(Set.of(Genre.Comedy, Genre.Drama, Genre.Romance)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Comedy, Genre.Drama, Genre.Romance))
                         .length(92)
                         .releaseDate(LocalDate.of(1994,6,10))
                         .rating(7.6f)
                         .countryOfOrigin("Switzerland, France, Poland")
                         .language("Polish, French, English")
                         .filmUniverse(FilmUniverse.Trois_Couleurs)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(587336))
                         .revenue(BigDecimal.valueOf(1237219))
+                        .individuals(Set.of(individuals.get(13), individuals.get(62), individuals.get(63)))
                         .build(),
                 Film.builder()
                         .title("Trois couleurs: Rouge")
@@ -1441,16 +1318,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Krzysztof Kieslowski
                         //Actors: Irène Jacob, Jean-Louis Trintignant
                         .description("A model discovers a retired judge is keen on invading people's privacy.")
-                        .genres(Set.of(Genre.Drama, Genre.Mystery, Genre.Romance)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Drama, Genre.Mystery, Genre.Romance))
                         .length(99)
                         .releaseDate(LocalDate.of(1994,11,23))
                         .rating(8.1f)
                         .countryOfOrigin("Switzerland, France, Poland")
                         .language("French")
                         .filmUniverse(FilmUniverse.Trois_Couleurs)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(617532))
                         .revenue(BigDecimal.valueOf(3581969))
+                        .individuals(Set.of(individuals.get(13), individuals.get(60), individuals.get(61)))
                         .build(),
                 Film.builder()
                         .title("Le fabuleux destin d'Amélie Poulain")
@@ -1458,15 +1335,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Jean-Piere Jeunet, Guillaume Laurant
                         //Actors: Audrey Tautou
                         .description("Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.")
-                        .genres(Set.of(Genre.Comedy, Genre.Romance)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Comedy, Genre.Romance))
                         .length(122)
                         .releaseDate(LocalDate.of(2002,2,8))
                         .rating(8.3f)
                         .countryOfOrigin("France, Germany")
                         .language("French, Russian, English")
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(10000000))
                         .revenue(BigDecimal.valueOf(174100765))
+                        .individuals(Set.of(individuals.get(17), individuals.get(16), individuals.get(15)))
                         .build(),
                 Film.builder()
                         .title("Druk")
@@ -1474,15 +1351,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Thomas Vinterberg
                         //Actors: Mads Mikkelsen, Thomas Bo Larsen
                         .description("Four high school teachers consume alcohol on a daily basis to see how it affects their social and professional lives.")
-                        .genres(Set.of(Genre.Comedy, Genre.Drama)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Comedy, Genre.Drama))
                         .length(117)
                         .releaseDate(LocalDate.of(2020,12,18))
                         .rating(7.8f)
                         .countryOfOrigin("Denmark, Sweden, Netherlands")
                         .language("Danish, Swedish")
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(1518000))
                         .revenue(BigDecimal.valueOf(12475919))
+                        .individuals(Set.of(individuals.get(18), individuals.get(19), individuals.get(59)))
                         .build(),
                 Film.builder()
                         .title("Khane-ye doust kodjast?")
@@ -1490,15 +1367,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Abbas Kiarostami
                         //Actors: Babek Ahmed Poor
                         .description("8 year old Ahmed has mistakenly taken his friend Mohammad's notebook. He wants to return it, or else his friend will be expelled from school. Determinedly, the conscientious boy sets out to find Mohammad's home in the neighbouring village.")
-                        .genres(Set.of(Genre.Drama, Genre.Family)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Drama, Genre.Family))
                         .length(83)
                         .releaseDate(LocalDate.of(1987,2,18))
                         .rating(8.1f)
                         .countryOfOrigin("Iran")
                         .language("Persian")
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(2280))
                         .revenue(BigDecimal.valueOf(4546))
+                        .individuals(Set.of(individuals.get(20), individuals.get(58)))
                         .build(),
                 Film.builder()
                         .title("Ran")
@@ -1506,15 +1383,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Akira Kurosawa
                         //Actors: Tatsuya Nakadai
                         .description("In Medieval Japan, an elderly warlord retires, handing over his empire to his three sons. However, he vastly underestimates how the new-found power will corrupt them and cause them to turn on each other...and him.")
-                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.War)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.War))
                         .length(162)
                         .releaseDate(LocalDate.of(1985,6,1))
                         .rating(8.2f)
                         .countryOfOrigin("Japan, France")
                         .language("Japanese")
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(11500000))
                         .revenue(BigDecimal.valueOf(4164283))
+                        .individuals(Set.of(individuals.get(22), individuals.get(21)))
                         .build(),
                 Film.builder()
                         .title("Shichinin no samurai")
@@ -1522,15 +1399,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Akira Kurosawa
                         //Actors: Toshiro Mifune
                         .description("A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.")
-                        .genres(Set.of(Genre.Action, Genre.Drama)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Drama))
                         .length(207)
                         .releaseDate(LocalDate.of(1956,11,19))
                         .rating(8.6f)
                         .countryOfOrigin("Japan")
                         .language("Japanese")
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(1250000))
                         .revenue(BigDecimal.valueOf(346258))
+                        .individuals(Set.of(individuals.get(22), individuals.get(23)))
                         .build(),
                 Film.builder()
                         .title("Das Cabinet des Dr. Caligari")
@@ -1538,15 +1415,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Carl Mayer
                         //Actors: Werner Krauss
                         .description("Hypnotist Dr. Caligari uses a somnambulist, Cesare, to commit murders.")
-                        .genres(Set.of(Genre.Horror, Genre.Mystery, Genre.Thriller)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Horror, Genre.Mystery, Genre.Thriller))
                         .length(67)
                         .releaseDate(LocalDate.of(1920,2,27))
                         .rating(8.1f)
                         .countryOfOrigin("Germany")
                         .language("German")
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(18000))
                         .revenue(BigDecimal.valueOf(8811))
+                        .individuals(Set.of(individuals.get(25), individuals.get(57), individuals.get(24)))
                         .build(),
                 Film.builder()
                         .title("Das Boot")
@@ -1554,15 +1431,15 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Wolfgang Petersen
                         //Actors: Jürgen Prochnow
                         .description("The claustrophobic world of a WWII German U-boat; boredom, filth and sheer terror.")
-                        .genres(Set.of(Genre.Drama, Genre.War)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Drama, Genre.War))
                         .length(149)
                         .releaseDate(LocalDate.of(1982,2,10))
                         .rating(8.3f)
                         .countryOfOrigin("Germany")
                         .language("German")
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(14400000))
                         .revenue(BigDecimal.valueOf(11487676))
+                        .individuals(Set.of(individuals.get(26), individuals.get(56)))
                         .build(),
                 Film.builder()
                         .title("Dune: Part One")
@@ -1570,16 +1447,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Denis Villeneuve
                         //Actors: Timothée Chalamet, Rebecca Fergusson
                         .description("Feature adaptation of Frank Herbert's science fiction novel about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.")
-                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Drama, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Drama, Genre.Sci_Fi))
                         .length(155)
                         .releaseDate(LocalDate.of(2021,10,22))
                         .rating(8.2f)
                         .countryOfOrigin("USA, Canada")
                         .language("English, Mandarin")
                         .filmUniverse(FilmUniverse.Dune)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(165000000))
                         .revenue(BigDecimal.valueOf(394585276))
+                        .individuals(Set.of(individuals.get(27), individuals.get(28), individuals.get(29)))
                         .build(),
                 Film.builder()
                         .title("Up")
@@ -1587,16 +1464,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Pete Docter
                         //Actors: Ed Asner
                         .description("78-year-old Carl Fredricksen travels to Paradise Falls in his house equipped with balloons, inadvertently taking a young stowaway.")
-                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Drama, Genre.Family)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Drama, Genre.Family))
                         .length(96)
                         .releaseDate(LocalDate.of(2009,5,29))
                         .rating(8.2f)
                         .countryOfOrigin("USA")
                         .language("English")
                         .filmUniverse(FilmUniverse.Pixar_Movies)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(175000000))
                         .revenue(BigDecimal.valueOf(735099102))
+                        .individuals(Set.of(individuals.get(31), individuals.get(32)))
                         .build(),
                 Film.builder()
                         .title("Coco")
@@ -1604,16 +1481,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Lee Unkrich
                         //Actors: Anthony Gonzalez
                         .description("Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.")
-                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Family, Genre.Fantasy, Genre.Music, Genre.Mystery)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Family, Genre.Fantasy, Genre.Music, Genre.Mystery))
                         .length(105)
                         .releaseDate(LocalDate.of(2017,11,22))
                         .rating(8.4f)
                         .countryOfOrigin("USA, Mexico")
                         .language("English, Spanish")
                         .filmUniverse(FilmUniverse.Pixar_Movies)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(175000000))
                         .revenue(BigDecimal.valueOf(807817888))
+                        .individuals(Set.of(individuals.get(33), individuals.get(34)))
                         .build(),
                 Film.builder()
                         .title("Star Wars: Episode IV - A New Hope")
@@ -1621,16 +1498,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: George Lucas
                         //Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Alec Guinness
                         .description("Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.")
-                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi))
                         .length(121)
                         .releaseDate(LocalDate.of(1977,5,25))
                         .rating(8.6f)
                         .countryOfOrigin("USA, UK")
                         .language("English")
                         .filmUniverse(FilmUniverse.E_T_And_Star_Wars)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(11000000))
                         .revenue(BigDecimal.valueOf(775398007))
+                        .individuals(Set.of(individuals.get(35), individuals.get(36), individuals.get(37), individuals.get(39), individuals.get(38)))
                         .build(),
                 Film.builder()
                         .title("Star Wars: Episode V - The Empire Strikes Back")
@@ -1638,16 +1515,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: George Lucas
                         //Actors: Mark Hamill, Harrison Ford, Carrie Fisher
                         .description("After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader and bounty hunter Boba Fett.")
-                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi))
                         .length(124)
                         .releaseDate(LocalDate.of(2021,10,22))
                         .rating(8.7f)
                         .countryOfOrigin("USA, UK")
                         .language("English")
                         .filmUniverse(FilmUniverse.E_T_And_Star_Wars)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(18000000))
                         .revenue(BigDecimal.valueOf(538375067))
+                        .individuals(Set.of(individuals.get(55), individuals.get(35), individuals.get(36), individuals.get(37), individuals.get(39)))
                         .build(),
                 Film.builder()
                         .title("Star Wars: Episode VI - Return of the Jedi")
@@ -1655,16 +1532,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Goerge Lucas
                         //Actors: Mark Hamill, Harrison Ford, Carrie Fisher
                         .description("After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor's trap.")
-                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi))
                         .length(131)
                         .releaseDate(LocalDate.of(1983,5,25))
                         .rating(8.3f)
                         .countryOfOrigin("USA, UK")
                         .language("English")
                         .filmUniverse(FilmUniverse.E_T_And_Star_Wars)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(32500000))
                         .revenue(BigDecimal.valueOf(475106177))
+                        .individuals(Set.of(individuals.get(54), individuals.get(35), individuals.get(36), individuals.get(37), individuals.get(39)))
                         .build(),
                 Film.builder()
                         .title("Blade Runner")
@@ -1672,16 +1549,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Hampton Fancher
                         //Actors: Harrison Ford, Rutger Hauer
                         .description("A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.")
-                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.Sci_Fi))
                         .length(117)
                         .releaseDate(LocalDate.of(1982,6,25))
                         .rating(8.1f)
                         .countryOfOrigin("USA")
                         .language("English, German, Cantonese, Japanese, Hungarian, Arabic, Korean")
                         .filmUniverse(FilmUniverse.Blade_Runner)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(28000000))
                         .revenue(BigDecimal.valueOf(41676878))
+                        .individuals(Set.of(individuals.get(41), individuals.get(42), individuals.get(37), individuals.get(40)))
                         .build(),
                 Film.builder()
                         .title("Blade Runner 2049")
@@ -1689,16 +1566,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Hampton Fancher
                         //Actors: Harrison Ford, Ryan Gosling
                         .description("Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.")
-                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.Mystery, Genre.Sci_Fi)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.Mystery, Genre.Sci_Fi))
                         .length(164)
                         .releaseDate(LocalDate.of(2017,10,6))
                         .rating(8.0f)
                         .countryOfOrigin("USA, UK, Canada, Hungary, Spain, Mexico")
                         .language("English, Finnish, Japanese, Hungarian, Russian, Somali, Spanish")
                         .filmUniverse(FilmUniverse.Blade_Runner)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(150000000))
                         .revenue(BigDecimal.valueOf(259334548))
+                        .individuals(Set.of(individuals.get(27), individuals.get(42), individuals.get(37), individuals.get(43)))
                         .build(),
                 Film.builder()
                         .title("Stand by Me")
@@ -1706,16 +1583,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Stephen King
                         //Actors: River Phoenix, Corey Feldman
                         .description("After the death of one of his friends, a writer recounts a childhood journey with his friends to find the body of a missing boy.")
-                        .genres(Set.of(Genre.Adventure, Genre.Drama)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Adventure, Genre.Drama))
                         .length(89)
                         .releaseDate(LocalDate.of(1986,8,22))
                         .rating(8.1f)
                         .countryOfOrigin("USA")
                         .language("English")
                         .filmUniverse(FilmUniverse.Stephen_King_Movies)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(8000000))
                         .revenue(BigDecimal.valueOf(52287414))
+                        .individuals(Set.of(individuals.get(44), individuals.get(45), individuals.get(46), individuals.get(47)))
                         .build(),
                 Film.builder()
                         .title("The Shining")
@@ -1723,16 +1600,16 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Stephen King, Stanley Kubrick
                         //Actors: Jack Nicholson, Shelley Duvall
                         .description("A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.")
-                        .genres(Set.of(Genre.Horror, Genre.Drama)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.Horror, Genre.Drama))
                         .length(146)
                         .releaseDate(LocalDate.of(1980,6,13))
                         .rating(8.4f)
                         .countryOfOrigin("UK, USA")
                         .language("English")
                         .filmUniverse(FilmUniverse.Stephen_King_Movies)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(19000000))
                         .revenue(BigDecimal.valueOf(46998772))
+                        .individuals(Set.of(individuals.get(48), individuals.get(45), individuals.get(49), individuals.get(50)))
                         .build(),
                 Film.builder()
                         .title("The Mist")
@@ -1747,9 +1624,9 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .countryOfOrigin("USA")
                         .language("English")
                         .filmUniverse(FilmUniverse.Stephen_King_Movies)
-                        //.awards(Set.of(awards.get(32), awards.get(34), awards.get(36)) )
                         .budget(BigDecimal.valueOf(18000000))
                         .revenue(BigDecimal.valueOf(57470220))
+                        .individuals(Set.of(individuals.get(51), individuals.get(45), individuals.get(52), individuals.get(53)))
                         .build()
 
 
@@ -1768,11 +1645,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(9.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(18), awards.get(41), awards.get(42), awards.get(43), awards.get(44), awards.get(41)))
                         .budget(BigDecimal.valueOf(6000000))
                         .revenue(BigDecimal.valueOf(135429666))
                         .seasons(1)
                         .episodes(13)
+                        .individuals(Set.of(individuals.get(121), individuals.get(7), individuals.get(75)))
                         .build(),
                 TvShow.builder()
                         .title("Black Sails")
@@ -1786,11 +1663,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.2f)
                         .countryOfOrigin("USA, South Africa")
                         .language("English")
-                        //.awards(Set.of(awards.get(39), awards.get(40)))
                         .budget(BigDecimal.valueOf(15460000))
                         .revenue(BigDecimal.valueOf(249752131))
                         .seasons(4)
                         .episodes(38)
+                        .individuals(Set.of(individuals.get(118), individuals.get(8), individuals.get(120), individuals.get(119)))
                         .build(),
                 TvShow.builder()
                         .title("Rick and Morty")
@@ -1804,11 +1681,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(9.2f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(20), awards.get(21)))
                         .budget(BigDecimal.valueOf(24000000))
                         .revenue(BigDecimal.valueOf(666732999))
                         .seasons(5)
                         .episodes(52)
+                        .individuals(Set.of(individuals.get(4), individuals.get(116), individuals.get(117)))
                         .build(),
                 TvShow.builder()
                         .title("The Pacific")
@@ -1822,11 +1699,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(8.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(7)))
                         .budget(BigDecimal.valueOf(200000000))
                         .revenue(BigDecimal.valueOf(350000000))
                         .seasons(1)
                         .episodes(10)
+                        .individuals(Set.of(individuals.get(113), individuals.get(114), individuals.get(115)))
                         .build(),
                 TvShow.builder()
                         .title("Taken")
@@ -1840,11 +1717,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.8f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(8)))
                         .budget(BigDecimal.valueOf(40000000))
                         .revenue(BigDecimal.valueOf(60000000))
                         .seasons(1)
                         .episodes(10)
+                        .individuals(Set.of(individuals.get(111), individuals.get(112)))
                         .build(),
                 TvShow.builder()
                         .title("Band of Brothers")
@@ -1858,11 +1735,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(9.4f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(9)))
                         .budget(BigDecimal.valueOf(125000000))
                         .revenue(BigDecimal.valueOf(183000000))
                         .seasons(1)
                         .episodes(10)
+                        .individuals(Set.of(individuals.get(92), individuals.get(108), individuals.get(109), individuals.get(110)))
                         .build(),
                 TvShow.builder()
                         .title("Pinky and the Brain")
@@ -1876,11 +1753,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.8f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(10)))
                         .budget(BigDecimal.valueOf(5200000))
                         .revenue(BigDecimal.valueOf(8700000))
                         .seasons(4)
                         .episodes(66)
+                        .individuals(Set.of(individuals.get(105), individuals.get(106), individuals.get(107)))
                         .build(),
                 TvShow.builder()
                         .title("Home Improvement")
@@ -1894,11 +1771,11 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.2f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(17)))
                         .budget(BigDecimal.valueOf(3400000))
                         .revenue(BigDecimal.valueOf(6800000))
                         .seasons(8)
                         .episodes(204)
+                        .individuals(Set.of(individuals.get(104), individuals.get(103), individuals.get(2)))
                         .build(),
                 TvShow.builder()
                         .title("King of the Hill")
@@ -1912,19 +1789,14 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .rating(7.3f)
                         .countryOfOrigin("USA")
                         .language("English")
-                        //.awards(Set.of(awards.get(23)))
                         .budget(BigDecimal.valueOf(2800000))
                         .revenue(BigDecimal.valueOf(47800000))
                         .seasons(13)
                         .episodes(259)
+                        .individuals(Set.of(individuals.get(101), individuals.get(102)))
                         .build()
 
         );
-        tvShowService.createAll(tvshows);
-        logger.info("Created 9 Tv Shows {}", tvshows);
-
-        filmService.createAll(films);
-        logger.info("Created 37 films {}", films);
 
         //Awards Factory
 
@@ -1941,7 +1813,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .yearOfAward("1996")
                         .category("Oscar")
                         .content(films.get(2))
-                        //.individual(individuals.get())
                         .build(),
                 Award.builder()
                         .title("Outstanding Animated Program - Rick & Morty")
@@ -2074,14 +1945,14 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .yearOfAward("2020")
                         .category("Emmy")
                         .content(tvshows.get(2))
-                        .individual(individuals.get(5))
+                        .individual(individuals.get(4))
                         .build(),
                 Award.builder()
                         .title("Outstanding Animated Program - Rick and Morty")
                         .yearOfAward("2018")
                         .category("Emmy")
                         .content(tvshows.get(2))
-                        .individual(individuals.get(5))
+                        .individual(individuals.get(4))
                         .build(),
                 Award.builder()
                         .title("Outstanding Animated Program (For Programming One Hour or Less) - King of the Hill")
@@ -2094,43 +1965,42 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .title("Best Actor in a Supporting Role - Goodfellas")
                         .yearOfAward("1991")
                         .category("Oscar")
-                        .content(films.get(0))
-                        .individual(individuals.get(10))
+                        .content(films.get(11))
+                        .individual(individuals.get(9))
                         .build(),
                 Award.builder()
                         .title("Most Outstanding Newcomer to Leading Film Roles - Raging Bull")
                         .yearOfAward("1982")
                         .category("BAFTA")
-                        .content(films.get(0))
-                        .individual(individuals.get(10))
+                        .content(films.get(12))
+                        .individual(individuals.get(9))
                         .build(),
                 Award.builder()
                         .title("Best Supporting Actor - Goodfellas")
                         .yearOfAward("2011")
                         .category("20/20")
                         .content(films.get(11))
-                        .individual(individuals.get(10))
+                        .individual(individuals.get(9))
                         .build(),
                 Award.builder()
                         .title("Funniest Actor in a Motion Picture (Leading Role) - My Cousin Vinny")
                         .yearOfAward("1992")
                         .category("American Comedy")
-                        //.content(films.get(0))
-                        .individual(individuals.get(11))
+                        .individual(individuals.get(9))
                         .build(),
                 Award.builder()
                         .title("Best Actor in a Leading Role - Raging Bull")
                         .yearOfAward("1981")
                         .category("Oscar")
                         .content(films.get(12))
-                        .individual(individuals.get(11))
+                        .individual(individuals.get(10))
                         .build(),
                 Award.builder()
                         .title("Best Actor in a Supporting Role - The Godfather: Part II")
                         .yearOfAward("1975")
                         .category("Oscar")
                         .content(films.get(13))
-                        .individual(individuals.get(11))
+                        .individual(individuals.get(10))
                         .build(),
                 Award.builder()
                         .title("Best Actor in a Motion Picture - Drama - Raging Bull")
@@ -2144,63 +2014,60 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .yearOfAward("2013")
                         .category("Oscar")
                         .content(films.get(14))
-                        .individual(individuals.get(12))
+                        .individual(individuals.get(11))
                         .build(),
                 Award.builder()
                         .title("Best Performance by an Actor in a Supporting Role - Inglourious Basterds")
                         .yearOfAward("2010")
                         .category("Oscar")
                         .content(films.get(15))
-                        .individual(individuals.get(12))
+                        .individual(individuals.get(11))
                         .build(),
                 Award.builder()
                         .title("Best Supporting Actor - Django Unchained")
                         .yearOfAward("2013")
                         .category("BAFTA")
                         .content(films.get(14))
-                        .individual(individuals.get(12))
+                        .individual(individuals.get(11))
                         .build(),
                 Award.builder()
                         .title("Best Supporting Actor - Inglourious Basterds")
                         .yearOfAward("2010")
                         .category("BAFTA")
                         .content(films.get(15))
-                        .individual(individuals.get(12))
+                        .individual(individuals.get(11))
                         .build(),
                 Award.builder()
                         .title("Best Performance by an Actor in a Supporting Role in a Motion Picture - Django Unchained")
                         .yearOfAward("2012")
                         .category("Golden Globes")
                         .content(films.get(14))
-                        .individual(individuals.get(12))
+                        .individual(individuals.get(11))
                         .build(),
                 Award.builder()
                         .title("Best Performance by an Actor in a Supporting Role in a Motion Picture - Inglourious Basterds")
                         .yearOfAward("2009")
                         .category("Golden GLobes")
                         .content(films.get(15))
-                        .individual(individuals.get(12))
+                        .individual(individuals.get(11))
                         .build(),
                 Award.builder()
                         .title("Best Music, Original Score - John Williams - E.T.")
                         .yearOfAward("1983")
                         .category("Oscar")
                         .content(films.get(1))
-                        //.individual(individuals.get(5))
                         .build(),
                 Award.builder()
                         .title("Best Score - John Williams")
                         .yearOfAward("1983")
                         .category("BAFTA")
                         .content(films.get(1))
-                        //.individual(individuals.get(5))
                         .build(),
                 Award.builder()
                         .title("Best Original Score - Motion Picture John Williams")
                         .yearOfAward("1983")
                         .category("Golden Globes")
                         .content(films.get(1))
-                        //.individual(individuals.get(5))
                         .build(),
                 Award.builder()
                         .title("Outstanding Sound Editing for a Series - Black Sails")
@@ -2221,63 +2088,58 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .yearOfAward("2014")
                         .category("Emmy")
                         .content(tvshows.get(0))
-                        //.individual(individuals.get(5))
                         .build(),
                 Award.builder()
                         .title("Outstanding Sound Editing for Nonfiction Programming - Cosmos")
                         .yearOfAward("2014")
                         .category("Emmy")
                         .content(tvshows.get(0))
-                        //.individual(individuals.get(5))
                         .build(),
                 Award.builder()
                         .title("Outstanding Music Composition for a Series - Cosmos")
                         .yearOfAward("2014")
                         .category("Emmy")
                         .content(tvshows.get(0))
-                        //.individual(individuals.get(5))
                         .build(),
                 Award.builder()
                         .title("Best Animated Special Production - Cosmos")
                         .yearOfAward("2015")
                         .category("Annie")
                         .content(tvshows.get(0))
-                        //.individual(individuals.get(5))
                         .build(),
                 Award.builder()
                         .title("Best Foreign Film - Trois couleurs: Bleu")
                         .yearOfAward("2014")
                         .category("20/20 Awards")
                         .content(films.get(17))
-                        .individual(individuals.get(14))
+                        .individual(individuals.get(13))
                         .build(),
                 Award.builder()
                         .title("Best Screenplay - Original Le fabuleux destin d'Amélie Poulain")
                         .yearOfAward("2002")
                         .category("BAFTA")
                         .content(films.get(20))
-                        .individual(individuals.get(17))
+                        .individual(individuals.get(16))
                         .build(),
                 Award.builder()
                         .title("Best International Feature Film - Druk")
                         .yearOfAward("2021")
                         .category("Oscar")
                         .content(films.get(21))
-                        .individual(individuals.get(19))
+                        .individual(individuals.get(18))
                         .build(),
                 Award.builder()
                         .title("Best Film Not in the English Language - Druk")
                         .yearOfAward("2021")
                         .category("BAFTA")
                         .content(films.get(21))
-                        .individual(individuals.get(19))
+                        .individual(individuals.get(18))
                         .build(),
                 Award.builder()
                         .title("Best Costume Design - Ran")
                         .yearOfAward("1986")
                         .category("Oscar")
                         .content(films.get(23))
-                        //.individual(individuals.get(5))
                         .build(),
                 Award.builder()
                         .title("Best Foreign Language Film - Ran")
@@ -2291,176 +2153,107 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .yearOfAward("2010")
                         .category("Oscar")
                         .content(films.get(27))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Animated Feature Film of the Year - Up")
                         .yearOfAward("2010")
                         .category("Oscar")
                         .content(films.get(27))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Achievement in Music Written for Motion Pictures, Original Song - Coco")
                         .yearOfAward("2018")
                         .category("Oscar")
                         .content(films.get(28))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Animated Feature Film - Coco")
                         .yearOfAward("2018")
                         .category("Oscar")
                         .content(films.get(28))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Music, Original Score - Star Wars IV")
                         .yearOfAward("1978")
                         .category("Oscar")
                         .content(films.get(29))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Effects, Visual Effects - Star Wars IV")
                         .yearOfAward("1978")
                         .category("Oscar")
                         .content(films.get(29))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Film Editing - Star Wars IV")
                         .yearOfAward("1978")
                         .category("Oscar")
                         .content(films.get(29))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Sound - Star Wars V")
                         .yearOfAward("1981")
                         .category("Oscar")
                         .content(films.get(30))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Special Achievement Award For visual effects  - Star Wars VI")
                         .yearOfAward("1984")
                         .category("Oscar")
                         .content(films.get(31))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Cinematography - Jordan Cronenweth - Blade Runner")
                         .yearOfAward("1983")
                         .category("BAFTA")
                         .content(films.get(32))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Achievement in Cinematography - Blade Runner 2049")
                         .yearOfAward("2018")
                         .category("Oscar")
                         .content(films.get(33))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Achievement in Visual Effects - Blade Runner 2049")
                         .yearOfAward("2018")
                         .category("Oscar")
                         .content(films.get(33))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Cinematography - Blade Runner 2049")
                         .yearOfAward("2018")
                         .category("BAFTA")
                         .content(films.get(33))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Achievement in Special Visual Effects - Blade Runner 2049")
                         .yearOfAward("2018")
                         .category("BAFTA")
                         .content(films.get(33))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Science Fiction Film - Blade Runner 2049")
                         .yearOfAward("2018")
                         .category("Academy of Science Fiction")
                         .content(films.get(33))
-                        //.individual(individuals.get(23))
                         .build(),
                 Award.builder()
                         .title("Best Supporting Actor Scatman Crothers - The Shining")
                         .yearOfAward("1981")
                         .category("Academy of Science Fiction")
                         .content(films.get(35))
-                        //.individual(individuals.get(23))
                         .build()
         );
 
-        //67 awards
+        individualService.createAll(individuals);
+        logger.info("Created 122 Individuals (Actors, Directors, Writers, Producers");
+        filmService.createAll(films);
+        logger.info("Created 36 films");
+        tvShowService.createAll(tvshows);
+        logger.info("Created 9 TvShows/Series");
         awardService.createAll(awards);
-
-        //logger.info("Created 45 awards: {}", (awards.forEach(award -> award.getTitle().equals("Best Animated Special Production Cosmos"))));
-        //logger.info("Created 45 awards : {}", awards);
-
-        //awards.get(0).setIndividual(individuals.get(5));
-        //awards.get(0).setContent(films.get(0));
-        //awards.get(1).setIndividual(individuals.get(5));
-        //awards.get(2).setIndividual(individuals.get(5));
-//        awards.get(3).setIndividual(individuals.get(0));
-//        awards.get(4).setIndividual(individuals.get(0));
-//        awards.get(5).setIndividual(individuals.get(5));
-//        awards.get(6).setIndividual(individuals.get(5));
-//        awards.get(7).setIndividual(individuals.get(5));
-//        awards.get(8).setIndividual(individuals.get(5));
-//        awards.get(9).setIndividual(individuals.get(5));
-//        awards.get(10).setIndividual(individuals.get(5));
-//        awards.get(10).setContent(films.get(0));
-//        awards.get(11).setIndividual(individuals.get(5));
-//        awards.get(11).setContent(films.get(0));
-//        awards.get(12).setIndividual(individuals.get(5));
-//        awards.get(13).setIndividual(individuals.get(5));
-//        awards.get(14).setIndividual(individuals.get(1));
-//        awards.get(15).setIndividual(individuals.get(2));
-//        awards.get(16).setIndividual(individuals.get(2));
-//        awards.get(17).setIndividual(individuals.get(6));
-//        awards.get(18).setIndividual(individuals.get(7));
-//        awards.get(19).setIndividual(individuals.get(7));
-//        awards.get(20).setIndividual(individuals.get(4));
-//        awards.get(21).setIndividual(individuals.get(4));
-//        awards.get(22).setIndividual(individuals.get(5));
-//        awards.get(23).setIndividual(individuals.get(10));
-//        awards.get(24).setIndividual(individuals.get(10));
-//        awards.get(25).setIndividual(individuals.get(10));
-//        awards.get(26).setIndividual(individuals.get(10));
-//        awards.get(27).setIndividual(individuals.get(11));
-//        awards.get(28).setIndividual(individuals.get(11));
-//        awards.get(29).setIndividual(individuals.get(11));
-//        awards.get(30).setIndividual(individuals.get(12));
-//        awards.get(31).setIndividual(individuals.get(12));
-//        awards.get(32).setIndividual(individuals.get(12));
-//        awards.get(33).setIndividual(individuals.get(12));
-//        awards.get(34).setIndividual(individuals.get(12));
-//        awards.get(35).setIndividual(individuals.get(12));
-        //awards.get(37).setIndividual(individuals.get(5));
-        //awards.get(38).setIndividual(individuals.get(5));
-        //awards.get(39).setIndividual(individuals.get(5));
-        //awards.get(40).setIndividual(individuals.get(5));
-        //awards.get(41).setIndividual(individuals.get(5));
-        //awards.get(42).setIndividual(individuals.get(5));
-        //awards.get(43).setIndividual(individuals.get(5));
-        //awards.get(44).setIndividual(individuals.get(5));
-        //awards.get(45).setIndividual(individuals.get(5));
-
-
-        //logger.info("Search Individual by first name: {}", individualService.findIndividualByFirstName("joe").get(0));
-        //logger.info("Search Individual by fullname: {}", individualService.findIndividualByFullName("joe", "peci").isPresent());
-
-        //logger.info("Search film by title: {}", filmService.findMovieByTitle(""));
-        //individualService.exportToCsv();
+        logger.info("Created 67 awards");
 
     }
 }
