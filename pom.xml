@@ -45,6 +45,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!--
+			NON SPRING RELATED
+		-->
+
 	</dependencies>
 
 	<build>

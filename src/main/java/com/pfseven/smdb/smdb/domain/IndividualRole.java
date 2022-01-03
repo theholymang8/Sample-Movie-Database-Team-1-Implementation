@@ -1,6 +1,6 @@
 package com.pfseven.smdb.smdb.domain;
 
-public enum ContributingRole {
+public enum IndividualRole {
 
     Actor, Producer,
     Director,  Writer

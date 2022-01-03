@@ -1,6 +1,6 @@
 package com.pfseven.smdb.smdb.services;
 
-import com.pfseven.smdb.smdb.domain.ContributingRole;
+import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.domain.Individual;
 import com.pfseven.smdb.smdb.repositories.IndividualRepository;
 import lombok.RequiredArgsConstructor;
@@ -32,8 +32,8 @@ public class IndividualServiceImpl extends BaseServiceImpl<Individual> implement
     }
 
     @Override
-    public List<Individual> findAllByContributingRole(ContributingRole contributingRole) {
-        return individualRepository.findAllByContributingRole(contributingRole);
+    public List<Individual> findAllByIndividualRole(IndividualRole individualRole) {
+        return individualRepository.findAllByIndividualRole(individualRole);
     }
 
     @Override

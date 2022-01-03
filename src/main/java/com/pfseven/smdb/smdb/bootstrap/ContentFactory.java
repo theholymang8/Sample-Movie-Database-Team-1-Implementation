@@ -2,10 +2,7 @@ package com.pfseven.smdb.smdb.bootstrap;
 
 import com.pfseven.smdb.smdb.base.AbstractLogComponent;
 import com.pfseven.smdb.smdb.domain.*;
-import com.pfseven.smdb.smdb.services.AwardService;
-import com.pfseven.smdb.smdb.services.FilmService;
-import com.pfseven.smdb.smdb.services.IndividualService;
-import com.pfseven.smdb.smdb.services.TvShowService;
+import com.pfseven.smdb.smdb.services.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
@@ -26,6 +23,8 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
     private final TvShowService tvShowService;
     private final IndividualService individualService;
 
+    private final ContentIndividualService contentIndividualService;
+
     @Override
     public void run(String... args) {
 
@@ -38,7 +37,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Liam")
                         .lastName("Neeson")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("drewbarrymore@outlook.com")
@@ -46,7 +45,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Drew")
                         .lastName("Barrymore")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("timallen@gmail.com")
@@ -54,7 +53,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Tim")
                         .lastName("Allen")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("jonburton@gmail.com")
@@ -62,7 +61,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jon")
                         .lastName("Burton")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("ronweasley@gmail.com")
@@ -70,7 +69,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Wesley")
                         .lastName("Archer")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("stevenspielrock@gmail.com")
@@ -78,7 +77,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Steven")
                         .lastName("Spielberg")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("melissamathison@gmail.com")
@@ -86,7 +85,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Melissa")
                         .lastName("Mathison")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("anndruchii@gmail.com")
@@ -94,7 +93,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ann")
                         .lastName("Druyan")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("robertlevine@gmail.com")
@@ -102,7 +101,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Robert")
                         .lastName("Levine")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("joepesci@gmail.com")
@@ -110,7 +109,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Joe")
                         .lastName("Pesci")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("robertdenniro@outlook.com")
@@ -118,7 +117,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Robert")
                         .lastName("De Niro Jr")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("christophwaltz@gmail.com")
@@ -126,7 +125,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Christoph")
                         .lastName("Waltz")
                         .nationality("German")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("kathleenkennedy@gmail.com")
@@ -134,7 +133,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Kathleen")
                         .lastName("Kennedy")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("krysztofkies@gmail.com")
@@ -142,7 +141,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Krzysztof")
                         .lastName("Kieslowski")
                         .nationality("Polish")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("juliettebinoche@gmail.com")
@@ -150,7 +149,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Juliette")
                         .lastName("Binoche")
                         .nationality("French")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("audreytautou@gmail.com")
@@ -158,7 +157,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Audrey")
                         .lastName("Tautou")
                         .nationality("French")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("guillaumelaurant@gmail.com")
@@ -166,7 +165,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Guillaume")
                         .lastName("Laurant")
                         .nationality("French")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("jeanpierrejeunet@gmail.com")
@@ -174,7 +173,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jean-Pierre")
                         .lastName("Jeunet")
                         .nationality("French")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("thomasvinterberg@gmail.com")
@@ -182,7 +181,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Thomas")
                         .lastName("Vinterberg")
                         .nationality("Danish")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("madsmikkelsen@gmail.com")
@@ -190,7 +189,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Mads")
                         .lastName("Mikkelsen")
                         .nationality("Danish")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("abbaskiarostami@gmail.com")
@@ -198,7 +197,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Abbas")
                         .lastName("Kiarostami")
                         .nationality("Iranian")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("tatsuyanakadai@gmail.com")
@@ -206,7 +205,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Tatsuya")
                         .lastName("Nakadai")
                         .nationality("Japanese")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("akirakurosawa@gmail.com")
@@ -214,7 +213,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Akira")
                         .lastName("Kurosawa")
                         .nationality("Japanese")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("toshiromifune@gmail.com")
@@ -222,7 +221,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Toshiro")
                         .lastName("Mifune")
                         .nationality("Japanese, Chinese")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("wernerkrauss@gmail.com")
@@ -230,7 +229,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Werner")
                         .lastName("Krauss")
                         .nationality("German")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("robertwiene@gmail.com")
@@ -238,7 +237,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Robert")
                         .lastName("Wiene")
                         .nationality("German")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("wolfgangpetersen@gmail.com")
@@ -246,7 +245,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Wolfgang")
                         .lastName("Petersen")
                         .nationality("German")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("denisvilleneuve@gmail.com")
@@ -254,7 +253,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Denis")
                         .lastName("Villeneuve")
                         .nationality("Canadian")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("timotheechalamet@gmail.com")
@@ -262,7 +261,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Timothée")
                         .lastName("Chalamet")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("rebeccaferguson@gmail.com")
@@ -270,7 +269,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Rebecca")
                         .lastName("Ferguson")
                         .nationality("Swedish")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("javierbardem@gmail.com")
@@ -278,7 +277,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Javier")
                         .lastName("Bardem")
                         .nationality("Spanish")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("petedocterm@gmail.com")
@@ -286,7 +285,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Pete")
                         .lastName("Docter")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("edasner@gmail.com")
@@ -294,7 +293,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ed")
                         .lastName("Asner")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("leeunkrich@gmail.com")
@@ -302,7 +301,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Lee")
                         .lastName("Unkrich")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("anthonygonzalez@gmail.com")
@@ -310,7 +309,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Anthony")
                         .lastName("Gonzalez")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("georgelucas@gmail.com")
@@ -318,7 +317,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("George")
                         .lastName("Lucas")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("markhamill@gmail.com")
@@ -326,7 +325,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Mark")
                         .lastName("Hamill")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("harrisonford@gmail.com")
@@ -334,7 +333,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Harrison")
                         .lastName("Ford")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("alecguinnesss@gmail.com")
@@ -342,7 +341,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Alec")
                         .lastName("Guinness")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("carriefisher@gmail.com")
@@ -350,7 +349,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Carrie")
                         .lastName("Fisher")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("rutgerhauer@gmail.com")
@@ -358,7 +357,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Rutger")
                         .lastName("Hauer")
                         .nationality("Dutch")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("ridleyscott@gmail.com")
@@ -366,7 +365,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ridley")
                         .lastName("Scott")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("hamptonfancher@gmail.com")
@@ -374,7 +373,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Hampton")
                         .lastName("Fancher")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("ryangosling@gmail.com")
@@ -382,7 +381,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ryan")
                         .lastName("Gosling")
                         .nationality("Canadian")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("robreiner@gmail.com")
@@ -390,7 +389,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Rob")
                         .lastName("Reiner")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("stephenking@gmail.com")
@@ -398,7 +397,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Stephen")
                         .lastName("King")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("riverpheonix@gmail.com")
@@ -406,7 +405,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("River")
                         .lastName("Phoenix")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("coreyfeldman@gmail.com")
@@ -414,7 +413,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Corey")
                         .lastName("Feldman")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("stanleykubrick@gmail.com")
@@ -422,7 +421,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Stanley")
                         .lastName("Kubrick")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Producer, ContributingRole.Director, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Producer, IndividualRole.Director, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("jacknicholson@gmail.com")
@@ -430,7 +429,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jack")
                         .lastName("Nicholson")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("shelleyduvall@gmail.com")
@@ -438,7 +437,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Shelley")
                         .lastName("Duvall")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("frankdarabont@gmail.com")
@@ -446,7 +445,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Frank")
                         .lastName("Darabont")
                         .nationality("French")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("thomasjane@gmail.com")
@@ -454,7 +453,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Thomas")
                         .lastName("Jane")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("marciagayharden@gmail.com")
@@ -462,7 +461,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Marcia Gay")
                         .lastName("Harden")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("richarcmarquand@gmail.com")
@@ -470,7 +469,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Richard")
                         .lastName("Marquand")
                         .nationality("Welsh")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("irvinkershner@gmail.com")
@@ -478,7 +477,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Irvin")
                         .lastName("Kershner")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("jurgenprochnow@gmail.com")
@@ -486,7 +485,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jürgen")
                         .lastName("Prochnow")
                         .nationality("German")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("carlmayer@gmail.com")
@@ -494,7 +493,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Carl")
                         .lastName("Mayer")
                         .nationality("Austrian")
-                        .contributingRole(Set.of(ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("babekahmedpoor@gmail.com")
@@ -502,7 +501,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Babek Ahmed")
                         .lastName("Poor")
                         .nationality("Iranian")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("thomasbolarsen@gmail.com")
@@ -510,7 +509,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Thomas Bo")
                         .lastName("Larsen")
                         .nationality("Danish")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("irenejacob@gmail.com")
@@ -518,7 +517,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Irène")
                         .lastName("Jacob")
                         .nationality("French")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("jeanlouistrintignant@gmail.com")
@@ -526,7 +525,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jean-Louis")
                         .lastName("Trintignant")
                         .nationality("French")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("zbigniewzamachowski@gmail.com")
@@ -534,7 +533,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Zbigniew")
                         .lastName("Zamachowski")
                         .nationality("Polish")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("juliedelpy@gmail.com")
@@ -542,7 +541,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Julie")
                         .lastName("Delpy")
                         .nationality("French")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("bradpitt@gmail.com")
@@ -550,7 +549,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Brad")
                         .lastName("Pitt")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("dianekruger@gmail.com")
@@ -558,7 +557,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Diane")
                         .lastName("Kruger")
                         .nationality("German")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("quentintarantino@gmail.com")
@@ -566,7 +565,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Quentin")
                         .lastName("Tarantino")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("jamiefoxx@gmail.com")
@@ -574,7 +573,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jamie")
                         .lastName("Foxx")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("leonardodicaprio@gmail.com")
@@ -582,7 +581,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Leonardo")
                         .lastName("DiCaprio")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("francisfordcopolla@gmail.com")
@@ -590,7 +589,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Francis")
                         .lastName("Coppola")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("alpacino@gmail.com")
@@ -598,7 +597,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Al")
                         .lastName("Pacino")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("martinscorsese@gmail.com")
@@ -606,7 +605,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Martin")
                         .lastName("Scorsese")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("jakelamotta@gmail.com")
@@ -614,7 +613,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jake")
                         .lastName("LaMotta")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("rayliotta@gmail.com")
@@ -622,7 +621,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ray")
                         .lastName("Liotta")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("robertzemeckis@gmail.com")
@@ -630,7 +629,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Robert")
                         .lastName("Zemeckis")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("carlsagan@gmail.com")
@@ -638,7 +637,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Carl")
                         .lastName("Sagan")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("jodiefoster@gmail.com")
@@ -646,7 +645,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jodie")
                         .lastName("Foster")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("matthewmacconaughey@gmail.com")
@@ -654,7 +653,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Matthew")
                         .lastName("McConaughey")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("deanparisto@gmail.com")
@@ -662,7 +661,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Dean")
                         .lastName("Parisot")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("davidhoward@gmail.com")
@@ -670,7 +669,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("David")
                         .lastName("Howard")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("sigourneyweaver@gmail.com")
@@ -678,7 +677,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Sigourney")
                         .lastName("Weaver")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("alanrickman@gmail.com")
@@ -686,7 +685,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Alan")
                         .lastName("Rickman")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("andytennant@gmail.com")
@@ -694,7 +693,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Andy")
                         .lastName("Tennant")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("susannahgrant@gmail.com")
@@ -702,7 +701,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Susannah")
                         .lastName("Grant")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("anjelicahuston@gmail.com")
@@ -710,7 +709,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Anjelica")
                         .lastName("Huston")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("tonykushner@gmail.com")
@@ -718,7 +717,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Tony")
                         .lastName("Kushner")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("ericbana@gmail.com")
@@ -726,7 +725,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Eric")
                         .lastName("Bana")
                         .nationality("Australian")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("danielcraig@gmail.com")
@@ -734,7 +733,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Daniel")
                         .lastName("Craig")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("danieldaylewis@gmail.com")
@@ -742,7 +741,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Daniel")
                         .lastName("Day-Lewis")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("sallyfield@gmail.com")
@@ -750,7 +749,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Sally")
                         .lastName("Field")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("patrickstewart@gmail.com")
@@ -758,7 +757,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Patrick")
                         .lastName("Stewart")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("robertrodat@gmail.com")
@@ -766,7 +765,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Robert")
                         .lastName("Rodat")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("tomhanks@gmail.com")
@@ -774,7 +773,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Tom")
                         .lastName("Hanks")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("mattdamon@gmail.com")
@@ -782,7 +781,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Matt")
                         .lastName("Damon")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("sylvierokab@gmail.com")
@@ -790,7 +789,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Sylvie")
                         .lastName("Rokab")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("billcondon@gmail.com")
@@ -798,7 +797,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Bill")
                         .lastName("Condon")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("johnlasseter@gmail.com")
@@ -806,7 +805,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("John")
                         .lastName("Lasseter")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("henrythomas@gmail.com")
@@ -814,7 +813,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Henry")
                         .lastName("Thomas")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("stevenzaillian@gmail.com")
@@ -822,7 +821,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Steven")
                         .lastName("Zaillian")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("ralphfiennes@gmail.com")
@@ -830,7 +829,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ralph")
                         .lastName("Fiennes")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("benkingsley@gmail.com")
@@ -838,7 +837,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ben")
                         .lastName("Kingsley")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("gregdaniels@gmail.com")
@@ -846,7 +845,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Greg")
                         .lastName("Daniels")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("mikejudge@gmail.com")
@@ -854,7 +853,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Mike")
                         .lastName("Judge")
                         .nationality("Equadorian")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("carmenfinestra@gmail.com")
@@ -862,7 +861,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Carmen")
                         .lastName("Finestra")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("andycardiff@gmail.com")
@@ -870,7 +869,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Andy")
                         .lastName("Cardiff")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("kirktingblad@gmail.com")
@@ -878,7 +877,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Kirk")
                         .lastName("Tingblad")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("mauricelamarche@gmail.com")
@@ -886,7 +885,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Maurice")
                         .lastName("LaMarche")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("robpaulsen@gmail.com")
@@ -894,7 +893,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Rob")
                         .lastName("Paulsen")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("stephenambrose@gmail.com")
@@ -902,7 +901,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Stephen")
                         .lastName("Ambrose")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("scottgrimes@gmail.com")
@@ -910,7 +909,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Scott")
                         .lastName("Grimes")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("damianlewis@gmail.com")
@@ -918,7 +917,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Damian")
                         .lastName("Lewis")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("lesliebohem@gmail.com")
@@ -926,7 +925,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Leslie")
                         .lastName("Bohem")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Director, ContributingRole.Writer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Director, IndividualRole.Writer))
                         .build(),
                 Individual.builder()
                         .email("dakotafanning@gmail.com")
@@ -934,7 +933,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Dakota")
                         .lastName("Fanning")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Producer, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("jeremypodeswa@gmail.com")
@@ -942,7 +941,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jeremy")
                         .lastName("Podeswa")
                         .nationality("Canadian")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("brucecmckenna@gmail.com")
@@ -950,7 +949,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Bruce")
                         .lastName("McKenna")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("jamesbadgedale@gmail.com")
@@ -958,7 +957,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("James")
                         .lastName("Dale")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
                         .build(),
                 Individual.builder()
                         .email("danharmon@gmail.com")
@@ -966,7 +965,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Dan")
                         .lastName("Harmon")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Writer, ContributingRole.Producer, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("justinroiland@gmail.com")
@@ -974,7 +973,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Justin")
                         .lastName("Roiland")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("steveboyum@gmail.com")
@@ -982,7 +981,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Steve")
                         .lastName("Boyum")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
                         .build(),
                 Individual.builder()
                         .email("tobystephens@gmail.com")
@@ -990,7 +989,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Toby")
                         .lastName("Stephens")
                         .nationality("British")
-                        .contributingRole(Set.of(ContributingRole.Actor, ContributingRole.Director))
+                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director))
                         .build(),
                 Individual.builder()
                         .email("jessicaparkerkennedy@gmail.com")
@@ -998,7 +997,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jessica")
                         .lastName("kennedy")
                         .nationality("Canadian")
-                        .contributingRole(Set.of(ContributingRole.Actor))
+                        .individualRole(Set.of(IndividualRole.Actor))
 
                         .build(),
                 Individual.builder()
@@ -1007,7 +1006,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Brannon")
                         .lastName("Braga")
                         .nationality("American")
-                        .contributingRole(Set.of(ContributingRole.Director, ContributingRole.Writer, ContributingRole.Producer))
+                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
                         .build()
         );
 
@@ -1030,7 +1029,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English, Hebrew, German, Polish, Latin")
                         .budget(BigDecimal.valueOf(22000000))
                         .revenue(BigDecimal.valueOf(322161245))
-                        .individuals(Set.of(individuals.get(5), individuals.get(98), individuals.get(0), individuals.get(99), individuals.get(100)))
+                        //.contentIndividuals(Set.of(individuals.get(5), individuals.get(98), individuals.get(0), individuals.get(99), individuals.get(100)))
                         .build(),
                 Film.builder()
                         .title("E.T. the Extra-Terrestrial")
@@ -1047,7 +1046,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.E_T_And_Star_Wars)
                         .budget(BigDecimal.valueOf(10500000))
                         .revenue(BigDecimal.valueOf(792910554))
-                        .individuals(Set.of(individuals.get(5), individuals.get(6), individuals.get(97), individuals.get(99), individuals.get(1)))
+                        //.contentIndividuals(Set.of(individuals.get(5), individuals.get(6), individuals.get(97), individuals.get(99), individuals.get(1)))
                         .build(),
                 Film.builder()
                         .title("Toy Story")
@@ -1064,7 +1063,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Pixar_Movies)
                         .budget(BigDecimal.valueOf(30000000))
                         .revenue(BigDecimal.valueOf(394436586))
-                        .individuals(Set.of(individuals.get(96), individuals.get(92), individuals.get(2)))
+                        //.contentIndividuals(Set.of(individuals.get(96), individuals.get(92), individuals.get(2)))
                         .build(),
                 Film.builder()
                         .title("Kinsey")
@@ -1080,7 +1079,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English")
                         .budget(BigDecimal.valueOf(11000000))
                         .revenue(BigDecimal.valueOf(16900000))
-                        .individuals(Set.of(individuals.get(95), individuals.get(0)))
+                        //.contentIndividuals(Set.of(individuals.get(95), individuals.get(0)))
                         .build(),
                 Film.builder()
                         .title("Love thy nature")
@@ -1096,7 +1095,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English")
                         .budget(BigDecimal.valueOf(60000))
                         .revenue(BigDecimal.valueOf(53134))
-                        .individuals(Set.of(individuals.get(94), individuals.get(0)))
+                        //.contentIndividuals(Set.of(individuals.get(94), individuals.get(0)))
                         .build(),
                 Film.builder()
                         .title("Saving Private Ryan")
@@ -1112,7 +1111,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English")
                         .budget(BigDecimal.valueOf(70000000))
                         .revenue(BigDecimal.valueOf(482300000))
-                        .individuals(Set.of(individuals.get(5), individuals.get(91), individuals.get(92), individuals.get(93)))
+                        //.contentIndividuals(Set.of(individuals.get(5), individuals.get(91), individuals.get(92), individuals.get(93)))
                         .build(),
                 Film.builder()
                         .title("Lincoln")
@@ -1128,7 +1127,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English")
                         .budget(BigDecimal.valueOf(65000000))
                         .revenue(BigDecimal.valueOf(275300000))
-                        .individuals(Set.of(individuals.get(5), individuals.get(85), individuals.get(88), individuals.get(89)))
+                        //.contentIndividuals(Set.of(individuals.get(5), individuals.get(85), individuals.get(88), individuals.get(89)))
                         .build(),
                 Film.builder()
                         .title("Munich")
@@ -1144,7 +1143,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English")
                         .budget(BigDecimal.valueOf(70000000))
                         .revenue(BigDecimal.valueOf(130400000))
-                        .individuals(Set.of(individuals.get(5), individuals.get(85), individuals.get(86), individuals.get(87)))
+                        //.contentIndividuals(Set.of(individuals.get(5), individuals.get(85), individuals.get(86), individuals.get(87)))
                         .build(),
                 Film.builder()
                         .title("EverAfter")
@@ -1160,7 +1159,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English")
                         .budget(BigDecimal.valueOf(26000000))
                         .revenue(BigDecimal.valueOf(98000000))
-                        .individuals(Set.of(individuals.get(82), individuals.get(83), individuals.get(1), individuals.get(84)))
+                        //.contentIndividuals(Set.of(individuals.get(82), individuals.get(83), individuals.get(1), individuals.get(84)))
                         .build(),
                 Film.builder()
                         .title("Galaxy Quest")
@@ -1176,7 +1175,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English")
                         .budget(BigDecimal.valueOf(45000000))
                         .revenue(BigDecimal.valueOf(90700000))
-                        .individuals(Set.of(individuals.get(78), individuals.get(79), individuals.get(80), individuals.get(81)))
+                        //.contentIndividuals(Set.of(individuals.get(78), individuals.get(79), individuals.get(80), individuals.get(81)))
                         .build(),
                 Film.builder()
                         .title("Contact")
@@ -1192,7 +1191,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English")
                         .budget(BigDecimal.valueOf(90000000))
                         .revenue(BigDecimal.valueOf(171100000))
-                        .individuals(Set.of(individuals.get(75), individuals.get(7), individuals.get(76), individuals.get(77)))
+                        //.contentIndividuals(Set.of(individuals.get(75), individuals.get(7), individuals.get(76), individuals.get(77)))
                         .build(),
                 Film.builder()
                         .title("GoodFellas")
@@ -1208,7 +1207,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English")
                         .budget(BigDecimal.valueOf(25000000))
                         .revenue(BigDecimal.valueOf(47100000))
-                        .individuals(Set.of(individuals.get(71), individuals.get(10), individuals.get(9), individuals.get(73)))
+                        //.contentIndividuals(Set.of(individuals.get(71), individuals.get(10), individuals.get(9), individuals.get(73)))
                         .build(),
                 Film.builder()
                         .title("Raging Bull")
@@ -1224,7 +1223,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("English")
                         .budget(BigDecimal.valueOf(18000000))
                         .revenue(BigDecimal.valueOf(23400000))
-                        .individuals(Set.of(individuals.get(71), individuals.get(10), individuals.get(9), individuals.get(72)))
+                        //.contentIndividuals(Set.of(individuals.get(71), individuals.get(10), individuals.get(9), individuals.get(72)))
                         .build(),
                 Film.builder()
                         .title("The Godfather : Part II")
@@ -1241,7 +1240,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Godfather)
                         .budget(BigDecimal.valueOf(13000000))
                         .revenue(BigDecimal.valueOf(93000000))
-                        .individuals(Set.of(individuals.get(69), individuals.get(70), individuals.get(10)))
+                        //.contentIndividuals(Set.of(individuals.get(69), individuals.get(70), individuals.get(10)))
                         .build(),
                 Film.builder()
                         .title("Django Unchained")
@@ -1258,7 +1257,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Quentin_Tarantino_Movies)
                         .budget(BigDecimal.valueOf(100000000))
                         .revenue(BigDecimal.valueOf(425400000))
-                        .individuals(Set.of(individuals.get(66), individuals.get(67), individuals.get(11), individuals.get(68)))
+                        //.contentIndividuals(Set.of(individuals.get(66), individuals.get(67), individuals.get(11), individuals.get(68)))
                         .build(),
                 Film.builder()
                         .title("Inglourious Basterds")
@@ -1275,7 +1274,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Quentin_Tarantino_Movies)
                         .budget(BigDecimal.valueOf(70000000))
                         .revenue(BigDecimal.valueOf(321500000))
-                        .individuals(Set.of(individuals.get(66), individuals.get(64), individuals.get(65), individuals.get(11)))
+                        //.contentIndividuals(Set.of(individuals.get(66), individuals.get(64), individuals.get(65), individuals.get(11)))
                         .build(),
                 Film.builder()
                         .title("Trois couleurs: Bleu")
@@ -1292,7 +1291,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Trois_Couleurs)
                         .budget(BigDecimal.valueOf(472591))
                         .revenue(BigDecimal.valueOf(1341154))
-                        .individuals(Set.of(individuals.get(13), individuals.get(14), individuals.get(62), individuals.get(63)))
+                        //.contentIndividuals(Set.of(individuals.get(13), individuals.get(14), individuals.get(62), individuals.get(63)))
                         .build(),
                 Film.builder()
                         .title("Trois couleurs: Blanc")
@@ -1309,7 +1308,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Trois_Couleurs)
                         .budget(BigDecimal.valueOf(587336))
                         .revenue(BigDecimal.valueOf(1237219))
-                        .individuals(Set.of(individuals.get(13), individuals.get(62), individuals.get(63)))
+                        //.contentIndividuals(Set.of(individuals.get(13), individuals.get(62), individuals.get(63)))
                         .build(),
                 Film.builder()
                         .title("Trois couleurs: Rouge")
@@ -1326,7 +1325,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Trois_Couleurs)
                         .budget(BigDecimal.valueOf(617532))
                         .revenue(BigDecimal.valueOf(3581969))
-                        .individuals(Set.of(individuals.get(13), individuals.get(60), individuals.get(61)))
+                        //.contentIndividuals(Set.of(individuals.get(13), individuals.get(60), individuals.get(61)))
                         .build(),
                 Film.builder()
                         .title("Le fabuleux destin d'Amélie Poulain")
@@ -1342,7 +1341,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("French, Russian, English")
                         .budget(BigDecimal.valueOf(10000000))
                         .revenue(BigDecimal.valueOf(174100765))
-                        .individuals(Set.of(individuals.get(17), individuals.get(16), individuals.get(15)))
+                        //.contentIndividuals(Set.of(individuals.get(17), individuals.get(16), individuals.get(15)))
                         .build(),
                 Film.builder()
                         .title("Druk")
@@ -1358,7 +1357,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("Danish, Swedish")
                         .budget(BigDecimal.valueOf(1518000))
                         .revenue(BigDecimal.valueOf(12475919))
-                        .individuals(Set.of(individuals.get(18), individuals.get(19), individuals.get(59)))
+                        //.contentIndividuals(Set.of(individuals.get(18), individuals.get(19), individuals.get(59)))
                         .build(),
                 Film.builder()
                         .title("Khane-ye doust kodjast?")
@@ -1374,7 +1373,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("Persian")
                         .budget(BigDecimal.valueOf(2280))
                         .revenue(BigDecimal.valueOf(4546))
-                        .individuals(Set.of(individuals.get(20), individuals.get(58)))
+                        //.contentIndividuals(Set.of(individuals.get(20), individuals.get(58)))
                         .build(),
                 Film.builder()
                         .title("Ran")
@@ -1390,7 +1389,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("Japanese")
                         .budget(BigDecimal.valueOf(11500000))
                         .revenue(BigDecimal.valueOf(4164283))
-                        .individuals(Set.of(individuals.get(22), individuals.get(21)))
+                        //.contentIndividuals(Set.of(individuals.get(22), individuals.get(21)))
                         .build(),
                 Film.builder()
                         .title("Shichinin no samurai")
@@ -1406,7 +1405,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("Japanese")
                         .budget(BigDecimal.valueOf(1250000))
                         .revenue(BigDecimal.valueOf(346258))
-                        .individuals(Set.of(individuals.get(22), individuals.get(23)))
+                        //.contentIndividuals(Set.of(individuals.get(22), individuals.get(23)))
                         .build(),
                 Film.builder()
                         .title("Das Cabinet des Dr. Caligari")
@@ -1422,7 +1421,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("German")
                         .budget(BigDecimal.valueOf(18000))
                         .revenue(BigDecimal.valueOf(8811))
-                        .individuals(Set.of(individuals.get(25), individuals.get(57), individuals.get(24)))
+                        //.contentIndividuals(Set.of(individuals.get(25), individuals.get(57), individuals.get(24)))
                         .build(),
                 Film.builder()
                         .title("Das Boot")
@@ -1438,7 +1437,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .language("German")
                         .budget(BigDecimal.valueOf(14400000))
                         .revenue(BigDecimal.valueOf(11487676))
-                        .individuals(Set.of(individuals.get(26), individuals.get(56)))
+                        //.contentIndividuals(Set.of(individuals.get(26), individuals.get(56)))
                         .build(),
                 Film.builder()
                         .title("Dune: Part One")
@@ -1455,7 +1454,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Dune)
                         .budget(BigDecimal.valueOf(165000000))
                         .revenue(BigDecimal.valueOf(394585276))
-                        .individuals(Set.of(individuals.get(27), individuals.get(28), individuals.get(29)))
+                        //.contentIndividuals(Set.of(individuals.get(27), individuals.get(28), individuals.get(29)))
                         .build(),
                 Film.builder()
                         .title("Up")
@@ -1472,7 +1471,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Pixar_Movies)
                         .budget(BigDecimal.valueOf(175000000))
                         .revenue(BigDecimal.valueOf(735099102))
-                        .individuals(Set.of(individuals.get(31), individuals.get(32)))
+                        //.contentIndividuals(Set.of(individuals.get(31), individuals.get(32)))
                         .build(),
                 Film.builder()
                         .title("Coco")
@@ -1489,7 +1488,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Pixar_Movies)
                         .budget(BigDecimal.valueOf(175000000))
                         .revenue(BigDecimal.valueOf(807817888))
-                        .individuals(Set.of(individuals.get(33), individuals.get(34)))
+                        //.contentIndividuals(Set.of(individuals.get(33), individuals.get(34)))
                         .build(),
                 Film.builder()
                         .title("Star Wars: Episode IV - A New Hope")
@@ -1506,7 +1505,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.E_T_And_Star_Wars)
                         .budget(BigDecimal.valueOf(11000000))
                         .revenue(BigDecimal.valueOf(775398007))
-                        .individuals(Set.of(individuals.get(35), individuals.get(36), individuals.get(37), individuals.get(39), individuals.get(38)))
+                        //.contentIndividuals(Set.of(individuals.get(35), individuals.get(36), individuals.get(37), individuals.get(39), individuals.get(38)))
                         .build(),
                 Film.builder()
                         .title("Star Wars: Episode V - The Empire Strikes Back")
@@ -1523,7 +1522,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.E_T_And_Star_Wars)
                         .budget(BigDecimal.valueOf(18000000))
                         .revenue(BigDecimal.valueOf(538375067))
-                        .individuals(Set.of(individuals.get(55), individuals.get(35), individuals.get(36), individuals.get(37), individuals.get(39)))
+                        //.contentIndividuals(Set.of(individuals.get(55), individuals.get(35), individuals.get(36), individuals.get(37), individuals.get(39)))
                         .build(),
                 Film.builder()
                         .title("Star Wars: Episode VI - Return of the Jedi")
@@ -1540,7 +1539,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.E_T_And_Star_Wars)
                         .budget(BigDecimal.valueOf(32500000))
                         .revenue(BigDecimal.valueOf(475106177))
-                        .individuals(Set.of(individuals.get(54), individuals.get(35), individuals.get(36), individuals.get(37), individuals.get(39)))
+                        //.contentIndividuals(Set.of(individuals.get(54), individuals.get(35), individuals.get(36), individuals.get(37), individuals.get(39)))
                         .build(),
                 Film.builder()
                         .title("Blade Runner")
@@ -1557,7 +1556,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Blade_Runner)
                         .budget(BigDecimal.valueOf(28000000))
                         .revenue(BigDecimal.valueOf(41676878))
-                        .individuals(Set.of(individuals.get(41), individuals.get(42), individuals.get(37), individuals.get(40)))
+                        //.contentIndividuals(Set.of(individuals.get(41), individuals.get(42), individuals.get(37), individuals.get(40)))
                         .build(),
                 Film.builder()
                         .title("Blade Runner 2049")
@@ -1574,7 +1573,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Blade_Runner)
                         .budget(BigDecimal.valueOf(150000000))
                         .revenue(BigDecimal.valueOf(259334548))
-                        .individuals(Set.of(individuals.get(27), individuals.get(42), individuals.get(37), individuals.get(43)))
+                        //.contentIndividuals(Set.of(individuals.get(27), individuals.get(42), individuals.get(37), individuals.get(43)))
                         .build(),
                 Film.builder()
                         .title("Stand by Me")
@@ -1591,7 +1590,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Stephen_King_Movies)
                         .budget(BigDecimal.valueOf(8000000))
                         .revenue(BigDecimal.valueOf(52287414))
-                        .individuals(Set.of(individuals.get(44), individuals.get(45), individuals.get(46), individuals.get(47)))
+                        //.contentIndividuals(Set.of(individuals.get(44), individuals.get(45), individuals.get(46), individuals.get(47)))
                         .build(),
                 Film.builder()
                         .title("The Shining")
@@ -1608,7 +1607,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Stephen_King_Movies)
                         .budget(BigDecimal.valueOf(19000000))
                         .revenue(BigDecimal.valueOf(46998772))
-                        .individuals(Set.of(individuals.get(48), individuals.get(45), individuals.get(49), individuals.get(50)))
+                        //.contentIndividuals(Set.of(individuals.get(48), individuals.get(45), individuals.get(49), individuals.get(50)))
                         .build(),
                 Film.builder()
                         .title("The Mist")
@@ -1625,9 +1624,8 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .filmUniverse(FilmUniverse.Stephen_King_Movies)
                         .budget(BigDecimal.valueOf(18000000))
                         .revenue(BigDecimal.valueOf(57470220))
-                        .individuals(Set.of(individuals.get(51), individuals.get(45), individuals.get(52), individuals.get(53)))
+                        //.contentIndividuals(Set.of(individuals.get(51), individuals.get(45), individuals.get(52), individuals.get(53)))
                         .build()
-
 
         );
 
@@ -1648,7 +1646,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .revenue(BigDecimal.valueOf(135429666))
                         .seasons(1)
                         .episodes(13)
-                        .individuals(Set.of(individuals.get(121), individuals.get(7), individuals.get(75)))
+                        //.contentIndividuals(Set.of(individuals.get(121), individuals.get(7), individuals.get(75)))
                         .build(),
                 TvShow.builder()
                         .title("Black Sails")
@@ -1666,7 +1664,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .revenue(BigDecimal.valueOf(249752131))
                         .seasons(4)
                         .episodes(38)
-                        .individuals(Set.of(individuals.get(118), individuals.get(8), individuals.get(120), individuals.get(119)))
+                        //.contentIndividuals(Set.of(individuals.get(118), individuals.get(8), individuals.get(120), individuals.get(119)))
                         .build(),
                 TvShow.builder()
                         .title("Rick and Morty")
@@ -1684,7 +1682,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .revenue(BigDecimal.valueOf(666732999))
                         .seasons(5)
                         .episodes(52)
-                        .individuals(Set.of(individuals.get(4), individuals.get(116), individuals.get(117)))
+                        //.contentIndividuals(Set.of(individuals.get(4), individuals.get(116), individuals.get(117)))
                         .build(),
                 TvShow.builder()
                         .title("The Pacific")
@@ -1702,7 +1700,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .revenue(BigDecimal.valueOf(350000000))
                         .seasons(1)
                         .episodes(10)
-                        .individuals(Set.of(individuals.get(113), individuals.get(114), individuals.get(115)))
+                        //.contentIndividuals(Set.of(individuals.get(113), individuals.get(114), individuals.get(115)))
                         .build(),
                 TvShow.builder()
                         .title("Taken")
@@ -1720,7 +1718,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .revenue(BigDecimal.valueOf(60000000))
                         .seasons(1)
                         .episodes(10)
-                        .individuals(Set.of(individuals.get(111), individuals.get(112)))
+                        //.contentIndividuals(Set.of(individuals.get(111), individuals.get(112)))
                         .build(),
                 TvShow.builder()
                         .title("Band of Brothers")
@@ -1738,7 +1736,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .revenue(BigDecimal.valueOf(183000000))
                         .seasons(1)
                         .episodes(10)
-                        .individuals(Set.of(individuals.get(92), individuals.get(108), individuals.get(109), individuals.get(110)))
+                        //.contentIndividuals(Set.of(individuals.get(92), individuals.get(108), individuals.get(109), individuals.get(110)))
                         .build(),
                 TvShow.builder()
                         .title("Pinky and the Brain")
@@ -1756,7 +1754,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .revenue(BigDecimal.valueOf(8700000))
                         .seasons(4)
                         .episodes(66)
-                        .individuals(Set.of(individuals.get(105), individuals.get(106), individuals.get(107)))
+                        //.contentIndividuals(Set.of(individuals.get(105), individuals.get(106), individuals.get(107)))
                         .build(),
                 TvShow.builder()
                         .title("Home Improvement")
@@ -1774,7 +1772,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .revenue(BigDecimal.valueOf(6800000))
                         .seasons(8)
                         .episodes(204)
-                        .individuals(Set.of(individuals.get(104), individuals.get(103), individuals.get(2)))
+                        //.contentIndividuals(Set.of(individuals.get(104)), individuals.get(103), individuals.get(2)))
                         .build(),
                 TvShow.builder()
                         .title("King of the Hill")
@@ -1792,7 +1790,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .revenue(BigDecimal.valueOf(47800000))
                         .seasons(13)
                         .episodes(259)
-                        .individuals(Set.of(individuals.get(101), individuals.get(102)))
+                        //.contentIndividuals(Set.of(individuals.get(101), individuals.get(102)))
                         .build()
 
         );
@@ -2245,6 +2243,31 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build()
         );
 
+        List<ContentIndividual> contentIndividuals = List.of(
+                ContentIndividual.builder()
+                        .content(films.get(0))
+                        .individual(individuals.get(5))
+                        .contributingRole(IndividualRole.Director)
+                        .build(),
+                ContentIndividual.builder()
+                        .content(films.get(0))
+                        .individual(individuals.get(98))
+                        .contributingRole(IndividualRole.Writer)
+                        .build(),
+                ContentIndividual.builder()
+                        .content(films.get(0))
+                        .individual(individuals.get(0))
+                        .contributingRole(IndividualRole.Actor)
+                        .build(),
+                ContentIndividual.builder()
+                        .content(films.get(0))
+                        .individual(individuals.get(99))
+                        .contributingRole(IndividualRole.Actor)
+                        .build()
+        );
+
+
+
         individualService.createAll(individuals);
         logger.info("Created 122 Individuals (Actors, Directors, Writers, Producers");
         filmService.createAll(films);
@@ -2254,5 +2277,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
         awardService.createAll(awards);
         logger.info("Created 67 awards");
 
+        contentIndividualService.createAll(contentIndividuals);
     }
 }

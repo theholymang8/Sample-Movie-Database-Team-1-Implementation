@@ -1,6 +1,8 @@
 package com.pfseven.smdb.smdb.bootstrap;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pfseven.smdb.smdb.base.AbstractLogComponent;
+import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.services.AwardService;
 import com.pfseven.smdb.smdb.services.FilmService;
@@ -11,7 +13,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Set;
 
 @Component
 @RequiredArgsConstructor
@@ -29,6 +34,51 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         //These services dont'w work properly yet
         //logger.info("Found one film with title 'Ran': {}", filmService.findByTitle("Ran"));
         //logger.info("Found these films with the given Genres: {}", filmService.findByGenres(List.of(Genre.Adventure)));
+
+        Film film = Film.builder()
+                .title("Schindler's List")
+                //Directors: Steven Spielberg
+                //Writers: Steven Zaillian
+                //Actors: Liam Neeson, Ralph Fiennes, Ben Kingsley
+                .description("In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.")
+                .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History))
+                .length(195)
+                .releaseDate(LocalDate.of(1994, 2, 4))
+                .rating(8.9f)
+                .countryOfOrigin("USA")
+                .language("English, Hebrew, German, Polish, Latin")
+                .budget(BigDecimal.valueOf(22000000))
+                .revenue(BigDecimal.valueOf(322161245))
+                //.individuals(Set.of(individuals.get(5), individuals.get(98), individuals.get(0), individuals.get(99), individuals.get(100)))
+                .build();
+
+        //logger.info(film.getReleaseDate());
+        ObjectMapper objectMapper = new ObjectMapper();
+
+
+        //filmService.findByTitle("Raging Bull").getAwards().forEach(award -> logger.info("Raging Bull won this award: {}\n", award));
+        //logger.info("Film from json encoding: {}",objectMapper.writeValueAsString(filmService.findByTitle("Raging Bull")));
+        //objectMapper.writeValue(System.out, filmService.findByTitle("Raging Bull"));
+        //objectMapper.writeValue(System.out, filmService.findByTitle("Raging Bull").getIndividuals());
+        //filmService.findByTitle("Raging Bull").getIndividuals().forEach(individual -> {
+        //    logger.info("Raging Bull has this individual involved: {}, {}, {}", individual.getFirstName(), individual.getLastName(), individual.getIndividualRole());
+        //});
+        //logger.info("Raging Bull has {} individuals involved.", (filmService.findByTitle("Raging Bull").getIndividuals().size()));
+
+        //filmService.findByTitle("Ran");
+
+        //logger.info("Awards: \n");
+        //Set<Award> awardSet = filmService.findByTitle("Ran").getAwards();
+        //logger.info("Is NulL?: {}", awardSet.isEmpty());
+        //awardSet.forEach(award -> logger.info("Ran won this awards: {}", award));
+
+
+        filmService.findByTitle("Schindler's List").getContentIndividuals().forEach( contentIndividual -> logger.info("Has this individual: {}", contentIndividual.getIndividual()));
+        logger.info("Film from repo: {}", filmService.findByTitle("Schindler's List"));
+
+        //logger.info("War has: {}",filmService.findByGenres(List.of(Genre.War)));
+
+        //JsonEncoding json_film = getClass(JsonParser).;
 
     }
 }

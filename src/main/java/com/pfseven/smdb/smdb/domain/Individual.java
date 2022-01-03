@@ -17,7 +17,9 @@ import java.util.Set;
 @SuperBuilder
 @Data
 @ToString(callSuper = true, exclude = {"awards", "content"})
+//@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true, exclude = {"awards", "content"})
+//@EqualsAndHashCode(callSuper = true)
 //Hibernate
 @Entity
 @Table(name = "INDIVIDUALS")
@@ -49,14 +51,14 @@ public class Individual extends BaseModel{
     @Column(length = 75, nullable = false)
     private String nationality;
 
-    @ElementCollection(targetClass=ContributingRole.class)
+    @ElementCollection(fetch = FetchType.EAGER, targetClass= IndividualRole.class)
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "INDIVIDUAL_ROLE")
     @Column(name = "ROLE")
-    private Set<ContributingRole> contributingRole = new HashSet<>();
+    private Set<IndividualRole> individualRole = new HashSet<>();
 
-    @ManyToMany(mappedBy = "individuals")
-    private Set<Content> content = new HashSet<>();
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "individual")
+    private Set<ContentIndividual> contentIndividual = new HashSet<>();
 
     @OneToMany(mappedBy = "individual", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private Set<Award> awards;

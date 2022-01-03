@@ -1,5 +1,8 @@
 package com.pfseven.smdb.smdb.domain;
 
+import lombok.EqualsAndHashCode;
+
+
 public enum Genre {
 
     Comedy, Action, Fantasy,

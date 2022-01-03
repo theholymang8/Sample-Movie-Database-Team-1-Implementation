@@ -1,6 +1,7 @@
 package com.pfseven.smdb.smdb.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -15,8 +16,10 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
-@ToString(callSuper = true, exclude = {"awards", "individuals"})
-@EqualsAndHashCode(callSuper = true, exclude = {"awards", "individuals"})
+@ToString(callSuper = true, exclude = {"awards", "individuals", "genres"})
+//@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true, exclude = {"awards", "individuals", "genres"})
+//@EqualsAndHashCode(callSuper = true)
 @Data
 //Hibernate
 @Entity
@@ -35,10 +38,11 @@ public class Content extends BaseModel{
     private String description;
 
     @NotNull(message = "{genre.null}")
-    @ElementCollection(targetClass=Genre.class)
+    @ElementCollection(fetch = FetchType.EAGER, targetClass=Genre.class)
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "CONTENT_GENRE")
     @Column(name = "GENRE")
+    //@OrderBy
     private Set<Genre> genres = new HashSet<>();
 
     @NotNull(message = "{length.null}")
@@ -61,6 +65,8 @@ public class Content extends BaseModel{
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     //@Temporal(TemporalType.DATE)
     @Column(nullable = false)
+    //Development
+    @Getter(AccessLevel.NONE)
     private LocalDate releaseDate;
 
     @NotNull(message = "{language.null}")
@@ -72,17 +78,24 @@ public class Content extends BaseModel{
     private String countryOfOrigin;
 
     //@NotNull(message = "{awards.null}")
-    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonManagedReference("awards")
+    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Award> awards = new HashSet<>();
 
     //@NotNull(message = "{individuals.null}")
-    @ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    /*@ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
     @JoinTable(
             name = "CONTENT_INDIVIDUALS",
             foreignKey = @ForeignKey(name = "CONTENT_FK_ID_P"),
             inverseForeignKey = @ForeignKey(name = "INDIVIDUAL_FK_ID"),
             joinColumns = @JoinColumn(name="CONTENT_ID"),
-            inverseJoinColumns = @JoinColumn(name="INDIVIDUAL_ID"))
-    private Set<Individual> individuals = new HashSet<>();
+            inverseJoinColumns = @JoinColumn(name="INDIVIDUAL_ID"))*/
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "content")
+    private Set<ContentIndividual> contentIndividuals = new HashSet<>();
+
+    //Custom Getter for daterRelease data -experimental-
+    public String getReleaseDate(){
+        return this.releaseDate.toString();
+    }
 
 }
