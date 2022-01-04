@@ -16,9 +16,9 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
-@ToString(callSuper = true, exclude = {"awards", "individuals", "genres"})
+@ToString(callSuper = true, exclude = {"awards", "genres", "contentIndividuals"})
 //@ToString(callSuper = true)
-@EqualsAndHashCode(callSuper = true, exclude = {"awards", "individuals", "genres"})
+@EqualsAndHashCode(callSuper = true, exclude = {"awards", "contentIndividuals", "genres"})
 //@EqualsAndHashCode(callSuper = true)
 @Data
 //Hibernate

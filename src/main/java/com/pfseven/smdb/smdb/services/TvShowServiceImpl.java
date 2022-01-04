@@ -30,7 +30,7 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
     public List<TvShow> findByGenres(final List<Genre> genres) {
         List<TvShow> foundTvShows = new ArrayList<>();
         for(final Genre genre : genres){
-            foundTvShows.addAll(tvShowRepository.findByGenre(genre));
+            foundTvShows.addAll(tvShowRepository.findByGenres(genre));
         }
         return foundTvShows;
     }

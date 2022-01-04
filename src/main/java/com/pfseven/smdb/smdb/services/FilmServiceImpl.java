@@ -28,10 +28,10 @@ public class FilmServiceImpl extends BaseServiceImpl<Film> implements FilmServic
 
     @Override
     public List<Film> findByGenres(List<Genre> genres) {
-        List<Film> filmsByGenre = new ArrayList<>();
+        List<Film> foundFilms = new ArrayList<>();
         for(final Genre genre : genres){
-            filmsByGenre.addAll(filmRepository.findByGenre(genre));
+            foundFilms.addAll(filmRepository.findByGenres(genre));
         }
-        return filmsByGenre;
+        return foundFilms;
     }
 }

@@ -16,9 +16,9 @@ import java.util.Set;
 @AllArgsConstructor
 @SuperBuilder
 @Data
-@ToString(callSuper = true, exclude = {"awards", "content"})
+@ToString(callSuper = true, exclude = {"awards", "contentIndividuals"})
 //@ToString(callSuper = true)
-@EqualsAndHashCode(callSuper = true, exclude = {"awards", "content"})
+@EqualsAndHashCode(callSuper = true, exclude = {"awards", "contentIndividuals"})
 //@EqualsAndHashCode(callSuper = true)
 //Hibernate
 @Entity
@@ -60,7 +60,7 @@ public class Individual extends BaseModel{
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "individual")
     private Set<ContentIndividual> contentIndividual = new HashSet<>();
 
-    @OneToMany(mappedBy = "individual", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "individual", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Award> awards;
 
 }

@@ -17,12 +17,6 @@ public interface TvShowRepository extends JpaRepository<TvShow, Long> {
 
     //List<TvShow> findTop10ByOrderByRatingDesc();
 
-    @Query(value = "SELECT CONTENT.*, TV.EPISODES, SEASONS\n" +
-            "FROM\n" +
-            "(SELECT C.*, CONTENT.GENRE\n" +
-            "FROM(SELECT * FROM CONTENT_GENRE WHERE GENRE = ?) AS CONTENT\n" +
-            "INNER JOIN CONTENTS C ON CONTENT.CONTENT_ID = C.ID) AS CONTENT\n" +
-            "INNER JOIN TV_SHOWS TV ON CONTENT.ID=TV.ID;", nativeQuery = true)
-    List<TvShow> findByGenre(Genre genre);
+    List<TvShow> findByGenres(Genre genre);
 
 }

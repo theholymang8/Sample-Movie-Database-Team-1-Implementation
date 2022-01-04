@@ -4,10 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pfseven.smdb.smdb.base.AbstractLogComponent;
 import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
-import com.pfseven.smdb.smdb.services.AwardService;
-import com.pfseven.smdb.smdb.services.FilmService;
-import com.pfseven.smdb.smdb.services.IndividualService;
-import com.pfseven.smdb.smdb.services.TvShowService;
+import com.pfseven.smdb.smdb.domain.IndividualRole;
+import com.pfseven.smdb.smdb.services.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
@@ -27,6 +25,8 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
     private final FilmService filmService;
     private final TvShowService tvShowService;
     private final IndividualService individualService;
+
+    private final ContentIndividualService contentIndividualService;
 
     @Override
     public void run(String... args) throws Exception {
@@ -73,11 +73,24 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         //awardSet.forEach(award -> logger.info("Ran won this awards: {}", award));
 
 
-        filmService.findByTitle("Schindler's List").getContentIndividuals().forEach( contentIndividual -> logger.info("Has this individual: {}", contentIndividual.getIndividual()));
-        logger.info("Film from repo: {}", filmService.findByTitle("Schindler's List"));
+        //filmService.findByTitle("Schindler's List").getContentIndividuals().forEach( contentIndividual -> logger.info("Has this individual: {}", contentIndividual.getIndividual()));
+        //logger.info("Film from repo: {}", filmService.findByTitle("Schindler's List"));
 
         //logger.info("War has: {}",filmService.findByGenres(List.of(Genre.War)));
+        //filmService.findByGenres(List.of(Genre.Drama, Genre.Biography)).forEach(film_1 -> logger.info("This genre has this film: {}, {}, {}", film_1.getTitle(), film_1.getRating(), film_1.getGenres()));
 
+        //logger.info("{} has {} content associated with him.",individualService.findByFirstNameAndLastName("Henry", "Thomas").getFirstName(), individualService.findByFirstNameAndLastName("Henry", "Thomas").getContentIndividual().size());
+        logger.info("Shcindler's list has {} individuals associated with it.", filmService.findByTitle("Schindler's List").getContentIndividuals().size());
+        logger.info("Steven Spielberg has {} content associated with him.", individualService.findByFirstNameAndLastName("Steven", "Spielberg").getContentIndividual().size());
+        individualService.findByFirstNameAndLastName("Harrison","Ford").getContentIndividual().forEach( contentIndividual -> logger.info("This individual has played in this content: {} as {}", contentIndividual.getContent().getTitle(), contentIndividual.getContributingRole()));
+        individualService.findByFirstNameAndLastName("Steven", "Spielberg").getAwards().forEach(award -> logger.info("Steven Spielberg has won this award: {}", award.getTitle()));
+        //Long i_id = individualService.findByFirstNameAndLastName("Steven", "Spielberg").getId();
+
+        individualService.findAllByFirstName("Stephen").forEach(individual -> logger.info("This individual: {}", individual));
+
+        individualService.findAllByIndividualRole(IndividualRole.Director).forEach(individual -> logger.info("{} {}", individual.getFirstName(), individual.getLastName()));
+
+        //logger.info("These are the films: {}", filmService.findByGenres(List.of(Genre.Drama, Genre.Biography)));
         //JsonEncoding json_film = getClass(JsonParser).;
 
     }

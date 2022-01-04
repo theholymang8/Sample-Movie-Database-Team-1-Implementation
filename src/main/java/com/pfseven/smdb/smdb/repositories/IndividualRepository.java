@@ -18,7 +18,6 @@ public interface IndividualRepository extends JpaRepository<Individual, Long> {
 
     List<Individual> findAllByFirstName(String firstname);
 
-
     //List<Individual> findByFirstNameIgnoreCaseContaining(String firstName);
 
     //Optional<Individual> findByFirstNameIgnoreCaseContainingAndLastNameIgnoreCaseContaining(String firstName, String lastName);
