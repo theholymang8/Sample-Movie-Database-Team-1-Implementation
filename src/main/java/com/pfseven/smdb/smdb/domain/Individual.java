@@ -8,7 +8,9 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 //Project Lombok
@@ -58,7 +60,7 @@ public class Individual extends BaseModel{
     private Set<IndividualRole> individualRole = new HashSet<>();
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "individual")
-    private Set<ContentIndividual> contentIndividual = new HashSet<>();
+    private List<ContentIndividual> contentIndividual = new ArrayList<>();
 
     @OneToMany(mappedBy = "individual", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Award> awards;

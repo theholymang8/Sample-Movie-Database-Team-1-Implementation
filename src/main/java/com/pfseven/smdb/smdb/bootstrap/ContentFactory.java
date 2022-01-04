@@ -2300,7 +2300,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(2))
-                        .individual(individuals.get(97))
+                        .individual(individuals.get(96))
                         .contributingRole(IndividualRole.Director)
                         .build(),
                 ContentIndividual.builder()
@@ -2426,7 +2426,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                 ContentIndividual.builder()
                         .content(films.get(9))
                         .individual(individuals.get(80))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.Actor)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(9))
@@ -2486,7 +2486,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                 ContentIndividual.builder()
                         .content(films.get(12))
                         .individual(individuals.get(9))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.Actor)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(12))
@@ -2500,17 +2500,12 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(12))
-                        .individual(individuals.get(71))
+                        .individual(individuals.get(72))
                         .contributingRole(IndividualRole.Writer)
                         .build(),
                 ContentIndividual.builder()
-                        .content(films.get(12))
-                        .individual(individuals.get(72))
-                        .contributingRole(IndividualRole.Actor)
-                        .build(),
-                ContentIndividual.builder()
                         .content(films.get(13))
-                        .individual(individuals.get(11))
+                        .individual(individuals.get(10))
                         .contributingRole(IndividualRole.Actor)
                         .build(),
                 ContentIndividual.builder()
@@ -2554,27 +2549,27 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .contributingRole(IndividualRole.Actor)
                         .build(),
                 ContentIndividual.builder()
-                        .content(films.get(14))
+                        .content(films.get(15))
                         .individual(individuals.get(66))
                         .contributingRole(IndividualRole.Writer)
                         .build(),
                 ContentIndividual.builder()
-                        .content(films.get(14))
+                        .content(films.get(15))
                         .individual(individuals.get(66))
                         .contributingRole(IndividualRole.Director)
                         .build(),
                 ContentIndividual.builder()
-                        .content(films.get(14))
+                        .content(films.get(15))
                         .individual(individuals.get(11))
                         .contributingRole(IndividualRole.Actor)
                         .build(),
                 ContentIndividual.builder()
-                        .content(films.get(14))
+                        .content(films.get(15))
                         .individual(individuals.get(64))
                         .contributingRole(IndividualRole.Actor)
                         .build(),
                 ContentIndividual.builder()
-                        .content(films.get(14))
+                        .content(films.get(15))
                         .individual(individuals.get(65))
                         .contributingRole(IndividualRole.Actor)
                         .build(),
@@ -2605,12 +2600,12 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(17))
-                        .individual(individuals.get(14))
+                        .individual(individuals.get(13))
                         .contributingRole(IndividualRole.Director)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(17))
-                        .individual(individuals.get(14))
+                        .individual(individuals.get(13))
                         .contributingRole(IndividualRole.Writer)
                         .build(),
                 ContentIndividual.builder()
@@ -2625,12 +2620,12 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(18))
-                        .individual(individuals.get(14))
+                        .individual(individuals.get(13))
                         .contributingRole(IndividualRole.Director)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(18))
-                        .individual(individuals.get(14))
+                        .individual(individuals.get(13))
                         .contributingRole(IndividualRole.Writer)
                         .build(),
                 ContentIndividual.builder()
@@ -2710,7 +2705,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(22))
-                        .individual(individuals.get(23))
+                        .individual(individuals.get(21))
                         .contributingRole(IndividualRole.Actor)
                         .build(),
                 ContentIndividual.builder()
@@ -2725,7 +2720,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(23))
-                        .individual(individuals.get(21))
+                        .individual(individuals.get(23))
                         .contributingRole(IndividualRole.Actor)
                         .build(),
                 ContentIndividual.builder()
@@ -3160,22 +3155,53 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build()
         );
 
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(1).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(List.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(1).setContentIndividuals(List.of(contentIndividuals.get(5),contentIndividuals.get(6), contentIndividuals.get(7), contentIndividuals.get(8)));
+        films.get(2).setContentIndividuals(List.of(contentIndividuals.get(9),contentIndividuals.get(10), contentIndividuals.get(11)));
+        films.get(3).setContentIndividuals(List.of(contentIndividuals.get(12),contentIndividuals.get(13), contentIndividuals.get(14)));
+        films.get(4).setContentIndividuals(List.of(contentIndividuals.get(15),contentIndividuals.get(16), contentIndividuals.get(17)));
+        films.get(5).setContentIndividuals(List.of(contentIndividuals.get(18),contentIndividuals.get(19), contentIndividuals.get(20), contentIndividuals.get(21)));
+        films.get(6).setContentIndividuals(List.of(contentIndividuals.get(22),contentIndividuals.get(23), contentIndividuals.get(24), contentIndividuals.get(25)));
+        films.get(7).setContentIndividuals(List.of(contentIndividuals.get(26),contentIndividuals.get(27), contentIndividuals.get(28), contentIndividuals.get(29)));
+        films.get(8).setContentIndividuals(List.of(contentIndividuals.get(30),contentIndividuals.get(31), contentIndividuals.get(32), contentIndividuals.get(33)));
+        films.get(9).setContentIndividuals(List.of(contentIndividuals.get(34),contentIndividuals.get(35), contentIndividuals.get(36), contentIndividuals.get(37)));
+        films.get(10).setContentIndividuals(List.of(contentIndividuals.get(38),contentIndividuals.get(39), contentIndividuals.get(40), contentIndividuals.get(41), contentIndividuals.get(42)));
+        films.get(11).setContentIndividuals(List.of(contentIndividuals.get(43),contentIndividuals.get(44), contentIndividuals.get(45), contentIndividuals.get(46), contentIndividuals.get(47)));
+        films.get(12).setContentIndividuals(List.of(contentIndividuals.get(48),contentIndividuals.get(49), contentIndividuals.get(50), contentIndividuals.get(51)));
+        films.get(13).setContentIndividuals(List.of(contentIndividuals.get(52),contentIndividuals.get(53), contentIndividuals.get(54), contentIndividuals.get(55)));
+        films.get(14).setContentIndividuals(List.of(contentIndividuals.get(56),contentIndividuals.get(57), contentIndividuals.get(58), contentIndividuals.get(59), contentIndividuals.get(60)));
+        films.get(15).setContentIndividuals(List.of(contentIndividuals.get(61),contentIndividuals.get(62), contentIndividuals.get(63), contentIndividuals.get(64), contentIndividuals.get(65)));
+        films.get(16).setContentIndividuals(List.of(contentIndividuals.get(66),contentIndividuals.get(67), contentIndividuals.get(68), contentIndividuals.get(69), contentIndividuals.get(70)));
+        films.get(17).setContentIndividuals(List.of(contentIndividuals.get(71),contentIndividuals.get(72), contentIndividuals.get(73), contentIndividuals.get(74)));
+        films.get(18).setContentIndividuals(List.of(contentIndividuals.get(75),contentIndividuals.get(76), contentIndividuals.get(77), contentIndividuals.get(78)));
+        films.get(19).setContentIndividuals(List.of(contentIndividuals.get(79),contentIndividuals.get(80), contentIndividuals.get(81), contentIndividuals.get(82)));
+        films.get(20).setContentIndividuals(List.of(contentIndividuals.get(83),contentIndividuals.get(84), contentIndividuals.get(85), contentIndividuals.get(86)));
+        films.get(21).setContentIndividuals(List.of(contentIndividuals.get(87),contentIndividuals.get(88), contentIndividuals.get(89)));
+        films.get(22).setContentIndividuals(List.of(contentIndividuals.get(90),contentIndividuals.get(91), contentIndividuals.get(92)));
+        films.get(23).setContentIndividuals(List.of(contentIndividuals.get(93),contentIndividuals.get(94), contentIndividuals.get(95)));
+        films.get(24).setContentIndividuals(List.of(contentIndividuals.get(96),contentIndividuals.get(97), contentIndividuals.get(98)));
+        films.get(25).setContentIndividuals(List.of(contentIndividuals.get(99),contentIndividuals.get(100), contentIndividuals.get(101)));
+        films.get(26).setContentIndividuals(List.of(contentIndividuals.get(102),contentIndividuals.get(103), contentIndividuals.get(104), contentIndividuals.get(105)));
+        films.get(27).setContentIndividuals(List.of(contentIndividuals.get(106),contentIndividuals.get(107), contentIndividuals.get(108)));
+        films.get(28).setContentIndividuals(List.of(contentIndividuals.get(109),contentIndividuals.get(110), contentIndividuals.get(111)));
+        films.get(29).setContentIndividuals(List.of(contentIndividuals.get(112),contentIndividuals.get(113), contentIndividuals.get(114), contentIndividuals.get(115), contentIndividuals.get(116), contentIndividuals.get(117)));
+        films.get(30).setContentIndividuals(List.of(contentIndividuals.get(118),contentIndividuals.get(119), contentIndividuals.get(120), contentIndividuals.get(121), contentIndividuals.get(122)));
+        films.get(31).setContentIndividuals(List.of(contentIndividuals.get(123),contentIndividuals.get(124), contentIndividuals.get(125), contentIndividuals.get(126), contentIndividuals.get(127)));
+        films.get(32).setContentIndividuals(List.of(contentIndividuals.get(128),contentIndividuals.get(129), contentIndividuals.get(130), contentIndividuals.get(131)));
+        films.get(33).setContentIndividuals(List.of(contentIndividuals.get(132),contentIndividuals.get(133), contentIndividuals.get(134), contentIndividuals.get(135)));
+        films.get(34).setContentIndividuals(List.of(contentIndividuals.get(136),contentIndividuals.get(137), contentIndividuals.get(138), contentIndividuals.get(139)));
+        films.get(35).setContentIndividuals(List.of(contentIndividuals.get(140),contentIndividuals.get(141), contentIndividuals.get(142), contentIndividuals.get(143), contentIndividuals.get(144)));
+        films.get(36).setContentIndividuals(List.of(contentIndividuals.get(145),contentIndividuals.get(146), contentIndividuals.get(147), contentIndividuals.get(148), contentIndividuals.get(149)));
+
+        tvshows.get(0).setContentIndividuals(List.of(contentIndividuals.get(150),contentIndividuals.get(151), contentIndividuals.get(152)));
+        tvshows.get(1).setContentIndividuals(List.of(contentIndividuals.get(153),contentIndividuals.get(154), contentIndividuals.get(155), contentIndividuals.get(156)));
+        tvshows.get(2).setContentIndividuals(List.of(contentIndividuals.get(157),contentIndividuals.get(158), contentIndividuals.get(159), contentIndividuals.get(160)));
+        tvshows.get(3).setContentIndividuals(List.of(contentIndividuals.get(161),contentIndividuals.get(162), contentIndividuals.get(163)));
+        tvshows.get(4).setContentIndividuals(List.of(contentIndividuals.get(164),contentIndividuals.get(165), contentIndividuals.get(166)));
+        tvshows.get(5).setContentIndividuals(List.of(contentIndividuals.get(167),contentIndividuals.get(168), contentIndividuals.get(169), contentIndividuals.get(170)));
+        tvshows.get(6).setContentIndividuals(List.of(contentIndividuals.get(171),contentIndividuals.get(172), contentIndividuals.get(173), contentIndividuals.get(174)));
+        tvshows.get(7).setContentIndividuals(List.of(contentIndividuals.get(175),contentIndividuals.get(176), contentIndividuals.get(177)));
+        tvshows.get(8).setContentIndividuals(List.of(contentIndividuals.get(178),contentIndividuals.get(179), contentIndividuals.get(180), contentIndividuals.get(181)));
 
 
         individualService.createAll(individuals);
