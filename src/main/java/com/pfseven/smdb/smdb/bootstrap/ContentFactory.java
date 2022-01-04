@@ -1011,7 +1011,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
         );
 
 
-
         //Film Factory
 
         List<Film> films = List.of(
@@ -3161,6 +3160,22 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build()
         );
 
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(1).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        films.get(0).setContentIndividuals(Set.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
 
 
         individualService.createAll(individuals);
