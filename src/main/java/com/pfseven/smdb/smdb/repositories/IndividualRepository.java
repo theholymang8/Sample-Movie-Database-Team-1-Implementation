@@ -18,6 +18,10 @@ public interface IndividualRepository extends JpaRepository<Individual, Long> {
 
     List<Individual> findAllByFirstName(String firstname);
 
+    List<Individual> findByIndividualRole(IndividualRole individualRole);
+
+    List<Individual> findByFirstNameAndIndividualRole(String firstName, IndividualRole individualRole);
+
     //List<Individual> findByFirstNameIgnoreCaseContaining(String firstName);
 
     //Optional<Individual> findByFirstNameIgnoreCaseContainingAndLastNameIgnoreCaseContaining(String firstName, String lastName);

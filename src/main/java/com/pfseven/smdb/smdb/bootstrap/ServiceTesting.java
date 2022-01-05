@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.EnumSet;
 import java.util.List;
 import java.util.Set;
 
@@ -76,19 +77,33 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         //filmService.findByTitle("Schindler's List").getContentIndividuals().forEach( contentIndividual -> logger.info("Has this individual: {}", contentIndividual.getIndividual()));
         //logger.info("Film from repo: {}", filmService.findByTitle("Schindler's List"));
 
+        //Query 4
         //logger.info("War has: {}",filmService.findByGenres(List.of(Genre.War)));
         //filmService.findByGenres(List.of(Genre.Drama, Genre.Biography)).forEach(film_1 -> logger.info("This genre has this film: {}, {}, {}", film_1.getTitle(), film_1.getRating(), film_1.getGenres()));
 
+        //logger.info("Shcindler's list has {} individuals associated with it.", filmService.findByTitle("Schindler's List").getContentIndividuals().size());
+
+        //Query 2
         //logger.info("{} has {} content associated with him.",individualService.findByFirstNameAndLastName("Henry", "Thomas").getFirstName(), individualService.findByFirstNameAndLastName("Henry", "Thomas").getContentIndividual().size());
-        logger.info("Shcindler's list has {} individuals associated with it.", filmService.findByTitle("Schindler's List").getContentIndividuals().size());
         logger.info("Steven Spielberg has {} content associated with him.", individualService.findByFirstNameAndLastName("Steven", "Spielberg").getContentIndividual().size());
-        individualService.findByFirstNameAndLastName("Harrison","Ford").getContentIndividual().forEach( contentIndividual -> logger.info("This individual has played in this content: {} as {}", contentIndividual.getContent().getTitle(), contentIndividual.getContributingRole()));
-        individualService.findByFirstNameAndLastName("Steven", "Spielberg").getAwards().forEach(award -> logger.info("Steven Spielberg has won this award: {}", award.getTitle()));
+        //individualService.findByFirstNameAndLastName("Harrison","Ford").getContentIndividual().forEach( contentIndividual -> logger.info("This individual has played in this content: {} as {}", contentIndividual.getContent().getTitle(), contentIndividual.getContributingRole()));
+
+        //individualService.findByFirstNameAndLastName("Steven", "Spielberg").getAwards().forEach(award -> logger.info("Steven Spielberg has won this award: {}", award.getTitle()));
         //Long i_id = individualService.findByFirstNameAndLastName("Steven", "Spielberg").getId();
 
-        individualService.findAllByFirstName("Stephen").forEach(individual -> logger.info("This individual: {}", individual));
+        //individualService.findAllByFirstName("Stephen").forEach(individual -> logger.info("This individual: {}", individual));
 
-        individualService.findAllByIndividualRole(IndividualRole.Director).forEach(individual -> logger.info("{} {}", individual.getFirstName(), individual.getLastName()));
+        //individualService.findAllByIndividualRole(IndividualRole.Director).forEach(individual -> logger.info("{} {}", individual.getFirstName(), individual.getLastName()));
+
+        //Query 3
+        individualService
+                .findByFirstNameAndIndividualRole("Liam", IndividualRole.Actor)
+                .forEach(individual -> individual.getContentIndividual()
+                        .forEach(contentIndividual -> logger.info("{} content : {}",contentIndividual.getIndividual().getFirstName(), contentIndividual.getContent())));
+
+
+        //Query 5
+        logger.info("Genre list: {} ", tvShowService.countByGenres(EnumSet.allOf(Genre.class)));
 
         //logger.info("These are the films: {}", filmService.findByGenres(List.of(Genre.Drama, Genre.Biography)));
         //JsonEncoding json_film = getClass(JsonParser).;

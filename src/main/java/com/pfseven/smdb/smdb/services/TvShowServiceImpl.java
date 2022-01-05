@@ -7,8 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -33,5 +32,15 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
             foundTvShows.addAll(tvShowRepository.findByGenres(genre));
         }
         return foundTvShows;
+    }
+
+    @Override
+    public Map<Genre, Long> countByGenres(final Set<Genre> genres){
+        Map<Genre, Long> map = new HashMap<>();
+        for(final Genre genre : genres){
+            Long count = tvShowRepository.countByGenres(genre);
+            map.put(genre, count);
+        }
+        return map;
     }
 }

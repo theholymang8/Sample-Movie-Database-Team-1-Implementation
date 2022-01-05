@@ -6,6 +6,7 @@ import com.pfseven.smdb.smdb.domain.TvShow;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 
 public interface TvShowService extends BaseService<TvShow, Long> {
 
@@ -24,4 +25,6 @@ public interface TvShowService extends BaseService<TvShow, Long> {
     //Long numOfTvShowsPerGenre(Genre genre);
 
     //Map<Long, Long> numOfTvShowsPerYearPerGenre();
+
+    Map<Genre, Long> countByGenres(Set<Genre> genres);
 }
