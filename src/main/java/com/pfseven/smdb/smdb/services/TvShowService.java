@@ -2,10 +2,10 @@ package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
+import com.pfseven.smdb.smdb.pojo.CountPerYearReport;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.Set;
 
 public interface TvShowService extends BaseService<TvShow, Long> {
@@ -27,4 +27,6 @@ public interface TvShowService extends BaseService<TvShow, Long> {
     //Map<Long, Long> numOfTvShowsPerYearPerGenre();
 
     Map<Genre, Long> countByGenres(Set<Genre> genres);
+
+    Map<Genre, List<CountPerYearReport>> countByYearAndGenres(Set<Genre> genres);
 }

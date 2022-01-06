@@ -39,10 +39,10 @@ public class Content extends BaseModel{
     @Column(length = 4096, nullable = false)
     private String description;
 
-    @NotNull(message = "{genre.null}")
+    //@NotNull(message = "{genre.null}")
     @ElementCollection(fetch = FetchType.EAGER, targetClass=Genre.class)
     @Enumerated(EnumType.STRING)
-    @CollectionTable(name = "CONTENT_GENRE")
+    @CollectionTable(name = "CONTENT_GENRE", joinColumns = @JoinColumn(name = "content_id"))
     @Column(name = "GENRE")
     //@OrderBy
     private Set<Genre> genres = new HashSet<>();

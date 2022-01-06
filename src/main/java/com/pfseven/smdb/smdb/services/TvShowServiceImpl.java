@@ -2,6 +2,7 @@ package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
+import com.pfseven.smdb.smdb.pojo.CountPerYearReport;
 import com.pfseven.smdb.smdb.repositories.TvShowRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -40,6 +41,16 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
         for(final Genre genre : genres){
             Long count = tvShowRepository.countByGenres(genre);
             map.put(genre, count);
+        }
+        return map;
+    }
+
+    @Override
+    public Map<Genre, List<CountPerYearReport>> countByYearAndGenres(Set<Genre> genres){
+        Map<Genre, List<CountPerYearReport>> map = new HashMap<>();
+        for(final Genre genre : genres){
+            List<CountPerYearReport> reports = tvShowRepository.countByYearAndGenres(genre);
+            map.put(genre, reports);
         }
         return map;
     }

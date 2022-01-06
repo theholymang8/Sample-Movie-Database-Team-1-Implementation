@@ -36,22 +36,22 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         //logger.info("Found one film with title 'Ran': {}", filmService.findByTitle("Ran"));
         //logger.info("Found these films with the given Genres: {}", filmService.findByGenres(List.of(Genre.Adventure)));
 
-        Film film = Film.builder()
-                .title("Schindler's List")
-                //Directors: Steven Spielberg
-                //Writers: Steven Zaillian
-                //Actors: Liam Neeson, Ralph Fiennes, Ben Kingsley
-                .description("In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.")
-                .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History))
-                .length(195)
-                .releaseDate(LocalDate.of(1994, 2, 4))
-                .rating(8.9f)
-                .countryOfOrigin("USA")
-                .language("English, Hebrew, German, Polish, Latin")
-                .budget(BigDecimal.valueOf(22000000))
-                .revenue(BigDecimal.valueOf(322161245))
-                //.individuals(Set.of(individuals.get(5), individuals.get(98), individuals.get(0), individuals.get(99), individuals.get(100)))
-                .build();
+//        Film film = Film.builder()
+//                .title("Schindler's List")
+//                //Directors: Steven Spielberg
+//                //Writers: Steven Zaillian
+//                //Actors: Liam Neeson, Ralph Fiennes, Ben Kingsley
+//                .description("In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.")
+//                .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History))
+//                .length(195)
+//                .releaseDate(LocalDate.of(1994, 2, 4))
+//                .rating(8.9f)
+//                .countryOfOrigin("USA")
+//                .language("English, Hebrew, German, Polish, Latin")
+//                .budget(BigDecimal.valueOf(22000000))
+//                .revenue(BigDecimal.valueOf(322161245))
+//                //.individuals(Set.of(individuals.get(5), individuals.get(98), individuals.get(0), individuals.get(99), individuals.get(100)))
+//                .build();
 
         //logger.info(film.getReleaseDate());
         ObjectMapper objectMapper = new ObjectMapper();
@@ -104,6 +104,11 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
 
         //Query 5
         logger.info("Genre list: {} ", tvShowService.countByGenres(EnumSet.allOf(Genre.class)));
+
+        //Query 6
+        tvShowService.countByYearAndGenres(EnumSet.allOf(Genre.class))
+                .forEach((key,value)-> value
+                        .forEach(queryReport -> logger.info("Num of shows per year: {} per genre: {} are: {}", queryReport.getYear(), key, queryReport.getCount()) ));
 
         //logger.info("These are the films: {}", filmService.findByGenres(List.of(Genre.Drama, Genre.Biography)));
         //JsonEncoding json_film = getClass(JsonParser).;
