@@ -53,7 +53,7 @@ public class Individual extends BaseModel{
     @Column(length = 75, nullable = false)
     private String nationality;
 
-    @ElementCollection(fetch = FetchType.EAGER, targetClass= IndividualRole.class)
+    @ElementCollection(fetch = FetchType.LAZY, targetClass= IndividualRole.class)
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "INDIVIDUAL_ROLE")
     @Column(name = "ROLE")

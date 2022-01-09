@@ -7,6 +7,8 @@ import com.pfseven.smdb.smdb.domain.TvShow;
 import com.pfseven.smdb.smdb.pojo.CountPerYearReport;
 import com.pfseven.smdb.smdb.repositories.TvShowRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +37,11 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
             foundTvShows.addAll(tvShowRepository.findByGenres(genre));
         }
         return foundTvShows;
+    }
+
+    @Override
+    public List<TvShow> findTopTvShows(Integer limit) {
+        return tvShowRepository.findAll(PageRequest.of(0, limit, Sort.by(Sort.Direction.DESC, "rating"))).getContent();
     }
 
     @Override

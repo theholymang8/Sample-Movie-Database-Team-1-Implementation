@@ -2,6 +2,8 @@ package com.pfseven.smdb.smdb.repositories;
 
 import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
@@ -13,6 +15,8 @@ public interface FilmRepository extends JpaRepository<Film, Long> {
     Film findByTitle(String title);
 
     List<Film> findByGenres(Genre genre);
+
+    //List<Film> findAll(Pageable pageable);
 
     //Long exportFilms(Film film);
 

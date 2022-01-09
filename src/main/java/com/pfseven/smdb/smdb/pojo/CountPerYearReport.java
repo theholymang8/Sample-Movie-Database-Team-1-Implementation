@@ -10,5 +10,6 @@ import lombok.NoArgsConstructor;
 public class CountPerYearReport {
 
     Long count;
+
     String year;
 }

@@ -3,8 +3,8 @@ package com.pfseven.smdb.smdb.repositories;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.domain.Individual;
-import com.pfseven.smdb.smdb.pojo.IndivContentPerGenreReport;
-import com.pfseven.smdb.smdb.projections.IndividualInfo;
+//import com.pfseven.smdb.smdb.pojo.IndivContentPerGenreReport;
+//import com.pfseven.smdb.smdb.projections.IndividualInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

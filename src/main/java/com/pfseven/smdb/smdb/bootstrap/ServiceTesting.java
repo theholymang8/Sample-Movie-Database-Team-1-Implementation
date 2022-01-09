@@ -7,6 +7,7 @@ import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.services.*;
 import lombok.RequiredArgsConstructor;
+import lombok.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
@@ -27,7 +28,7 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
     private final TvShowService tvShowService;
     private final IndividualService individualService;
 
-    private final ContentIndividualService contentIndividualService;
+    //private final ContentIndividualService contentIndividualService;
 
     @Override
     public void run(String... args) throws Exception {
@@ -85,7 +86,7 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
 
         //Query 2
         //logger.info("{} has {} content associated with him.",individualService.findByFirstNameAndLastName("Henry", "Thomas").getFirstName(), individualService.findByFirstNameAndLastName("Henry", "Thomas").getContentIndividual().size());
-        logger.info("Steven Spielberg has {} content associated with him.", individualService.findByFirstNameAndLastName("Steven", "Spielberg").getContentIndividual().size());
+        //logger.info("Steven Spielberg has {} content associated with him.", individualService.findByFirstNameAndLastName("Steven", "Spielberg").getContentIndividual().size());
         //individualService.findByFirstNameAndLastName("Harrison","Ford").getContentIndividual().forEach( contentIndividual -> logger.info("This individual has played in this content: {} as {}", contentIndividual.getContent().getTitle(), contentIndividual.getContributingRole()));
 
         //individualService.findByFirstNameAndLastName("Steven", "Spielberg").getAwards().forEach(award -> logger.info("Steven Spielberg has won this award: {}", award.getTitle()));
@@ -96,10 +97,10 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         //individualService.findAllByIndividualRole(IndividualRole.Director).forEach(individual -> logger.info("{} {}", individual.getFirstName(), individual.getLastName()));
 
         //Query 3
-        individualService
-                .findByFirstNameAndIndividualRole("Liam", IndividualRole.Actor)
-                .forEach(individual -> individual.getContentIndividual()
-                        .forEach(contentIndividual -> logger.info("{} content : {}",contentIndividual.getIndividual().getFirstName(), contentIndividual.getContent())));
+        //individualService
+                //.findByFirstNameAndIndividualRole("Liam", IndividualRole.Actor)
+                //.forEach(individual -> individual.getContentIndividual()
+                        //.forEach(contentIndividual -> logger.info("{} content : {}",contentIndividual.getIndividual().getFirstName(), contentIndividual.getContent())));
 
 
         //Query 5
@@ -110,8 +111,22 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
                 .forEach((key,value)-> value
                         .forEach(queryReport -> logger.info("Num of shows per year: {} per genre: {} are: {}", queryReport.getYear(), key, queryReport.getCount()) ));
 
+        individualService.findAllByNationality("British").forEach(individual -> {
+            logger.info("{} {} is British   ", individual.getFirstName(), individual.getLastName());
+        });
+
+        logger.info("Result : {}", tvShowService.countByGenres(Set.of(Genre.Drama, Genre.Comedy)));
+
+        //tvShowService.countByGenres(Set.of(Genre.Drama, Genre.Comedy)).values().forEach(count -> {
+        //    logger.info("{} has  tvShows", count);
+        //});
         //logger.info("These are the films: {}", filmService.findByGenres(List.of(Genre.Drama, Genre.Biography)));
         //JsonEncoding json_film = getClass(JsonParser).;
 
+
+        //logger.info("Top 10 Films: {}", filmService.findTopFilms(10));
+
+        filmService.findTopFilms(10).forEach(film -> logger.info("{} with rating: {}", film.getTitle(), film.getRating()));
+        tvShowService.findTopTvShows(4).forEach(tvShow -> logger.info("{} with rating: {}", tvShow.getTitle(), tvShow.getRating()));
     }
 }

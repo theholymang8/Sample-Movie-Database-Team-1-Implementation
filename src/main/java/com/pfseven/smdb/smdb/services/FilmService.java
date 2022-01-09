@@ -13,7 +13,7 @@ public interface FilmService extends BaseService<Film, Long>  {
     //Long exportFilms(Film film);
 
     //Return X high-rated content
-    //List<Film> findTopFilms(Long X);
+    List<Film> findTopFilms(Integer limit);
 
     //Returns films for a given (or more) genre(s)
     List<Film> findByGenres(List<Genre> genres);

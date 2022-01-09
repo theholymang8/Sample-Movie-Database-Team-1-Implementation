@@ -3,6 +3,8 @@ package com.pfseven.smdb.smdb.services;
 import com.pfseven.smdb.smdb.domain.*;
 import com.pfseven.smdb.smdb.repositories.FilmRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +25,11 @@ public class FilmServiceImpl extends BaseServiceImpl<Film> implements FilmServic
     @Override
     public Film findByTitle(String title) {
         return filmRepository.findByTitle(title);
+    }
+
+    @Override
+    public List<Film> findTopFilms(Integer limit) {
+        return filmRepository.findAll(PageRequest.of(0, limit, Sort.by(Sort.Direction.DESC, "rating"))).getContent();
     }
 
     @Override

@@ -16,6 +16,8 @@ public interface TvShowService extends BaseService<TvShow, Long> {
 
     List<TvShow> findByGenres(final List<Genre> genres);
 
+    List<TvShow> findTopTvShows(Integer limit);
+
     //Long exportTvShows(TvShow tvShow);
 
     //Return X high-rated content
