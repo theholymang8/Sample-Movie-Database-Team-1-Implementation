@@ -59,8 +59,8 @@ public class Individual extends BaseModel{
     @Column(name = "ROLE")
     private Set<IndividualRole> individualRole = new HashSet<>();
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "individual")
-    private List<ContentIndividual> contentIndividual = new ArrayList<>();
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "individual")
+    private final Set<ContentIndividual> contentIndividuals =  new HashSet<>();
 
     @OneToMany(mappedBy = "individual", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Award> awards;

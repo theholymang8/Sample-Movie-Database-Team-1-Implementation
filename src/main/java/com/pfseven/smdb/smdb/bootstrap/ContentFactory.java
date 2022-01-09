@@ -23,7 +23,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
     private final TvShowService tvShowService;
     private final IndividualService individualService;
 
-    private final ContentIndividualService contentIndividualService;
+    //private final ContentIndividualService contentIndividualService;
 
     @Override
     public void run(String... args) {
@@ -2242,6 +2242,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build()
         );
 
+
         List<ContentIndividual> contentIndividuals = List.of(
                 ContentIndividual.builder()
                         .content(films.get(0))
@@ -3155,54 +3156,265 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .build()
         );
 
-        films.get(0).setContentIndividuals(List.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
-        films.get(1).setContentIndividuals(List.of(contentIndividuals.get(5),contentIndividuals.get(6), contentIndividuals.get(7), contentIndividuals.get(8)));
-        films.get(2).setContentIndividuals(List.of(contentIndividuals.get(9),contentIndividuals.get(10), contentIndividuals.get(11)));
-        films.get(3).setContentIndividuals(List.of(contentIndividuals.get(12),contentIndividuals.get(13), contentIndividuals.get(14)));
-        films.get(4).setContentIndividuals(List.of(contentIndividuals.get(15),contentIndividuals.get(16), contentIndividuals.get(17)));
-        films.get(5).setContentIndividuals(List.of(contentIndividuals.get(18),contentIndividuals.get(19), contentIndividuals.get(20), contentIndividuals.get(21)));
-        films.get(6).setContentIndividuals(List.of(contentIndividuals.get(22),contentIndividuals.get(23), contentIndividuals.get(24), contentIndividuals.get(25)));
-        films.get(7).setContentIndividuals(List.of(contentIndividuals.get(26),contentIndividuals.get(27), contentIndividuals.get(28), contentIndividuals.get(29)));
-        films.get(8).setContentIndividuals(List.of(contentIndividuals.get(30),contentIndividuals.get(31), contentIndividuals.get(32), contentIndividuals.get(33)));
-        films.get(9).setContentIndividuals(List.of(contentIndividuals.get(34),contentIndividuals.get(35), contentIndividuals.get(36), contentIndividuals.get(37)));
-        films.get(10).setContentIndividuals(List.of(contentIndividuals.get(38),contentIndividuals.get(39), contentIndividuals.get(40), contentIndividuals.get(41), contentIndividuals.get(42)));
-        films.get(11).setContentIndividuals(List.of(contentIndividuals.get(43),contentIndividuals.get(44), contentIndividuals.get(45), contentIndividuals.get(46), contentIndividuals.get(47)));
-        films.get(12).setContentIndividuals(List.of(contentIndividuals.get(48),contentIndividuals.get(49), contentIndividuals.get(50), contentIndividuals.get(51)));
-        films.get(13).setContentIndividuals(List.of(contentIndividuals.get(52),contentIndividuals.get(53), contentIndividuals.get(54), contentIndividuals.get(55)));
-        films.get(14).setContentIndividuals(List.of(contentIndividuals.get(56),contentIndividuals.get(57), contentIndividuals.get(58), contentIndividuals.get(59), contentIndividuals.get(60)));
-        films.get(15).setContentIndividuals(List.of(contentIndividuals.get(61),contentIndividuals.get(62), contentIndividuals.get(63), contentIndividuals.get(64), contentIndividuals.get(65)));
-        films.get(16).setContentIndividuals(List.of(contentIndividuals.get(66),contentIndividuals.get(67), contentIndividuals.get(68), contentIndividuals.get(69), contentIndividuals.get(70)));
-        films.get(17).setContentIndividuals(List.of(contentIndividuals.get(71),contentIndividuals.get(72), contentIndividuals.get(73), contentIndividuals.get(74)));
-        films.get(18).setContentIndividuals(List.of(contentIndividuals.get(75),contentIndividuals.get(76), contentIndividuals.get(77), contentIndividuals.get(78)));
-        films.get(19).setContentIndividuals(List.of(contentIndividuals.get(79),contentIndividuals.get(80), contentIndividuals.get(81), contentIndividuals.get(82)));
-        films.get(20).setContentIndividuals(List.of(contentIndividuals.get(83),contentIndividuals.get(84), contentIndividuals.get(85), contentIndividuals.get(86)));
-        films.get(21).setContentIndividuals(List.of(contentIndividuals.get(87),contentIndividuals.get(88), contentIndividuals.get(89)));
-        films.get(22).setContentIndividuals(List.of(contentIndividuals.get(90),contentIndividuals.get(91), contentIndividuals.get(92)));
-        films.get(23).setContentIndividuals(List.of(contentIndividuals.get(93),contentIndividuals.get(94), contentIndividuals.get(95)));
-        films.get(24).setContentIndividuals(List.of(contentIndividuals.get(96),contentIndividuals.get(97), contentIndividuals.get(98)));
-        films.get(25).setContentIndividuals(List.of(contentIndividuals.get(99),contentIndividuals.get(100), contentIndividuals.get(101)));
-        films.get(26).setContentIndividuals(List.of(contentIndividuals.get(102),contentIndividuals.get(103), contentIndividuals.get(104), contentIndividuals.get(105)));
-        films.get(27).setContentIndividuals(List.of(contentIndividuals.get(106),contentIndividuals.get(107), contentIndividuals.get(108)));
-        films.get(28).setContentIndividuals(List.of(contentIndividuals.get(109),contentIndividuals.get(110), contentIndividuals.get(111)));
-        films.get(29).setContentIndividuals(List.of(contentIndividuals.get(112),contentIndividuals.get(113), contentIndividuals.get(114), contentIndividuals.get(115), contentIndividuals.get(116), contentIndividuals.get(117)));
-        films.get(30).setContentIndividuals(List.of(contentIndividuals.get(118),contentIndividuals.get(119), contentIndividuals.get(120), contentIndividuals.get(121), contentIndividuals.get(122)));
-        films.get(31).setContentIndividuals(List.of(contentIndividuals.get(123),contentIndividuals.get(124), contentIndividuals.get(125), contentIndividuals.get(126), contentIndividuals.get(127)));
-        films.get(32).setContentIndividuals(List.of(contentIndividuals.get(128),contentIndividuals.get(129), contentIndividuals.get(130), contentIndividuals.get(131)));
-        films.get(33).setContentIndividuals(List.of(contentIndividuals.get(132),contentIndividuals.get(133), contentIndividuals.get(134), contentIndividuals.get(135)));
-        films.get(34).setContentIndividuals(List.of(contentIndividuals.get(136),contentIndividuals.get(137), contentIndividuals.get(138), contentIndividuals.get(139)));
-        films.get(35).setContentIndividuals(List.of(contentIndividuals.get(140),contentIndividuals.get(141), contentIndividuals.get(142), contentIndividuals.get(143), contentIndividuals.get(144)));
-        films.get(36).setContentIndividuals(List.of(contentIndividuals.get(145),contentIndividuals.get(146), contentIndividuals.get(147), contentIndividuals.get(148), contentIndividuals.get(149)));
 
-        tvshows.get(0).setContentIndividuals(List.of(contentIndividuals.get(150),contentIndividuals.get(151), contentIndividuals.get(152)));
-        tvshows.get(1).setContentIndividuals(List.of(contentIndividuals.get(153),contentIndividuals.get(154), contentIndividuals.get(155), contentIndividuals.get(156)));
-        tvshows.get(2).setContentIndividuals(List.of(contentIndividuals.get(157),contentIndividuals.get(158), contentIndividuals.get(159), contentIndividuals.get(160)));
-        tvshows.get(3).setContentIndividuals(List.of(contentIndividuals.get(161),contentIndividuals.get(162), contentIndividuals.get(163)));
-        tvshows.get(4).setContentIndividuals(List.of(contentIndividuals.get(164),contentIndividuals.get(165), contentIndividuals.get(166)));
-        tvshows.get(5).setContentIndividuals(List.of(contentIndividuals.get(167),contentIndividuals.get(168), contentIndividuals.get(169), contentIndividuals.get(170)));
-        tvshows.get(6).setContentIndividuals(List.of(contentIndividuals.get(171),contentIndividuals.get(172), contentIndividuals.get(173), contentIndividuals.get(174)));
-        tvshows.get(7).setContentIndividuals(List.of(contentIndividuals.get(175),contentIndividuals.get(176), contentIndividuals.get(177)));
-        tvshows.get(8).setContentIndividuals(List.of(contentIndividuals.get(178),contentIndividuals.get(179), contentIndividuals.get(180), contentIndividuals.get(181)));
 
+        //films.get(0).setContentIndividuals(List.of(contentIndividuals.get(0),contentIndividuals.get(1), contentIndividuals.get(2), contentIndividuals.get(3), contentIndividuals.get(4)));
+        filmService.addContentIndividual(films.get(0), contentIndividuals.get(0));
+        filmService.addContentIndividual(films.get(0), contentIndividuals.get(1));
+        filmService.addContentIndividual(films.get(0), contentIndividuals.get(2));
+        filmService.addContentIndividual(films.get(0), contentIndividuals.get(3));
+        filmService.addContentIndividual(films.get(0), contentIndividuals.get(4));
+
+        //films.get(1).setContentIndividuals(List.of(contentIndividuals.get(5),contentIndividuals.get(6), contentIndividuals.get(7), contentIndividuals.get(8)));
+        filmService.addContentIndividual(films.get(1), contentIndividuals.get(5));
+        filmService.addContentIndividual(films.get(1), contentIndividuals.get(6));
+        filmService.addContentIndividual(films.get(1), contentIndividuals.get(7));
+        filmService.addContentIndividual(films.get(1), contentIndividuals.get(8));
+        //filmService.create(films.get(1));
+
+        //films.get(2).setContentIndividuals(List.of(contentIndividuals.get(9),contentIndividuals.get(10), contentIndividuals.get(11)));
+        filmService.addContentIndividual(films.get(2), contentIndividuals.get(9));
+        filmService.addContentIndividual(films.get(2), contentIndividuals.get(10));
+        filmService.addContentIndividual(films.get(2), contentIndividuals.get(11));
+
+        //films.get(3).setContentIndividuals(List.of(contentIndividuals.get(12),contentIndividuals.get(13), contentIndividuals.get(14)));
+        filmService.addContentIndividual(films.get(3), contentIndividuals.get(12));
+        filmService.addContentIndividual(films.get(3), contentIndividuals.get(13));
+        filmService.addContentIndividual(films.get(3), contentIndividuals.get(14));
+
+        //films.get(4).setContentIndividuals(List.of(contentIndividuals.get(15),contentIndividuals.get(16), contentIndividuals.get(17)));
+        filmService.addContentIndividual(films.get(4), contentIndividuals.get(15));
+        filmService.addContentIndividual(films.get(4), contentIndividuals.get(16));
+        filmService.addContentIndividual(films.get(4), contentIndividuals.get(17));
+
+        //films.get(5).setContentIndividuals(List.of(contentIndividuals.get(18),contentIndividuals.get(19), contentIndividuals.get(20), contentIndividuals.get(21)));
+        filmService.addContentIndividual(films.get(5), contentIndividuals.get(18));
+        filmService.addContentIndividual(films.get(5), contentIndividuals.get(19));
+        filmService.addContentIndividual(films.get(5), contentIndividuals.get(20));
+        filmService.addContentIndividual(films.get(5), contentIndividuals.get(21));
+
+        //films.get(6).setContentIndividuals(List.of(contentIndividuals.get(22),contentIndividuals.get(23), contentIndividuals.get(24), contentIndividuals.get(25)));
+        filmService.addContentIndividual(films.get(6), contentIndividuals.get(22));
+        filmService.addContentIndividual(films.get(6), contentIndividuals.get(23));
+        filmService.addContentIndividual(films.get(6), contentIndividuals.get(24));
+        filmService.addContentIndividual(films.get(6), contentIndividuals.get(25));
+
+        //films.get(7).setContentIndividuals(List.of(contentIndividuals.get(26),contentIndividuals.get(27), contentIndividuals.get(28), contentIndividuals.get(29)));
+        filmService.addContentIndividual(films.get(7), contentIndividuals.get(26));
+        filmService.addContentIndividual(films.get(7), contentIndividuals.get(27));
+        filmService.addContentIndividual(films.get(7), contentIndividuals.get(28));
+        filmService.addContentIndividual(films.get(7), contentIndividuals.get(29));
+
+        //films.get(8).setContentIndividuals(List.of(contentIndividuals.get(30),contentIndividuals.get(31), contentIndividuals.get(32), contentIndividuals.get(33)));
+        filmService.addContentIndividual(films.get(8), contentIndividuals.get(30));
+        filmService.addContentIndividual(films.get(8), contentIndividuals.get(31));
+        filmService.addContentIndividual(films.get(8), contentIndividuals.get(32));
+        filmService.addContentIndividual(films.get(8), contentIndividuals.get(33));
+
+        //films.get(9).setContentIndividuals(List.of(contentIndividuals.get(34),contentIndividuals.get(35), contentIndividuals.get(36), contentIndividuals.get(37)));
+        filmService.addContentIndividual(films.get(9), contentIndividuals.get(34));
+        filmService.addContentIndividual(films.get(9), contentIndividuals.get(35));
+        filmService.addContentIndividual(films.get(9), contentIndividuals.get(36));
+        filmService.addContentIndividual(films.get(9), contentIndividuals.get(37));
+
+        //films.get(10).setContentIndividuals(List.of(contentIndividuals.get(38),contentIndividuals.get(39), contentIndividuals.get(40), contentIndividuals.get(41), contentIndividuals.get(42)));
+        filmService.addContentIndividual(films.get(10), contentIndividuals.get(38));
+        filmService.addContentIndividual(films.get(10), contentIndividuals.get(39));
+        filmService.addContentIndividual(films.get(10), contentIndividuals.get(40));
+        filmService.addContentIndividual(films.get(10), contentIndividuals.get(41));
+        filmService.addContentIndividual(films.get(10), contentIndividuals.get(42));
+
+        //films.get(11).setContentIndividuals(List.of(contentIndividuals.get(43),contentIndividuals.get(44), contentIndividuals.get(45), contentIndividuals.get(46), contentIndividuals.get(47)));
+        filmService.addContentIndividual(films.get(11), contentIndividuals.get(43));
+        filmService.addContentIndividual(films.get(11), contentIndividuals.get(44));
+        filmService.addContentIndividual(films.get(11), contentIndividuals.get(45));
+        filmService.addContentIndividual(films.get(11), contentIndividuals.get(46));
+        filmService.addContentIndividual(films.get(11), contentIndividuals.get(47));
+
+        //films.get(12).setContentIndividuals(List.of(contentIndividuals.get(48),contentIndividuals.get(49), contentIndividuals.get(50), contentIndividuals.get(51)));
+        filmService.addContentIndividual(films.get(12), contentIndividuals.get(48));
+        filmService.addContentIndividual(films.get(12), contentIndividuals.get(49));
+        filmService.addContentIndividual(films.get(12), contentIndividuals.get(50));
+        filmService.addContentIndividual(films.get(12), contentIndividuals.get(51));
+
+        //films.get(13).setContentIndividuals(List.of(contentIndividuals.get(52),contentIndividuals.get(53), contentIndividuals.get(54), contentIndividuals.get(55)));
+        filmService.addContentIndividual(films.get(13), contentIndividuals.get(52));
+        filmService.addContentIndividual(films.get(13), contentIndividuals.get(53));
+        filmService.addContentIndividual(films.get(13), contentIndividuals.get(54));
+        filmService.addContentIndividual(films.get(13), contentIndividuals.get(55));
+
+        //films.get(14).setContentIndividuals(List.of(contentIndividuals.get(56),contentIndividuals.get(57), contentIndividuals.get(58), contentIndividuals.get(59), contentIndividuals.get(60)));
+        filmService.addContentIndividual(films.get(14), contentIndividuals.get(56));
+        filmService.addContentIndividual(films.get(14), contentIndividuals.get(57));
+        filmService.addContentIndividual(films.get(14), contentIndividuals.get(58));
+        filmService.addContentIndividual(films.get(14), contentIndividuals.get(59));
+        filmService.addContentIndividual(films.get(14), contentIndividuals.get(60));
+
+        //films.get(15).setContentIndividuals(List.of(contentIndividuals.get(61),contentIndividuals.get(62), contentIndividuals.get(63), contentIndividuals.get(64), contentIndividuals.get(65)));
+        filmService.addContentIndividual(films.get(15), contentIndividuals.get(61));
+        filmService.addContentIndividual(films.get(15), contentIndividuals.get(62));
+        filmService.addContentIndividual(films.get(15), contentIndividuals.get(63));
+        filmService.addContentIndividual(films.get(15), contentIndividuals.get(64));
+        filmService.addContentIndividual(films.get(15), contentIndividuals.get(65));
+
+        //films.get(16).setContentIndividuals(List.of(contentIndividuals.get(66),contentIndividuals.get(67), contentIndividuals.get(68), contentIndividuals.get(69), contentIndividuals.get(70)));
+        filmService.addContentIndividual(films.get(16), contentIndividuals.get(66));
+        filmService.addContentIndividual(films.get(16), contentIndividuals.get(67));
+        filmService.addContentIndividual(films.get(16), contentIndividuals.get(68));
+        filmService.addContentIndividual(films.get(16), contentIndividuals.get(69));
+        filmService.addContentIndividual(films.get(16), contentIndividuals.get(70));
+
+        //films.get(17).setContentIndividuals(List.of(contentIndividuals.get(71),contentIndividuals.get(72), contentIndividuals.get(73), contentIndividuals.get(74)));
+        filmService.addContentIndividual(films.get(17), contentIndividuals.get(71));
+        filmService.addContentIndividual(films.get(17), contentIndividuals.get(71));
+        filmService.addContentIndividual(films.get(17), contentIndividuals.get(73));
+        filmService.addContentIndividual(films.get(17), contentIndividuals.get(74));
+
+
+        //films.get(18).setContentIndividuals(List.of(contentIndividuals.get(75),contentIndividuals.get(76), contentIndividuals.get(77), contentIndividuals.get(78)));
+        filmService.addContentIndividual(films.get(18), contentIndividuals.get(75));
+        filmService.addContentIndividual(films.get(18), contentIndividuals.get(76));
+        filmService.addContentIndividual(films.get(18), contentIndividuals.get(77));
+        filmService.addContentIndividual(films.get(18), contentIndividuals.get(78));
+
+        //films.get(19).setContentIndividuals(List.of(contentIndividuals.get(79),contentIndividuals.get(80), contentIndividuals.get(81), contentIndividuals.get(82)));
+        filmService.addContentIndividual(films.get(19), contentIndividuals.get(79));
+        filmService.addContentIndividual(films.get(19), contentIndividuals.get(80));
+        filmService.addContentIndividual(films.get(19), contentIndividuals.get(81));
+        filmService.addContentIndividual(films.get(19), contentIndividuals.get(82));
+
+        //films.get(20).setContentIndividuals(List.of(contentIndividuals.get(83),contentIndividuals.get(84), contentIndividuals.get(85), contentIndividuals.get(86)));
+        filmService.addContentIndividual(films.get(20), contentIndividuals.get(83));
+        filmService.addContentIndividual(films.get(20), contentIndividuals.get(84));
+        filmService.addContentIndividual(films.get(20), contentIndividuals.get(85));
+        filmService.addContentIndividual(films.get(20), contentIndividuals.get(86));
+
+        //films.get(21).setContentIndividuals(List.of(contentIndividuals.get(87),contentIndividuals.get(88), contentIndividuals.get(89)));
+        filmService.addContentIndividual(films.get(21), contentIndividuals.get(87));
+        filmService.addContentIndividual(films.get(21), contentIndividuals.get(88));
+        filmService.addContentIndividual(films.get(21), contentIndividuals.get(89));
+
+        //films.get(22).setContentIndividuals(List.of(contentIndividuals.get(90),contentIndividuals.get(91), contentIndividuals.get(92)));
+        filmService.addContentIndividual(films.get(22), contentIndividuals.get(90));
+        filmService.addContentIndividual(films.get(22), contentIndividuals.get(91));
+        filmService.addContentIndividual(films.get(22), contentIndividuals.get(92));
+
+        //films.get(23).setContentIndividuals(List.of(contentIndividuals.get(93),contentIndividuals.get(94), contentIndividuals.get(95)));
+        filmService.addContentIndividual(films.get(23), contentIndividuals.get(93));
+        filmService.addContentIndividual(films.get(23), contentIndividuals.get(94));
+        filmService.addContentIndividual(films.get(23), contentIndividuals.get(95));
+
+        //films.get(24).setContentIndividuals(List.of(contentIndividuals.get(96),contentIndividuals.get(97), contentIndividuals.get(98)));
+        filmService.addContentIndividual(films.get(24), contentIndividuals.get(96));
+        filmService.addContentIndividual(films.get(24), contentIndividuals.get(97));
+        filmService.addContentIndividual(films.get(24), contentIndividuals.get(98));
+
+        //films.get(25).setContentIndividuals(List.of(contentIndividuals.get(99),contentIndividuals.get(100), contentIndividuals.get(101)));
+        filmService.addContentIndividual(films.get(25), contentIndividuals.get(99));
+        filmService.addContentIndividual(films.get(25), contentIndividuals.get(100));
+        filmService.addContentIndividual(films.get(25), contentIndividuals.get(101));
+
+        //films.get(26).setContentIndividuals(List.of(contentIndividuals.get(102),contentIndividuals.get(103), contentIndividuals.get(104), contentIndividuals.get(105)));
+        filmService.addContentIndividual(films.get(26), contentIndividuals.get(102));
+        filmService.addContentIndividual(films.get(26), contentIndividuals.get(103));
+        filmService.addContentIndividual(films.get(26), contentIndividuals.get(104));
+        filmService.addContentIndividual(films.get(26), contentIndividuals.get(105));
+        //films.get(27).setContentIndividuals(List.of(contentIndividuals.get(106),contentIndividuals.get(107), contentIndividuals.get(108)));
+        filmService.addContentIndividual(films.get(27), contentIndividuals.get(106));
+        filmService.addContentIndividual(films.get(27), contentIndividuals.get(107));
+        filmService.addContentIndividual(films.get(27), contentIndividuals.get(108));
+        //films.get(28).setContentIndividuals(List.of(contentIndividuals.get(109),contentIndividuals.get(110), contentIndividuals.get(111)));
+        filmService.addContentIndividual(films.get(28), contentIndividuals.get(109));
+        filmService.addContentIndividual(films.get(28), contentIndividuals.get(110));
+        filmService.addContentIndividual(films.get(28), contentIndividuals.get(111));
+        //films.get(29).setContentIndividuals(List.of(contentIndividuals.get(112),contentIndividuals.get(113), contentIndividuals.get(114), contentIndividuals.get(115), contentIndividuals.get(116), contentIndividuals.get(117)));
+        filmService.addContentIndividual(films.get(29), contentIndividuals.get(112));
+        filmService.addContentIndividual(films.get(29), contentIndividuals.get(113));
+        filmService.addContentIndividual(films.get(29), contentIndividuals.get(114));
+        filmService.addContentIndividual(films.get(29), contentIndividuals.get(115));
+        filmService.addContentIndividual(films.get(29), contentIndividuals.get(116));
+        filmService.addContentIndividual(films.get(29), contentIndividuals.get(117));
+        //films.get(30).setContentIndividuals(List.of(contentIndividuals.get(118),contentIndividuals.get(119), contentIndividuals.get(120), contentIndividuals.get(121), contentIndividuals.get(122)));
+        filmService.addContentIndividual(films.get(30), contentIndividuals.get(118));
+        filmService.addContentIndividual(films.get(30), contentIndividuals.get(119));
+        filmService.addContentIndividual(films.get(30), contentIndividuals.get(120));
+        filmService.addContentIndividual(films.get(30), contentIndividuals.get(121));
+        filmService.addContentIndividual(films.get(30), contentIndividuals.get(122));
+        //films.get(31).setContentIndividuals(List.of(contentIndividuals.get(123),contentIndividuals.get(124), contentIndividuals.get(125), contentIndividuals.get(126), contentIndividuals.get(127)));
+        filmService.addContentIndividual(films.get(31), contentIndividuals.get(123));
+        filmService.addContentIndividual(films.get(31), contentIndividuals.get(124));
+        filmService.addContentIndividual(films.get(31), contentIndividuals.get(125));
+        filmService.addContentIndividual(films.get(31), contentIndividuals.get(126));
+        filmService.addContentIndividual(films.get(31), contentIndividuals.get(127));
+        //films.get(32).setContentIndividuals(List.of(contentIndividuals.get(128),contentIndividuals.get(129), contentIndividuals.get(130), contentIndividuals.get(131)));
+        filmService.addContentIndividual(films.get(32), contentIndividuals.get(128));
+        filmService.addContentIndividual(films.get(32), contentIndividuals.get(129));
+        filmService.addContentIndividual(films.get(32), contentIndividuals.get(130));
+        filmService.addContentIndividual(films.get(32), contentIndividuals.get(131));
+        //films.get(33).setContentIndividuals(List.of(contentIndividuals.get(132),contentIndividuals.get(133), contentIndividuals.get(134), contentIndividuals.get(135)));
+        filmService.addContentIndividual(films.get(33), contentIndividuals.get(132));
+        filmService.addContentIndividual(films.get(33), contentIndividuals.get(133));
+        filmService.addContentIndividual(films.get(33), contentIndividuals.get(134));
+        filmService.addContentIndividual(films.get(33), contentIndividuals.get(135));
+        //films.get(34).setContentIndividuals(List.of(contentIndividuals.get(136),contentIndividuals.get(137), contentIndividuals.get(138), contentIndividuals.get(139)));
+        filmService.addContentIndividual(films.get(34), contentIndividuals.get(136));
+        filmService.addContentIndividual(films.get(34), contentIndividuals.get(137));
+        filmService.addContentIndividual(films.get(34), contentIndividuals.get(138));
+        filmService.addContentIndividual(films.get(34), contentIndividuals.get(139));
+        //films.get(35).setContentIndividuals(List.of(contentIndividuals.get(140),contentIndividuals.get(141), contentIndividuals.get(142), contentIndividuals.get(143), contentIndividuals.get(144)));
+        filmService.addContentIndividual(films.get(35), contentIndividuals.get(140));
+        filmService.addContentIndividual(films.get(35), contentIndividuals.get(141));
+        filmService.addContentIndividual(films.get(35), contentIndividuals.get(142));
+        filmService.addContentIndividual(films.get(35), contentIndividuals.get(143));
+        filmService.addContentIndividual(films.get(35), contentIndividuals.get(144));
+        //films.get(36).setContentIndividuals(List.of(contentIndividuals.get(145),contentIndividuals.get(146), contentIndividuals.get(147), contentIndividuals.get(148), contentIndividuals.get(149)));
+        filmService.addContentIndividual(films.get(36), contentIndividuals.get(145));
+        filmService.addContentIndividual(films.get(36), contentIndividuals.get(146));
+        filmService.addContentIndividual(films.get(36), contentIndividuals.get(147));
+        filmService.addContentIndividual(films.get(36), contentIndividuals.get(148));
+        filmService.addContentIndividual(films.get(36), contentIndividuals.get(149));
+
+        //tvshows.get(0).setContentIndividuals(List.of(contentIndividuals.get(150),contentIndividuals.get(151), contentIndividuals.get(152)));
+        tvShowService.addContentIndividual(tvshows.get(0), contentIndividuals.get(150));
+        tvShowService.addContentIndividual(tvshows.get(0), contentIndividuals.get(151));
+        tvShowService.addContentIndividual(tvshows.get(0), contentIndividuals.get(152));
+        //tvshows.get(1).setContentIndividuals(List.of(contentIndividuals.get(153),contentIndividuals.get(154), contentIndividuals.get(155), contentIndividuals.get(156)));
+        tvShowService.addContentIndividual(tvshows.get(1), contentIndividuals.get(153));
+        tvShowService.addContentIndividual(tvshows.get(1), contentIndividuals.get(154));
+        tvShowService.addContentIndividual(tvshows.get(1), contentIndividuals.get(155));
+        tvShowService.addContentIndividual(tvshows.get(1), contentIndividuals.get(156));
+        //tvshows.get(2).setContentIndividuals(List.of(contentIndividuals.get(157),contentIndividuals.get(158), contentIndividuals.get(159), contentIndividuals.get(160)));
+        tvShowService.addContentIndividual(tvshows.get(2), contentIndividuals.get(157));
+        tvShowService.addContentIndividual(tvshows.get(2), contentIndividuals.get(158));
+        tvShowService.addContentIndividual(tvshows.get(2), contentIndividuals.get(159));
+        tvShowService.addContentIndividual(tvshows.get(2), contentIndividuals.get(160));
+        //tvshows.get(3).setContentIndividuals(List.of(contentIndividuals.get(161),contentIndividuals.get(162), contentIndividuals.get(163)));
+        tvShowService.addContentIndividual(tvshows.get(3), contentIndividuals.get(161));
+        tvShowService.addContentIndividual(tvshows.get(3), contentIndividuals.get(162));
+        tvShowService.addContentIndividual(tvshows.get(3), contentIndividuals.get(163));
+        //tvshows.get(4).setContentIndividuals(List.of(contentIndividuals.get(164),contentIndividuals.get(165), contentIndividuals.get(166)));
+        tvShowService.addContentIndividual(tvshows.get(4), contentIndividuals.get(164));
+        tvShowService.addContentIndividual(tvshows.get(4), contentIndividuals.get(165));
+        tvShowService.addContentIndividual(tvshows.get(4), contentIndividuals.get(166));
+        //tvshows.get(5).setContentIndividuals(List.of(contentIndividuals.get(167),contentIndividuals.get(168), contentIndividuals.get(169), contentIndividuals.get(170)));
+        tvShowService.addContentIndividual(tvshows.get(5), contentIndividuals.get(167));
+        tvShowService.addContentIndividual(tvshows.get(5), contentIndividuals.get(168));
+        tvShowService.addContentIndividual(tvshows.get(5), contentIndividuals.get(169));
+        tvShowService.addContentIndividual(tvshows.get(5), contentIndividuals.get(170));
+        //tvshows.get(6).setContentIndividuals(List.of(contentIndividuals.get(171),contentIndividuals.get(172), contentIndividuals.get(173), contentIndividuals.get(174)));
+        tvShowService.addContentIndividual(tvshows.get(6), contentIndividuals.get(171));
+        tvShowService.addContentIndividual(tvshows.get(6), contentIndividuals.get(172));
+        tvShowService.addContentIndividual(tvshows.get(6), contentIndividuals.get(173));
+        tvShowService.addContentIndividual(tvshows.get(6), contentIndividuals.get(174));
+        //tvshows.get(7).setContentIndividuals(List.of(contentIndividuals.get(175),contentIndividuals.get(176), contentIndividuals.get(177)));
+        tvShowService.addContentIndividual(tvshows.get(7), contentIndividuals.get(175));
+        tvShowService.addContentIndividual(tvshows.get(7), contentIndividuals.get(176));
+        tvShowService.addContentIndividual(tvshows.get(7), contentIndividuals.get(177));
+        //tvshows.get(8).setContentIndividuals(List.of(contentIndividuals.get(178),contentIndividuals.get(179), contentIndividuals.get(180), contentIndividuals.get(181)));
+        tvShowService.addContentIndividual(tvshows.get(8), contentIndividuals.get(178));
+        tvShowService.addContentIndividual(tvshows.get(8), contentIndividuals.get(179));
+        tvShowService.addContentIndividual(tvshows.get(8), contentIndividuals.get(180));
+        tvShowService.addContentIndividual(tvshows.get(8), contentIndividuals.get(181));
 
         individualService.createAll(individuals);
         logger.info("Created 122 Individuals (Actors, Directors, Writers, Producers");
@@ -3213,6 +3425,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
         awardService.createAll(awards);
         logger.info("Created 67 awards");
 
-        contentIndividualService.createAll(contentIndividuals);
+
     }
 }

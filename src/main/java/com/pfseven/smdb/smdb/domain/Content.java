@@ -92,8 +92,8 @@ public class Content extends BaseModel{
             inverseForeignKey = @ForeignKey(name = "INDIVIDUAL_FK_ID"),
             joinColumns = @JoinColumn(name="CONTENT_ID"),
             inverseJoinColumns = @JoinColumn(name="INDIVIDUAL_ID"))*/
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "content")
-    private List<ContentIndividual> contentIndividuals = new ArrayList<>();
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true,  mappedBy = "content")
+    private final Set<ContentIndividual> contentIndividuals = new HashSet<>();
 
     //Custom Getter for daterRelease data -experimental-
     public String getReleaseDate(){

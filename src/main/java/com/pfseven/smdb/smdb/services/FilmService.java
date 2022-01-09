@@ -1,8 +1,6 @@
 package com.pfseven.smdb.smdb.services;
 
-import com.pfseven.smdb.smdb.domain.Film;
-import com.pfseven.smdb.smdb.domain.Genre;
-import com.pfseven.smdb.smdb.domain.TvShow;
+import com.pfseven.smdb.smdb.domain.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -19,6 +17,8 @@ public interface FilmService extends BaseService<Film, Long>  {
 
     //Returns films for a given (or more) genre(s)
     List<Film> findByGenres(List<Genre> genres);
+
+    void addContentIndividual(Film film,  ContentIndividual contentIndividual);
 
 
 

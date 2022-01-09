@@ -12,6 +12,8 @@ public interface FilmRepository extends JpaRepository<Film, Long> {
 
     Film findByTitle(String title);
 
+    List<Film> findByGenres(Genre genre);
+
     //Long exportFilms(Film film);
 
     //List<Film> findTop10ByOrderByRatingDesc();
@@ -25,7 +27,7 @@ public interface FilmRepository extends JpaRepository<Film, Long> {
     List<Film> findByGenre(Genre genre);*/
 
     //List<Film> findByGenres(Set<Genre> genre);
-    List<Film> findByGenres(Genre genre);
+
 
 
 }

@@ -1,10 +1,15 @@
 package com.pfseven.smdb.smdb.repositories;
 
+import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.domain.Individual;
+import com.pfseven.smdb.smdb.pojo.IndivContentPerGenreReport;
+import com.pfseven.smdb.smdb.projections.IndividualInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
+import java.util.Map;
 
 public interface IndividualRepository extends JpaRepository<Individual, Long> {
 
@@ -22,9 +27,12 @@ public interface IndividualRepository extends JpaRepository<Individual, Long> {
 
     List<Individual> findByFirstNameAndIndividualRole(String firstName, IndividualRole individualRole);
 
+    @Query("select ind from Individual ind join ind.contentIndividuals conInd join conInd.content cont inner join cont.genres genre WHERE ind.firstName=?1 and ind.lastName=?2")
+    List<Individual> findByFirstNameAndLastNameAndGenre(String firstName, String lastName, Genre genre);
+
     //List<Individual> findByFirstNameIgnoreCaseContaining(String firstName);
 
     //Optional<Individual> findByFirstNameIgnoreCaseContainingAndLastNameIgnoreCaseContaining(String firstName, String lastName);
 
-    //Long exportActors(Individual individual);
+
 }

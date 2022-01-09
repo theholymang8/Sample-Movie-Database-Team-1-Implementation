@@ -5,6 +5,7 @@ import lombok.experimental.SuperBuilder;
 import net.bytebuddy.implementation.bind.annotation.Super;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 //Lombok
@@ -12,8 +13,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@ToString(callSuper = true, exclude = {"content", "individual"})
-@EqualsAndHashCode(callSuper = true, exclude = {"content", "individual"})
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 //Hibernate
 @Entity
 @Table(name = "CONTENT_INDIVIDUALS")
@@ -21,11 +22,13 @@ import java.io.Serializable;
 @SequenceGenerator(name = "idGenerator", sequenceName = "CONTENT_INDIVIDUALS_SEQ", allocationSize = 1)
 public class ContentIndividual extends BaseModel {
 
-    @ManyToOne
+    @NotNull
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "CONTENT_ID")
     private Content content;
 
-    @ManyToOne
+    @NotNull
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "INDIVIDUAL_ID")
     private Individual individual;
 

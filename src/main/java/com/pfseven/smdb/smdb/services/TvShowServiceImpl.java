@@ -1,5 +1,7 @@
 package com.pfseven.smdb.smdb.services;
 
+import com.pfseven.smdb.smdb.domain.ContentIndividual;
+import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
 import com.pfseven.smdb.smdb.pojo.CountPerYearReport;
@@ -53,5 +55,11 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
             map.put(genre, reports);
         }
         return map;
+    }
+
+    @Override
+    public void addContentIndividual(TvShow tvShow, ContentIndividual contentIndividual){
+
+        tvShow.getContentIndividuals().add(contentIndividual);
     }
 }

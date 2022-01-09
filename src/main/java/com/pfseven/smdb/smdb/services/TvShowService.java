@@ -1,5 +1,7 @@
 package com.pfseven.smdb.smdb.services;
 
+import com.pfseven.smdb.smdb.domain.ContentIndividual;
+import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
 import com.pfseven.smdb.smdb.pojo.CountPerYearReport;
@@ -13,6 +15,7 @@ public interface TvShowService extends BaseService<TvShow, Long> {
     TvShow findByTitle(String title);
 
     List<TvShow> findByGenres(final List<Genre> genres);
+
     //Long exportTvShows(TvShow tvShow);
 
     //Return X high-rated content
@@ -29,4 +32,6 @@ public interface TvShowService extends BaseService<TvShow, Long> {
     Map<Genre, Long> countByGenres(Set<Genre> genres);
 
     Map<Genre, List<CountPerYearReport>> countByYearAndGenres(Set<Genre> genres);
+
+    void addContentIndividual(TvShow tvShow, ContentIndividual contentIndividual);
 }

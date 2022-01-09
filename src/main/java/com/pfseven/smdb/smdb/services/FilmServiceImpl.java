@@ -1,7 +1,6 @@
 package com.pfseven.smdb.smdb.services;
 
-import com.pfseven.smdb.smdb.domain.Film;
-import com.pfseven.smdb.smdb.domain.Genre;
+import com.pfseven.smdb.smdb.domain.*;
 import com.pfseven.smdb.smdb.repositories.FilmRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -33,5 +32,17 @@ public class FilmServiceImpl extends BaseServiceImpl<Film> implements FilmServic
             foundFilms.addAll(filmRepository.findByGenres(genre));
         }
         return foundFilms;
+    }
+
+    @Override
+    public void addContentIndividual(Film film,  ContentIndividual contentIndividual){
+        //film.getContentIndividuals().add(
+                //ContentIndividual.builder()
+                //.content(film)
+                //.individual(individual)
+                //.contributingRole(individualRole)
+                //.build());
+        film.getContentIndividuals().add(contentIndividual);
+        //logger.debug("content {} added to ContIndiv {}", film, contentIndividual);
     }
 }
