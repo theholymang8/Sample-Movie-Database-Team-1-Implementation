@@ -18,6 +18,8 @@ public interface FilmService extends BaseService<Film, Long>  {
     //Returns films for a given (or more) genre(s)
     List<Film> findByGenres(List<Genre> genres);
 
+    List<Film> contentPerGenreForGivenIndividual(final String firstName, final String lastName);
+
     void addContentIndividual(Film film,  ContentIndividual contentIndividual);
 
 

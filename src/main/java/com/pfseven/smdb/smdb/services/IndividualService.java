@@ -1,7 +1,6 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.*;
-//import com.pfseven.smdb.smdb.pojo.IndivContentPerGenreReport;
 
 import java.util.List;
 import java.util.Map;

@@ -4,7 +4,7 @@ import com.pfseven.smdb.smdb.domain.ContentIndividual;
 import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
-import com.pfseven.smdb.smdb.pojo.CountPerYearReport;
+import com.pfseven.smdb.smdb.dto.CountPerYearReport;
 
 import java.util.List;
 import java.util.Map;
@@ -17,6 +17,8 @@ public interface TvShowService extends BaseService<TvShow, Long> {
     List<TvShow> findByGenres(final List<Genre> genres);
 
     List<TvShow> findTopTvShows(Integer limit);
+
+    List<TvShow> findAllByGenre(final String firstName, final String lastName);
 
     //Long exportTvShows(TvShow tvShow);
 
@@ -31,9 +33,11 @@ public interface TvShowService extends BaseService<TvShow, Long> {
 
     //Map<Long, Long> numOfTvShowsPerYearPerGenre();
 
-    Map<Genre, Long> countByGenres(Set<Genre> genres);
+    Map<Genre, Integer> countByGenres(Set<Genre> genres);
 
     Map<Genre, List<CountPerYearReport>> countByYearAndGenres(Set<Genre> genres);
+
+    //List<TvShow> contentPerGenreForGivenIndividual(Long individualID);
 
     void addContentIndividual(TvShow tvShow, ContentIndividual contentIndividual);
 }

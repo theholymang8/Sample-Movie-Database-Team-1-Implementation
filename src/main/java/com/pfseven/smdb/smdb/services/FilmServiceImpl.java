@@ -3,6 +3,7 @@ package com.pfseven.smdb.smdb.services;
 import com.pfseven.smdb.smdb.domain.*;
 import com.pfseven.smdb.smdb.repositories.FilmRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -16,6 +17,9 @@ import java.util.List;
 public class FilmServiceImpl extends BaseServiceImpl<Film> implements FilmService{
 
     private final FilmRepository filmRepository;
+
+    @Autowired
+    private final IndividualService individualService;
 
     @Override
     public JpaRepository<Film, Long> getRepository() {
@@ -39,6 +43,12 @@ public class FilmServiceImpl extends BaseServiceImpl<Film> implements FilmServic
             foundFilms.addAll(filmRepository.findByGenres(genre));
         }
         return foundFilms;
+    }
+
+    @Override
+    public List<Film> contentPerGenreForGivenIndividual(final String firstName, final String lastName) {
+        Long individualID = individualService.findByFirstNameAndLastName(firstName,lastName).getId();
+        return filmRepository.contentPerGenreForGivenIndividual(individualID);
     }
 
     @Override

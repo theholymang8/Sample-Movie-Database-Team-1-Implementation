@@ -1,12 +1,12 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.ContentIndividual;
-import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
-import com.pfseven.smdb.smdb.pojo.CountPerYearReport;
+import com.pfseven.smdb.smdb.dto.CountPerYearReport;
 import com.pfseven.smdb.smdb.repositories.TvShowRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -19,6 +19,9 @@ import java.util.*;
 public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShowService{
 
     private final TvShowRepository tvShowRepository;
+
+    @Autowired
+    private final IndividualService individualService;
 
     @Override
     public JpaRepository<TvShow, Long> getRepository() {
@@ -45,10 +48,15 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
     }
 
     @Override
-    public Map<Genre, Long> countByGenres(final Set<Genre> genres){
-        Map<Genre, Long> map = new HashMap<>();
+    public List<TvShow> findAllByGenre(final String firstName, final String lastName) {
+        return null;
+    }
+
+    @Override
+    public Map<Genre, Integer> countByGenres(final Set<Genre> genres){
+        Map<Genre, Integer> map = new HashMap<>();
         for(final Genre genre : genres){
-            Long count = tvShowRepository.countByGenres(genre);
+            Integer count = tvShowRepository.countByGenres(genre);
             map.put(genre, count);
         }
         return map;
@@ -63,6 +71,11 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
         }
         return map;
     }
+
+    //@Override
+    //public List<TvShow> contentPerGenreForGivenIndividual(Long individualID) {
+    //    return null;
+    //}
 
     @Override
     public void addContentIndividual(TvShow tvShow, ContentIndividual contentIndividual){

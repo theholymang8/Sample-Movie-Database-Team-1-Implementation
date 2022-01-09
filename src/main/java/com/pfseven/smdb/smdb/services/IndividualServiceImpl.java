@@ -1,22 +1,16 @@
 package com.pfseven.smdb.smdb.services;
 
-import com.pfseven.smdb.smdb.domain.ContentIndividual;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.domain.Individual;
-import com.pfseven.smdb.smdb.pojo.CountPerYearReport;
 //import com.pfseven.smdb.smdb.pojo.IndivContentPerGenreReport;
 //import com.pfseven.smdb.smdb.projections.IndividualInfo;
 import com.pfseven.smdb.smdb.repositories.IndividualRepository;
 import lombok.RequiredArgsConstructor;
 
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVPrinter;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.*;
 
 @Service

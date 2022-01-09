@@ -30,6 +30,8 @@ public interface IndividualRepository extends JpaRepository<Individual, Long> {
     @Query("select ind from Individual ind join ind.contentIndividuals conInd join conInd.content cont inner join cont.genres genre WHERE ind.firstName=?1 and ind.lastName=?2")
     List<Individual> findByFirstNameAndLastNameAndGenre(String firstName, String lastName, Genre genre);
 
+
+
     //List<Individual> findByFirstNameIgnoreCaseContaining(String firstName);
 
     //Optional<Individual> findByFirstNameIgnoreCaseContainingAndLastNameIgnoreCaseContaining(String firstName, String lastName);

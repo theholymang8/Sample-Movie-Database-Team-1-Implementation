@@ -1,4 +1,4 @@
-package com.pfseven.smdb.smdb.pojo;
+package com.pfseven.smdb.smdb.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

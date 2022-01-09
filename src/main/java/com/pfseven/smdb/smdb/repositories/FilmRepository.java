@@ -2,6 +2,7 @@ package com.pfseven.smdb.smdb.repositories;
 
 import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
+import com.pfseven.smdb.smdb.domain.TvShow;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -32,6 +33,8 @@ public interface FilmRepository extends JpaRepository<Film, Long> {
 
     //List<Film> findByGenres(Set<Genre> genre);
 
-
+    //Query 7
+    @Query("select f from ContentIndividual ci join ci.content c join Film f join c.genres g where ci.id=?1 group by g")
+    List<Film> contentPerGenreForGivenIndividual(Long individualID);
 
 }

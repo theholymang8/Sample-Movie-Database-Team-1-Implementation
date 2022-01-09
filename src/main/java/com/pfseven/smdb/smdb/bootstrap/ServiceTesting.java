@@ -107,6 +107,7 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         logger.info("Genre list: {} ", tvShowService.countByGenres(EnumSet.allOf(Genre.class)));
 
         //Query 6
+        logger.info("Query 6:");
         tvShowService.countByYearAndGenres(EnumSet.allOf(Genre.class))
                 .forEach((key,value)-> value
                         .forEach(queryReport -> logger.info("Num of shows per year: {} per genre: {} are: {}", queryReport.getYear(), key, queryReport.getCount()) ));
@@ -116,6 +117,11 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         });
 
         logger.info("Result : {}", tvShowService.countByGenres(Set.of(Genre.Drama, Genre.Comedy)));
+
+
+        //Query 7
+        logger.info("Query 7");
+        filmService.contentPerGenreForGivenIndividual("Liam", "Neeson").forEach(content -> logger.info("{}", content));
 
         //tvShowService.countByGenres(Set.of(Genre.Drama, Genre.Comedy)).values().forEach(count -> {
         //    logger.info("{} has  tvShows", count);
