@@ -1,6 +1,7 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.*;
+import com.pfseven.smdb.smdb.projections.ContentPerGenre;
 import com.pfseven.smdb.smdb.repositories.FilmRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,8 +47,9 @@ public class FilmServiceImpl extends BaseServiceImpl<Film> implements FilmServic
     }
 
     @Override
-    public List<Film> contentPerGenreForGivenIndividual(final String firstName, final String lastName) {
+    public List<ContentPerGenre> contentPerGenreForGivenIndividual(final String firstName, final String lastName) {
         Long individualID = individualService.findByFirstNameAndLastName(firstName,lastName).getId();
+        logger.info("individualID is {}",individualID);
         return filmRepository.contentPerGenreForGivenIndividual(individualID);
     }
 

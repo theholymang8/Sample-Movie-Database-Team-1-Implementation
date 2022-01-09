@@ -121,7 +121,8 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
 
         //Query 7
         logger.info("Query 7");
-        filmService.contentPerGenreForGivenIndividual("Liam", "Neeson").forEach(content -> logger.info("{}", content));
+        //filmService.contentPerGenreForGivenIndividual("Liam", "Neeson").forEach(content -> logger.info("{} / {}", content.getTitle(), content.getGenres()));
+        filmService.contentPerGenreForGivenIndividual("Liam", "Neeson").forEach(contentPerGenreReport -> logger.info("Genre: {} / Title: {}",contentPerGenreReport.getGenre(),contentPerGenreReport.getTitle()));
 
         //tvShowService.countByGenres(Set.of(Genre.Drama, Genre.Comedy)).values().forEach(count -> {
         //    logger.info("{} has  tvShows", count);
@@ -132,7 +133,8 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
 
         //logger.info("Top 10 Films: {}", filmService.findTopFilms(10));
 
-        filmService.findTopFilms(10).forEach(film -> logger.info("{} with rating: {}", film.getTitle(), film.getRating()));
-        tvShowService.findTopTvShows(4).forEach(tvShow -> logger.info("{} with rating: {}", tvShow.getTitle(), tvShow.getRating()));
+        //Query 1
+        //filmService.findTopFilms(10).forEach(film -> logger.info("{} with rating: {}", film.getTitle(), film.getRating()));
+        //tvShowService.findTopTvShows(4).forEach(tvShow -> logger.info("{} with rating: {}", tvShow.getTitle(), tvShow.getRating()));
     }
 }

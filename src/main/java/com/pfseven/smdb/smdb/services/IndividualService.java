@@ -3,7 +3,6 @@ package com.pfseven.smdb.smdb.services;
 import com.pfseven.smdb.smdb.domain.*;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 public interface IndividualService extends BaseService<Individual, Long>{
