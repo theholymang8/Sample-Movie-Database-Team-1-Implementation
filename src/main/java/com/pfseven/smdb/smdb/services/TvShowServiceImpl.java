@@ -1,23 +1,15 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.ContentIndividual;
-import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
 import com.pfseven.smdb.smdb.dto.CountPerYearReport;
-import com.pfseven.smdb.smdb.projections.ContentPerGenre;
-import com.pfseven.smdb.smdb.repositories.ContentRepository;
-import com.pfseven.smdb.smdb.repositories.FilmRepository;
 import com.pfseven.smdb.smdb.repositories.TvShowRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -26,14 +18,10 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
     private final TvShowRepository tvShowRepository;
 
     @Override
-    public ContentRepository<TvShow, Long> getRepositoryCo() {
+    public JpaRepository<TvShow, Long> getRepository() {
         return tvShowRepository;
     }
 
-    @Override
-    public JpaRepository<TvShow, Long> getRepository() {
-        return null;
-    }
 
     @Override
     public TvShow findByTitle(String title) {
@@ -48,7 +36,6 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
         }
         return foundTvShows;
     }
-
 
     @Override
     public List<TvShow> findAllByGenre(final String firstName, final String lastName) {
@@ -75,10 +62,8 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
         return map;
     }
 
-
     @Override
     public void addContentIndividual(TvShow tvShow, ContentIndividual contentIndividual){
-
         tvShow.getContentIndividuals().add(contentIndividual);
     }
 

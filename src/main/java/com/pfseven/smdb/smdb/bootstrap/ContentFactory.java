@@ -22,10 +22,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
     private final FilmService filmService;
     private final TvShowService tvShowService;
     private final IndividualService individualService;
-    private final ContentService<Film, Long> contentServiceFilms;
-    private final ContentService<TvShow, Long> contentServiceTvShows;
 
-    //private final ContentIndividualService contentIndividualService;
 
     @Override
     public void run(String... args) {
@@ -3172,7 +3169,6 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
         filmService.addContentIndividual(films.get(1), contentIndividuals.get(6));
         filmService.addContentIndividual(films.get(1), contentIndividuals.get(7));
         filmService.addContentIndividual(films.get(1), contentIndividuals.get(8));
-        //filmService.create(films.get(1));
 
         //films.get(2).setContentIndividuals(List.of(contentIndividuals.get(9),contentIndividuals.get(10), contentIndividuals.get(11)));
         filmService.addContentIndividual(films.get(2), contentIndividuals.get(9));
@@ -3420,11 +3416,9 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
 
         individualService.createAll(individuals);
         logger.info("Created 122 Individuals (Actors, Directors, Writers, Producers");
-        //filmService.createAll(films);
-        contentServiceFilms.createAll(films);
-        contentServiceTvShows.createAll(tvshows);
+        filmService.createAll(films);
         logger.info("Created 36 films");
-        //tvShowService.createAll(tvshows);
+        tvShowService.createAll(tvshows);
         logger.info("Created 9 TvShows/Series");
         awardService.createAll(awards);
         logger.info("Created 67 awards");

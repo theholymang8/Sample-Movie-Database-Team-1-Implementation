@@ -3,8 +3,6 @@ package com.pfseven.smdb.smdb.services;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.domain.Individual;
-//import com.pfseven.smdb.smdb.pojo.IndivContentPerGenreReport;
-//import com.pfseven.smdb.smdb.projections.IndividualInfo;
 import com.pfseven.smdb.smdb.repositories.IndividualRepository;
 import lombok.RequiredArgsConstructor;
 
@@ -55,15 +53,16 @@ public class IndividualServiceImpl extends BaseServiceImpl<Individual> implement
     }
 
 
-
-    @Override
+    //!!Suspicious Method Implementation!!
+    /**@Override
     public List<Individual> findByFirstNameAndLastNameAndGenre(String firstName, String lastName, final Set<Genre> genres){
-        //List<IndivContentPerGenreReport> foundIndividual = new ArrayList<>();
-        //for(Genre genre: genres){
-             //foundIndividual.add(individualRepository.findByFirstNameAndLastNameAndGenre(firstName, lastName, genre));
-        //}
+        List<IndivContentPerGenreReport> foundIndividual = new ArrayList<>();
+        for(Genre genre: genres){
+             foundIndividual.add(individualRepository.findByFirstNameAndLastNameAndGenre(firstName, lastName, genre));
+        }
+        Especially this Parameter -> Genre.Drama
         return individualRepository.findByFirstNameAndLastNameAndGenre(firstName, lastName, Genre.Drama);
-    }
+    }*/
 
 
 }

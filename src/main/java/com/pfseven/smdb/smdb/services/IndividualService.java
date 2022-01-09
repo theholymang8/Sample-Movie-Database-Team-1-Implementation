@@ -19,6 +19,9 @@ public interface IndividualService extends BaseService<Individual, Long>{
 
     List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
 
-    List<Individual>  findByFirstNameAndLastNameAndGenre(String firstName, String lastName, final Set<Genre> genres);
+    /**
+     Please check this one again, I believe it has suspicious implementation
+     */
+    //List<Individual>  findByFirstNameAndLastNameAndGenre(String firstName, String lastName, final Set<Genre> genres);
 
 }

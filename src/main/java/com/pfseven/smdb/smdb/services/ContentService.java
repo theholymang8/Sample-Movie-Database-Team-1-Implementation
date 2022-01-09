@@ -11,10 +11,8 @@ import java.util.Map;
 
 public interface ContentService<T, ID> extends BaseService<T, Long>{
 
+    List<T> findTopContent(Integer limit);
 
-    public List<T> findTopContent(Integer limit);
+    Map<Genre, List<ContentPerGenre>> contentPerGenreForGivenIndividual(final String firstName, final String lastName);
 
-    public Map<Genre, List<ContentPerGenre>> contentPerGenreForGivenIndividual(final String firstName, final String lastName);
-
-    //List<? extends Content> createAllContent(List<? extends Content> entities);
 }

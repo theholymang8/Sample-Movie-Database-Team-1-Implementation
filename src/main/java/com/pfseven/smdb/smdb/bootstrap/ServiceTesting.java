@@ -31,7 +31,7 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
     //private final ContentIndividualService contentIndividualService;
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args)  {
 
         //These services dont'w work properly yet
         //logger.info("Found one film with title 'Ran': {}", filmService.findByTitle("Ran"));
@@ -148,7 +148,14 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         //logger.info("Top 10 Films: {}", filmService.findTopFilms(10));
 
         //Query 1
-        //filmService.findTopFilms(10).forEach(film -> logger.info("{} with rating: {}", film.getTitle(), film.getRating()));
-        //tvShowService.findTopTvShows(4).forEach(tvShow -> logger.info("{} with rating: {}", tvShow.getTitle(), tvShow.getRating()));
+        filmService.findTopContent(10).forEach(film -> logger.info("{} with rating: {}", film.getTitle(), film.getRating()));
+        tvShowService.findTopContent(4).forEach(tvShow -> logger.info("{} with rating: {}", tvShow.getTitle(), tvShow.getRating()));
+
+        //Query 7 i guess
+        logger.info("**Query 7**");
+        filmService.contentPerGenreForGivenIndividual("Tom", "Hanks").forEach((genre, contentPerGenres) -> {
+            logger.info("{} : ", genre);
+            contentPerGenres.forEach(content -> logger.info("{}", content.getTitle()));
+        });
     }
 }

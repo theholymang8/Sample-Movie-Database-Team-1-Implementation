@@ -1,12 +1,9 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.BaseModel;
-import com.pfseven.smdb.smdb.domain.Content;
-import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.projections.ContentPerGenre;
 import com.pfseven.smdb.smdb.repositories.ContentRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -22,32 +19,33 @@ import java.util.stream.Collectors;
 @Component
 public abstract class ContentServiceImpl<T extends BaseModel> extends BaseServiceImpl<T> implements ContentService<T, Long> {
 
+    @Deprecated
+    @Autowired
+    private ContentRepository contentRepository;
+
+    //Service Field Injection
+    @Deprecated
     @Autowired
     private IndividualService individualService;
 
+    public abstract JpaRepository<T, Long> getRepository();
 
-    public abstract ContentRepository<T, Long> getRepositoryCo();
 
     @Override
-    public List<T> findTopContent(Integer limit)
-    {
-        //List<T> topContent = (List<T>) getRepositoryCo().findAll(PageRequest.of(0, limit, Sort.by(Sort.Direction.DESC, "rating"))).getContent();
-        return (List<T>) getRepositoryCo().findAll(PageRequest.of(0, limit, Sort.by(Sort.Direction.DESC, "rating"))).getContent();
+    public List<T> findTopContent(Integer limit) {
+        return getRepository().findAll(PageRequest.of(0, limit, Sort.by(Sort.Direction.DESC, "rating"))).getContent();
     }
 
     @Override
     public Map<Genre, List<ContentPerGenre>> contentPerGenreForGivenIndividual(final String firstName, final String lastName) {
         Long individualID = individualService.findByFirstNameAndLastName(firstName,lastName).getId();
         if (individualID == null){
-            logger.info("This person is not found!");
+            logger.info("{} {} could not be found", firstName, lastName);
             return null;
         }
-        logger.info("individualID is {}",individualID);
-        List<ContentPerGenre>reports = getRepositoryCo().contentPerGenreForGivenIndividual(individualID);
-        Map<Genre, List<ContentPerGenre>> byGenre = reports.stream()
+        List<ContentPerGenre>reports = contentRepository.contentPerGenreForGivenIndividual(individualID);
+        return reports.stream()
                 .collect(Collectors.groupingBy(ContentPerGenre::getGenre));
-        return byGenre;
-        //return filmRepository.contentPerGenreForGivenIndividual(individualID);
     }
 
 }

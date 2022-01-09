@@ -14,11 +14,8 @@ public interface FilmService extends ContentService<Film, Long>  {
     //Export films to csv file
     //Long exportFilms(Film film);
 
-
     //Returns films for a given (or more) genre(s)
     List<Film> findByGenres(List<Genre> genres);
-
-    Map<Genre, List<ContentPerGenre>> contentPerGenreForGivenIndividual(final String firstName, final String lastName);
 
     void addContentIndividual(Film film,  ContentIndividual contentIndividual);
 
