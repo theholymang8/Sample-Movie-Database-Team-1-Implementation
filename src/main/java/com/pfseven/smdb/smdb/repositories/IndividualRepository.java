@@ -25,7 +25,9 @@ public interface IndividualRepository extends JpaRepository<Individual, Long> {
 
     List<Individual> findByIndividualRole(IndividualRole individualRole);
 
-    List<Individual> findByFirstNameAndIndividualRole(String firstName, IndividualRole individualRole);
+    @Query("select distinct IND from Individual IND join IND.contentIndividuals CI " +
+            "where IND.firstName=?1 and IND.lastName=?2 and CI.contributingRole=?3 ")
+    List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
 
     @Query("select ind from Individual ind join ind.contentIndividuals conInd join conInd.content cont inner join cont.genres genre WHERE ind.firstName=?1 and ind.lastName=?2")
     List<Individual> findByFirstNameAndLastNameAndGenre(String firstName, String lastName, Genre genre);

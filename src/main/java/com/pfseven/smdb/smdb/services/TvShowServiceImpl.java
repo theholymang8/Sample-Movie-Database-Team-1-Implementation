@@ -1,9 +1,13 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.ContentIndividual;
+import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
 import com.pfseven.smdb.smdb.dto.CountPerYearReport;
+import com.pfseven.smdb.smdb.projections.ContentPerGenre;
+import com.pfseven.smdb.smdb.repositories.ContentRepository;
+import com.pfseven.smdb.smdb.repositories.FilmRepository;
 import com.pfseven.smdb.smdb.repositories.TvShowRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,18 +17,16 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShowService{
+public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvShowService{
 
     private final TvShowRepository tvShowRepository;
 
-    @Autowired
-    private final IndividualService individualService;
-
     @Override
-    public JpaRepository<TvShow, Long> getRepository() {
+    public ContentRepository<TvShow, Long> getRepository() {
         return tvShowRepository;
     }
 
@@ -42,10 +44,6 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
         return foundTvShows;
     }
 
-    @Override
-    public List<TvShow> findTopTvShows(Integer limit) {
-        return tvShowRepository.findAll(PageRequest.of(0, limit, Sort.by(Sort.Direction.DESC, "rating"))).getContent();
-    }
 
     @Override
     public List<TvShow> findAllByGenre(final String firstName, final String lastName) {
@@ -72,10 +70,6 @@ public class TvShowServiceImpl extends BaseServiceImpl<TvShow> implements TvShow
         return map;
     }
 
-    //@Override
-    //public List<TvShow> contentPerGenreForGivenIndividual(Long individualID) {
-    //    return null;
-    //}
 
     @Override
     public void addContentIndividual(TvShow tvShow, ContentIndividual contentIndividual){

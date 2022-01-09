@@ -17,7 +17,7 @@ public interface IndividualService extends BaseService<Individual, Long>{
 
     List<Individual> findAllByNationality(String nationality);
 
-    List<Individual> findByFirstNameAndIndividualRole(String firstName, IndividualRole individualRole);
+    List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
 
     List<Individual>  findByFirstNameAndLastNameAndGenre(String firstName, String lastName, final Set<Genre> genres);
 

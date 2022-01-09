@@ -2,6 +2,7 @@ package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.*;
 import com.pfseven.smdb.smdb.projections.ContentPerGenre;
+import com.pfseven.smdb.smdb.repositories.ContentRepository;
 import com.pfseven.smdb.smdb.repositories.FilmRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,29 +13,24 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class FilmServiceImpl extends BaseServiceImpl<Film> implements FilmService{
+public class FilmServiceImpl extends ContentServiceImpl<Film> implements FilmService{
 
     private final FilmRepository filmRepository;
 
-    @Autowired
-    private final IndividualService individualService;
-
     @Override
-    public JpaRepository<Film, Long> getRepository() {
+    public ContentRepository<Film, Long> getRepository() {
         return filmRepository;
     }
+
 
     @Override
     public Film findByTitle(String title) {
         return filmRepository.findByTitle(title);
-    }
-
-    @Override
-    public List<Film> findTopFilms(Integer limit) {
-        return filmRepository.findAll(PageRequest.of(0, limit, Sort.by(Sort.Direction.DESC, "rating"))).getContent();
     }
 
     @Override
@@ -47,21 +43,8 @@ public class FilmServiceImpl extends BaseServiceImpl<Film> implements FilmServic
     }
 
     @Override
-    public List<ContentPerGenre> contentPerGenreForGivenIndividual(final String firstName, final String lastName) {
-        Long individualID = individualService.findByFirstNameAndLastName(firstName,lastName).getId();
-        logger.info("individualID is {}",individualID);
-        return filmRepository.contentPerGenreForGivenIndividual(individualID);
+    public void addContentIndividual(Film film,  ContentIndividual contentIndividual){
+        film.getContentIndividuals().add(contentIndividual);
     }
 
-    @Override
-    public void addContentIndividual(Film film,  ContentIndividual contentIndividual){
-        //film.getContentIndividuals().add(
-                //ContentIndividual.builder()
-                //.content(film)
-                //.individual(individual)
-                //.contributingRole(individualRole)
-                //.build());
-        film.getContentIndividuals().add(contentIndividual);
-        //logger.debug("content {} added to ContIndiv {}", film, contentIndividual);
-    }
 }

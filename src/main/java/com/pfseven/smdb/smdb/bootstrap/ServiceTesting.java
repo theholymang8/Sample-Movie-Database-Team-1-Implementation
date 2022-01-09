@@ -97,11 +97,15 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         //individualService.findAllByIndividualRole(IndividualRole.Director).forEach(individual -> logger.info("{} {}", individual.getFirstName(), individual.getLastName()));
 
         //Query 3
-        //individualService
+        //Integer res = individualService.findIndividualByContributingRole("Liam", "Neeson", IndividualRole.Actor).size();
+        //logger.info("Size is: {}", res);
+        individualService.findIndividualByContributingRole("Tom", "Hanks", IndividualRole.Actor)
+                .forEach(individual -> individual.getContentIndividuals()
+                        .forEach(contentIndividual -> logger.info("TOM has these content as DIRECTOR: {}", contentIndividual.getContent().getTitle())));
                 //.findByFirstNameAndIndividualRole("Liam", IndividualRole.Actor)
                 //.forEach(individual -> individual.getContentIndividual()
                         //.forEach(contentIndividual -> logger.info("{} content : {}",contentIndividual.getIndividual().getFirstName(), contentIndividual.getContent())));
-
+        //logger.info("Tom Hanks as Actor: {}", individualService.findIndividualByContributingRole("Tom", "Hanks", IndividualRole.Actor));
 
         //Query 5
         logger.info("Genre list: {} ", tvShowService.countByGenres(EnumSet.allOf(Genre.class)));
@@ -122,7 +126,17 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         //Query 7
         logger.info("Query 7");
         //filmService.contentPerGenreForGivenIndividual("Liam", "Neeson").forEach(content -> logger.info("{} / {}", content.getTitle(), content.getGenres()));
-        filmService.contentPerGenreForGivenIndividual("Liam", "Neeson").forEach(contentPerGenreReport -> logger.info("Genre: {} / Title: {}",contentPerGenreReport.getGenre(),contentPerGenreReport.getTitle()));
+        filmService.contentPerGenreForGivenIndividual("Tom", "Hanks").forEach((key, value) ->
+        {
+             logger.info("{} has these films:", key);
+             value.forEach(movie -> logger.info("{}", movie.getTitle()));
+        });
+
+        tvShowService.contentPerGenreForGivenIndividual("Tom", "Hanks")
+                .forEach((key, value) -> {
+                    logger.info("{} has these tvShows: ", key);
+                    value.forEach(tvShow -> logger.info("{}", tvShow.getTitle()));
+                });
 
         //tvShowService.countByGenres(Set.of(Genre.Drama, Genre.Comedy)).values().forEach(count -> {
         //    logger.info("{} has  tvShows", count);

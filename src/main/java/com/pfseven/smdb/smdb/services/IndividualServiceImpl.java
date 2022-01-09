@@ -45,14 +45,16 @@ public class IndividualServiceImpl extends BaseServiceImpl<Individual> implement
     }
 
     @Override
+    public List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole) {
+        return individualRepository.findIndividualByContributingRole(firstName,lastName, individualRole);
+    }
+
+    @Override
     public List<Individual> findAllByFirstName(String firstname) {
         return individualRepository.findAllByFirstName(firstname);
     }
 
-    @Override
-    public List<Individual> findByFirstNameAndIndividualRole(String firstName, IndividualRole individualRole){
-        return individualRepository.findByFirstNameAndIndividualRole(firstName, individualRole);
-    }
+
 
     @Override
     public List<Individual> findByFirstNameAndLastNameAndGenre(String firstName, String lastName, final Set<Genre> genres){
