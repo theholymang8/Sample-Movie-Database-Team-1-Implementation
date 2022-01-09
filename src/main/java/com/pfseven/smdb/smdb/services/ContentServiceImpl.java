@@ -25,6 +25,7 @@ public abstract class ContentServiceImpl<T extends BaseModel> extends BaseServic
     @Autowired
     private IndividualService individualService;
 
+
     public abstract ContentRepository<T, Long> getRepositoryCo();
 
     @Override

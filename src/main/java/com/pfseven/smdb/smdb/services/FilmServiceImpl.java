@@ -23,10 +23,14 @@ public class FilmServiceImpl extends ContentServiceImpl<Film> implements FilmSer
     private final FilmRepository filmRepository;
 
     @Override
-    public ContentRepository<Film, Long> getRepository() {
+    public ContentRepository<Film, Long> getRepositoryCo() {
         return filmRepository;
     }
 
+    @Override
+    public JpaRepository<Film, Long> getRepository() {
+        return null;
+    }
 
     @Override
     public Film findByTitle(String title) {
@@ -46,5 +50,6 @@ public class FilmServiceImpl extends ContentServiceImpl<Film> implements FilmSer
     public void addContentIndividual(Film film,  ContentIndividual contentIndividual){
         film.getContentIndividuals().add(contentIndividual);
     }
+
 
 }

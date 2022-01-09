@@ -9,12 +9,12 @@ import com.pfseven.smdb.smdb.projections.ContentPerGenre;
 import java.util.List;
 import java.util.Map;
 
-public interface ContentService<T, ID> extends BaseService<Content, Long>{
+public interface ContentService<T, ID> extends BaseService<T, Long>{
 
 
     public List<T> findTopContent(Integer limit);
 
     public Map<Genre, List<ContentPerGenre>> contentPerGenreForGivenIndividual(final String firstName, final String lastName);
 
-    List<? extends Content> createAllContent(List<? extends Content> entities);
+    //List<? extends Content> createAllContent(List<? extends Content> entities);
 }

@@ -26,8 +26,13 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
     private final TvShowRepository tvShowRepository;
 
     @Override
-    public ContentRepository<TvShow, Long> getRepository() {
+    public ContentRepository<TvShow, Long> getRepositoryCo() {
         return tvShowRepository;
+    }
+
+    @Override
+    public JpaRepository<TvShow, Long> getRepository() {
+        return null;
     }
 
     @Override
@@ -76,4 +81,6 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
 
         tvShow.getContentIndividuals().add(contentIndividual);
     }
+
+
 }
