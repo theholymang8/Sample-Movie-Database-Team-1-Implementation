@@ -1,9 +1,11 @@
 package com.pfseven.smdb.smdb.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -14,6 +16,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+@JsonIgnoreProperties({"handler", "hibernateLazyInitializer"})
 //Project Lombok
 @AllArgsConstructor
 @NoArgsConstructor
@@ -33,6 +36,7 @@ public class Content extends BaseModel{
 
     @NotNull(message = "{title.null}")
     @Column(length = 70, nullable = false)
+    //@NaturalId
     private String title;
 
     @NotNull(message = "{description.null}")
@@ -44,7 +48,6 @@ public class Content extends BaseModel{
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "CONTENT_GENRE", joinColumns = @JoinColumn(name = "content_id"))
     @Column(name = "GENRE")
-    //@OrderBy
     private Set<Genre> genres = new HashSet<>();
 
     @NotNull(message = "{length.null}")
@@ -84,7 +87,8 @@ public class Content extends BaseModel{
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Award> awards = new HashSet<>();
 
-    @JsonManagedReference("individuals")
+    //@JsonManagedReference("individuals")
+    @JsonIgnoreProperties("content")
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true,  mappedBy = "content")
     private final Set<ContentIndividual> contentIndividuals = new HashSet<>();
 

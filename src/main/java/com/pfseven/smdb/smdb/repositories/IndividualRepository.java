@@ -3,7 +3,6 @@ package com.pfseven.smdb.smdb.repositories;
 import com.pfseven.smdb.smdb.domain.ContentIndividual;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.domain.Individual;
-import com.pfseven.smdb.smdb.dto.IndivPerRoleReport;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

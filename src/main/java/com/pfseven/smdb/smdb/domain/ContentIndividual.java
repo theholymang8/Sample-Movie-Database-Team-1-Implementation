@@ -1,6 +1,7 @@
 package com.pfseven.smdb.smdb.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import net.bytebuddy.implementation.bind.annotation.Super;
@@ -23,16 +24,18 @@ import java.io.Serializable;
 @SequenceGenerator(name = "idGenerator", sequenceName = "CONTENT_INDIVIDUALS_SEQ", allocationSize = 1)
 public class ContentIndividual extends BaseModel {
 
-    @JsonBackReference("content")
+    //@JsonBackReference("content")
     @NotNull
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "CONTENT_ID")
+    @JsonIgnoreProperties("contentIndividuals")
     private Content content;
 
-    @JsonBackReference("individuals")
+    //@JsonBackReference("individuals")
     @NotNull
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "INDIVIDUAL_ID")
+    @JsonIgnoreProperties("contentIndividuals")
     private Individual individual;
 
     //@Column(nullable = false)

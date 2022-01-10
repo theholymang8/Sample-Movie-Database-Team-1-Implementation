@@ -15,7 +15,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-
+@JsonIgnoreProperties({"handler", "hibernateLazyInitializer"})
 //Project Lombok
 @NoArgsConstructor
 @AllArgsConstructor
@@ -63,7 +63,8 @@ public class Individual extends BaseModel{
     @Column(name = "ROLE")
     private Set<IndividualRole> individualRole = new HashSet<>();
 
-    @JsonManagedReference("content")
+    //@JsonManagedReference("content")
+    @JsonIgnoreProperties("individual")
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "individual")
     private final Set<ContentIndividual> contentIndividuals =  new HashSet<>();
 
