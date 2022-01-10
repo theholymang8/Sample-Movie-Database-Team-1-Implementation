@@ -15,7 +15,7 @@ public interface FilmService extends ContentService<Film, Long>  {
     //Long exportFilms(Film film);
 
     //Returns films for a given (or more) genre(s)
-    List<Film> findByGenres(List<Genre> genres);
+    //List<Film> findByGenres(List<Genre> genres);
 
     void addContentIndividual(Film film,  ContentIndividual contentIndividual);
 

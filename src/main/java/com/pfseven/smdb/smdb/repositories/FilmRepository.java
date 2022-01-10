@@ -12,12 +12,9 @@ public interface FilmRepository extends JpaRepository<Film, Long> {
 
     Film findByTitle(String title);
 
-    List<Film> findByGenres(Genre genre);
+    //List<Film> findByGenres(Genre genre);
 
     //Long exportFilms(Film film);
-
-    //Query 7
-    //@Query("select c from ContentIndividual ci join ci.content c  join c.genres g where ci.id=?1 group by g")
 
 
 }

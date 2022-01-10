@@ -1,6 +1,7 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.BaseModel;
+import com.pfseven.smdb.smdb.domain.Content;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.projections.ContentPerGenre;
 import com.pfseven.smdb.smdb.repositories.ContentRepository;
@@ -11,6 +12,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -46,6 +49,15 @@ public abstract class ContentServiceImpl<T extends BaseModel> extends BaseServic
         List<ContentPerGenre>reports = contentRepository.contentPerGenreForGivenIndividual(individualID);
         return reports.stream()
                 .collect(Collectors.groupingBy(ContentPerGenre::getGenre));
+    }
+
+    @Override
+    public List<Content> findByGenres(List<Genre> genres) {
+        List<Content> foundFilms = new ArrayList<>();
+        for(final Genre genre : genres){
+            foundFilms.addAll(contentRepository.findByGenres(genre));
+        }
+        return foundFilms;
     }
 
 }

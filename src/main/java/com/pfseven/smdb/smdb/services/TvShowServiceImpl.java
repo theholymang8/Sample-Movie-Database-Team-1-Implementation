@@ -28,19 +28,17 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
         return tvShowRepository.findByTitle(title);
     }
 
-    @Override
-    public List<TvShow> findByGenres(final List<Genre> genres) {
-        List<TvShow> foundTvShows = new ArrayList<>();
-        for(final Genre genre : genres){
-            foundTvShows.addAll(tvShowRepository.findByGenres(genre));
-        }
-        return foundTvShows;
-    }
+//    @Override
+//    public List<TvShow> findByGenres(final List<Genre> genres) {
+//        List<TvShow> foundTvShows = new ArrayList<>();
+//        for(final Genre genre : genres){
+//            foundTvShows.addAll(tvShowRepository.findByGenres(genre));
+//        }
+//        return foundTvShows;
+//    }
 
-    @Override
-    public List<TvShow> findAllByGenre(final String firstName, final String lastName) {
-        return null;
-    }
+    //@Override
+    //public List<TvShow> findAllByGenre(final String firstName, final String lastName) {return null;}
 
     @Override
     public Map<Genre, Integer> countByGenres(final Set<Genre> genres){

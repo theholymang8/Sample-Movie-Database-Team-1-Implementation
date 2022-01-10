@@ -25,14 +25,14 @@ public class FilmServiceImpl extends ContentServiceImpl<Film> implements FilmSer
         return filmRepository.findByTitle(title);
     }
 
-    @Override
-    public List<Film> findByGenres(List<Genre> genres) {
-        List<Film> foundFilms = new ArrayList<>();
-        for(final Genre genre : genres){
-            foundFilms.addAll(filmRepository.findByGenres(genre));
-        }
-        return foundFilms;
-    }
+//    @Override
+//    public List<Film> findByGenres(List<Genre> genres) {
+//        List<Film> foundFilms = new ArrayList<>();
+//        for(final Genre genre : genres){
+//            foundFilms.addAll(filmRepository.findByGenres(genre));
+//        }
+//        return foundFilms;
+//    }
 
     @Override
     public void addContentIndividual(Film film,  ContentIndividual contentIndividual){

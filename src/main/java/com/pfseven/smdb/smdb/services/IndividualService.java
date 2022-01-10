@@ -1,6 +1,7 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.*;
+import com.pfseven.smdb.smdb.dto.IndivPerRoleReport;
 
 import java.util.List;
 import java.util.Set;
@@ -17,11 +18,6 @@ public interface IndividualService extends BaseService<Individual, Long>{
 
     List<Individual> findAllByNationality(String nationality);
 
-    List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
-
-    /**
-     Please check this one again, I believe it has suspicious implementation
-     */
-    //List<Individual>  findByFirstNameAndLastNameAndGenre(String firstName, String lastName, final Set<Genre> genres);
+    List<ContentIndividual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
 
 }
