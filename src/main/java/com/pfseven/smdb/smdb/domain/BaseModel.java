@@ -1,5 +1,6 @@
 package com.pfseven.smdb.smdb.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -25,6 +26,7 @@ public class BaseModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "idGenerator")
+    @JsonIgnore
     private Long id;
 
 }

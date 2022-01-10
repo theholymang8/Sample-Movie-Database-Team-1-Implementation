@@ -84,14 +84,7 @@ public class Content extends BaseModel{
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Award> awards = new HashSet<>();
 
-    //@NotNull(message = "{individuals.null}")
-    /*@ManyToMany(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "CONTENT_INDIVIDUALS",
-            foreignKey = @ForeignKey(name = "CONTENT_FK_ID_P"),
-            inverseForeignKey = @ForeignKey(name = "INDIVIDUAL_FK_ID"),
-            joinColumns = @JoinColumn(name="CONTENT_ID"),
-            inverseJoinColumns = @JoinColumn(name="INDIVIDUAL_ID"))*/
+    @JsonManagedReference("individuals")
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true,  mappedBy = "content")
     private final Set<ContentIndividual> contentIndividuals = new HashSet<>();
 

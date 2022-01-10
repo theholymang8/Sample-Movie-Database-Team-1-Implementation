@@ -1,10 +1,8 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.ContentIndividual;
-import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.domain.Individual;
-import com.pfseven.smdb.smdb.dto.IndivPerRoleReport;
 import com.pfseven.smdb.smdb.repositories.IndividualRepository;
 import lombok.RequiredArgsConstructor;
 

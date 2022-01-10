@@ -114,6 +114,7 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         logger.info("**Find Individuals by IndividualRole**");
         individualService.findAllByIndividualRole(IndividualRole.Director).forEach(individual -> logger.info("{} {}", individual.getFirstName(), individual.getLastName()));
 
+        logger.info("{}", individualService.findByFirstNameAndLastName("Tom", "Hanks"));
 
     }
 }

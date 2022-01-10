@@ -1,5 +1,7 @@
 package com.pfseven.smdb.smdb.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -12,6 +14,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
 
 //Project Lombok
 @NoArgsConstructor
@@ -53,15 +56,18 @@ public class Individual extends BaseModel{
     @Column(length = 75, nullable = false)
     private String nationality;
 
+
     @ElementCollection(fetch = FetchType.LAZY, targetClass= IndividualRole.class)
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "INDIVIDUAL_ROLE")
     @Column(name = "ROLE")
     private Set<IndividualRole> individualRole = new HashSet<>();
 
+    @JsonManagedReference("content")
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "individual")
     private final Set<ContentIndividual> contentIndividuals =  new HashSet<>();
 
+    @JsonManagedReference("awards")
     @OneToMany(mappedBy = "individual", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Award> awards;
 

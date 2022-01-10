@@ -41,9 +41,10 @@ public class Award extends BaseModel{
     private String category;
 
     @JsonBackReference("awards")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Content content;
 
-    @ManyToOne
+    @JsonBackReference("awards")
+    @ManyToOne(fetch = FetchType.LAZY)
     private Individual individual;
 }

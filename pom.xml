@@ -45,15 +45,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
+		<!--
+			NON SPRING RELATED
+		-->
+
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-csv</artifactId>
 			<version>1.8</version>
 		</dependency>
-
-		<!--
-			NON SPRING RELATED
-		-->
 
 	</dependencies>
 
