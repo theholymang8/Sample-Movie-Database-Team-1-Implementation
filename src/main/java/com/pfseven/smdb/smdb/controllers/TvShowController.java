@@ -4,6 +4,7 @@ import com.pfseven.smdb.smdb.controllers.transfer.ApiResponse;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
 import com.pfseven.smdb.smdb.dto.CountPerYearReport;
+import com.pfseven.smdb.smdb.projections.ContentPerGenre;
 import com.pfseven.smdb.smdb.services.BaseService;
 import com.pfseven.smdb.smdb.services.TvShowService;
 import lombok.RequiredArgsConstructor;
@@ -63,5 +64,17 @@ public class TvShowController extends AbstractController<TvShow>{
                 .data(tvShowService.countByYearAndGenres(genres))
                 .build());
     };
+
+    @GetMapping(path="find",
+            headers = "action=contentPerGenreForGivenIndividual",
+            params = {"firstName", "lastName"})
+    public ResponseEntity<ApiResponse<Map<Genre, List<ContentPerGenre>>>> contentPerGenreForGivenIndividual(
+            @RequestParam("firstName") String firstName,
+            @RequestParam("lastName") String lastName){
+        return ResponseEntity.ok(ApiResponse.<Map<Genre, List<ContentPerGenre>>>builder()
+                .data(tvShowService.contentPerGenreForGivenIndividual(firstName, lastName))
+                .build());
+    }
+
 
 }

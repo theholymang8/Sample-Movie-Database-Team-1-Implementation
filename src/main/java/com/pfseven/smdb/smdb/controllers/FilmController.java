@@ -3,8 +3,7 @@ package com.pfseven.smdb.smdb.controllers;
 import com.pfseven.smdb.smdb.controllers.transfer.ApiResponse;
 import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
-import com.pfseven.smdb.smdb.domain.Individual;
-import com.pfseven.smdb.smdb.domain.TvShow;
+import com.pfseven.smdb.smdb.projections.ContentPerGenre;
 import com.pfseven.smdb.smdb.services.BaseService;
 import com.pfseven.smdb.smdb.services.FilmService;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RequiredArgsConstructor
 @RestController
@@ -28,7 +28,7 @@ public class FilmController extends AbstractController<Film>{
         return filmService;
     }
 
-    @GetMapping(value = "find", params = {"title"})
+    @GetMapping(path = "find", headers = "action=findByTitle", params = {"title"})
     public ResponseEntity<ApiResponse<Film>> find(@RequestParam("title") String title){
         return ResponseEntity.ok(ApiResponse.<Film>builder()
                 .data(filmService.findByTitle(title))
@@ -46,6 +46,17 @@ public class FilmController extends AbstractController<Film>{
     public ResponseEntity<ApiResponse<List<Film>>> findTopFilms(@RequestParam(value = "limit") Integer limit){
         return ResponseEntity.ok(ApiResponse.<List<Film>>builder()
                 .data(filmService.findTopContent(limit))
+                .build());
+    }
+
+    @GetMapping(path="find",
+            headers = "action=contentPerGenreForGivenIndividual",
+            params = {"firstName", "lastName"})
+    public ResponseEntity<ApiResponse<Map<Genre, List<ContentPerGenre>>>> contentPerGenreForGivenIndividual(
+            @RequestParam("firstName") String firstName,
+            @RequestParam("lastName") String lastName){
+        return ResponseEntity.ok(ApiResponse.<Map<Genre, List<ContentPerGenre>>>builder()
+                .data(filmService.contentPerGenreForGivenIndividual(firstName, lastName))
                 .build());
     }
 
