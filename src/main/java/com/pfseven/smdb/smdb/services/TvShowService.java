@@ -14,9 +14,8 @@ public interface TvShowService extends ContentService<TvShow, Long> {
 
     TvShow findByTitle(String title);
 
-    //List<TvShow> findByGenres(final List<Genre> genres);
+    List<TvShow> findByGenres(final List<Genre> genres);
 
-    //List<TvShow> findTopTvShows(Integer limit);
 
     /** is this used? **/
     //List<TvShow> findAllByGenre(final String firstName, final String lastName);

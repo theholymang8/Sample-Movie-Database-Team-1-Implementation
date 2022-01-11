@@ -1,5 +1,6 @@
 package com.pfseven.smdb.smdb.services;
 
+import com.pfseven.smdb.smdb.domain.Content;
 import com.pfseven.smdb.smdb.domain.ContentIndividual;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
@@ -26,6 +27,15 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
     @Override
     public TvShow findByTitle(String title) {
         return tvShowRepository.findByTitle(title);
+    }
+
+    @Override
+    public List<TvShow> findByGenres(List<Genre> genres) {
+        List<TvShow> foundFilms = new ArrayList<>();
+        for(final Genre genre : genres){
+            foundFilms.addAll(tvShowRepository.findByGenres(genre));
+        }
+        return foundFilms;
     }
 
 //    @Override

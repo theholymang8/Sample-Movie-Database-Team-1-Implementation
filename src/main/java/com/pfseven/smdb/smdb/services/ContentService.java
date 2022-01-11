@@ -15,6 +15,6 @@ public interface ContentService<T, ID> extends BaseService<T, Long>{
 
     Map<Genre, List<ContentPerGenre>> contentPerGenreForGivenIndividual(final String firstName, final String lastName);
 
-    List<Content> findByGenres(List<Genre> genres);
+    //List<Content> findByGenres(List<Genre> genres);
 
 }

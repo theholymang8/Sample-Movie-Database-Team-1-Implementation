@@ -15,5 +15,5 @@ public interface ContentRepository extends JpaRepository<Content, Long> {
     @Query(nativeQuery = true)
     List<ContentPerGenre> contentPerGenreForGivenIndividual(Long individualID);
 
-    List<Content> findByGenres(Genre genre);
+
 }

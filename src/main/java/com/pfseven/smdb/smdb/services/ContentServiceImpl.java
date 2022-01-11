@@ -50,13 +50,4 @@ public abstract class ContentServiceImpl<T extends BaseModel> extends BaseServic
                 .collect(Collectors.groupingBy(ContentPerGenre::getGenre));
     }
 
-    @Override
-    public List<Content> findByGenres(List<Genre> genres) {
-        List<Content> foundFilms = new ArrayList<>();
-        for(final Genre genre : genres){
-            foundFilms.addAll(contentRepository.findByGenres(genre));
-        }
-        return foundFilms;
-    }
-
 }

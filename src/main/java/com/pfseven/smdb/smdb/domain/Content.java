@@ -36,7 +36,6 @@ public class Content extends BaseModel{
 
     @NotNull(message = "{title.null}")
     @Column(length = 70, nullable = false)
-    //@NaturalId
     private String title;
 
     @NotNull(message = "{description.null}")

@@ -14,7 +14,7 @@ public interface TvShowRepository extends JpaRepository<TvShow, Long> {
 
     //Long exportTvShows(TvShow tvShow);
 
-    //List<TvShow> findByGenres(Genre genre);
+    List<TvShow> findByGenres(Genre genre);
 
     Integer countByGenres(Genre genre);
 
