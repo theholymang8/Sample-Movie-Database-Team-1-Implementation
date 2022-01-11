@@ -11,4 +11,6 @@ public interface AwardRepository extends JpaRepository<Award, Long> {
 
     List<Award> findByCategory(String category);
 
+    List<Award> findByYearOfAward(String yearOfAward);
+
 }

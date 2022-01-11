@@ -61,8 +61,8 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         logger.info("**Query 3**");
         //Integer res = individualService.findIndividualByContributingRole("Liam", "Neeson", IndividualRole.Actor).size();
         //logger.info("Size is: {}", res);
-        individualService.findIndividualByContributingRole("Tom", "Hanks", IndividualRole.Actor)
-                .forEach(individual -> logger.info("TOM has these content as ACTOR: {}", individual.getContent().getTitle()));
+        //individualService.findIndividualByContributingRole("Tom", "Hanks", IndividualRole.Actor)
+        //        .forEach(individual -> logger.info("TOM has these content as ACTOR: {}", individual.getContent().getTitle()));
         //.forEach(contentIndividual -> logger.info("TOM has these content as DIRECTOR: {}", contentIndividual.getContent().getTitle())));
 
         //Query 4
@@ -96,9 +96,7 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
 
         //Find Individuals by nationality
         logger.info("**Find Individuals by nationality**");
-        individualService.findAllByNationality("Polish").forEach(individual -> {
-            logger.info("{} {} is Polish   ", individual.getFirstName(), individual.getLastName());
-        });
+        individualService.findAllByNationality("Polish").forEach(individual -> logger.info("{} {} is Polish   ", individual.getFirstName(), individual.getLastName()));
 
         //Search Film
         logger.info("**Search Film**");

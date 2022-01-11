@@ -9,4 +9,6 @@ public interface AwardService extends BaseService<Award, Long>{
     Award findByTitle(String title);
 
     List<Award> findByCategory(String category);
+
+    List<Award> findByYear(String year);
 }

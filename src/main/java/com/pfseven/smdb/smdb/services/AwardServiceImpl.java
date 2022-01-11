@@ -28,4 +28,9 @@ public class AwardServiceImpl extends BaseServiceImpl<Award> implements AwardSer
     public List<Award> findByCategory(String category) {
         return awardRepository.findByCategory(category);
     }
+
+    @Override
+    public List<Award> findByYear(String year) {
+        return awardRepository.findByYearOfAward(year);
+    }
 }

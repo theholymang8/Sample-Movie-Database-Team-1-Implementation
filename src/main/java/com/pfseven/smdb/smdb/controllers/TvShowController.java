@@ -56,19 +56,19 @@ public class TvShowController extends AbstractController<TvShow>{
         return ResponseEntity.ok(ApiResponse.<Map<Genre, Integer>>builder()
                 .data(tvShowService.countByGenres(genres))
                 .build());
-    };
+    }
 
     @GetMapping(path = "count", headers = "action=countByGenresPerYear")
     public ResponseEntity<ApiResponse<Map<Genre, List<CountPerYearReport>>>> countByGenresPerYear(@RequestParam  Set<Genre> genres) {
         return ResponseEntity.ok(ApiResponse.<Map<Genre, List<CountPerYearReport>>>builder()
                 .data(tvShowService.countByYearAndGenres(genres))
                 .build());
-    };
+    }
 
     @GetMapping(path="find",
-            headers = "action=contentPerGenreForGivenIndividual",
+            headers = "action=tvShowsPerGenreForGivenIndividual",
             params = {"firstName", "lastName"})
-    public ResponseEntity<ApiResponse<Map<Genre, List<ContentPerGenre>>>> contentPerGenreForGivenIndividual(
+    public ResponseEntity<ApiResponse<Map<Genre, List<ContentPerGenre>>>> tvShowsPerGenreForGivenIndividual(
             @RequestParam("firstName") String firstName,
             @RequestParam("lastName") String lastName){
         return ResponseEntity.ok(ApiResponse.<Map<Genre, List<ContentPerGenre>>>builder()

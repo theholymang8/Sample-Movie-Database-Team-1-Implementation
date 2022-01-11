@@ -1,7 +1,9 @@
 package com.pfseven.smdb.smdb.controllers;
 
 import com.pfseven.smdb.smdb.controllers.transfer.ApiResponse;
+import com.pfseven.smdb.smdb.domain.Award;
 import com.pfseven.smdb.smdb.domain.Film;
+import com.pfseven.smdb.smdb.domain.FilmUniverse;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.projections.ContentPerGenre;
 import com.pfseven.smdb.smdb.services.BaseService;
@@ -46,6 +48,13 @@ public class FilmController extends AbstractController<Film>{
     public ResponseEntity<ApiResponse<List<Film>>> findTopFilms(@RequestParam(value = "limit") Integer limit){
         return ResponseEntity.ok(ApiResponse.<List<Film>>builder()
                 .data(filmService.findTopContent(limit))
+                .build());
+    }
+
+    @GetMapping(path = "find", headers = "action=findByUniverse", params = {"universe"})
+    public ResponseEntity<ApiResponse<List<Film>>> findByUniverse(@RequestParam("universe")FilmUniverse filmUniverse){
+        return ResponseEntity.ok(ApiResponse.<List<Film>>builder()
+                .data(filmService.findByUniverse(filmUniverse))
                 .build());
     }
 

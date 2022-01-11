@@ -11,6 +11,7 @@ public interface FilmService extends ContentService<Film, Long>  {
 
     Film findByTitle(String title);
 
+    List<Film> findByUniverse(FilmUniverse filmUniverse);
     //Export films to csv file
     //Long exportFilms(Film film);
 
