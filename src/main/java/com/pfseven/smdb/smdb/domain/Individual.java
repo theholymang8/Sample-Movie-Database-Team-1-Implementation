@@ -70,6 +70,6 @@ public class Individual extends BaseModel{
 
     @JsonManagedReference("awardsInd")
     @OneToMany(mappedBy = "individual", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Award> awards;
+    private final Set<Award> awards = new HashSet<>();
 
 }

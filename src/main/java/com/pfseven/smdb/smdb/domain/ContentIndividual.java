@@ -16,7 +16,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @SuperBuilder
 @ToString(callSuper = true)
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, exclude = {"individual"})
 //Hibernate
 @Entity
 @Table(name = "CONTENT_INDIVIDUALS")
