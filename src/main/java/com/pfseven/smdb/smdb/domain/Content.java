@@ -82,11 +82,10 @@ public class Content extends BaseModel{
     private String countryOfOrigin;
 
     //@NotNull(message = "{awards.null}")
-    @JsonManagedReference("awards")
+    @JsonManagedReference("awardsCont")
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Award> awards = new HashSet<>();
 
-    //@JsonManagedReference("individuals")
     @JsonIgnoreProperties("content")
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true,  mappedBy = "content")
     private final Set<ContentIndividual> contentIndividuals = new HashSet<>();

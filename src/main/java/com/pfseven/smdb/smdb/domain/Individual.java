@@ -57,7 +57,7 @@ public class Individual extends BaseModel{
     private String nationality;
 
 
-    @ElementCollection(fetch = FetchType.LAZY, targetClass= IndividualRole.class)
+    @ElementCollection(fetch = FetchType.EAGER, targetClass= IndividualRole.class)
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "INDIVIDUAL_ROLE")
     @Column(name = "ROLE")
@@ -68,7 +68,7 @@ public class Individual extends BaseModel{
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "individual")
     private final Set<ContentIndividual> contentIndividuals =  new HashSet<>();
 
-    @JsonManagedReference("awards")
+    @JsonManagedReference("awardsInd")
     @OneToMany(mappedBy = "individual", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Award> awards;
 
