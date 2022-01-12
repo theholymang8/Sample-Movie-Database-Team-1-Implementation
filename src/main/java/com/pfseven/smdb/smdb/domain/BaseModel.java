@@ -11,14 +11,14 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 
-//Project Lombok
+
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder(toBuilder = true)
 @ToString
 @EqualsAndHashCode
 @Data
-//Hibernate
+
 @MappedSuperclass
 public class BaseModel implements Serializable {
 

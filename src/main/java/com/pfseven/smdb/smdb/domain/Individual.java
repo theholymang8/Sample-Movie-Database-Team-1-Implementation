@@ -61,7 +61,6 @@ public class Individual extends BaseModel{
     @Column(name = "ROLE")
     private Set<IndividualRole> individualRole = new HashSet<>();
 
-    //@JsonManagedReference("content")
     @JsonIgnoreProperties("individual")
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "individual")
     private final Set<ContentIndividual> contentIndividuals =  new HashSet<>();
