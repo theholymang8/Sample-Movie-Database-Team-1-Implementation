@@ -26,7 +26,7 @@ public class BaseModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "idGenerator")
-    //@JsonIgnore
+    @JsonIgnore
     private Long id;
 
 }

@@ -16,20 +16,18 @@ import java.util.List;
 import java.util.Set;
 
 @JsonIgnoreProperties({"handler", "hibernateLazyInitializer"})
-//Project Lombok
+
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
 @Data
 @ToString(callSuper = true, exclude = {"awards", "contentIndividuals"})
-//@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true, exclude = {"awards", "contentIndividuals"})
-//@EqualsAndHashCode(callSuper = true)
-//Hibernate
+
 @Entity
 @Table(name = "INDIVIDUALS")
 @Inheritance(strategy = InheritanceType.JOINED)
-//Serializable
+
 @SequenceGenerator(name = "idGenerator", sequenceName = "INDIVIDUAL_SEQ", allocationSize = 1)
 public class Individual extends BaseModel{
 

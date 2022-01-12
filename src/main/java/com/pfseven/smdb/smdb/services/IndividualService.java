@@ -1,6 +1,7 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.*;
+import com.pfseven.smdb.smdb.dto.IndividualAndContentPerContribution;
 
 import java.util.List;
 
@@ -16,6 +17,6 @@ public interface IndividualService extends BaseService<Individual, Long>{
 
     List<Individual> findAllByNationality(String nationality);
 
-    List<ContentIndividual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
+    List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
 
 }

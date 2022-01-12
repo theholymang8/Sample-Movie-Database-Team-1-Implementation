@@ -26,14 +26,14 @@ public class ContentIndividual extends BaseModel {
 
     //@JsonBackReference("content")
     @NotNull
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "CONTENT_ID")
     @JsonIgnoreProperties("contentIndividuals")
     private Content content;
 
     //@JsonBackReference("individuals")
     @NotNull
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "INDIVIDUAL_ID")
     @JsonIgnoreProperties("contentIndividuals")
     private Individual individual;

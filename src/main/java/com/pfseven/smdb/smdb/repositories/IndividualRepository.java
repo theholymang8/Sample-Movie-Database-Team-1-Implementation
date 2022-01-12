@@ -3,6 +3,7 @@ package com.pfseven.smdb.smdb.repositories;
 import com.pfseven.smdb.smdb.domain.ContentIndividual;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.domain.Individual;
+import com.pfseven.smdb.smdb.dto.IndividualAndContentPerContribution;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
@@ -20,7 +21,8 @@ public interface IndividualRepository extends JpaRepository<Individual, Long> {
 
     List<Individual> findAllByFirstName(String firstname);
 
+    //List<ContentIndividual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
     @Query
-    List<ContentIndividual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
+    List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
 
 }
