@@ -36,7 +36,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Liam")
                         .lastName("Neeson")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("drewbarrymore@outlook.com")
@@ -44,7 +44,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Drew")
                         .lastName("Barrymore")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("timallen@gmail.com")
@@ -52,7 +52,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Tim")
                         .lastName("Allen")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("jonburton@gmail.com")
@@ -60,7 +60,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jon")
                         .lastName("Burton")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("ronweasley@gmail.com")
@@ -68,7 +68,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Wesley")
                         .lastName("Archer")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("stevenspielrock@gmail.com")
@@ -76,7 +76,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Steven")
                         .lastName("Spielberg")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("melissamathison@gmail.com")
@@ -84,7 +84,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Melissa")
                         .lastName("Mathison")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("anndruchii@gmail.com")
@@ -92,7 +92,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ann")
                         .lastName("Druyan")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("robertlevine@gmail.com")
@@ -100,7 +100,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Robert")
                         .lastName("Levine")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("joepesci@gmail.com")
@@ -108,7 +108,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Joe")
                         .lastName("Pesci")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("robertdenniro@outlook.com")
@@ -116,7 +116,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Robert")
                         .lastName("De Niro Jr")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("christophwaltz@gmail.com")
@@ -124,7 +124,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Christoph")
                         .lastName("Waltz")
                         .nationality("German")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("kathleenkennedy@gmail.com")
@@ -132,7 +132,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Kathleen")
                         .lastName("Kennedy")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("krysztofkies@gmail.com")
@@ -140,7 +140,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Krzysztof")
                         .lastName("Kieslowski")
                         .nationality("Polish")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("juliettebinoche@gmail.com")
@@ -148,7 +148,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Juliette")
                         .lastName("Binoche")
                         .nationality("French")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("audreytautou@gmail.com")
@@ -156,7 +156,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Audrey")
                         .lastName("Tautou")
                         .nationality("French")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("guillaumelaurant@gmail.com")
@@ -164,7 +164,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Guillaume")
                         .lastName("Laurant")
                         .nationality("French")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("jeanpierrejeunet@gmail.com")
@@ -172,7 +172,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jean-Pierre")
                         .lastName("Jeunet")
                         .nationality("French")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("thomasvinterberg@gmail.com")
@@ -180,7 +180,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Thomas")
                         .lastName("Vinterberg")
                         .nationality("Danish")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("madsmikkelsen@gmail.com")
@@ -188,7 +188,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Mads")
                         .lastName("Mikkelsen")
                         .nationality("Danish")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("abbaskiarostami@gmail.com")
@@ -196,7 +196,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Abbas")
                         .lastName("Kiarostami")
                         .nationality("Iranian")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("tatsuyanakadai@gmail.com")
@@ -204,7 +204,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Tatsuya")
                         .lastName("Nakadai")
                         .nationality("Japanese")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("akirakurosawa@gmail.com")
@@ -212,7 +212,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Akira")
                         .lastName("Kurosawa")
                         .nationality("Japanese")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("toshiromifune@gmail.com")
@@ -220,7 +220,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Toshiro")
                         .lastName("Mifune")
                         .nationality("Japanese, Chinese")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("wernerkrauss@gmail.com")
@@ -228,7 +228,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Werner")
                         .lastName("Krauss")
                         .nationality("German")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("robertwiene@gmail.com")
@@ -236,7 +236,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Robert")
                         .lastName("Wiene")
                         .nationality("German")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("wolfgangpetersen@gmail.com")
@@ -244,7 +244,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Wolfgang")
                         .lastName("Petersen")
                         .nationality("German")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("denisvilleneuve@gmail.com")
@@ -252,7 +252,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Denis")
                         .lastName("Villeneuve")
                         .nationality("Canadian")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("timotheechalamet@gmail.com")
@@ -260,7 +260,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Timothée")
                         .lastName("Chalamet")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("rebeccaferguson@gmail.com")
@@ -268,7 +268,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Rebecca")
                         .lastName("Ferguson")
                         .nationality("Swedish")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("javierbardem@gmail.com")
@@ -276,7 +276,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Javier")
                         .lastName("Bardem")
                         .nationality("Spanish")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("petedocterm@gmail.com")
@@ -284,7 +284,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Pete")
                         .lastName("Docter")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("edasner@gmail.com")
@@ -292,7 +292,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ed")
                         .lastName("Asner")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("leeunkrich@gmail.com")
@@ -300,7 +300,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Lee")
                         .lastName("Unkrich")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("anthonygonzalez@gmail.com")
@@ -308,7 +308,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Anthony")
                         .lastName("Gonzalez")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("georgelucas@gmail.com")
@@ -316,7 +316,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("George")
                         .lastName("Lucas")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("markhamill@gmail.com")
@@ -324,7 +324,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Mark")
                         .lastName("Hamill")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("harrisonford@gmail.com")
@@ -332,7 +332,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Harrison")
                         .lastName("Ford")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("alecguinnesss@gmail.com")
@@ -340,7 +340,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Alec")
                         .lastName("Guinness")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("carriefisher@gmail.com")
@@ -348,7 +348,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Carrie")
                         .lastName("Fisher")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("rutgerhauer@gmail.com")
@@ -356,7 +356,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Rutger")
                         .lastName("Hauer")
                         .nationality("Dutch")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("ridleyscott@gmail.com")
@@ -364,7 +364,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ridley")
                         .lastName("Scott")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("hamptonfancher@gmail.com")
@@ -372,7 +372,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Hampton")
                         .lastName("Fancher")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("ryangosling@gmail.com")
@@ -380,7 +380,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ryan")
                         .lastName("Gosling")
                         .nationality("Canadian")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("robreiner@gmail.com")
@@ -388,7 +388,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Rob")
                         .lastName("Reiner")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("stephenking@gmail.com")
@@ -396,7 +396,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Stephen")
                         .lastName("King")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("riverpheonix@gmail.com")
@@ -404,7 +404,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("River")
                         .lastName("Phoenix")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("coreyfeldman@gmail.com")
@@ -412,7 +412,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Corey")
                         .lastName("Feldman")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("stanleykubrick@gmail.com")
@@ -420,7 +420,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Stanley")
                         .lastName("Kubrick")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Producer, IndividualRole.Director, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.PRODUCER, IndividualRole.DIRECTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("jacknicholson@gmail.com")
@@ -428,7 +428,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jack")
                         .lastName("Nicholson")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("shelleyduvall@gmail.com")
@@ -436,7 +436,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Shelley")
                         .lastName("Duvall")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("frankdarabont@gmail.com")
@@ -444,7 +444,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Frank")
                         .lastName("Darabont")
                         .nationality("French")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("thomasjane@gmail.com")
@@ -452,7 +452,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Thomas")
                         .lastName("Jane")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER, IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("marciagayharden@gmail.com")
@@ -460,7 +460,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Marcia Gay")
                         .lastName("Harden")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("richarcmarquand@gmail.com")
@@ -468,7 +468,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Richard")
                         .lastName("Marquand")
                         .nationality("Welsh")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("irvinkershner@gmail.com")
@@ -476,7 +476,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Irvin")
                         .lastName("Kershner")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("jurgenprochnow@gmail.com")
@@ -484,7 +484,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jürgen")
                         .lastName("Prochnow")
                         .nationality("German")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("carlmayer@gmail.com")
@@ -492,7 +492,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Carl")
                         .lastName("Mayer")
                         .nationality("Austrian")
-                        .individualRole(Set.of(IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("babekahmedpoor@gmail.com")
@@ -500,7 +500,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Babek Ahmed")
                         .lastName("Poor")
                         .nationality("Iranian")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("thomasbolarsen@gmail.com")
@@ -508,7 +508,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Thomas Bo")
                         .lastName("Larsen")
                         .nationality("Danish")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("irenejacob@gmail.com")
@@ -516,7 +516,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Irène")
                         .lastName("Jacob")
                         .nationality("French")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("jeanlouistrintignant@gmail.com")
@@ -524,7 +524,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jean-Louis")
                         .lastName("Trintignant")
                         .nationality("French")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("zbigniewzamachowski@gmail.com")
@@ -532,7 +532,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Zbigniew")
                         .lastName("Zamachowski")
                         .nationality("Polish")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("juliedelpy@gmail.com")
@@ -540,7 +540,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Julie")
                         .lastName("Delpy")
                         .nationality("French")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("bradpitt@gmail.com")
@@ -548,7 +548,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Brad")
                         .lastName("Pitt")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("dianekruger@gmail.com")
@@ -556,7 +556,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Diane")
                         .lastName("Kruger")
                         .nationality("German")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("quentintarantino@gmail.com")
@@ -564,7 +564,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Quentin")
                         .lastName("Tarantino")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("jamiefoxx@gmail.com")
@@ -572,7 +572,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jamie")
                         .lastName("Foxx")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("leonardodicaprio@gmail.com")
@@ -580,7 +580,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Leonardo")
                         .lastName("DiCaprio")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("francisfordcopolla@gmail.com")
@@ -588,7 +588,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Francis")
                         .lastName("Coppola")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("alpacino@gmail.com")
@@ -596,7 +596,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Al")
                         .lastName("Pacino")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("martinscorsese@gmail.com")
@@ -604,7 +604,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Martin")
                         .lastName("Scorsese")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("jakelamotta@gmail.com")
@@ -612,7 +612,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jake")
                         .lastName("LaMotta")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("rayliotta@gmail.com")
@@ -620,7 +620,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ray")
                         .lastName("Liotta")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("robertzemeckis@gmail.com")
@@ -628,7 +628,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Robert")
                         .lastName("Zemeckis")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("carlsagan@gmail.com")
@@ -636,7 +636,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Carl")
                         .lastName("Sagan")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("jodiefoster@gmail.com")
@@ -644,7 +644,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jodie")
                         .lastName("Foster")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("matthewmacconaughey@gmail.com")
@@ -652,7 +652,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Matthew")
                         .lastName("McConaughey")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("deanparisto@gmail.com")
@@ -660,7 +660,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Dean")
                         .lastName("Parisot")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("davidhoward@gmail.com")
@@ -668,7 +668,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("David")
                         .lastName("Howard")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("sigourneyweaver@gmail.com")
@@ -676,7 +676,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Sigourney")
                         .lastName("Weaver")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("alanrickman@gmail.com")
@@ -684,7 +684,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Alan")
                         .lastName("Rickman")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("andytennant@gmail.com")
@@ -692,7 +692,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Andy")
                         .lastName("Tennant")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("susannahgrant@gmail.com")
@@ -700,7 +700,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Susannah")
                         .lastName("Grant")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("anjelicahuston@gmail.com")
@@ -708,7 +708,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Anjelica")
                         .lastName("Huston")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("tonykushner@gmail.com")
@@ -716,7 +716,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Tony")
                         .lastName("Kushner")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("ericbana@gmail.com")
@@ -724,7 +724,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Eric")
                         .lastName("Bana")
                         .nationality("Australian")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("danielcraig@gmail.com")
@@ -732,7 +732,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Daniel")
                         .lastName("Craig")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("danieldaylewis@gmail.com")
@@ -740,7 +740,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Daniel")
                         .lastName("Day-Lewis")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("sallyfield@gmail.com")
@@ -748,7 +748,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Sally")
                         .lastName("Field")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("patrickstewart@gmail.com")
@@ -756,7 +756,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Patrick")
                         .lastName("Stewart")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("robertrodat@gmail.com")
@@ -764,7 +764,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Robert")
                         .lastName("Rodat")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("tomhanks@gmail.com")
@@ -772,7 +772,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Tom")
                         .lastName("Hanks")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("mattdamon@gmail.com")
@@ -780,7 +780,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Matt")
                         .lastName("Damon")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("sylvierokab@gmail.com")
@@ -788,7 +788,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Sylvie")
                         .lastName("Rokab")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.WRITER, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("billcondon@gmail.com")
@@ -796,7 +796,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Bill")
                         .lastName("Condon")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("johnlasseter@gmail.com")
@@ -804,7 +804,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("John")
                         .lastName("Lasseter")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("henrythomas@gmail.com")
@@ -812,7 +812,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Henry")
                         .lastName("Thomas")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("stevenzaillian@gmail.com")
@@ -820,7 +820,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Steven")
                         .lastName("Zaillian")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("ralphfiennes@gmail.com")
@@ -828,7 +828,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ralph")
                         .lastName("Fiennes")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("benkingsley@gmail.com")
@@ -836,7 +836,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Ben")
                         .lastName("Kingsley")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("gregdaniels@gmail.com")
@@ -844,7 +844,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Greg")
                         .lastName("Daniels")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("mikejudge@gmail.com")
@@ -852,7 +852,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Mike")
                         .lastName("Judge")
                         .nationality("Equadorian")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("carmenfinestra@gmail.com")
@@ -860,7 +860,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Carmen")
                         .lastName("Finestra")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("andycardiff@gmail.com")
@@ -868,7 +868,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Andy")
                         .lastName("Cardiff")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("kirktingblad@gmail.com")
@@ -876,7 +876,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Kirk")
                         .lastName("Tingblad")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("mauricelamarche@gmail.com")
@@ -884,7 +884,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Maurice")
                         .lastName("LaMarche")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("robpaulsen@gmail.com")
@@ -892,7 +892,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Rob")
                         .lastName("Paulsen")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("stephenambrose@gmail.com")
@@ -900,7 +900,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Stephen")
                         .lastName("Ambrose")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("scottgrimes@gmail.com")
@@ -908,7 +908,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Scott")
                         .lastName("Grimes")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("damianlewis@gmail.com")
@@ -916,7 +916,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Damian")
                         .lastName("Lewis")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("lesliebohem@gmail.com")
@@ -924,7 +924,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Leslie")
                         .lastName("Bohem")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Director, IndividualRole.Writer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER, IndividualRole.DIRECTOR, IndividualRole.WRITER))
                         .build(),
                 Individual.builder()
                         .email("dakotafanning@gmail.com")
@@ -932,7 +932,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Dakota")
                         .lastName("Fanning")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Producer, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.PRODUCER, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("jeremypodeswa@gmail.com")
@@ -940,7 +940,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jeremy")
                         .lastName("Podeswa")
                         .nationality("Canadian")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("brucecmckenna@gmail.com")
@@ -948,7 +948,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Bruce")
                         .lastName("McKenna")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("jamesbadgedale@gmail.com")
@@ -956,7 +956,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("James")
                         .lastName("Dale")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
                         .build(),
                 Individual.builder()
                         .email("danharmon@gmail.com")
@@ -964,7 +964,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Dan")
                         .lastName("Harmon")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Writer, IndividualRole.Producer, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.WRITER, IndividualRole.PRODUCER, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("justinroiland@gmail.com")
@@ -972,7 +972,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Justin")
                         .lastName("Roiland")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("steveboyum@gmail.com")
@@ -980,7 +980,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Steve")
                         .lastName("Boyum")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.PRODUCER))
                         .build(),
                 Individual.builder()
                         .email("tobystephens@gmail.com")
@@ -988,7 +988,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Toby")
                         .lastName("Stephens")
                         .nationality("British")
-                        .individualRole(Set.of(IndividualRole.Actor, IndividualRole.Director))
+                        .individualRole(Set.of(IndividualRole.ACTOR, IndividualRole.DIRECTOR))
                         .build(),
                 Individual.builder()
                         .email("jessicaparkerkennedy@gmail.com")
@@ -996,7 +996,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Jessica")
                         .lastName("kennedy")
                         .nationality("Canadian")
-                        .individualRole(Set.of(IndividualRole.Actor))
+                        .individualRole(Set.of(IndividualRole.ACTOR))
 
                         .build(),
                 Individual.builder()
@@ -1005,7 +1005,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         .firstName("Brannon")
                         .lastName("Braga")
                         .nationality("American")
-                        .individualRole(Set.of(IndividualRole.Director, IndividualRole.Writer, IndividualRole.Producer))
+                        .individualRole(Set.of(IndividualRole.DIRECTOR, IndividualRole.WRITER, IndividualRole.PRODUCER))
                         .build()
         );
 
@@ -1019,7 +1019,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Steven Zaillian
                         //Actors: Liam Neeson, Ralph Fiennes, Ben Kingsley
                         .description("In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.")
-                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History))
+                        .genres(Set.of(Genre.BIOGRAPHY, Genre.DRAMA, Genre.HISTORY))
                         .length(195)
                         .releaseDate(LocalDate.of(1994, 2, 4))
                         .rating(8.9f)
@@ -1035,7 +1035,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Melissa Mathison
                         //Actors: Henry Thomas, Drew Barrymore
                         .description("A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.")
-                        .genres(Set.of(Genre.Adventure, Genre.Family, Genre.Sci_Fi))
+                        .genres(Set.of(Genre.ADVENTURE, Genre.FAMILY, Genre.SCI_FI))
                         .length(115)
                         .releaseDate(LocalDate.of(1982,6,11))
                         .rating(7.8f)
@@ -1052,7 +1052,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: John Lasseter
                         //Actors: Tom Hanks, Tim Allen
                         .description("A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.")
-                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Family, Genre.Fantasy))
+                        .genres(Set.of(Genre.ANIMATION, Genre.ADVENTURE, Genre.COMEDY, Genre.FAMILY, Genre.FANTASY))
                         .length(81)
                         .releaseDate(LocalDate.of(1995,11,22))
                         .rating(8.3f)
@@ -1069,7 +1069,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Bill Condon
                         //Actors: Liam Neeson
                         .description("A look at the life of Alfred Kinsey, a pioneer in the area of human sexuality research, whose 1948 publication \"Sexual Behavior in the Human Male\" was one of the first recorded works that saw science address sexual behavior.")
-                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.Romance))
+                        .genres(Set.of(Genre.BIOGRAPHY, Genre.DRAMA, Genre.ROMANCE))
                         .length(118)
                         .releaseDate(LocalDate.of(2004,11,12))
                         .rating(7.1f)
@@ -1085,7 +1085,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Sylvie Rokab
                         //Actors: Liam Neeson
                         .description("The film shows that a renewed connection with nature is key both to good health and to solving our environmental and climate crises.")
-                        .genres(Set.of(Genre.Documentary))
+                        .genres(Set.of(Genre.DOCUMENTARY))
                         .length(76)
                         .releaseDate(LocalDate.of(2014,10,18))
                         .rating(6.8f)
@@ -1101,7 +1101,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Robert Rodat
                         //Actors: Tom Hanks, Matt Damon
                         .description("Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.")
-                        .genres(Set.of(Genre.Drama, Genre.War))
+                        .genres(Set.of(Genre.DRAMA, Genre.WAR))
                         .length(169)
                         .releaseDate(LocalDate.of(1998,7,24))
                         .rating(8.6f)
@@ -1117,7 +1117,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Tony Kushner
                         //Actors: Daniel Day-Lewis, Sally Field
                         .description("As the American Civil War continues to rage, America's president struggles with continuing carnage on the battlefield as he fights with many inside his own cabinet on the decision to emancipate the slaves.")
-                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.History, Genre.War))
+                        .genres(Set.of(Genre.BIOGRAPHY, Genre.DRAMA, Genre.HISTORY, Genre.WAR))
                         .length(150)
                         .releaseDate(LocalDate.of(2012,10,8))
                         .rating(7.3f)
@@ -1133,7 +1133,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Tony Kushner
                         //Actors: Eric Bana, Daniel Craig
                         .description("After the Black September capture and massacre of Israeli athletes at the 1972 Olympics, five men are chosen to eliminate the people responsible for that fateful day.")
-                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.History, Genre.Thriller))
+                        .genres(Set.of(Genre.ACTION, Genre.DRAMA, Genre.HISTORY, Genre.THRILLER))
                         .length(163)
                         .releaseDate(LocalDate.of(2005,12,23))
                         .rating(7.5f)
@@ -1149,7 +1149,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Susannah Grant
                         //Actors: Drew Barrymore, Anjelica Huston
                         .description("The Brothers Grimm arrive at the home of a wealthy Grande Dame who speaks of the many legends surrounding the fable of the cinder girl before telling the \"true\" story of her ancestor.")
-                        .genres(Set.of(Genre.Comedy, Genre.Drama, Genre.Romance))
+                        .genres(Set.of(Genre.COMEDY, Genre.DRAMA, Genre.ROMANCE))
                         .length(121)
                         .releaseDate(LocalDate.of(1998,7,31))
                         .rating(7.1f)
@@ -1165,7 +1165,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: David Howard
                         //Actors: Tim Allen, Sigourney Weaver, Alan Rickman
                         .description("The alumni cast of a space opera television series have to play their roles as the real thing when an alien race needs their help. However, they also have to defend both Earth and the alien race from a reptilian warlord.")
-                        .genres(Set.of(Genre.Adventure, Genre.Comedy, Genre.Sci_Fi))
+                        .genres(Set.of(Genre.ADVENTURE, Genre.COMEDY, Genre.SCI_FI))
                         .length(102)
                         .releaseDate(LocalDate.of(1999,12,25))
                         .rating(7.3f)
@@ -1181,7 +1181,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Carl Sagan, Ann Druyan
                         //Actors: Jodie Foster, Matthew McConaughey
                         .description("Dr. Ellie Arroway, after years of searching, finds conclusive radio proof of extraterrestrial intelligence, sending plans for a mysterious machine.")
-                        .genres(Set.of(Genre.Drama, Genre.Mystery, Genre.Sci_Fi, Genre.Thriller))
+                        .genres(Set.of(Genre.DRAMA, Genre.MYSTERY, Genre.SCI_FI, Genre.THRILLER))
                         .length(150)
                         .releaseDate(LocalDate.of(1997,7,11))
                         .rating(7.5f)
@@ -1197,7 +1197,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Martin Scorsese
                         //Actors: Robert De Niro, Joew Pesci, Ray Liotta
                         .description("The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.")
-                        .genres(Set.of(Genre.Biography, Genre.Crime, Genre.Drama))
+                        .genres(Set.of(Genre.BIOGRAPHY, Genre.CRIME, Genre.DRAMA))
                         .length(146)
                         .releaseDate(LocalDate.of(1990,9,9))
                         .rating(8.7f)
@@ -1213,7 +1213,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Jake LaMotta
                         //Actors: Robert De Niro, Joe Pesci
                         .description("The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.")
-                        .genres(Set.of(Genre.Biography, Genre.Drama, Genre.Sport))
+                        .genres(Set.of(Genre.BIOGRAPHY, Genre.DRAMA, Genre.SPORT))
                         .length(129)
                         .releaseDate(LocalDate.of(1990,12,19))
                         .rating(8.2f)
@@ -1229,7 +1229,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Francis Ford Coppola
                         //Actors: Al Pacino, Robert De Niro
                         .description("The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.")
-                        .genres(Set.of(Genre.Crime, Genre.Drama))
+                        .genres(Set.of(Genre.CRIME, Genre.DRAMA))
                         .length(200)
                         .releaseDate(LocalDate.of(1974,12,12))
                         .rating(9.0f)
@@ -1246,7 +1246,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Quentin Tarantino
                         //Actors: Jamie Foxx, Christoph Waltz, Leonardo Dicaprio
                         .description("With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation-owner in Mississippi.")
-                        .genres(Set.of(Genre.Drama, Genre.Western))
+                        .genres(Set.of(Genre.DRAMA, Genre.WESTERN))
                         .length(165)
                         .releaseDate(LocalDate.of(2012,12,11))
                         .rating(8.4f)
@@ -1263,7 +1263,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Quentin Tarantino
                         //Actors: Brad Pitt, Diane Kruger, Christoph Waltz
                         .description("In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.")
-                        .genres(Set.of(Genre.Adventure, Genre.Drama, Genre.War))
+                        .genres(Set.of(Genre.ADVENTURE, Genre.DRAMA, Genre.WAR))
                         .length(153)
                         .releaseDate(LocalDate.of(2009,5,20))
                         .rating(8.4f)
@@ -1280,7 +1280,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Krzysztof Kieslowski
                         //Actors: Juliette Binoche, Zbigniew Zamachowski, Julie Delpy
                         .description("A woman struggles to find a way to live her life after the death of her husband and child.")
-                        .genres(Set.of(Genre.Drama, Genre.Music, Genre.Mystery, Genre.Romance))
+                        .genres(Set.of(Genre.DRAMA, Genre.MUSIC, Genre.MYSTERY, Genre.ROMANCE))
                         .length(94)
                         .releaseDate(LocalDate.of(1993,9,8))
                         .rating(7.9f)
@@ -1297,7 +1297,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Krzysztof Kieslowski
                         //Actors: Zbigniew Zamachowski, Julie Delpy
                         .description("After his wife divorces him, a Polish immigrant plots to get even with her.")
-                        .genres(Set.of(Genre.Comedy, Genre.Drama, Genre.Romance))
+                        .genres(Set.of(Genre.COMEDY, Genre.DRAMA, Genre.ROMANCE))
                         .length(92)
                         .releaseDate(LocalDate.of(1994,6,10))
                         .rating(7.6f)
@@ -1314,7 +1314,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Krzysztof Kieslowski
                         //Actors: Irène Jacob, Jean-Louis Trintignant
                         .description("A model discovers a retired judge is keen on invading people's privacy.")
-                        .genres(Set.of(Genre.Drama, Genre.Mystery, Genre.Romance))
+                        .genres(Set.of(Genre.DRAMA, Genre.MYSTERY, Genre.ROMANCE))
                         .length(99)
                         .releaseDate(LocalDate.of(1994,11,23))
                         .rating(8.1f)
@@ -1331,7 +1331,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Jean-Piere Jeunet, Guillaume Laurant
                         //Actors: Audrey Tautou
                         .description("Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.")
-                        .genres(Set.of(Genre.Comedy, Genre.Romance))
+                        .genres(Set.of(Genre.COMEDY, Genre.ROMANCE))
                         .length(122)
                         .releaseDate(LocalDate.of(2002,2,8))
                         .rating(8.3f)
@@ -1347,7 +1347,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Thomas Vinterberg
                         //Actors: Mads Mikkelsen, Thomas Bo Larsen
                         .description("Four high school teachers consume alcohol on a daily basis to see how it affects their social and professional lives.")
-                        .genres(Set.of(Genre.Comedy, Genre.Drama))
+                        .genres(Set.of(Genre.COMEDY, Genre.DRAMA))
                         .length(117)
                         .releaseDate(LocalDate.of(2020,12,18))
                         .rating(7.8f)
@@ -1363,7 +1363,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Abbas Kiarostami
                         //Actors: Babek Ahmed Poor
                         .description("8 year old Ahmed has mistakenly taken his friend Mohammad's notebook. He wants to return it, or else his friend will be expelled from school. Determinedly, the conscientious boy sets out to find Mohammad's home in the neighbouring village.")
-                        .genres(Set.of(Genre.Drama, Genre.Family))
+                        .genres(Set.of(Genre.DRAMA, Genre.FAMILY))
                         .length(83)
                         .releaseDate(LocalDate.of(1987,2,18))
                         .rating(8.1f)
@@ -1379,7 +1379,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Akira Kurosawa
                         //Actors: Tatsuya Nakadai
                         .description("In Medieval Japan, an elderly warlord retires, handing over his empire to his three sons. However, he vastly underestimates how the new-found power will corrupt them and cause them to turn on each other...and him.")
-                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.War))
+                        .genres(Set.of(Genre.ACTION, Genre.DRAMA, Genre.WAR))
                         .length(162)
                         .releaseDate(LocalDate.of(1985,6,1))
                         .rating(8.2f)
@@ -1395,7 +1395,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Akira Kurosawa
                         //Actors: Toshiro Mifune
                         .description("A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.")
-                        .genres(Set.of(Genre.Action, Genre.Drama))
+                        .genres(Set.of(Genre.ACTION, Genre.DRAMA))
                         .length(207)
                         .releaseDate(LocalDate.of(1956,11,19))
                         .rating(8.6f)
@@ -1411,7 +1411,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Carl Mayer
                         //Actors: Werner Krauss
                         .description("Hypnotist Dr. Caligari uses a somnambulist, Cesare, to commit murders.")
-                        .genres(Set.of(Genre.Horror, Genre.Mystery, Genre.Thriller))
+                        .genres(Set.of(Genre.HORROR, Genre.MYSTERY, Genre.THRILLER))
                         .length(67)
                         .releaseDate(LocalDate.of(1920,2,27))
                         .rating(8.1f)
@@ -1427,7 +1427,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Wolfgang Petersen
                         //Actors: Jürgen Prochnow
                         .description("The claustrophobic world of a WWII German U-boat; boredom, filth and sheer terror.")
-                        .genres(Set.of(Genre.Drama, Genre.War))
+                        .genres(Set.of(Genre.DRAMA, Genre.WAR))
                         .length(149)
                         .releaseDate(LocalDate.of(1982,2,10))
                         .rating(8.3f)
@@ -1443,7 +1443,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Denis Villeneuve
                         //Actors: Timothée Chalamet, Rebecca Fergusson
                         .description("Feature adaptation of Frank Herbert's science fiction novel about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.")
-                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Drama, Genre.Sci_Fi))
+                        .genres(Set.of(Genre.ACTION, Genre.ADVENTURE, Genre.DRAMA, Genre.SCI_FI))
                         .length(155)
                         .releaseDate(LocalDate.of(2021,10,22))
                         .rating(8.2f)
@@ -1460,7 +1460,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Pete Docter
                         //Actors: Ed Asner
                         .description("78-year-old Carl Fredricksen travels to Paradise Falls in his house equipped with balloons, inadvertently taking a young stowaway.")
-                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Drama, Genre.Family))
+                        .genres(Set.of(Genre.ANIMATION, Genre.ADVENTURE, Genre.COMEDY, Genre.DRAMA, Genre.FAMILY))
                         .length(96)
                         .releaseDate(LocalDate.of(2009,5,29))
                         .rating(8.2f)
@@ -1477,7 +1477,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Lee Unkrich
                         //Actors: Anthony Gonzalez
                         .description("Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.")
-                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Family, Genre.Fantasy, Genre.Music, Genre.Mystery))
+                        .genres(Set.of(Genre.ANIMATION, Genre.ADVENTURE, Genre.COMEDY, Genre.FAMILY, Genre.FANTASY, Genre.MUSIC, Genre.MYSTERY))
                         .length(105)
                         .releaseDate(LocalDate.of(2017,11,22))
                         .rating(8.4f)
@@ -1494,7 +1494,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: George Lucas
                         //Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Alec Guinness
                         .description("Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.")
-                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi))
+                        .genres(Set.of(Genre.ACTION, Genre.ADVENTURE, Genre.FANTASY, Genre.SCI_FI))
                         .length(121)
                         .releaseDate(LocalDate.of(1977,5,25))
                         .rating(8.6f)
@@ -1511,7 +1511,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: George Lucas
                         //Actors: Mark Hamill, Harrison Ford, Carrie Fisher
                         .description("After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader and bounty hunter Boba Fett.")
-                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi))
+                        .genres(Set.of(Genre.ACTION, Genre.ADVENTURE, Genre.FANTASY, Genre.SCI_FI))
                         .length(124)
                         .releaseDate(LocalDate.of(2021,10,22))
                         .rating(8.7f)
@@ -1528,7 +1528,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Goerge Lucas
                         //Actors: Mark Hamill, Harrison Ford, Carrie Fisher
                         .description("After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor's trap.")
-                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Fantasy, Genre.Sci_Fi))
+                        .genres(Set.of(Genre.ACTION, Genre.ADVENTURE, Genre.FANTASY, Genre.SCI_FI))
                         .length(131)
                         .releaseDate(LocalDate.of(1983,5,25))
                         .rating(8.3f)
@@ -1545,7 +1545,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Hampton Fancher
                         //Actors: Harrison Ford, Rutger Hauer
                         .description("A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.")
-                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.Sci_Fi))
+                        .genres(Set.of(Genre.ACTION, Genre.DRAMA, Genre.SCI_FI))
                         .length(117)
                         .releaseDate(LocalDate.of(1982,6,25))
                         .rating(8.1f)
@@ -1562,7 +1562,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Hampton Fancher
                         //Actors: Harrison Ford, Ryan Gosling
                         .description("Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.")
-                        .genres(Set.of(Genre.Action, Genre.Drama, Genre.Mystery, Genre.Sci_Fi))
+                        .genres(Set.of(Genre.ACTION, Genre.DRAMA, Genre.MYSTERY, Genre.SCI_FI))
                         .length(164)
                         .releaseDate(LocalDate.of(2017,10,6))
                         .rating(8.0f)
@@ -1579,7 +1579,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Stephen King
                         //Actors: River Phoenix, Corey Feldman
                         .description("After the death of one of his friends, a writer recounts a childhood journey with his friends to find the body of a missing boy.")
-                        .genres(Set.of(Genre.Adventure, Genre.Drama))
+                        .genres(Set.of(Genre.ADVENTURE, Genre.DRAMA))
                         .length(89)
                         .releaseDate(LocalDate.of(1986,8,22))
                         .rating(8.1f)
@@ -1596,7 +1596,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Stephen King, Stanley Kubrick
                         //Actors: Jack Nicholson, Shelley Duvall
                         .description("A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.")
-                        .genres(Set.of(Genre.Horror, Genre.Drama))
+                        .genres(Set.of(Genre.HORROR, Genre.DRAMA))
                         .length(146)
                         .releaseDate(LocalDate.of(1980,6,13))
                         .rating(8.4f)
@@ -1613,7 +1613,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Frank Darabont, Stephen King
                         //Actors: Thomas Jane, Marcia Gay Harden
                         .description("A freak storm unleashes a species of bloodthirsty creatures on a small town, where a small band of citizens hole up in a supermarket and fight for their lives.")
-                        .genres(Set.of(Genre.Horror, Genre.Sci_Fi, Genre.Thriller)) //, Genre.Drama, Genre.War"
+                        .genres(Set.of(Genre.HORROR, Genre.SCI_FI, Genre.THRILLER)) //, Genre.Drama, Genre.War"
                         .length(89)
                         .releaseDate(LocalDate.of(1986,8,22))
                         .rating(7.1f)
@@ -1634,7 +1634,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Ann Druyan, Carl Sagan
                         //Actors: Neil deGrasse Tyson
                         .description("An exploration of our discovery of the laws of nature and coordinates in space and time.")
-                        .genres(Set.of(Genre.Documentary))
+                        .genres(Set.of(Genre.DOCUMENTARY))
                         .length(44)
                         .releaseDate(LocalDate.of(2014,3,9))
                         .rating(9.3f)
@@ -1652,7 +1652,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Robert Levine
                         //Actors: Jessica Kennedy, Toby Stephens
                         .description("Follows Captain Flint and his pirates twenty years prior to Robert Louis Stevenson's classic novel \"Treasure Island.\"")
-                        .genres(Set.of(Genre.Adventure, Genre.Drama))
+                        .genres(Set.of(Genre.ADVENTURE, Genre.DRAMA))
                         .length(56)
                         .releaseDate(LocalDate.of(2014,1,25))
                         .rating(8.2f)
@@ -1670,7 +1670,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Dan Harmon, Justin Roiland
                         //Actors: Justin Roiland
                         .description("An animated series that follows the exploits of a super scientist and his not-so-bright grandson.")
-                        .genres(Set.of(Genre.Animation, Genre.Adventure, Genre.Comedy, Genre.Sci_Fi))
+                        .genres(Set.of(Genre.ANIMATION, Genre.ADVENTURE, Genre.COMEDY, Genre.SCI_FI))
                         .length(23)
                         .releaseDate(LocalDate.of(2013,12,2))
                         .rating(9.2f)
@@ -1688,7 +1688,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Bruce MacKenna
                         //Actors: James Dale
                         .description("The Pacific Theatre of World War II, as seen through the eyes of several young Marines." )
-                        .genres(Set.of(Genre.Action, Genre.Adventure, Genre.Drama, Genre.History, Genre.War))
+                        .genres(Set.of(Genre.ACTION, Genre.ADVENTURE, Genre.DRAMA, Genre.HISTORY, Genre.WAR))
                         .length(55)
                         .releaseDate(LocalDate.of(2010,3,14))
                         .rating(8.3f)
@@ -1706,7 +1706,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Leslie Bohem
                         //Actors: Dakota Fanning
                         .description("Three families experience alien abductions over a period of five decades." )
-                        .genres(Set.of(Genre.Drama, Genre.Mystery, Genre.Sci_Fi, Genre.Thriller))
+                        .genres(Set.of(Genre.DRAMA, Genre.MYSTERY, Genre.SCI_FI, Genre.THRILLER))
                         .length(87)
                         .releaseDate(LocalDate.of(2002,12,2))
                         .rating(7.8f)
@@ -1724,7 +1724,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Stephen Ambrose
                         //Actors: Scott Grimes, Damian Lewis
                         .description("The story of Easy Company of the U.S. Army 101st Airborne Division and their mission in World War II Europe, from Operation Overlord to V-J Day." )
-                        .genres(Set.of(Genre.Drama, Genre.History, Genre.War))
+                        .genres(Set.of(Genre.DRAMA, Genre.HISTORY, Genre.WAR))
                         .length(60)
                         .releaseDate(LocalDate.of(2001,9,9))
                         .rating(9.4f)
@@ -1742,7 +1742,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Kirk Tingblad
                         //Actors: Maurice LaMarche, Rob Paulsen
                         .description("A genius mouse and his stupid sidekick try to conquer the world each night." )
-                        .genres(Set.of(Genre.Animation, Genre.Short, Genre.Adventure, Genre.Comedy, Genre.Family, Genre.Fantasy, Genre.Sci_Fi))
+                        .genres(Set.of(Genre.ANIMATION, Genre.SHORT, Genre.ADVENTURE, Genre.COMEDY, Genre.FAMILY, Genre.FANTASY, Genre.SCI_FI))
                         .length(22)
                         .releaseDate(LocalDate.of(1995,9,9))
                         .rating(7.8f)
@@ -1760,7 +1760,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Carmen Finestra
                         //Actors: Tim Allen
                         .description("The daily trials and tribulations of Tim \"The Tool Man\" Taylor, a television show host raising three mischievous boys with help from his loyal co-host, loving wife, and eccentric neighbor." )
-                        .genres(Set.of(Genre.Comedy, Genre.Family))
+                        .genres(Set.of(Genre.COMEDY, Genre.FAMILY))
                         .length(22)
                         .releaseDate(LocalDate.of(1991,9,17))
                         .rating(7.2f)
@@ -1778,7 +1778,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                         //Writers: Greg Daniels, Mike Judge
                         //Actors: Mike Judge
                         .description("A straight-laced propane salesman in Arlen, Texas tries to deal with the wacky antics of his family and friends, while also trying to keep his son in line." )
-                        .genres(Set.of(Genre.Animation, Genre.Comedy, Genre.Drama))
+                        .genres(Set.of(Genre.ANIMATION, Genre.COMEDY, Genre.DRAMA))
                         .length(21)
                         .releaseDate(LocalDate.of(1997,1,12))
                         .rating(7.3f)
@@ -2246,912 +2246,912 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                 ContentIndividual.builder()
                         .content(films.get(0))
                         .individual(individuals.get(5))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(0))
                         .individual(individuals.get(98))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(0))
                         .individual(individuals.get(0))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(0))
                         .individual(individuals.get(99))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(0))
                         .individual(individuals.get(100))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(1))
                         .individual(individuals.get(1))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(1))
                         .individual(individuals.get(5))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(1))
                         .individual(individuals.get(6))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(1))
                         .individual(individuals.get(97))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(2))
                         .individual(individuals.get(2))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(2))
                         .individual(individuals.get(92))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(2))
                         .individual(individuals.get(96))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(3))
                         .individual(individuals.get(0))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(3))
                         .individual(individuals.get(95))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(3))
                         .individual(individuals.get(95))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(4))
                         .individual(individuals.get(0))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(4))
                         .individual(individuals.get(94))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(4))
                         .individual(individuals.get(94))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(5))
                         .individual(individuals.get(5))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(5))
                         .individual(individuals.get(91))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(5))
                         .individual(individuals.get(92))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(5))
                         .individual(individuals.get(93))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(6))
                         .individual(individuals.get(5))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(6))
                         .individual(individuals.get(85))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(6))
                         .individual(individuals.get(88))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(6))
                         .individual(individuals.get(89))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(7))
                         .individual(individuals.get(5))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(7))
                         .individual(individuals.get(85))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(7))
                         .individual(individuals.get(86))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(7))
                         .individual(individuals.get(87))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(8))
                         .individual(individuals.get(1))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(8))
                         .individual(individuals.get(82))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(8))
                         .individual(individuals.get(83))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(8))
                         .individual(individuals.get(84))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(9))
                         .individual(individuals.get(78))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(9))
                         .individual(individuals.get(79))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(9))
                         .individual(individuals.get(80))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(9))
                         .individual(individuals.get(81))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(10))
                         .individual(individuals.get(7))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(10))
                         .individual(individuals.get(75))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(10))
                         .individual(individuals.get(74))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(10))
                         .individual(individuals.get(76))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(10))
                         .individual(individuals.get(77))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(11))
                         .individual(individuals.get(71))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(11))
                         .individual(individuals.get(71))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(11))
                         .individual(individuals.get(9))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(11))
                         .individual(individuals.get(10))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(11))
                         .individual(individuals.get(73))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(12))
                         .individual(individuals.get(9))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(12))
                         .individual(individuals.get(10))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(12))
                         .individual(individuals.get(71))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(12))
                         .individual(individuals.get(72))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(13))
                         .individual(individuals.get(10))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(13))
                         .individual(individuals.get(69))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(13))
                         .individual(individuals.get(70))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(13))
                         .individual(individuals.get(69))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(14))
                         .individual(individuals.get(11))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(14))
                         .individual(individuals.get(66))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(14))
                         .individual(individuals.get(66))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(14))
                         .individual(individuals.get(67))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(14))
                         .individual(individuals.get(68))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(15))
                         .individual(individuals.get(66))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(15))
                         .individual(individuals.get(66))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(15))
                         .individual(individuals.get(11))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(15))
                         .individual(individuals.get(64))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(15))
                         .individual(individuals.get(65))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(16))
                         .individual(individuals.get(13))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(16))
                         .individual(individuals.get(13))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(16))
                         .individual(individuals.get(14))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(16))
                         .individual(individuals.get(62))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(16))
                         .individual(individuals.get(63))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(17))
                         .individual(individuals.get(13))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(17))
                         .individual(individuals.get(13))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(17))
                         .individual(individuals.get(62))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(17))
                         .individual(individuals.get(63))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(18))
                         .individual(individuals.get(13))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(18))
                         .individual(individuals.get(13))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(18))
                         .individual(individuals.get(60))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(18))
                         .individual(individuals.get(61))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(19))
                         .individual(individuals.get(17))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(19))
                         .individual(individuals.get(17))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(19))
                         .individual(individuals.get(16))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(19))
                         .individual(individuals.get(15))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(20))
                         .individual(individuals.get(18))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(20))
                         .individual(individuals.get(18))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(20))
                         .individual(individuals.get(19))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(20))
                         .individual(individuals.get(59))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(21))
                         .individual(individuals.get(20))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(21))
                         .individual(individuals.get(20))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(21))
                         .individual(individuals.get(58))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(22))
                         .individual(individuals.get(22))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(22))
                         .individual(individuals.get(22))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(22))
                         .individual(individuals.get(21))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(23))
                         .individual(individuals.get(22))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(23))
                         .individual(individuals.get(22))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(23))
                         .individual(individuals.get(23))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(24))
                         .individual(individuals.get(25))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(24))
                         .individual(individuals.get(57))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(24))
                         .individual(individuals.get(24))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(25))
                         .individual(individuals.get(26))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(25))
                         .individual(individuals.get(26))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(25))
                         .individual(individuals.get(56))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(26))
                         .individual(individuals.get(27))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(26))
                         .individual(individuals.get(27))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(26))
                         .individual(individuals.get(28))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(26))
                         .individual(individuals.get(29))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(27))
                         .individual(individuals.get(31))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(27))
                         .individual(individuals.get(31))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(27))
                         .individual(individuals.get(32))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(28))
                         .individual(individuals.get(33))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(28))
                         .individual(individuals.get(33))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(28))
                         .individual(individuals.get(34))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(29))
                         .individual(individuals.get(35))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(29))
                         .individual(individuals.get(35))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(29))
                         .individual(individuals.get(36))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(29))
                         .individual(individuals.get(37))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(29))
                         .individual(individuals.get(38))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(29))
                         .individual(individuals.get(39))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(30))
                         .individual(individuals.get(55))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(30))
                         .individual(individuals.get(35))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(30))
                         .individual(individuals.get(36))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(30))
                         .individual(individuals.get(37))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(30))
                         .individual(individuals.get(39))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(31))
                         .individual(individuals.get(54))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(31))
                         .individual(individuals.get(35))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(31))
                         .individual(individuals.get(36))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(31))
                         .individual(individuals.get(37))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(31))
                         .individual(individuals.get(39))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(32))
                         .individual(individuals.get(41))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(32))
                         .individual(individuals.get(42))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(32))
                         .individual(individuals.get(37))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(32))
                         .individual(individuals.get(40))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(33))
                         .individual(individuals.get(27))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(33))
                         .individual(individuals.get(42))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(33))
                         .individual(individuals.get(37))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(33))
                         .individual(individuals.get(43))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(34))
                         .individual(individuals.get(44))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(34))
                         .individual(individuals.get(45))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(34))
                         .individual(individuals.get(46))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(34))
                         .individual(individuals.get(47))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(35))
                         .individual(individuals.get(48))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(35))
                         .individual(individuals.get(45))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(35))
                         .individual(individuals.get(48))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(35))
                         .individual(individuals.get(49))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(35))
                         .individual(individuals.get(50))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(36))
                         .individual(individuals.get(51))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(36))
                         .individual(individuals.get(45))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(36))
                         .individual(individuals.get(51))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(36))
                         .individual(individuals.get(52))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(films.get(36))
                         .individual(individuals.get(53))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(0))
                         .individual(individuals.get(121))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(0))
                         .individual(individuals.get(75))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(0))
                         .individual(individuals.get(7))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(1))
                         .individual(individuals.get(118))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(1))
                         .individual(individuals.get(8))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(1))
                         .individual(individuals.get(120))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(1))
                         .individual(individuals.get(119))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(2))
                         .individual(individuals.get(4))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(2))
                         .individual(individuals.get(116))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(2))
                         .individual(individuals.get(117))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(2))
                         .individual(individuals.get(117))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(3))
                         .individual(individuals.get(113))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(3))
                         .individual(individuals.get(114))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(3))
                         .individual(individuals.get(115))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(4))
                         .individual(individuals.get(111))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(4))
                         .individual(individuals.get(111))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(4))
                         .individual(individuals.get(112))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(5))
                         .individual(individuals.get(92))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(5))
                         .individual(individuals.get(108))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(5))
                         .individual(individuals.get(109))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(5))
                         .individual(individuals.get(110))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(6))
                         .individual(individuals.get(105))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(6))
                         .individual(individuals.get(105))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(6))
                         .individual(individuals.get(106))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(6))
                         .individual(individuals.get(107))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(7))
                         .individual(individuals.get(104))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(7))
                         .individual(individuals.get(103))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(7))
                         .individual(individuals.get(2))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(8))
                         .individual(individuals.get(101))
-                        .contributingRole(IndividualRole.Director)
+                        .contributingRole(IndividualRole.DIRECTOR)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(8))
                         .individual(individuals.get(101))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(8))
                         .individual(individuals.get(102))
-                        .contributingRole(IndividualRole.Writer)
+                        .contributingRole(IndividualRole.WRITER)
                         .build(),
                 ContentIndividual.builder()
                         .content(tvshows.get(8))
                         .individual(individuals.get(102))
-                        .contributingRole(IndividualRole.Actor)
+                        .contributingRole(IndividualRole.ACTOR)
                         .build()
         );
 

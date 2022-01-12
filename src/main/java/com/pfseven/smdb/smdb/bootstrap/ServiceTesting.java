@@ -1,20 +1,15 @@
 package com.pfseven.smdb.smdb.bootstrap;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pfseven.smdb.smdb.base.AbstractLogComponent;
 import com.pfseven.smdb.smdb.domain.Award;
-import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.services.*;
 import lombok.RequiredArgsConstructor;
-import lombok.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.Set;
@@ -67,12 +62,12 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
 
         //Query 4
         logger.info("**Query 4**");
-        filmService.findByGenres(List.of(Genre.Drama, Genre.Biography)).forEach(film -> logger.info("This genre has this film: {}, {}, {}", film.getTitle(), film.getRating(), film.getGenres()));
+        filmService.findByGenres(List.of(Genre.DRAMA, Genre.BIOGRAPHY)).forEach(film -> logger.info("This genre has this film: {}, {}, {}", film.getTitle(), film.getRating(), film.getGenres()));
 
         //Query 5
         logger.info("**Query 5**");
         logger.info("Genre list: {} ", tvShowService.countByGenres(EnumSet.allOf(Genre.class)));
-        logger.info("Result : {}", tvShowService.countByGenres(Set.of(Genre.Drama, Genre.Comedy)));
+        logger.info("Result : {}", tvShowService.countByGenres(Set.of(Genre.DRAMA, Genre.COMEDY)));
 
         //Query 6
         logger.info("**Query 6**");
@@ -110,7 +105,7 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
 
         //Find Individuals by IndividualRole
         logger.info("**Find Individuals by IndividualRole**");
-        individualService.findAllByIndividualRole(IndividualRole.Director).forEach(individual -> logger.info("{} {}", individual.getFirstName(), individual.getLastName()));
+        individualService.findAllByIndividualRole(IndividualRole.DIRECTOR).forEach(individual -> logger.info("{} {}", individual.getFirstName(), individual.getLastName()));
 
         logger.info("{}", individualService.findByFirstNameAndLastName("Tom", "Hanks"));
 
