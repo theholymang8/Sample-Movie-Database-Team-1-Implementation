@@ -47,7 +47,7 @@ public abstract class ContentServiceImpl<T extends BaseModel> extends BaseServic
     public Map<Genre, List<ContentPerGenre>> contentPerGenreForGivenIndividual(final String firstName, final String lastName) {
         Long individualID = individualService.findByFirstNameAndLastName(firstName,lastName).getId();
         if (individualID == null){
-            logger.info("{} {} could not be found", firstName, lastName);
+            logger.trace("{} {} could not be found", firstName, lastName);
             return null;
         }
         List<ContentPerGenre>reports = contentRepository.contentPerGenreForGivenIndividual(individualID);

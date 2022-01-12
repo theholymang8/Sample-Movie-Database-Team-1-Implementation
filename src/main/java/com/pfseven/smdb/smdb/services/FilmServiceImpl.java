@@ -38,13 +38,11 @@ public class FilmServiceImpl extends ContentServiceImpl<Film> implements FilmSer
     @Override
     public Long exportFilms() {
         List<Film> films = filmRepository.findAll();
-        //logger.info("{}", films);
+        logger.trace("These films are getting exported: {}", films);
         try (CSVPrinter csvPrinter = new CSVPrinter(new FileWriter("films.csv"), CSVFormat.DEFAULT)) {
             for (Film film : films) {
                 csvPrinter.printRecord(film);
             }
-            //contentGenres.forEach(contentGenre -> csvPrinter.printRecord(contentGenre.getGenre());
-            logger.info("No problem with path");
             return (long) films.size();
         } catch (IOException e) {
             logger.error("There was an error with the content_genres csv creation");

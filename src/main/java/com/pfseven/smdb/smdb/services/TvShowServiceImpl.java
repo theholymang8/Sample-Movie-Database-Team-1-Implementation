@@ -35,20 +35,9 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
         for(final Genre genre : genres){
             foundFilms.addAll(tvShowRepository.findByGenres(genre));
         }
+        logger.trace("Found Content By Genre: {}", foundFilms);
         return foundFilms;
     }
-
-//    @Override
-//    public List<TvShow> findByGenres(final List<Genre> genres) {
-//        List<TvShow> foundTvShows = new ArrayList<>();
-//        for(final Genre genre : genres){
-//            foundTvShows.addAll(tvShowRepository.findByGenres(genre));
-//        }
-//        return foundTvShows;
-//    }
-
-    //@Override
-    //public List<TvShow> findAllByGenre(final String firstName, final String lastName) {return null;}
 
     @Override
     public Map<Genre, Integer> countByGenres(final Set<Genre> genres){
@@ -57,6 +46,7 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
             Integer count = tvShowRepository.countByGenres(genre);
             map.put(genre, count);
         }
+        logger.trace("Count Content Per Genre: {}", map);
         return map;
     }
 
@@ -67,6 +57,7 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
             List<CountPerYearReport> reports = tvShowRepository.countByYearAndGenres(genre);
             map.put(genre, reports);
         }
+        logger.trace("Count By Year By Genre: {}", map);
         return map;
     }
 
