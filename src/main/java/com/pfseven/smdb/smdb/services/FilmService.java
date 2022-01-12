@@ -13,7 +13,7 @@ public interface FilmService extends ContentService<Film, Long>  {
 
     List<Film> findByUniverse(FilmUniverse filmUniverse);
     //Export films to csv file
-    //Long exportFilms(Film film);
+    Long exportFilms();
 
     //Returns films for a given (or more) genre(s)
     List<Film> findByGenres(List<Genre> genres);
