@@ -43,7 +43,7 @@ public class IndividualServiceImpl extends BaseServiceImpl<Individual> implement
     }
 
     @Override
-    public List<ContentIndividual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole) {
+    public List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole) {
         return individualRepository.findIndividualByContributingRole(firstName,lastName, individualRole);
     }
 

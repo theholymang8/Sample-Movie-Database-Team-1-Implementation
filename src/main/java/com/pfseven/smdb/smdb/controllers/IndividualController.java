@@ -45,11 +45,11 @@ public class IndividualController extends AbstractController<Individual>{
     @GetMapping(path = "find",
                 headers = "action=findByContributingRole",
                 params = {"firstName", "lastName", "contributingRole"})
-    public ResponseEntity<ApiResponse<List<ContentIndividual>>> findByContributingRole(
+    public ResponseEntity<ApiResponse<List<Individual>>> findByContributingRole(
             @RequestParam(value ="firstName") String firstName,
             @RequestParam(value = "lastName") String lastName,
             @RequestParam(value = "contributingRole")IndividualRole contributingRole){
-        return ResponseEntity.ok(ApiResponse.<List<ContentIndividual>>builder()
+        return ResponseEntity.ok(ApiResponse.<List<Individual>>builder()
                 .data(individualService.findIndividualByContributingRole(firstName, lastName, contributingRole))
                 .build());
     }

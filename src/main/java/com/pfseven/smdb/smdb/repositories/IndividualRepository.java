@@ -21,6 +21,6 @@ public interface IndividualRepository extends JpaRepository<Individual, Long> {
     List<Individual> findAllByFirstName(String firstname);
 
     @Query
-    List<ContentIndividual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
+    List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
 
 }

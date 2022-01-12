@@ -16,6 +16,6 @@ public interface IndividualService extends BaseService<Individual, Long>{
 
     List<Individual> findAllByNationality(String nationality);
 
-    List<ContentIndividual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
+    List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
 
 }
