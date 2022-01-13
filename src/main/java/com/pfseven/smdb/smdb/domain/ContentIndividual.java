@@ -21,7 +21,7 @@ import javax.validation.constraints.NotNull;
 public class ContentIndividual extends BaseModel {
 
     @NotNull
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "CONTENT_ID")
     @JsonIgnoreProperties("contentIndividuals")
     private Content content;
