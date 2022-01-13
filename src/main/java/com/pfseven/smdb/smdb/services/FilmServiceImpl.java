@@ -27,11 +27,13 @@ public class FilmServiceImpl extends ContentServiceImpl<Film> implements FilmSer
 
     @Override
     public Film findByTitle(String title) {
+        logger.info("found film by title {}", title);
         return filmRepository.findByTitle(title);
     }
 
     @Override
     public List<Film> findByUniverse(FilmUniverse filmUniverse) {
+        logger.info("found films by film universe {}", filmUniverse);
         return filmRepository.findAllByFilmUniverse(filmUniverse);
     }
 
@@ -57,6 +59,7 @@ public class FilmServiceImpl extends ContentServiceImpl<Film> implements FilmSer
         for(final Genre genre : genres){
             foundFilms.addAll(filmRepository.findByGenres(genre));
         }
+        logger.info("found films by genres {}", genres);
         return foundFilms;
     }
 

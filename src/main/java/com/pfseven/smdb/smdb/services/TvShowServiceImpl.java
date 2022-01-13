@@ -26,17 +26,18 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
 
     @Override
     public TvShow findByTitle(String title) {
+        logger.info("Found TvShow by title {}", title);
         return tvShowRepository.findByTitle(title);
     }
 
     @Override
     public List<TvShow> findByGenres(List<Genre> genres) {
-        List<TvShow> foundFilms = new ArrayList<>();
+        List<TvShow> foundTvShows = new ArrayList<>();
         for(final Genre genre : genres){
-            foundFilms.addAll(tvShowRepository.findByGenres(genre));
+            foundTvShows.addAll(tvShowRepository.findByGenres(genre));
         }
-        logger.trace("Found Content By Genre: {}", foundFilms);
-        return foundFilms;
+        logger.trace("Found Content By Genre: {}", foundTvShows);
+        return foundTvShows;
     }
 
     @Override

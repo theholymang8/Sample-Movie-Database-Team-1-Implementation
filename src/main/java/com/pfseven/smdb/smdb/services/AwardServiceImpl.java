@@ -21,16 +21,19 @@ public class AwardServiceImpl extends BaseServiceImpl<Award> implements AwardSer
 
     @Override
     public Award findByTitle(String title) {
+        logger.info("found award by title {}", title);
         return awardRepository.findByTitle(title);
     }
 
     @Override
     public List<Award> findByCategory(String category) {
+        logger.info("found awards by category {}", category);
         return awardRepository.findByCategory(category);
     }
 
     @Override
     public List<Award> findByYear(String year) {
+        logger.info("found awards by year {}", year);
         return awardRepository.findByYearOfAward(year);
     }
 }
