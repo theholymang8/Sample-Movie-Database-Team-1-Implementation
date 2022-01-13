@@ -1,7 +1,10 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.*;
-import com.pfseven.smdb.smdb.dto.IndividualAndContentPerContribution;
+import com.pfseven.smdb.smdb.projections.ContentGenreProjection;
+import com.pfseven.smdb.smdb.projections.ContentIndividualProjection;
+import com.pfseven.smdb.smdb.projections.IndividualProjection;
+import com.pfseven.smdb.smdb.projections.IndividualRoleProjection;
 
 import java.util.List;
 
@@ -19,4 +22,11 @@ public interface IndividualService extends BaseService<Individual, Long>{
 
     List<Individual> findIndividualByContributingRole(String firstName, String lastName, IndividualRole individualRole);
 
+    List<ContentGenreProjection> getContentGenre();
+
+    List<ContentIndividualProjection> getContentIndividuals();
+
+    List<IndividualRoleProjection> getIndividualRole();
+
+    List<IndividualProjection> getIndividuals();
 }

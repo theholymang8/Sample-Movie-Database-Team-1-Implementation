@@ -10,9 +10,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @JsonIgnoreProperties({"handler", "hibernateLazyInitializer"})
@@ -53,7 +51,6 @@ public class Individual extends BaseModel{
     @NotNull(message = "{nationality.null}")
     @Column(length = 75, nullable = false)
     private String nationality;
-
 
     @ElementCollection(fetch = FetchType.EAGER, targetClass= IndividualRole.class)
     @Enumerated(EnumType.STRING)

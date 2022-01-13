@@ -2,15 +2,8 @@ package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.base.AbstractLogComponent;
 import com.pfseven.smdb.smdb.domain.BaseModel;
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVPrinter;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

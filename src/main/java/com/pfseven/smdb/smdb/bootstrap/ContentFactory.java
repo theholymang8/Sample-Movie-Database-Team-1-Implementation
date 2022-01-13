@@ -1793,7 +1793,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
 
         );
 
-        //Awards Factory
+        //AwardProjection Factory
 
         List<Award> awards = List.of(
                 Award.builder()
@@ -2105,7 +2105,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
                 Award.builder()
                         .title("Best Foreign Film - Trois couleurs: Bleu")
                         .yearOfAward("2014")
-                        .category("20/20 Awards")
+                        .category("20/20 AwardProjection")
                         .content(films.get(16))
                         .individual(individuals.get(13))
                         .build(),
@@ -3419,7 +3419,7 @@ public class ContentFactory extends AbstractLogComponent implements CommandLineR
         filmService.createAll(films);
         logger.info("Created 36 films");
         tvShowService.createAll(tvshows);
-        logger.info("Created 9 TvShows/Series");
+        logger.info("Created 9 TvShowProjection/Series");
         awardService.createAll(awards);
         logger.info("Created 67 awards");
 

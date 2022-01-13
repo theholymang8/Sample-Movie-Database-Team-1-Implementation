@@ -1,9 +1,11 @@
 package com.pfseven.smdb.smdb.services;
 
-import com.pfseven.smdb.smdb.domain.ContentIndividual;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 import com.pfseven.smdb.smdb.domain.Individual;
-import com.pfseven.smdb.smdb.dto.IndividualAndContentPerContribution;
+import com.pfseven.smdb.smdb.projections.ContentGenreProjection;
+import com.pfseven.smdb.smdb.projections.ContentIndividualProjection;
+import com.pfseven.smdb.smdb.projections.IndividualProjection;
+import com.pfseven.smdb.smdb.projections.IndividualRoleProjection;
 import com.pfseven.smdb.smdb.repositories.IndividualRepository;
 import lombok.RequiredArgsConstructor;
 
@@ -51,6 +53,27 @@ public class IndividualServiceImpl extends BaseServiceImpl<Individual> implement
     @Override
     public List<Individual> findAllByFirstName(String firstname) {
         return individualRepository.findAllByFirstName(firstname);
+    }
+
+    @Override
+    public List<ContentGenreProjection> getContentGenre(){
+        return individualRepository.getContentGenre();
+    }
+
+    @Override
+    public List<ContentIndividualProjection> getContentIndividuals(){
+
+        return individualRepository.getContentIndividuals();
+    }
+
+    @Override
+    public List<IndividualRoleProjection> getIndividualRole(){
+        return individualRepository.getIndividualRole();
+    }
+
+    @Override
+    public List<IndividualProjection> getIndividuals(){
+        return individualRepository.getIndividuals();
     }
 
 }

@@ -2,14 +2,14 @@ package com.pfseven.smdb.smdb.projections;
 
 import com.pfseven.smdb.smdb.domain.IndividualRole;
 
-public interface ContentIndividual {
+public interface ContentIndividualProjection {
 
     Long getId();
 
     IndividualRole getContributingRole();
 
-    Long getContent();
+    Long getContent_ID();
 
-    Long getIndividual();
+    Long getIndividual_ID();
 
 }

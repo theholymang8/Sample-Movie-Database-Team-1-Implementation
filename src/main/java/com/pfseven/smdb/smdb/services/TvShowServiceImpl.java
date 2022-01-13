@@ -1,10 +1,10 @@
 package com.pfseven.smdb.smdb.services;
 
-import com.pfseven.smdb.smdb.domain.Content;
 import com.pfseven.smdb.smdb.domain.ContentIndividual;
 import com.pfseven.smdb.smdb.domain.Genre;
 import com.pfseven.smdb.smdb.domain.TvShow;
 import com.pfseven.smdb.smdb.dto.CountPerYearReport;
+import com.pfseven.smdb.smdb.projections.TvShowProjection;
 import com.pfseven.smdb.smdb.repositories.TvShowRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -19,10 +19,7 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
     private final TvShowRepository tvShowRepository;
 
     @Override
-    public JpaRepository<TvShow, Long> getRepository() {
-        return tvShowRepository;
-    }
-
+    public JpaRepository<TvShow, Long> getRepository() { return tvShowRepository; }
 
     @Override
     public TvShow findByTitle(String title) {
@@ -35,7 +32,6 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
         for(final Genre genre : genres){
             foundFilms.addAll(tvShowRepository.findByGenres(genre));
         }
-        logger.trace("Found Content By Genre: {}", foundFilms);
         return foundFilms;
     }
 
@@ -46,7 +42,6 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
             Integer count = tvShowRepository.countByGenres(genre);
             map.put(genre, count);
         }
-        logger.trace("Count Content Per Genre: {}", map);
         return map;
     }
 
@@ -57,13 +52,17 @@ public class TvShowServiceImpl extends ContentServiceImpl<TvShow> implements TvS
             List<CountPerYearReport> reports = tvShowRepository.countByYearAndGenres(genre);
             map.put(genre, reports);
         }
-        logger.trace("Count By Year By Genre: {}", map);
         return map;
     }
 
     @Override
     public void addContentIndividual(TvShow tvShow, ContentIndividual contentIndividual){
         tvShow.getContentIndividuals().add(contentIndividual);
+    }
+
+    @Override
+    public List<TvShowProjection> getTvShows(){
+        return tvShowRepository.getTvShows();
     }
 
 

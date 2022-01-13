@@ -10,8 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
-
-
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder(toBuilder = true)
@@ -26,7 +24,7 @@ public class BaseModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "idGenerator")
-    @JsonIgnore
+    //@JsonIgnore
     private Long id;
 
 }

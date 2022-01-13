@@ -19,7 +19,6 @@ import java.util.Set;
 @Profile("service-testing")
 public class ServiceTesting extends AbstractLogComponent implements CommandLineRunner {
 
-    private final AwardService awardService;
     private final FilmService filmService;
     private final TvShowService tvShowService;
     private final IndividualService individualService;
@@ -27,16 +26,6 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
 
     @Override
     public void run(String... args)  {
-
-        //ObjectMapper objectMapper = new ObjectMapper();
-        //filmService.findByTitle("Raging Bull").getAwards().forEach(award -> logger.info("Raging Bull won this award: {}\n", award));
-        //logger.info("Film from json encoding: {}",objectMapper.writeValueAsString(filmService.findByTitle("Raging Bull")));
-        //objectMapper.writeValue(System.out, filmService.findByTitle("Raging Bull"));
-        //objectMapper.writeValue(System.out, filmService.findByTitle("Raging Bull").getIndividuals());
-        //filmService.findByTitle("Raging Bull").getIndividuals().forEach(individual -> {
-        //    logger.info("Raging Bull has this individual involved: {}, {}, {}", individual.getFirstName(), individual.getLastName(), individual.getIndividualRole());
-        //});
-        //logger.info("Raging Bull has {} individuals involved.", (filmService.findByTitle("Raging Bull").getIndividuals().size()));
 
 
         //Query 1
@@ -84,7 +73,7 @@ public class ServiceTesting extends AbstractLogComponent implements CommandLineR
         });
 
         //Award query
-        logger.info("**Awards**");
+        logger.info("**AwardProjection**");
         Set<Award> awardSet = filmService.findByTitle("Ran").getAwards();
         logger.info("Is NulL?: {}", awardSet.isEmpty());
         awardSet.forEach(award -> logger.info("Ran won this awards: {}", award));

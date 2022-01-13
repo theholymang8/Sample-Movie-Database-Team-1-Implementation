@@ -3,9 +3,9 @@ package com.pfseven.smdb.smdb.projections;
 import com.pfseven.smdb.smdb.domain.Genre;
 
 
-public interface ContentGenre {
+public interface ContentGenreProjection {
 
-    Long getContentId();
+    Long getCONTENT_ID();
 
     Genre getGenre();
 

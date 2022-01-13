@@ -1,30 +1,21 @@
 package com.pfseven.smdb.smdb.services;
 
-import com.pfseven.smdb.smdb.domain.Award;
-import com.pfseven.smdb.smdb.domain.Content;
-import com.pfseven.smdb.smdb.domain.Film;
-import com.pfseven.smdb.smdb.domain.Individual;
-import com.pfseven.smdb.smdb.projections.ContentGenre;
-import com.pfseven.smdb.smdb.projections.ContentIndividual;
-import com.pfseven.smdb.smdb.projections.IndividualRoleProjection;
-import org.springframework.data.jpa.repository.Query;
-
-import java.util.List;
-
 public interface ExportService {
 
     Long exportAwards();
 
     Long exportContentGenre();
 
-    List<Film> exportFilms();
+    Long exportFilms();
 
-    List<ContentIndividual> exportContentIndividuals();
+    Long exportTvShows();
 
-    List<Content> exportContent();
+    Long exportContentIndividuals();
 
-    List<Individual> exportIndividuals();
+    Long exportContent();
 
-    List<IndividualRoleProjection> exportIndividualRole();
+    Long exportIndividuals();
+
+    Long exportIndividualRole();
 
 }

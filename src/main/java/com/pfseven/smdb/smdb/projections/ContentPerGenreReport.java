@@ -4,7 +4,7 @@ import com.pfseven.smdb.smdb.domain.Genre;
 
 import java.time.LocalDate;
 
-public interface ContentPerGenre {
+public interface ContentPerGenreReport {
 
     Genre getGenre();
 
