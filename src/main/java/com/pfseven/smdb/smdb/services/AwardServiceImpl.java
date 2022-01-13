@@ -1,6 +1,7 @@
 package com.pfseven.smdb.smdb.services;
 
 import com.pfseven.smdb.smdb.domain.Award;
+import com.pfseven.smdb.smdb.projections.AwardProjection;
 import com.pfseven.smdb.smdb.repositories.AwardRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -36,4 +37,7 @@ public class AwardServiceImpl extends BaseServiceImpl<Award> implements AwardSer
         logger.info("found awards by year {}", year);
         return awardRepository.findByYearOfAward(year);
     }
+
+    @Override
+    public List<AwardProjection> getAwards(){ return awardRepository.getAwardsInfo(); }
 }

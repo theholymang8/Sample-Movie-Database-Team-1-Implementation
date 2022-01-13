@@ -1,10 +1,8 @@
 package com.pfseven.smdb.smdb.controllers;
 
 import com.pfseven.smdb.smdb.controllers.transfer.ApiResponse;
-import com.pfseven.smdb.smdb.domain.ContentIndividual;
 import com.pfseven.smdb.smdb.domain.Individual;
 import com.pfseven.smdb.smdb.domain.IndividualRole;
-import com.pfseven.smdb.smdb.dto.IndividualAndContentPerContribution;
 import com.pfseven.smdb.smdb.services.BaseService;
 import com.pfseven.smdb.smdb.services.IndividualService;
 import lombok.RequiredArgsConstructor;
@@ -35,6 +33,7 @@ public class IndividualController extends AbstractController<Individual>{
                                             .data(individualService.findByFirstNameAndLastName(firstName, lastName))
                                             .build());
     }
+
 
     @GetMapping(path = "find", headers = "action=findByEmail", params = {"email"})
     public ResponseEntity<ApiResponse<Individual>> findByEmail(@RequestParam(value = "email") String email){

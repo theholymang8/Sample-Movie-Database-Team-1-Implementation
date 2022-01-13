@@ -2,7 +2,6 @@ package com.pfseven.smdb.smdb.controllers;
 
 import com.pfseven.smdb.smdb.controllers.transfer.ApiResponse;
 import com.pfseven.smdb.smdb.domain.Award;
-import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.services.AwardService;
 import com.pfseven.smdb.smdb.services.BaseService;
 import lombok.RequiredArgsConstructor;

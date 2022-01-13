@@ -5,15 +5,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @JsonIgnoreProperties({"handler", "hibernateLazyInitializer"})
@@ -22,9 +19,7 @@ import java.util.Set;
 @NoArgsConstructor
 @SuperBuilder
 @ToString(callSuper = true, exclude = {"awards", "genres", "contentIndividuals"})
-//@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true, exclude = {"awards", "contentIndividuals", "genres"})
-//@EqualsAndHashCode(callSuper = true)
 @Data
 //Hibernate
 @Entity
@@ -42,7 +37,7 @@ public class Content extends BaseModel{
     @Column(length = 4096, nullable = false)
     private String description;
 
-    //@NotNull(message = "{genre.null}")
+    @NotNull(message = "{genre.null}")
     @ElementCollection(fetch = FetchType.EAGER, targetClass=Genre.class)
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "CONTENT_GENRE", joinColumns = @JoinColumn(name = "content_id"))
@@ -81,7 +76,6 @@ public class Content extends BaseModel{
     @Column(length = 500, nullable = false)
     private String countryOfOrigin;
 
-    //@NotNull(message = "{awards.null}")
     @JsonManagedReference("awardsCont")
     @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Award> awards = new HashSet<>();

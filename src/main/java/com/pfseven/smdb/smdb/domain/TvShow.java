@@ -1,6 +1,5 @@
 package com.pfseven.smdb.smdb.domain;
 
-
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 

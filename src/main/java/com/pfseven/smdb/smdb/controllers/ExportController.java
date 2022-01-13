@@ -1,19 +1,12 @@
 package com.pfseven.smdb.smdb.controllers;
 
 import com.pfseven.smdb.smdb.controllers.transfer.ApiResponse;
-import com.pfseven.smdb.smdb.domain.Award;
-import com.pfseven.smdb.smdb.services.ContentService;
-import com.pfseven.smdb.smdb.services.ExportService;
-import com.pfseven.smdb.smdb.services.FilmService;
-import com.pfseven.smdb.smdb.services.FilmServiceImpl;
+import com.pfseven.smdb.smdb.services.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -21,8 +14,6 @@ import java.util.List;
 public class ExportController {
 
     private final ExportService exportService;
-    //private final ContentService contentService;
-    private final FilmService filmService;
 
     @GetMapping(headers = "action=awards")
     public ResponseEntity<ApiResponse<Long>> exportAwards(){
@@ -31,17 +22,52 @@ public class ExportController {
                 .build());
     }
 
-    /*@GetMapping(headers = "action=contentGenre")
+    @GetMapping(headers = "action=contentGenre")
     public ResponseEntity<ApiResponse<Long>> exportContentGenre(){
         return ResponseEntity.ok(ApiResponse.<Long>builder()
-                .data(contentService.exportContentGenre())
+                .data(exportService.exportContentGenre())
                 .build());
-    }*/
+    }
+
+    @GetMapping(headers = "action=contentIndividuals")
+    public ResponseEntity<ApiResponse<Long>> exportContentIndividuals(){
+        return ResponseEntity.ok(ApiResponse.<Long>builder()
+                .data(exportService.exportContentIndividuals())
+                .build());
+    }
+
+    @GetMapping(headers = "action=individualRoles")
+    public ResponseEntity<ApiResponse<Long>> exportIndividualRoles(){
+        return ResponseEntity.ok(ApiResponse.<Long>builder()
+                .data(exportService.exportIndividualRole())
+                .build());
+    }
+
+    @GetMapping(headers = "action=individuals")
+    public ResponseEntity<ApiResponse<Long>> exportIndividuals(){
+        return ResponseEntity.ok(ApiResponse.<Long>builder()
+                .data(exportService.exportIndividuals())
+                .build());
+    }
 
     @GetMapping(headers = "action=films")
     public ResponseEntity<ApiResponse<Long>> exportFilms(){
         return ResponseEntity.ok(ApiResponse.<Long>builder()
-                .data(filmService.exportFilms())
+                .data(exportService.exportFilms())
+                .build());
+    }
+
+    @GetMapping(headers = "action=tvShows")
+    public ResponseEntity<ApiResponse<Long>> exportTvShows(){
+        return ResponseEntity.ok(ApiResponse.<Long>builder()
+                .data(exportService.exportTvShows())
+                .build());
+    }
+
+    @GetMapping(headers = "action=content")
+    public ResponseEntity<ApiResponse<Long>> exportContent(){
+        return ResponseEntity.ok(ApiResponse.<Long>builder()
+                .data(exportService.exportContent())
                 .build());
     }
 

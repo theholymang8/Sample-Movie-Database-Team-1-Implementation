@@ -1,11 +1,10 @@
 package com.pfseven.smdb.smdb.controllers;
 
 import com.pfseven.smdb.smdb.controllers.transfer.ApiResponse;
-import com.pfseven.smdb.smdb.domain.Award;
 import com.pfseven.smdb.smdb.domain.Film;
 import com.pfseven.smdb.smdb.domain.FilmUniverse;
 import com.pfseven.smdb.smdb.domain.Genre;
-import com.pfseven.smdb.smdb.projections.ContentPerGenre;
+import com.pfseven.smdb.smdb.projections.ContentPerGenreReport;
 import com.pfseven.smdb.smdb.services.BaseService;
 import com.pfseven.smdb.smdb.services.FilmService;
 import lombok.RequiredArgsConstructor;
@@ -37,6 +36,7 @@ public class FilmController extends AbstractController<Film>{
                 .build());
     }
 
+
     @GetMapping(path = "find", headers = "action=findByGenres")
     public ResponseEntity<ApiResponse<List<Film>>> findByGenres(@RequestParam List<Genre> genres){
         return ResponseEntity.ok(ApiResponse.<List<Film>>builder()
@@ -59,12 +59,12 @@ public class FilmController extends AbstractController<Film>{
     }
 
     @GetMapping(path="find",
-            headers = "action=contentPerGenreForGivenIndividual",
+            headers = "action=filmsPerGenreForGivenIndividual",
             params = {"firstName", "lastName"})
-    public ResponseEntity<ApiResponse<Map<Genre, List<ContentPerGenre>>>> contentPerGenreForGivenIndividual(
+    public ResponseEntity<ApiResponse<Map<Genre, List<ContentPerGenreReport>>>> contentPerGenreForGivenIndividual(
             @RequestParam("firstName") String firstName,
             @RequestParam("lastName") String lastName){
-        return ResponseEntity.ok(ApiResponse.<Map<Genre, List<ContentPerGenre>>>builder()
+        return ResponseEntity.ok(ApiResponse.<Map<Genre, List<ContentPerGenreReport>>>builder()
                 .data(filmService.contentPerGenreForGivenIndividual(firstName, lastName))
                 .build());
     }

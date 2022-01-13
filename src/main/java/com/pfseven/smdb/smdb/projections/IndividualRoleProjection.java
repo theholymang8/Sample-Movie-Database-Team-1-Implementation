@@ -3,8 +3,8 @@ import com.pfseven.smdb.smdb.domain.IndividualRole;
 
 public interface IndividualRoleProjection {
 
-    Long getId();
+    Long getINDIVIDUAL_ID();
 
-    IndividualRole getIndividualRole();
+    IndividualRole getRole();
 
 }
